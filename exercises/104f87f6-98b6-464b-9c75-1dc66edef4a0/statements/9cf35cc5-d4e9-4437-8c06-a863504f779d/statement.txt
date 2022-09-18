@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">string reversa com funções</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Queremos fazer um programa Java que reverta uma frase.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Por exemplo</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se a frase for "Esta tarde vamos programar muito", o resultado seria "ohcum ramargorp a somav edrat atsE"&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você terá que usar métodos da classe String para manipular strings. </font><font style="vertical-align: inherit;">Você pode muito bem ter que usar os seguintes métodos:</font></font></p> 
+        <ul> 
+         <li><code>length()</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Além disso, lembre-se de que você pode concatenar strings com o operador '+' ou com o método concat (será mais fácil com o operador +)</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Além disso, para ler os dados da entrada, talvez seja necessário usar os seguintes métodos da classe Scanner:</font></font></p> 
+        <ul> 
+         <li><code>nextInt()</code></li> 
+         <li><code>nextLine()</code></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A entrada começa com um número indicando quantos casos de teste serão processados. </font><font style="vertical-align: inherit;">Cada um dos casos estará em uma linha diferente e será composto por uma string de texto não vazia.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SAÍDA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para cada caso de teste, o programa escreverá a frase resultante da inversão da string.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTRIÇÕES</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O problema deve ser resolvido projetando uma função que receba uma string de texto e retorne a string invertida.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal, para cada um dos casos, lerá os dados de entrada e utilizará a função para resolver o problema, imprimindo posteriormente o resultado correspondente.</font></font></p></body></html>
