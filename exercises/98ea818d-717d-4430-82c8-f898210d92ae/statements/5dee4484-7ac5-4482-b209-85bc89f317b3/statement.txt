@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">euroconverter with functions</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We want to make a Java program that allows us to change from euros to pesetas and vice versa. </font><font style="vertical-align: inherit;">To do this, the user will enter one of the following options:</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. Go from pesetas to euros</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Convert from euros to pesetas</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. Exit</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">After entering one of the options, the user will enter a number, which will be the amount to be converted, in euros or pesetas, depending on the selected option.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">For euros we will use decimal numbers (float) with two decimal places, while for pesetas we will use integers (int)</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Finally, the result of the conversion will be displayed.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This will be repeated until the user decides to leave the program with the "Exit" option.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Equivalence: 1 euro = 166,386 pesetas</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRY</font></font></strong></h3> 
+        <p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p> 
+        <p>A continuación habrá una línea para cada caso.</p> 
+        <p>Cada línea será una secuencia de opción de conversión y cantidad a convertir (en pesetas o euros, según la opción), donde cada cantidad será un número entre 0 y 10000,&nbsp;hasta que se pulse la opción 3. Es decir, cada línea termina con la opción 3.</p> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá el resultado para cada conversión del caso con el texto que puede observarse en el OUTPUT.</p> 
+        <p>Entre caso y caso, se imprimirá la frase "SIGUIENTE CASO", tal y como puede observarse en el OUTPUT.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se deberá implementar una función que reciba un float&nbsp;y un entero y redondee el float con el número de decimales que se hayan indicado en el número entero.&nbsp;Para saber cómo hacer esto, visita <a href="https://translate.google.com/website?sl=es&amp;tl=en&amp;hl=es&amp;client=webapp&amp;u=https://www.delftstack.com/es/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/" target="_blank">este enlace</a>. En el enlace te explica cómo redondear a 2 decimales. Deberás generalizar el problema a redondear a N decimales, obteniendo así una función más reutilizable.</p> 
+        <p>Deberá resolverse el problema diseñando dos funciones más, una que pase de pesetas a euros y otra que pase de euros a pesetas.</p> 
+        <p>Se proporcionan las cabeceras o interfaces de dichas funciones en la sección MUST CONTAIN&nbsp;</p> 
+        <p>La&nbsp;función que devuelve euros, devolverá un número decimal con dos decimales.</p> 
+        <p>La función que devuelve pesetas, devolverá un número entero redondeado, usando la función <strong>Math.round</strong>.&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The main program will ask for the options and will resolve them by making calls to the functions, and subsequently printing the result calculated and returned by the corresponding function.</font></font></p></body></html>
