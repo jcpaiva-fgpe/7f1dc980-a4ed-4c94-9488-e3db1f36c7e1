@@ -1,0 +1,37 @@
+package oop_ejemplos;
+    
+import java.util.Scanner;
+
+    public class OOP_ejemplos {
+
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            SubClase miObj1 = new SubClase(sc.nextInt());
+            miObj1.y = sc.nextInt();
+            System.out.println(miObj1.suma());
+        }
+
+    }
+
+    class SubClase {
+
+        private int x;
+        public int y;
+
+        public SubClase(int _x) {
+            x = _x;
+        }
+
+        public SubClase(int _x, int _y) {
+            x = _x;
+            y = _y;
+        }
+
+        public int suma() {
+            return suma(x, y);
+        }
+
+        private int suma(int _x, int _y) {
+            return _x + _y;
+        }
+    }
