@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escreva um programa Java que verifique a ordem de um array de inteiros e diga se o array está em ordem ASCENDENTE, DESCENDENTE ou sem ordem.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dado o array de inteiros {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, ele dirá que é um array ASCENDENTE.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dado o array de inteiros {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}, ele dirá que é um array em ordem DESCENDENTE.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dado o array de inteiros {10, 9, 8, 2, 6, 5, 4, 3, 2, 1}, ele dirá que é um array UNORDERED.</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A entrada começa com um número indicando quantos casos de teste serão processados.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cada caso será composto por:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma primeira linha com o número L de elementos da matriz, onde L &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um segundo com os L elementos do referido array separados por um espaço.&nbsp;</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SAÍDA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para cada caso de teste, o programa escreverá ASCENDENTE, DESCENDENTE ou SEM ORDEM, dependendo da ordem do array analisado.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos casos especiais em que todos os elementos do array são iguais, a resposta que daremos será que o array não tem ordem.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTRIÇÕES</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O problema será resolvido usando a seguinte decomposição funcional:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma função que recebe um array de inteiros e retorna um booleano dizendo se a ordem do array é crescente ou não.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma função que recebe um array de inteiros e retorna um booleano dizendo se a ordem do array é decrescente ou não</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal, para cada caso, imprimirá o tipo de ordem do array: ASCENDENTE, DESCENDENTE ou SEM ORDEM.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OTIMIZAÇÃO ALGORITMICA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JuezLTI não o levará em consideração ao decidir o exercício como correto ou não, mas tentaremos programá-lo da maneira mais otimizada possível, </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">reduzindo ao máximo o tempo de execução</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você deve programar suas funções tendo em mente que assim que encontrar um elemento que não esteja em ordem no array, você não precisa continuar passando por ele até o final para saber que não está ordenado.</font></font></p> 
+        <p>&nbsp;</p></body></html>
