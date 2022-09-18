@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">constructor overload</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The constructor of a class, just like any other method, can be </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">overloaded</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">This means that it is possible to have methods with the same name, as long as they differ in the number or type of parameters.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example:</font></font></h3> 
+        <blockquote>
+         <code>public class OOP {</code> 
+         <p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj1 = new SubClase(8, 3);<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj1.suma());<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj2 = new SubClase();<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj2.suma());<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>}</code></p> 
+         <p><code>class SubClase {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; int x, y;</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; <strong>public SubClase()</strong> {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = 5;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = 7;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; <strong>public SubClase(int _x, int _y)</strong> {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = _x;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = _y;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; public int suma() {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br> &nbsp;&nbsp;&nbsp; }<br> }</code></p> 
+        </blockquote> 
+        <p><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Note:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> If two methods of the same class differ only in parameter names, an error will be generated.</font></font></small></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercise</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Starting with the class </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">that solves the last exercise, combine a parameterless class constructor with another parameterized class constructor.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The application will ask 3 times for the name of the module and the grade. </font><font style="vertical-align: inherit;">With the following guidelines:</font></font></p> 
+        <ul> 
+         <li>Si el nombre que facilita el usuario está vacío, no se le solicitará la nota y se invocará el constructor sin parámetros, que inicializará las propiedades del objeto a "Programacion" y 8.</li> 
+         <li>Si el nombre que facilita el usuario no está vacío, se solicitará al usuario la nota hasta que suministre una nota &gt;= a la calificación máxima permitida. A continuación, se invocará el constructor con parámetros, el cual, inicializará las propiedades del objeto con los datos suministrados por el usuario.</li> 
+        </ul> 
+        <p>Para evitar que entre los efectos indeseables de combinar <code>sc.nextLine()</code> con <code>sc.nextInt()</code> entre distintas ejecuciones del bucle que solicita los datos de los 3 módulos, introduce al final de las sentencias que se ejecutan en el caso de que la longitud del nombre sea mayor que 0:</p> 
+        <blockquote> 
+         <p><code>sc.nextLine();</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">To find out if a module name is empty or not, we can use the </font></font><code>length()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">class method </font></font><code>String</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, as follows:</font></font></p> 
+        <blockquote> 
+         <p><code>if (nombre.length() &gt; 0)</code></p> 
+        </blockquote> 
+        <p>&nbsp;</p></body></html>
