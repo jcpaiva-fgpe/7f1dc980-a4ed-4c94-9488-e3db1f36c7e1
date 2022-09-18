@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Queremos hacer un programa Java que&nbsp;calcule&nbsp;el factorial de un&nbsp;número. En el <a href="https://es.wikipedia.org/wiki/Factorial" target="_blank">siguiente enlace</a> tienes información sobre cómo se calcula el factorial de un número.</p>
+
+<p>NOTA:</p>
+
+<ul>
+	<li>El factorial de 5 es 5 * 4 * 3 * 2 * 1&nbsp;= 120.</li>
+	<li>El factorial de 0 es 1.</li>
+</ul>
+
+<p>Utiliza un double para calcular el factorial.</p>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba deberán ser procesados.</p>
+
+<p>A continuación habrá una línea para cada caso, donde cada caso es simplemente el número del que hay que calcular el factorial. Cada número será un entero n, con n &gt;=0 y n&lt;=100</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá el resultado del cálculo del factorial del número</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función que calcule y devuelva el factorial del número pasado como parámetro.</p>
+
+<p>Se proporcionan la&nbsp;cabecera o interfaz&nbsp;de dicha&nbsp;función&nbsp;en la sección MUST CONTAIN&nbsp;</p>
+
+<p>El programa principal irá procesando la entrada del teclado, irá invocando a la función e irá&nbsp;imprimiendo el resultado calculado y devuelto por ésta.</p></body></html>
