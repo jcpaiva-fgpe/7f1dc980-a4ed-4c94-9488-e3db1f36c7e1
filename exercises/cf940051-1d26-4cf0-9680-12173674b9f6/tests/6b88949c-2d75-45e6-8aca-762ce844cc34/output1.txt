@@ -1,0 +1,10 @@
+Dime la nota que me corresponde:
+Debe introducir un numero entero:
+Dime la nota que me corresponde:
+Debe introducir un numero entero:
+Dime la nota que me corresponde:
+Debe introducir un numero entero:
+Dime la nota que me corresponde:
+Debe introducir un numero entero:
+Dime la nota que me corresponde:
+Mi nota en PROGRAMACION es: 7
