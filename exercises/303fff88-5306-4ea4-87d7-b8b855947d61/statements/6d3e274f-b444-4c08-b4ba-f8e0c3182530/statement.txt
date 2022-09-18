@@ -1,0 +1,3 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Partiendo del código inicial de multicines, que se facilita en el curso, vas a crear un TreeMap en la clase principal que va a contener una colección de salas de cine.</p>
+
+<p>Deberás permitir las operaciones de creación (opción 1), y listado de las salas de cine (opción 3).</p></body></html>
