@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Skriv ett Java-program som grupperar elementen i en array i grupper med N sammanhängande element. </font><font style="vertical-align: inherit;">Elementen i arrayen kommer att vara textsträngar som representerar elevnamn.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exempel</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Med tanke på strängarrayen {David, Maria, Sergio, Cristhian, Miguel, Alfonso} skulle gruppering av 3 sammanhängande element resultera i följande grupper: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupp 1: David, Maria, Sergio</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupp 2: Cristhian, Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Med samma strängarray som ovan: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, skulle gruppering av 2 sammanhängande element resultera i följande grupper: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupp 1: David, Maria</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupp 2: Sergio, Cristhian&nbsp;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupp 3: Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Med samma strängarray som ovan: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, skulle gruppering av 4 sammanhängande element resultera i följande grupper: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupp 1: David, Maria, Sergio, Cristhian</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupp 2: Miguel, Alfonso, SAKNAS, SAKNAS</font></font></li> 
+          </ul> </li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INTRÄDE</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Posten börjar med ett nummer som anger hur många testfall som kommer att behandlas.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Varje fall kommer att bestå av:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En första rad med antalet N element som varje grupp måste ha, där N &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En andra rad med antalet L arrayelement, där L &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En tredje med L-elementen i nämnda array separerade av ett mellanslag. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBS:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Sammansatta namn kan inte användas, eftersom det skulle ta dem som två namn om delarna av det sammansatta namnet separeras med ett mellanslag.</font></font></li> 
+        </ul> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, imprimirá las agrupaciones hechas, cada una en una línea, donde se rellenará con la palabra FALTA aquellos miembros que le falten al último grupo hecho, si es que le falta alguno.</p> 
+        <p>Entre caso y caso, se imprimirán 10 guiones en una línea, para que se pueda diferenciar entre las salidas de los distintos casos de prueba.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p> 
+        <ul> 
+         <li>Una función que reciba un array de cadenas y el número de miembros que tiene que tener cada grupo, y devuelva una array de cadenas, donde en cada cadena estén los nombres de los miembros de cada grupo, separados por espacio.</li> 
+        </ul> 
+        <p>Es decir, que si la función recibe los siguientes argumentos:</p> 
+        <ul> 
+         <li>alumnos = {David, Maria, Sergio, Cristhian, Miguel, Alfonso}</li> 
+         <li>tamanyoGrupos&nbsp;= 4</li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">skulle returnera följande array av 2 element: { David Maria Sergio Cristhian, Miguel Alfonso MISSING MISSING}, där</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">det första elementet i arrayen skulle vara strängen "David Maria Sergio, Cristhian" och</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">det andra elementet skulle vara strängen "Miguel Alfonso MISSING MISSING"</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Huvudprogrammet, för varje enskilt fall, genererar arrayen av elever som läser från tangentbordet, anropar funktionen och skriver ut resultatarrayen som returneras av funktionen med det format som förväntas för programmets utdata</font></font></p></body></html>
