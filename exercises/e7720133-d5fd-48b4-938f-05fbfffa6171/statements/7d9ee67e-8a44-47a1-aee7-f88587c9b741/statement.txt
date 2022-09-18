@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Parámetros y argumentos</h3>
+
+<p>La mayoría de las funciones usan <strong>PARÁMETROS de ENTRADA</strong>, que serán usados en el código del algoritmo que encierran para poder generalizar el problema que resuelven.</p>
+
+<blockquote>
+<p><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#pow-double-double-">Math.pow</a>(double&nbsp;a, double&nbsp;b)</code></p>
+</blockquote>
+
+<p>Estos parámetros de entrada no son más que <strong>variables internas de la función </strong>que representan de manera genérica a los datos que necesita el algoritmo de la función para resolver el problema que resuelve.&nbsp;</p>
+
+<p>Estas variables internas de la función, llamadas parámetros, <strong>solo tienen existencia dentro de la función</strong>, y pueden usarse solamente dentro de la misma, en el código de su algoritmo.</p>
+
+<p>Estas variables especiales internas de la función, llamadas parámetros, <strong>tomarán sus valores concretos y reales en el momento de usar la función</strong>, cuando se llama a la misma, pudiendo ser éstos distintos en cada uso de la función. Los valores que se pasan a la función en el momento de la llamada reciben el nombre de <strong>ARGUMENTOS de entrada</strong>.&nbsp;</p>
+
+<p>Es decir, <strong>los parámetros de una función son variables internas de la misma que toman como valor inicial (INICIALIZACIÓN) los valores pasados como argumentos en en el momento de la llamada a la función</strong>.</p>
+
+<h3>Ejemplo</h3>
+
+<p>Sería interesante que, tanto en la cabecera como en el pie de las tablas, apareciera el número correspondiente a la tabla de multiplicar que encierran.</p>
+
+<p>Podríamos intentar concatenar la variable <code>contador</code> en el mensaje:</p>
+
+<blockquote>
+<p><code>&nbsp;&nbsp;&nbsp; static void cabeceraTablaMultiplicar() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("** INICIO TABLA " + <s>contador</s> + " **");<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+</blockquote>
+
+<p>Pero, esto generaría el error <code>"cannot find symbol"</code>, ya que contador es una variable local al método <code>main()</code> y no puede ser utilizada fuera del bloque correspondiente a dicho método <code>main()</code>.</p>
+
+<p>La manera correcta de pasar el valor de la variable contador al método <code>cabeceraTablaMultiplicar()</code> es a través de la invocación:</p>
+
+<blockquote>
+<p><code>cabeceraTablaMultiplicar(contador)</code></p>
+</blockquote>
+
+<p>Pero, debe haber una correlación entre los argumentos que se envían entre los paréntesis y los que son recogidos por el método invocado, por lo que deberemos modificar las declaraciones de los métodos <code>cabeceraTablaMultiplicar()</code> y <code>pieTablaMultiplicar()</code>:</p>
+
+<blockquote>
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static void cabeceraTablaMultiplicar(int contador) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("** INICIO TABLA " + contador + " **");<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+</blockquote>
+
+<p>Hay que señalar que no es necesario que las variables que se utilizan en la invocación y la que se utiliza en la definición del método tengan el mismo nombre.</p>
+
+<h3>Ejercicio</h3>
+
+<p>Además de incorporar el contador al método <code>pieTablaMultiplicar()</code>, traslada el código que genera cada tabla de multiplicar completa a un método <code>tablaDeUnNumero(contador).</code></p></body></html>
