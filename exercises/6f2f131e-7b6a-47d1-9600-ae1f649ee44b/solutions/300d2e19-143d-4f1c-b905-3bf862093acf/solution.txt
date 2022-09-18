@@ -1,0 +1,21 @@
+package variables;
+
+public class Variables {
+
+    public static void main(String[] args) {
+        int numero;
+        float numeroReal;
+        char letra;
+        boolean estaLloviendo;
+        
+        numero = 18;
+        numeroReal = 3.14f;
+        letra = 'P';
+        estaLloviendo = false;
+        System.out.println("El contenido de la variable numero es " + numero);
+        System.out.println("El contenido de la variable numeroReal es " + numeroReal);
+        System.out.println("El contenido de la variable letra es " + letra);
+        System.out.println("El contenido de la variable estaLloviendo es " + estaLloviendo);
+    }
+    
+}
