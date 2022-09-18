@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Räkna kedjevokaler med funktioner</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vi vill göra ett Java-program som räknar antalet vokaler i meningarna som skrivs in.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kom ihåg att meningar kan innehålla stora och små bokstäver och i båda fallen måste vokalerna räknas.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Du måste använda metoder i klassen String för att hantera strängar. </font><font style="vertical-align: inherit;">Du kan mycket väl behöva använda följande metoder:</font></font></p> 
+        <ul> 
+         <li><code>charAt(n)</code></li> 
+         <li><code>toLowerCase()</code></li> 
+         <li><code>length()</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">För att läsa data från ingången kan du också mycket väl behöva använda följande metoder i klassen Scanner:</font></font></p> 
+        <ul> 
+         <li><code>nextInt()</code></li> 
+         <li><code>nextLine()</code></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INTRÄDE</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Posten börjar med ett nummer som anger hur många testfall som kommer att behandlas.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vart och ett av fallen består av en fras (en textsträng)</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UTGÅNG</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">För varje testfall kommer programmet att skriva antalet vokaler som motsvarande fras har.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BEGRÄNSNINGAR</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Problemet bör lösas genom att designa en funktion som tar emot en textsträng och returnerar antalet vokaler den innehåller.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Huvudprogrammet, för vart och ett av fallen, kommer att begära strängarna med tangentbordet och kommer att använda funktionen för att lösa problemet och sedan skriva ut motsvarande resultat.</font></font></p></body></html>
