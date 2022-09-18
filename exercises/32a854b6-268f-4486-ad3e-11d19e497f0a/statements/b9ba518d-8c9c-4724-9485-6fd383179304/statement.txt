@@ -1,0 +1,140 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>¿Qué es la Programación Orientada a Objetos (OOP)?</h2>
+
+<p>Mientras que la programación procedural se refiere a la escritura de procedimientos&nbsp; o métodos que realizan operaciones con los datos, la Programación Orientada a Objetos se refiere a la creación de objetos que contienen tanto los datos como los métodos que manipulan dichos datos.</p>
+
+<h3>Ventajas:</h3>
+
+<ul>
+	<li>es más rápida y fácil de ejecutar.</li>
+	<li>facilita la estructuración de los programas.</li>
+	<li>sigue el principio DRY "Don't Repeat Yourself".</li>
+	<li>facilita el mantenimiento, la depuración y la modificación del código.</li>
+	<li>posibilita la creación de aplicaciones reusables con menos código y menor tiempo de desarrollo.</li>
+</ul>
+
+<p><strong>Nota:</strong> El principio "Don't Repeat Yourself" (DRY) se refiere a la reducción en la repetición de código, extrayendo el código que sea común en diversas partes de la aplicación, colocándolas en un único lugar, que permita su reutilización en lugar de su repetición.</p>
+
+<hr>
+<h2>¿Qué son las Clases y los Objetos?</h2>
+
+<p>Las clases y los objetos constituyen los dos principales aspectos de la Programación Orientada a Objetos.</p>
+
+<p>En la siguiente tabla se puede observar la diferencia entre clases y objetos:</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+	<thead>
+		<tr>
+			<th scope="col">class</th>
+			<th scope="col">objects</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Fruta</td>
+			<td>
+			<p>Manzana</p>
+
+			<p>Plátano</p>
+
+			<p>Mango</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Coche</td>
+			<td>
+			<p>Volvo</p>
+
+			<p>Audi</p>
+
+			<p>Toyota</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>Por lo tanto, debemos entender una clase como una plantilla para la creación de objetos. Un objeto será una <strong>instancia</strong> de una clase.</p>
+
+<p>&nbsp;</p>
+
+<p>Cuando creamos un objeto, éste hereda todas las variables y los métodos de la clase.</p>
+
+<h3>Crear una clase en Java.</h3>
+
+<p>Recordamos ahora, algunas de los conceptos que abordamos en los primeros ejercicios de Java.</p>
+
+<p><strong>Los programas en Java</strong> (y en cualquier lenguaje orientado a objetos) <strong>se organizan en clases</strong>.</p>
+
+<p>Java nos obliga a que <strong>en cada programa haya al menos una clase</strong>, en concreto una <strong>clase pública</strong>.</p>
+
+<p><code>public class OOP {</code></p>
+
+<p><code>}</code></p>
+
+<p>Es importante recordar que <strong>el nombre del fichero tiene que coincidir exactamente con el nombre de la clase</strong>, teniendo cuidado con las mayúsculas y minúsculas, que en Java son caracteres distintos.</p>
+
+<p><tt>OOP.java</tt></p>
+
+<p>Java nos obliga a que <strong>en cada aplicación haya un método main</strong>, que es por donde empezará a ejecutarse el código de la misma; es lo que se llama el punto de entrada de la aplicación.</p>
+
+<p>A continuación se muestra el esqueleto básico de una aplicación Java:</p>
+
+<blockquote>
+<p><code>public class OOP {<br>
+<br>
+&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO code application logic here<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+</blockquote>
+
+<p>Lo normal es que cada clase se escriba en un fichero aparte. No obstante, para que podamos seguir utilizando JuezLTI, todas las clases las definiremos en un único fichero, teniendo en cuenta que únicamente la clase que contenga el método <code>main</code> llevará el modificador <code>public</code>. El resto de clases se colocarán tras la llave de cierre de esa clase pública.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>A continuación, se muestran dos clases que estarían definidas conjuntamente en un único fichero OOP.java:</p>
+
+<blockquote>
+<p><code>package oop;</code></p>
+
+<p><code>public class OOP {<br>
+<br>
+&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Creando una clase");<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+
+<p><code>class SubClase {<br>
+&nbsp; int x = 5;<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>A la siguiente clase pública, que contiene el método <code>main()</code></p>
+
+<blockquote>
+<p><code>package oop;</code></p>
+
+<p><code>public class OOP {</code></p>
+
+<p><br>
+<code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Creando una clase");<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+</blockquote>
+
+<p>Añádele la clase <code>Modulo</code>:</p>
+
+<blockquote>
+<p><code>class Modulo {<br>
+&nbsp; int nota = 8;<br>
+}</code></p>
+</blockquote>
+
+<p>&nbsp;</p></body></html>
