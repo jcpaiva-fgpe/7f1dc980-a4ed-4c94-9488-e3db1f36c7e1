@@ -1,0 +1,80 @@
+package ayudaspalma;
+
+import java.util.Scanner;
+
+public class AyudasPalma {
+    
+    static Scanner sc = new Scanner(System.in);
+        
+    public static void main(String[] args) {
+        int tipoAyuda;
+        long cuantiaTotal = 0, cuantiaSolicitada;
+        
+        do {
+            mostrarMenu();
+            tipoAyuda = sc.nextInt();
+            if(tipoAyuda >= 1 && tipoAyuda <= 3) {
+                System.out.println("Cantidad solicitada: ");
+                cuantiaSolicitada = sc.nextLong();
+                sc.nextLine();
+                System.out.println("Referencia catastral: ");
+                if(catastroValido(sc.nextLine())) {
+                    cuantiaTotal += cuantiaOtorgada(tipoAyuda, cuantiaSolicitada);
+                }
+            }
+            
+        } while (tipoAyuda != 0);
+
+        System.out.println("Se han concedido ayudas por un total de: " + cuantiaTotal);
+    }
+
+    static void mostrarMenu() {
+        System.out.println("MENU AYUDAS");
+        System.out.println("1.- Por destruccion total de la vivienda habitual");
+        System.out.println("2.- Por danos que afecten a la estructura de la vivienda habitual");
+        System.out.println("3.- Por danos que no afecten a la estructura de la vivienda habitual");
+        System.out.println("0.- Salir");
+        System.out.println("Elija un tipo de ayuda (0-3)");
+    }
+    
+    static long cuantiaOtorgada(int tipoAyuda, long cuantiaSolicitada) {
+        long cuantiaMaxima = 0;
+        
+        switch(tipoAyuda){
+            case 1:
+                cuantiaMaxima = 30240;
+                break;
+            case 2: 
+                cuantiaMaxima = 20640;
+                break;
+            case 3: 
+                cuantiaMaxima = 10320;
+                break;
+        }
+        if(cuantiaSolicitada > cuantiaMaxima) {
+            cuantiaSolicitada = cuantiaMaxima;
+        }
+        return cuantiaSolicitada;
+    }
+
+    private static boolean catastroValido(String refCatastral) {
+        boolean refValida = false;
+        int provincia = getProvincia(refCatastral);
+        if(provincia == 38) {
+            int municipio = getMunicipio(refCatastral);
+            if((municipio == 24) || (municipio == 27) || (municipio == 45)) {
+                refValida = true;
+            }
+        }
+        return refValida;
+    }
+
+    private static int getProvincia(String refCatastral) {
+        return Integer.parseInt("" + refCatastral.charAt(0) + refCatastral.charAt(1));
+    }
+
+    private static int getMunicipio(String refCatastral) {
+        return Integer.parseInt("" + refCatastral.charAt(2) + refCatastral.charAt(3) + refCatastral.charAt(4));
+    }
+    
+}
