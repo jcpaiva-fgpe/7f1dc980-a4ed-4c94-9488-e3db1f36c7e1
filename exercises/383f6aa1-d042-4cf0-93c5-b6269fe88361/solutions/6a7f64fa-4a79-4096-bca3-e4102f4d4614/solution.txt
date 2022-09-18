@@ -1,0 +1,28 @@
+package contarpositivos;
+
+import java.util.Scanner;
+
+public class ContarPositivos {
+    public static void main(String[] args) {
+
+        int numero1, numero2, numero3, mayor = 0;
+
+        Scanner teclado = new Scanner(System.in);
+
+        numero1 = teclado.nextInt();
+        if (numero1 > mayor) {
+            mayor = numero1;
+        }
+
+        numero2 = teclado.nextInt();
+        if (numero2 > mayor) {
+            mayor = numero2;
+        }
+
+        numero3 = teclado.nextInt();
+        if (numero3 > mayor) {
+            mayor = numero3;
+        }
+        System.out.println(mayor);
+    }
+}
