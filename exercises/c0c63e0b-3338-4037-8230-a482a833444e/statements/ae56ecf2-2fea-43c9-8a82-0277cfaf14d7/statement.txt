@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faça um programa que pergunte o número de alunos da turma (valores inteiros) e depois pergunte as notas de cada um desses alunos. </font><font style="vertical-align: inherit;">A saída consiste em mostrar o seguinte:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O total de alunos aprovados</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O número de alunos que obtiveram um 10.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O número de alunos reprovados</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O número de alunos que obtiveram um 0.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A porcentagem de aprovados.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A porcentagem de falhas.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para tipos de variáveis, use inteiros.</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">As notas dos alunos são números sem decimais.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Talvez as porcentagens fossem mais razoáveis ​​para trabalhar com números reais, mas vamos trabalhar com números inteiros. </font><font style="vertical-align: inherit;">Isso significa que se o percentual do resultado for 30,66%, o resultado será 30%.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ATENÇÃO</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Tenha cuidado com as mensagens na tela. </font><font style="vertical-align: inherit;">Identifique no exemplo OUTPUT o que é impresso com System.out.print("") e o que é impresso com System.out. </font><font style="vertical-align: inherit;">println("").</font></font></p></body></html>
