@@ -1,0 +1,16 @@
+package sumatoriodel1al10;
+
+public class SumatorioDel1Al10 {
+
+    public static void main(String[] args) {
+       int suma=0;
+
+       // Bucle que suma enteros del uno al diez
+       for (int i=1;(i<=10);i++){
+            suma = suma + i;
+       }
+
+       // Muestra por pantalla el resultado
+       System.out.println(suma);
+    }
+}
