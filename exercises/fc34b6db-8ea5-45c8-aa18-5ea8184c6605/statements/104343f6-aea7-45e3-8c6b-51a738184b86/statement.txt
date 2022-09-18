@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Atamalı</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Aritmetik Operatörler </font><font style="vertical-align: inherit;">.</font></font></h3> 
+        <p>&nbsp;</p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Aritmetik operatörler
+         </font></font></caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ŞEBEKE</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KULLANMAK</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERASYON</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÖRNEK</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SONUÇ</font></font></th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir += b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">a = a + b'ye</font></strong><font style="vertical-align: inherit;"> eşittir</font></font><strong><font style="vertical-align: inherit;"></font></strong></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir += 5</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 13</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir -= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">a = a - b'ye</font></strong><font style="vertical-align: inherit;"> eşittir</font></font><strong><font style="vertical-align: inherit;"></font></strong></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a -= 5</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 3</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir *= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">a = a * b'ye</font></strong><font style="vertical-align: inherit;"> eşittir</font></font><strong><font style="vertical-align: inherit;"></font></strong></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ila =8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ila *= 5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 40</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a /= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">a = a / b'ye</font></strong><font style="vertical-align: inherit;"> eşittir</font></font><strong><font style="vertical-align: inherit;"></font></strong></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=10 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a /= 5</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 2</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">%=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir %= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">a = a %b'ye</font></strong><font style="vertical-align: inherit;"> eşittir</font></font><strong><font style="vertical-align: inherit;"></font></strong></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a %= 5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 3</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egzersiz yapmak:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Klavyeden 2 tamsayı okur ve yukarıda görülen atamalı aritmetik operatörleri kullanarak sayıların birincisinin ikincinin gösterdiği birimlerle arttığında ve aynı miktarda azaldığında alacağı değeri gösterir.</font></font></p></body></html>
