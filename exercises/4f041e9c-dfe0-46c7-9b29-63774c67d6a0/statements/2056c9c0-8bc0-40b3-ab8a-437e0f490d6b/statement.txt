@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h1>Estructura básica de un programa Java</h1>
+
+<p><strong>Crea una aplicación Java que muestre los siguientes textos:</strong></p>
+
+<blockquote>
+<p>MODULO DE PROGRAMACION</p>
+
+<p>1er. Reto</p>
+</blockquote>
+
+<p><em><small><strong>Recuerda:</strong> copia y pega los textos en el lugar adecuado, para que no te fallen los espacios, tildes o signos de puntuación.</small></em></p></body></html>
