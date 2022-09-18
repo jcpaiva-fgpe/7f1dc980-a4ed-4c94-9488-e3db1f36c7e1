@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Gestionar entradas.</h2>
+
+<p>Crea el apartado de menú&nbsp;GESTIONAR ENTRADAS, junto con las opciones de menú:</p>
+
+<ul>
+	<li><code>6. Vender entradas</code></li>
+	<li><code>7. Devolver entradas</code>.</li>
+</ul>
+
+<h3>Vender entradas</h3>
+
+<p>Debe solicitar, por teclado, el número de entradas que se está solicitando comprar.</p>
+
+<p>El número de entradas introducido se enviará al método <code>venderEntradas</code> de la clase <code>SalaCine</code>, debiendo controlar si dicho método lanza la excepción <code>IllegalArgumentException</code>.</p>
+
+<p>El método <code>public void venderEntradas(int numeroEntradas)</code>:</p>
+
+<ul>
+	<li>comprueba si el número de entradas ya ocupadas más el número de entradas que se están vendiendo superaría el aforo, en cuyo caso se lanzaría un nuevo objeto excepción de la clase <code>IllegalArgumentException</code>.</li>
+	<li>también se lanzaría la excepción <code>IllegalArgumentException</code> en el caso de que el número de entradas fuera negativo.</li>
+	<li>si se cumplen los requisitos, se utilizará el método <code>setButacasOcupadas</code> para indicar que el número de butacas ocupadas se ha incrementado en el número de entradas vendidas.</li>
+</ul>
+
+<h3>Devolver entradas</h3>
+
+<p>Debe solicitar, por teclado, el número de entradas que se está solicitando devolver.</p>
+
+<p>El número de entradas introducido se enviará al método <code>devolverEntradas</code> de la clase <code>SalaCine</code>, debiendo controlar si dicho método lanza la excepción <code>IllegalArgumentException</code>.</p>
+
+<p>El método <code>public void devolverEntradas(int numeroEntradas)</code>:</p>
+
+<ul>
+	<li>comprueba si el número de entradas que se intenta devolver es mayor que el número de butacas ocupadas , en cuyo caso se lanzaría un nuevo objeto excepción de la clase <code>IllegalArgumentException</code>.</li>
+	<li>también se lanzaría la excepción <code>IllegalArgumentException</code> en el caso de que el número de entradas fuera negativo.</li>
+	<li>si se cumplen los requisitos, se utilizará el método <code>setButacasOcupadas</code> para indicar que el número de butacas ocupadas se ha decrementado en el número de entradas devueltas.</li>
+</ul></body></html>
