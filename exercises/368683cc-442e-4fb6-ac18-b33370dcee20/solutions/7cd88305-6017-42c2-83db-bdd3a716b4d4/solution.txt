@@ -1,0 +1,27 @@
+package aleatorio;
+
+import java.util.Scanner;
+
+public class Aleatorio {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int contador = 1;
+        int suma = 0;
+        int sumaIncognita;
+        Scanner sc = new Scanner(System.in);
+
+        sumaIncognita = sc.nextInt();
+
+        // Bucle que suma enteros hasta alcanzar la suma incógnita
+        while (suma < sumaIncognita) {
+            suma = suma + contador++;
+        }
+
+        // Muestra por pantalla el resultado
+        System.out.println(--contador);
+    }
+
+}
