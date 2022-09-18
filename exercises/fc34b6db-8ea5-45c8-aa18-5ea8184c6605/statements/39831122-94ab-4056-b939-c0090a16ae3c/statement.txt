@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Operadores <strong>aritméticos con asignación</strong>.</h3>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+        <caption>Operadores aritméticos</caption>
+        <thead>
+                <tr>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">OPERADOR</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">USO</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">OPERACIÓN</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">EJEMPLO</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">RESULTADO</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td style="text-align:center">+=</td>
+                        <td style="text-align:center">a += b</td>
+                        <td style="text-align:center">equivale a <strong>a = a + b</strong></td>
+                        <td style="text-align:center">
+                        <p>a=8<br>
+                        a += 5</p>
+                        </td>
+                        <td style="text-align:center">a = 13</td>
+                </tr>
+                <tr>
+                        <td style="text-align:center">-=</td>
+                        <td style="text-align:center">a -= b</td>
+                        <td style="text-align:center">equivale a <strong>a = a - b</strong></td>
+                        <td style="text-align:center">
+                        <p>a=8<br>
+                        a -= 5</p>
+                        </td>
+                        <td style="text-align:center">a = 3</td>
+                </tr>
+                <tr>
+                        <td style="text-align:center">*=</td>
+                        <td style="text-align:center">a *= b</td>
+                        <td style="text-align:center">equivale a <strong>a = a * b</strong></td>
+                        <td style="text-align:center">a=8<br>
+                        a *= 5</td>
+                        <td style="text-align:center">a = 40</td>
+                </tr>
+                <tr>
+                        <td style="text-align:center">/=</td>
+                        <td style="text-align:center">a /= b</td>
+                        <td style="text-align:center">equivale a <strong>a = a / b</strong></td>
+                        <td style="text-align:center">
+                        <p>a=10<br>
+                        a /= 5</p>
+                        </td>
+                        <td style="text-align:center">
+                        <p>a = 2</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td style="text-align:center">%=</td>
+                        <td style="text-align:center">a %= b</td>
+                        <td style="text-align:center">equivale a <strong>a = a % b</strong></td>
+                        <td style="text-align:center">a=8<br>
+                        a %= 5</td>
+                        <td style="text-align:center">a = 3</td>
+                </tr>
+        </tbody>
+</table>
+
+<h3>Ejercicio:</h3>
+
+<p>Lee del teclado 2 números enteros y utiliza los operadores aritméticos con asignación vistos anteriormente para mostrar el valor que tendría el primero de los números al incrementarlo en las unidades indicadas por el segundo y al decrementarlo en la misma cantidad.</p></body></html>
