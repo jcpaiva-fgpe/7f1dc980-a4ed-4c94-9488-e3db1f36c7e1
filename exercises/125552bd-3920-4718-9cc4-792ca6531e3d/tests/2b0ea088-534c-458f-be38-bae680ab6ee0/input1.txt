@@ -1,0 +1,11 @@
+1
+Sala1
+100
+4
+Sala1
+peliculon
+8
+4
+minisala
+5
+0
