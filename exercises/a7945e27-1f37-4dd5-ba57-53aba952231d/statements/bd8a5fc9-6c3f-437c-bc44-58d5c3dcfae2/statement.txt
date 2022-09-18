@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Em 'Terra Mítica' você quer saber quantas pessoas visitaram o parque de diversões em um dia.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Os visitantes devem declarar sua idade ao entrar:&nbsp;</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se a sua idade for inferior ou igual a 4 anos, a entrada é gratuita,</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se a idade for entre os 5 e os 12 anos (incluídos), o bilhete custa 20€, e</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se a idade for superior a 12 anos, o bilhete custa 40€.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O armário fechará quando o caixa entrar em idade igual a -1.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Indique o número de crianças menores de 4 anos (incluindo 4), o número de crianças entre 5 e 12 anos de idade (incluindo ambos) e o número de adultos.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Também mostra o número total de pessoas que entraram e a caixa que foi feita no final do dia.</font></font></p></body></html>
