@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong><font style="vertical-align: inherit;"></font></strong><br> <tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp; Özel statik void removeHosted() </font></font></tt><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">yöntemini uygulayın </font></strong></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bu method:</font></font></strong></p> 
+        <p>&nbsp;</p> 
+        <ul> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Klavye ile bir ana bilgisayarın adını isteyecektir.</font></font></p> </li> 
+         <li> <p><font style="vertical-align: inherit;"><tt><font style="vertical-align: inherit;">Bu ada sahip ana bilgisayarın bulunduğu hosts []</font></tt><font style="vertical-align: inherit;"> dizisindeki konumu bulmak için </font></font><tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">private static int findHosted(String hostName)</font></font></tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> yöntemini kullanır </font><font style="vertical-align: inherit;">. </font><em><font style="vertical-align: inherit;">* </font></em><em><font style="vertical-align: inherit;">findHosted() yönteminin zaten uygulanmış olduğunu unutmayın.</font></em></font><tt><font style="vertical-align: inherit;"></font></tt><font style="vertical-align: inherit;"></font><em><font style="vertical-align: inherit;"></font></em><em><font style="vertical-align: inherit;"></font></em></p> </li> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana bilgisayarın kaldırılması, önceki yöntem tarafından döndürülen konumdan saklanan tüm ana bilgisayarların sola taşınmasıyla gerçekleşir.</font></font></p> 
+          <table cellpadding="4" cellspacing="0" style="width:100%"> 
+           <tbody> 
+            <tr> 
+             <td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A3'ü ortadan kaldırmadan önce</font></font></p> </td> 
+             <td style="border-style:none"> <p>&nbsp;</p> </td> 
+             <td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A3'ü ortadan kaldırdıktan sonra</font></font></p> </td> 
+            </tr> 
+            <tr> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A1</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A2</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A3</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A4</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></p> </td> 
+             <td style="border-bottom:none; border-left:1px solid #000000; border-right:none; border-top:none"> <p>&nbsp;</p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A1</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A2</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A4</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hükümsüz</font></font></p> </td> 
+            </tr> 
+           </tbody> 
+          </table> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Değişken </font></font><code>numAcogidos</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, diziden kaldırılan her ana bilgisayar için azaltılmalıdır.</font></font></li> 
+        </ul></body></html>
