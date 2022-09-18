@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tanım</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wikipedia'ya göre </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=tr&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Recursi%25C3%25B3n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">özyineleme</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , bir sürecin kendi tanımına göre belirlenme şeklidir.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aşağıda gösterilen ağaç özyinelemeli bir ağaçtır, çünkü her dal sırayla başka bir ağacın başlangıcıdır.</font></font></p> 
+        <p><img alt="özyinelemeli ağaç" src="https://miro.medium.com/max/1000/1*TiJl4Rh47os3hVGoWMwhJQ.gif" style="height:546px; width:600px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Programlamada, özyinelemeli bir işleve kendini çağıran bir işlev denir.</font></font></p> 
+        <p>&nbsp; </p>
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek</font></font></h3> 
+        <p></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Önceki bir alıştırmada, bir sayının faktöriyelini hesaplayan bir işlevi gerçekleştirmeniz istendi. </font><font style="vertical-align: inherit;">Zorunlu programlamayı kullanan olası bir çözüm aşağıdaki gibidir:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 1; i &lt;= numero; i++) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = resultado * i;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aslında bir sayının faktöriyelinin hesaplanması şu şekilde de ifade edilebilir:</font></font></p> 
+        <p><img alt="" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc7c912b34ffe06bb047d66c307c104237adef5" style="height:49px; width:360px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gördüğümüz gibi, n'nin faktöriyeli, n-1'in faktöriyelinin bir fonksiyonu olarak hesaplanabilir. </font><font style="vertical-align: inherit;">Bu nedenle, önceki alıştırma şu şekilde çözülebilir:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = numero * factorial(numero - 1);</code><br> <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Avantajlar ve dezavantajlar</font></font></h3> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Avantaj:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Özyinelemeli bir işlev tasarlamak daha kolaydır.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Okumak kolaylaştı.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kod daha kısadır.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dezavantajları:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zorunlu eşdeğerinden daha az verimlidir.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Daha fazla bellek tüketin.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egzersiz yapmak</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bunun için yinelemeli fonksiyonu kullanarak klavye ile girilen iki doğal sayının çarpımını hesaplayan bir uygulama yapınız </font></font><code>multiplica(multiplicando, multiplicador)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Program, iki işlenenden biri 0'dan küçük veya 0'a eşit olduğunda sona erer.</font></font></p></body></html>
