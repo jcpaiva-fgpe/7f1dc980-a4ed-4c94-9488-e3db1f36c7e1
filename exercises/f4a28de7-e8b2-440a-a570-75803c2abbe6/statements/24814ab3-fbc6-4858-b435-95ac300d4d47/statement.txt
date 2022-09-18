@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Queremos hacer un programa Java que ofrezca las siguientes dos opciones:</p>
+
+<p>1. Calcular los N primeros números primos</p>
+
+<p>2. Calcular los números primos entre dos números N y M dados, así como contar cuántos son</p>
+
+<p>En el <a href="https://es.wikipedia.org/wiki/N%C3%BAmero_primo#:~:text=En%20matem%C3%A1ticas%2C%20un%20n%C3%BAmero%20primo,por%20lo%20tanto%2C%20pueden%20factorizarse." target="_blank">siguiente enlace</a> tienes información sobre lo que es un número primo. Básicamente, un número es primo es un número que&nbsp;solamente es divisible por él mismo y por la unidad.</p>
+
+<p><strong>Ejemplos:</strong></p>
+
+<p>El 37&nbsp;<strong>SI es primo</strong></p>
+
+<p>El 98 <strong>NO es primo</strong>, porque puede dividirse, entre otros, entre 2.</p>
+
+<p>El 1 <strong>NO es primo</strong> (<strong>ATENCIÓN</strong>, cuidado porque cuando resolvimos este problema anteriormente, sí lo consideramos primo).</p>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos&nbsp;está compuesto por la opción de cuál de los dos problemas solucionar, es decir, un 1 o un 2:</p>
+
+<ul>
+	<li>Si la opción&nbsp;es un 1, irá seguido de otro número entero positivo:&nbsp;N</li>
+	<li>Si la opción es un 2, irá seguido de dos números enteros positivos:&nbsp;N y M</li>
+</ul>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá la solución al mismo tal y como se puede apreciar en el OUTPUT.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función&nbsp;que reciba un número y devuelva en un booleano si es primo o no.</p>
+
+<p>Se proporcionan la&nbsp;cabecer&nbsp;o interfaz&nbsp;de dicha&nbsp;función&nbsp;en la sección MUST CONTAIN&nbsp;</p>
+
+<p>El programa principal, para cada uno de los casos,&nbsp;pedirá los números por teclado y usará la función para resolver el problema, imprimiendo posteriormente lo que tenga que imprimir para resolver el problema planteado.</p>
+
+<p><strong>ATENCIÓN:</strong> Intenta resolverlo de la manera más óptima posible. Es decir, en cuanto sepas que no es primo, no tienes por qué seguir haciendo cálculos. Observa el tiempo de ejecución cuando el número primo es un número grande.</p></body></html>
