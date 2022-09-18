@@ -1,0 +1,34 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Métodos static.</h2>
+
+<p>A menudo, veremos programas Java que tienen atributos y métodos con modificadores <code>static</code>.</p>
+
+<p>Un método creado con el modificador <code>static</code> significa que puede ser accedido sin necesidad de crear un objeto de la clase, a diferencia del modificador <code>public</code>, que significa que únicamente puede ser accedido a través de instancias (objetos) de la clase.</p>
+
+<p>Ejemplo:</p>
+
+<p>En el siguiente código, creamos un método static de la Subclase para mostrar un mensaje con el uso que se le puede dar a los parámetros de la clase. Para utilizar dicho método, no es necesario instanciar ningún objeto de la clase:</p>
+
+<blockquote>
+<p><code>package oop_ejemplos;</code></p>
+
+<p><code>public class OOP_ejemplos {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SubClase.</strong>uso();<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+
+<p><code>class SubClase {<br>
+&nbsp; int x = 5;<br>
+&nbsp; int y = 7;<br>
+&nbsp; &nbsp;<br>
+&nbsp; <strong>static</strong> void uso() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("x indica el ancho e y el alto");<br>
+&nbsp; }<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio</h3>
+
+<p>Modifica el ejercicio anterior, añadiendo un método estático&nbsp;<code>calificacionMaxima()</code> que devuelve la calificación máxima permitida en el módulo (<em>10</em>). La aplicación solicitará por teclado, en el método <code>main()</code>, la calificación del módulo, hasta que la calificación sea menor o igual a la calificación máxima permitida.</p></body></html>
