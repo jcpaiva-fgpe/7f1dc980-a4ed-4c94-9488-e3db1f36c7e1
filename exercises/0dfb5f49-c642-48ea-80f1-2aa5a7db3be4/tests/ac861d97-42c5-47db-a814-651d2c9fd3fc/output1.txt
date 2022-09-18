@@ -1,0 +1,7 @@
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Aforo de sala: LISTAR SALAS de CINE
+-------------------
+Sala: Central	Aforo: 100
+BORRAR SALA de CINE
+-------------------
