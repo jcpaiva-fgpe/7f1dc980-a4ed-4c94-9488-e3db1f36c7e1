@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class FCadenasIguales {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+        Scanner sc = new Scanner(System.in);
+        String cad1, cad2;
+
+        int numCasos = 0;
+        numCasos = sc.nextInt();
+        sc.nextLine();
+
+        for (int i = 1; i <= numCasos; i++) {
+            cad1 = sc.nextLine(); 
+            cad2 = sc.nextLine();
+            if (sonIguales(cad1, cad2)) {
+                System.out.println("IGUALES");
+            } else {
+                System.out.println("DISTINTAS");
+            }
+        }
+    }
+
+    public static boolean sonIguales(String cadena1, String cadena2) {
+        boolean iguales = true;
+        int contador = 0;
+
+        if (cadena1.length() == cadena2.length()) {
+            while ((contador < cadena1.length()) && iguales) {
+                if (cadena1.charAt(contador) != cadena2.charAt(contador)) {
+                    iguales = false;
+                }
+                contador++;
+            }
+        } else {
+            iguales = false;
+        }
+        return iguales;
+    }
+}
