@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir dizinin öğelerini N tane bitişik öğeden oluşan gruplara ayıran bir Java programı yazın. </font><font style="vertical-align: inherit;">Dizinin öğeleri, öğrenci adlarını temsil eden metin dizeleri olacaktır.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnekler</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{David, Maria, Sergio, Cristhian, Miguel, Alfonso} dize dizisi göz önüne alındığında, 3 bitişik öğenin gruplandırılması aşağıdaki gruplarla sonuçlanır: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grup 1: David, Maria, Sergio</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Grup: Cristhian, Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yukarıdakiyle aynı dize dizisi verildiğinde: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, 2 bitişik öğeyi gruplamak aşağıdaki gruplarla sonuçlanır: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grup 1: David, Maria</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Grup: Sergio, Cristhian&nbsp;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grup 3: Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yukarıdakiyle aynı dize dizisi verildiğinde: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, 4 bitişik öğeyi gruplamak aşağıdaki gruplarla sonuçlanır: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grup 1: David, Maria, Sergio, Cristhian</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Grup: Miguel, Alfonso, EKSİK, EKSİK</font></font></li> 
+          </ul> </li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her vaka aşağıdakilerden oluşacaktır:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N &gt; 0 olmak üzere, her grubun sahip olması gereken öğelerin sayısı N olan ilk satır</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L &gt; 0 olmak üzere, dizi öğelerinin sayısı L ​​olan ikinci bir satır</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir boşlukla ayrılmış söz konusu dizinin L elemanları ile üçüncü. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NOT:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Bileşik adların bölümleri bir boşlukla ayrılmışsa, bileşik adlar iki ad olarak alınacağından, bileşik adlar kullanılamaz.</font></font></li> 
+        </ul> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, imprimirá las agrupaciones hechas, cada una en una línea, donde se rellenará con la palabra FALTA aquellos miembros que le falten al último grupo hecho, si es que le falta alguno.</p> 
+        <p>Entre caso y caso, se imprimirán 10 guiones en una línea, para que se pueda diferenciar entre las salidas de los distintos casos de prueba.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p> 
+        <ul> 
+         <li>Una función que reciba un array de cadenas y el número de miembros que tiene que tener cada grupo, y devuelva una array de cadenas, donde en cada cadena estén los nombres de los miembros de cada grupo, separados por espacio.</li> 
+        </ul> 
+        <p>Es decir, que si la función recibe los siguientes argumentos:</p> 
+        <ul> 
+         <li>alumnos = {David, Maria, Sergio, Cristhian, Miguel, Alfonso}</li> 
+         <li>tamanyoGrupos&nbsp;= 4</li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">aşağıdaki 2 öğe dizisini döndürür: { David Maria Sergio Cristhian, Miguel Alfonso MISSING MISSING}, burada</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dizinin ilk öğesi "David Maria Sergio, Cristhian" dizesi olacaktır ve</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ikinci öğe "Miguel Alfonso MISSING MISSING" dizesi olacaktır.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana program, her durum için, klavyeden okuyan öğrencilerin dizisini oluşturacak, işlevi arayacak ve işlev tarafından döndürülen sonuç dizisini program çıktısı için beklenen formatta yazdıracaktır.</font></font></p></body></html>
