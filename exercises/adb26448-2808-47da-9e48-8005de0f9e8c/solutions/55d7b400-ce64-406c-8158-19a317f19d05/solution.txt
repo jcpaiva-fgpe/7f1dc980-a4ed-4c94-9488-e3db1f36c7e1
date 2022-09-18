@@ -1,0 +1,111 @@
+package validadni;
+
+import java.util.Scanner;
+
+public class ValidaDNI {
+
+    
+    static Scanner sc = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        String dni_nie, tipo, dni;
+        long numero;
+        char letra;
+
+        while (!(dni_nie = leeDniNie()).equals("0")) {
+            tipo = getTipo(dni_nie);
+            if (tipo.equals("NIE")) {
+                dni = convierteNIE(dni_nie);
+            } else {
+                dni = dni_nie;
+            }
+            dni = dni + letraControl(dni);
+            escribeMensaje(dni_nie, esValido(dni));
+        }
+    }
+
+    static String leeDniNie() {
+        return (sc.nextLine()).toUpperCase();
+    }
+
+    static boolean esNIE(String dni_nie) {
+        char primera;
+        boolean esNieBoolean = false;
+        primera = dni_nie.charAt(0);
+        if (primera == 'X' || primera == 'Y' || primera == 'Z') {
+            esNieBoolean = true;
+        }
+        return esNieBoolean;
+    }
+
+    static String convierteNIE(String dni_nie) {
+        String numeroLetra;
+        char letraNIE = dni_nie.charAt(0);
+        switch (letraNIE) {
+            case 'X':
+                numeroLetra = "0";
+                break;
+            case 'Y':
+                numeroLetra = "1";
+                break;
+            case 'Z':
+                numeroLetra = "2";
+                break;
+            default:
+                numeroLetra = "9999";
+        }
+        return numeroLetra + dni_nie.substring(1);
+    }
+
+    static long getNumero(String dni) {
+        return Integer.parseInt(dni.substring(0, dni.length() - 1));
+    }
+
+    static char getLetra(String dni) {
+        return dni.charAt(dni.length() - 1);
+    }
+
+    static char letraControl(String dni) {
+        char letraControl = '*';
+        long numero = Integer.parseInt(dni);
+        if (numero <= 99999999) {
+            int resto = (int) numero % 23;
+            String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+            letraControl = letras.charAt(resto);
+        }
+        return letraControl;
+    }
+
+    static boolean esValido(String dni) {
+        char letraControl;
+        long numero = getNumero(dni);
+        char letra = getLetra(dni);
+        
+        boolean valido = false;
+        if (numero <= 99999999) {
+            int resto = (int) numero % 23;
+            String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+            letraControl = letras.charAt(resto);
+            valido = (letra == letraControl);
+        }
+
+        return valido;
+    }
+
+    static void escribeMensaje(String dni_nie, boolean esValido) {
+        String validado = "SI";
+        if(!esValido) {validado = "NO";}
+        System.out.println(getTipo(dni_nie) + " " + dni_nie + " Validado: " + validado);
+    }
+    
+    static String getTipo(String dni_nie) {
+        String tipo;
+            if (esNIE(dni_nie)) {
+                tipo = "NIE";
+            } else {
+                tipo = "DNI";
+            }
+        return tipo;
+    }
+
+}
