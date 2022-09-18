@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Adivina el número</h2>
+
+<p>Realiza un&nbsp;programa en el que el ordenador tiene programado un número fijo, que debería elegirse&nbsp;aleatoriamente entre 1 y 100, pero que <strong>nosotros pondremos de manera fija, dandole un valor fijo a la variable correspondiente en el programa</strong>, para que JuezLTI funcione correctamente. <strong>Le pondremos el valor 39</strong>.&nbsp;</p>
+
+<p>El usuario tiene que&nbsp;adivinarlo con el número&nbsp;de&nbsp;oportunidades que se fije (se pedirá por teclado).</p>
+
+<p>Cuando el usuario introduzca un número, el programa indicará si el número introducido es el correcto y si no lo es, señalará si es mayor o menor que el número que tiene que adivinar.</p>
+
+<p>El intento terminará tanto si acierta el número, como si alcanza el máximo de oportunidades sin acertarlo, indicándolo por pantalla en cada caso. En ese momento se volverá a solicitar el número de intentos y, si es distinto de 0, se permitirá volver a jugar, finalizando el programa si el número de intentos se establece a 0.</p>
+
+<p>En el <a href="http://chuwiki.chuidiang.org/index.php?title=Generar_n%C3%BAmeros_aleatorios_en_Java" target="_blank">siguiente enlace</a>&nbsp;tienes información sobre cómo generar números aleatorios en Java (<strong>usa la clase Random</strong>), por si quieres implementarlo en tu programa, aunque la versión que subas debe ser sin número aleatorio para que JuezLTI funcione correctamente.</p>
+
+<p>&nbsp;</p></body></html>
