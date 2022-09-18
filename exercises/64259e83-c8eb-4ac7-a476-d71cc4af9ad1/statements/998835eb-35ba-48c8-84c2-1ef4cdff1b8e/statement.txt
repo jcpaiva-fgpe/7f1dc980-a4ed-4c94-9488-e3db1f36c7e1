@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Definition</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enligt wikipedia är </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=sv&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Recursi%25C3%25B3n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">rekursion</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> det sätt på vilket en process specificeras utifrån sin egen definition.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trädet som visas nedan är ett rekursivt träd, eftersom varje gren i sin tur är början på ett annat träd.</font></font></p> 
+        <p><img alt="rekursivt träd" src="https://miro.medium.com/max/1000/1*TiJl4Rh47os3hVGoWMwhJQ.gif" style="height:546px; width:600px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I programmering sägs en rekursiv funktion vara en som anropar sig själv.</font></font></p> 
+        <p>&nbsp; </p>
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exempel</font></font></h3> 
+        <p></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I en tidigare övning blev du ombedd att utföra en funktion som beräknar fakulteten för ett tal. </font><font style="vertical-align: inherit;">En möjlig lösning med imperativ programmering är följande:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 1; i &lt;= numero; i++) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = resultado * i;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egentligen kan beräkningen av faktorialen för ett tal också uttryckas på följande sätt:</font></font></p> 
+        <p><img alt="" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc7c912b34ffe06bb047d66c307c104237adef5" style="height:49px; width:360px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Som vi kan se kan faktorialen för n beräknas som en funktion av faktorialen för n-1. </font><font style="vertical-align: inherit;">Därför kunde den föregående övningen lösas som:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = numero * factorial(numero - 1);</code><br> <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fördelar och nackdelar</font></font></h3> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fördel:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Att designa en rekursiv funktion är lättare att göra.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Det är lätt att läsa.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Koden är kortare.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nackdelar:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Det är mindre effektivt än dess imperativa motsvarighet.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Förbruka mer minne.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Träning</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gör en applikation som beräknar produkterna av två naturliga tal som matas in med tangentbordet, använd den rekursiva funktionen för detta </font></font><code>multiplica(multiplicando, multiplicador)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Programmet avslutas när någon av de två operanderna är mindre än eller lika med 0.</font></font></p></body></html>
