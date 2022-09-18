@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DNI'larda olduğu gibi, kadastro referanslarının doğruluğunu kontrol etmek için bazı kontrol karakterleri dahil edilmiştir. </font><font style="vertical-align: inherit;">DNI'dan farklı olarak, kadastro referansları 2 kontrol karakterine sahiptir.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kadastro referanslarının kontrol karakterlerinin hesaplanması için 2 String çıkarılır:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 ile 6 arasındaki karakterler, 14 ile 17 arasındaki karakterlerle birleştirilmiş</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7'den 13'e kadar olan karakterler, 14'ten 17'ye kadar olan karakterlerle birleştirilmiş</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bu karakter dizilerinin her biri, iki kontrol karakterinin her birini hesaplamak için kullanılır.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dizelerin her birine karşılık gelen karakter elde edilir:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dizenin karakterlerini tek tek çıkarmak.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">karakterin ilk değeri, sayısal mı yoksa alfabetik mi olduğuna bağlı olacaktır: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alfabetik: 'A' = 1, 'B' = 2, 'C' = 3,...</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sayısal: '0' = 0, '1' = 1, '2' = 2,...</font></font></li> 
+          </ul> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Karakter aritmetiğinin sizin için yararlı olabileceğini unutmayın:</font></font></p> 
+          <blockquote> 
+           <ul> 
+            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'C' - 'A' = 2</font></font></li> 
+            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'3' - '0' = 3</font></font></li> 
+           </ul> 
+          </blockquote> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">daha önce elde edilen değer, bulunduğu konuma karşılık gelen ağırlıkla çarpılmalıdır.</font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her pozisyonun ağırlıkları aşağıdaki gibidir:</font></font></p> 
+          <blockquote><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           13, 15, 12, 5, 4, 17, 9, 21, 3, 7, 1
+          </font></font></blockquote> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">karakterin değerinin konumunun ağırlığı ile çarpılmasından elde edilen sonuç, daha önce elde edilen sonuçlara eklenmelidir.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tüm karakter dizisini inceledikten ve elde edilen tüm sonuçları ekledikten sonra, toplam 23'e bölünmeli ve kalan elde edilmelidir.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bu şekilde elde edilen geri kalan, aşağıdaki karakter dizisinde kontrol karakteri tarafından işgal edilen konumu gösterecektir: 
+          </font></font><blockquote><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           "MQWERTYUIOPASDFGHJKLBZX"
+          </font></font></blockquote> </li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eğer ifade tam olarak açıklayıcı olmadıysa, size bu kontrol karakterlerini çözen farklı dillerde 2 link vereceğim:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://bloginformaticoinaki.blogspot.com/2016/05/validar-referencia-catastral.html</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/juanato/referenciacatastral/blob/master/valida-refcastv104.py</font></font></li> 
+        </ul> 
+        <p><em><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Not:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Diziler kullanılmamalıdır.</font></font></small></em></p></body></html>
