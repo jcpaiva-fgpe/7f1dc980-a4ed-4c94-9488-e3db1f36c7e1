@@ -1,0 +1,16 @@
+package oop;
+
+public class OOP {
+
+    public static void main(String[] args) {
+        Modulo miModulo1 = new Modulo();
+        Modulo miModulo2 = new Modulo();
+        System.out.println(miModulo1.nota);
+        System.out.println(miModulo2.nota);
+    }
+    
+}
+
+class Modulo {
+  int nota = 8;
+}
