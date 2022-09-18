@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">İşlevlerle eşit dizeleri algıla</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dizeleri karşılaştıran ve iki dizenin aynı olup olmadığını tespit eden bir Java programı yapmak istiyoruz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bildiğimiz gibi, nesneler olan iki diziyi karşılaştırmak için eşitlik operatörünü (==) kullanamayız, çünkü bu operatör her iki nesnenin de aynı olup olmadığını (aynı bellek konumu) karşılaştırır ve her iki nesnenin veya dizenin aynı olup olmadığını karşılaştırmaz. değer. aynı metin.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dizeleri işlemek için String sınıfının yöntemlerini kullanmanız gerekecek. </font><font style="vertical-align: inherit;">Aşağıdaki yöntemleri çok iyi kullanmanız gerekebilir:</font></font></p> 
+        <ul> 
+         <li><code>length()</code></li> 
+         <li><code>charAt(n)</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ayrıca, girdiden verileri okumak için Scanner sınıfının aşağıdaki yöntemlerini kullanmanız gerekebilir:</font></font></p> 
+        <ul> 
+         <li><code>nextInt()</code></li> 
+         <li><code>nextLine()</code></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar. Cada uno de los casos estará formado por dos cadenas, cada una en una línea.</p> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá si las dos cadenas comparadas son iguales.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Deberá resolverse el problema diseñando una función que reciba dos cadenas de texto y devuelva un boolean en el que se indique si son iguales o no.</p> 
+        <p>El programa principal, para cada uno de los casos,&nbsp;leerá los datos de entrada&nbsp;y usará la&nbsp;función&nbsp;para resolver el problema, imprimiendo posteriormente el resultado correspondiente.</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java'da dizeleri karşılaştırma sorununu çözmek için equals yönteminin olduğunu zaten biliyorsunuz. </font><font style="vertical-align: inherit;">Açıkçası, bu karşılaştırma algoritmasını uygulamakla ilgili, bu nedenle " </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">equals</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> " yöntemini veya " </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CompareTo</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> " yöntemini veya benzer bir şeyi KULLANAMAZSINIZ.</font></font></p></body></html>
