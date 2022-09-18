@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java programının temel yapısı</font></font></h1> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aşağıdaki metinleri görüntüleyen bir Java uygulaması oluşturun:</font></font></strong></p> 
+        <blockquote> 
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PROGRAMLAMA MODÜLÜ</font></font></p> 
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 inci. </font><font style="vertical-align: inherit;">Meydan okumak</font></font></p> 
+        </blockquote> 
+        <p><em><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unutmayın:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> boşlukları, aksanları veya noktalama işaretlerini kaçırmamak için metinleri doğru yere kopyalayıp yapıştırın.</font></font></small></em></p></body></html>
