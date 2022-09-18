@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Once the previous version was developed, the government delegation has asked us to include a new requirement for the granting of aid,</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Once the user has indicated the amount requested, the application must ask for the </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cadastral reference of the property</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> for which the aid is requested and only if the reference is valid will the amount be added to the total aid granted. </font><font style="vertical-align: inherit;">To do this, we will use the function </font></font><code>catastroValido()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, to which a String is sent with the cadastral reference of the property and tells us if it is covered or not.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Of the </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=en&amp;hl=es&amp;client=webapp&amp;u=https://www.catastro.meh.es/esp/referencia_catastral.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 types of existing cadastral references</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , we are going to use the one that begins with the digits of the province and the municipality in which the property is located. </font><font style="vertical-align: inherit;">In our case, we will only accept cadastral references that are located in the province of Santa Cruz de Tenerife ( </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">code 38</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ). </font><font style="vertical-align: inherit;">In addition, they must be located in one of the following municipalities:</font></font></p> 
+        <table align="center" border="1" cellspacing="0"> 
+         <tbody> 
+          <tr> 
+           <td style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">code</font></font></td> 
+           <td style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">municipality</font></font></td> 
+          </tr> 
+          <tr> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">24</font></font></td> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aridane Plains (The)</font></font></td> 
+          </tr> 
+          <tr> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">27</font></font></td> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Step (The)</font></font></td> 
+          </tr> 
+          <tr> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Four. Five</font></font></td> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mugcut</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">To extract the codes of the province and the municipality, the two functions getProvincia() and getMunicipio() will be used, to which the cadastral reference is sent and they return the corresponding code as an integer value:</font></font></p> 
+        <ul> 
+         <li>el código de la <strong>provincia</strong> corresponde al valor numérico de los <strong>2 primeros caracteres</strong> de la referencia catastral.</li> 
+         <li>el código del <strong>municipio</strong> corresponde al valor numérico de los caracteres que van <strong>del 3º al 5º</strong>.</li> 
+        </ul> 
+        <p>Para obtener esos valores numéricos deberás utilizar las funciones <code>charAt()</code> e <code>Integer.parseInt()</code> que se han utilizado en anteriores ejercicios.</p> 
+        <p>En el ejemplo, las referencias catastrales correspondientes a la segunda y a la tercera solicitud no se suman al total de las ayudas otorgadas porque sus referencias catastrales no son válidas: la primera no corresponde a la provincia y la segunda no corresponde con ninguno de los municipios en los que deben estar situados los inmuebles.</p></body></html>
