@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Detectar strings iguais com funções</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Queremos fazer um programa Java que compare strings e detecte se duas strings são iguais.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Como sabemos, para comparar duas strings, que são objetos, não podemos usar o operador de igualdade (==), pois este operador compara se ambos os objetos são iguais (mesma localização de memória), e não se ambos os objetos ou strings contiverem o mesmo valor. mesmo texto.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você terá que usar métodos da classe String para manipular strings. </font><font style="vertical-align: inherit;">Você pode muito bem ter que usar os seguintes métodos:</font></font></p> 
+        <ul> 
+         <li><code>length()</code></li> 
+         <li><code>charAt(n)</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Além disso, para ler os dados da entrada, talvez seja necessário usar os seguintes métodos da classe Scanner:</font></font></p> 
+        <ul> 
+         <li><code>nextInt()</code></li> 
+         <li><code>nextLine()</code></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar. Cada uno de los casos estará formado por dos cadenas, cada una en una línea.</p> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá si las dos cadenas comparadas son iguales.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Deberá resolverse el problema diseñando una función que reciba dos cadenas de texto y devuelva un boolean en el que se indique si son iguales o no.</p> 
+        <p>El programa principal, para cada uno de los casos,&nbsp;leerá los datos de entrada&nbsp;y usará la&nbsp;función&nbsp;para resolver el problema, imprimiendo posteriormente el resultado correspondiente.</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você já sabe que em Java, para resolver esse problema de comparação de strings, existe o método equals. </font><font style="vertical-align: inherit;">Obviamente, trata-se de você implementar o algoritmo de comparação, então você NÃO pode usar o método " </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">equals</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> " ou o método " </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">compareTo</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ", ou qualquer coisa semelhante.</font></font></p></body></html>
