@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">constant</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> is a </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">space in memory that stores a value that cannot change during program execution</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">A constant is like a variable, but unlike a variable, it stores a fixed value, which cannot change.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A constant must be assigned its value during its declaration, since then no assignment operation can be performed on it (really, it is not necessary to give it a value in the declaration, although it is recommended, but it can only be done an assignment operation on it). </font><font style="vertical-align: inherit;">It will be a read-only element, we will be able to use the value it contains in our program, but we will not be able to modify it.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The value that a constant stores cannot change during program execution.&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Constants are used to define values ​​that should not change during the execution of a program:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Because </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">they represent data that never changes</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">For example, the number "pi", which will always be equal to 3.1416.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Because </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">they represent values ​​that will not change during the execution of the program</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">For example, in a billing program you can define a constant called VAT and set it to 21%. </font><font style="vertical-align: inherit;">This value will not change during program execution. </font><font style="vertical-align: inherit;">If it ever changes, you would have to change the value in the constant declaration, in the source code, and recompile.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Why use constants instead of using the value they contain directly in code?&nbsp;</font></font></p> 
+        <ul> 
+         <li>Primero <strong>por claridad</strong>, siempre será más legible leer la constante pi, que el número 3,1416. O la constante IVA, que 21%.</li> 
+         <li>Segundo, porque <strong>si alguna vez ese valor tiene que cambiar, solo tendré que cambiar el valor en la declaración de la constante</strong> y automáticamente estará cambiado en el resto del código en el que se usa. De otra forma, tendría que cambiar uno a uno todos los usos de dicho valor en mi código.</li> 
+        </ul> 
+        <h3>Sintaxis para definir una constante:</h3> 
+        <blockquote> 
+         <p><code>final tipo nombre = valor;</code></p> 
+        </blockquote> 
+        <p>donde:</p> 
+        <ul> 
+         <li>La palabra clave final es la que establece que lo que se está definiendo es una constante. La palabra final indica que el valor que se le asigne en la declaración será su valor final, que se mantendrá inalterable durante todo el programa.&nbsp;</li> 
+         <li>El nombre de la constante debe ir, por convención, todo en mayúscula. Si está formado por varias palabras, éstas irán separadas por _.</li> 
+         <li><strong><s>Si intentamos variar su contenido, el compilador dará un error.</s></strong></li> 
+        </ul> 
+        <h3>Ejemplos:</h3> 
+        <blockquote> 
+         <p><code>final int IVA = 21;<br> final double PI = 3.1416;<br> final int EDAD_MINIMA = 0;</code></p> 
+        </blockquote> 
+        <h3>Ejercicio:</h3> 
+        <p>El ejercicio anterior solicitaba la declaración e inicialicialización de las siguientes variables:</p> 
+        <blockquote> 
+         <p><code>numero </code>de tipo entero.<br> <code>numeroReal </code>de tipo float.<br> <code>letra </code>de tipo carácter.<br> <code>estaLloviendo </code>de tipo booleano.</p> 
+        </blockquote> 
+        <p>Los valores de cada una de esas variables será el siguiente.</p> 
+        <blockquote> 
+         <p><code>numero</code>: 18<br> <code>numeroReal</code>: 3,14<br> <code>letra</code>: P<br> <code>estaLloviendo</code>: false</p> 
+        </blockquote> 
+        <p><strong>Amplía dicho ejercicio, de manera que se inicialice también la constante PI con el valor 3.14.</strong></p> 
+        <p>El resultado de la aplicación será el que se puede observar en el <em>OUTPUT</em>.</p></body></html>
