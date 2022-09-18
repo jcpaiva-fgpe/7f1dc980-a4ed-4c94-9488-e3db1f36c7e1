@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Konstruktör med parametrar</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eftersom konstruktorn för en klass används för att initiera egenskaperna för objekten som instansieras, ingår vanligtvis en konstruktor med parametrar i klassdefinitionen, som anropas med de värden som vi vill ska användas vid initieringen av egenskaper för objektet klass.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exempel:</font></font></h3> 
+        <blockquote>
+         <code>public class OOP {</code> 
+         <p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase(5, 7);<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.suma());<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>}</code></p> 
+         <p><code>class SubClase {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; int x, y;</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; public SubClase(int _x, int _y) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = _x;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = _y;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; public int suma() {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br> &nbsp;&nbsp;&nbsp; }<br> }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vi kan se att resultatet av summan är det som erhålls genom att lägga till värdena som skickas till konstruktormetoden.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Träning</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Börja från klassen </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">som löser den sista övningen, skapa konstruktören för klassen med parametrar till vilka värdena för namnet och anteckningen som tidigare samlats in med tangentbordet kommer att skickas.</font></font></p></body></html>
