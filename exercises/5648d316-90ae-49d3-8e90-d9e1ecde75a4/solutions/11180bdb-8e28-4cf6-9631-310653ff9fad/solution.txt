@@ -1,0 +1,23 @@
+package operadores;
+
+import java.util.Scanner;
+
+
+public class Operadores {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      int a;
+      Scanner teclado = new Scanner(System.in);
+      
+      // Lectura de los numeros por teclado
+      a = teclado.nextInt();
+      
+      System.out.println(++a);
+      a--;
+      System.out.println(--a);      
+    }
+    
+}
