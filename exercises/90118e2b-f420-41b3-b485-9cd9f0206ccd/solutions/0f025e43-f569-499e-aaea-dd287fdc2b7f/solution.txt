@@ -1,0 +1,90 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author AulaVirtual
+ */
+public class RotarN {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+        int numCasos = 0;
+        int arraySize;
+        int[] array;
+
+        int posiciones;
+        char direccion;
+        
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            arraySize = sc.nextInt();
+            array = new int[arraySize];
+
+            for (int j = 0; j < array.length; j++) {
+                array[j] = sc.nextInt();
+            }
+
+            posiciones = sc.nextInt();
+            direccion = sc.next().charAt(0);
+
+            if (direccion == 'D') {
+                try {
+                    rotarDerechaN(array, posiciones);
+                } catch (IllegalArgumentException ex) {
+                    System.out.println("Las posiciones a rotar deben ser un numero positivo. No se ha rotado el array");
+                }
+            } else if (direccion == 'I') {
+                try {
+                    rotarIzquierdaN(array, posiciones);
+                } catch (IllegalArgumentException ex) {
+                    System.out.println("Las posiciones a rotar deben ser un numero positivo. No se ha rotado el array");
+                }
+            }
+            
+            for (int num:array){
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
+    public static void rotarDerechaN(int[] array, int numPosiciones) {
+        int auxiliar;
+
+        if (numPosiciones < 0) {
+            throw new IllegalArgumentException();
+        } else {
+            for (int i = 1; i <= numPosiciones; i++) {
+                auxiliar = array[array.length - 1];
+                for (int j = array.length - 1; j > 0; j--) {
+                    array[j] = array[j - 1];
+                }
+                array[0] = auxiliar;
+            }
+        }
+    }
+
+    public static void rotarIzquierdaN(int[] array, int numPosiciones) {
+        int auxiliar;
+
+        if (numPosiciones < 0) {
+            throw new IllegalArgumentException();
+        } else {
+            for (int i = 1; i <= numPosiciones; i++) {
+                auxiliar = array[0];
+                for (int j = 0; j < array.length - 1; j++) {
+                    array[j] = array[j + 1];
+                }
+                array[array.length - 1] = auxiliar;
+            }
+        }
+    }
+
+}
