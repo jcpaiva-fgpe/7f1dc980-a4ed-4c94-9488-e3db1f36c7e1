@@ -1,0 +1,7 @@
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Aforo de sala: LISTAR SALAS de CINE
+-------------------
+Sala: Rialto	Aforo: 120
+BORRAR SALA de CINE
+-------------------
