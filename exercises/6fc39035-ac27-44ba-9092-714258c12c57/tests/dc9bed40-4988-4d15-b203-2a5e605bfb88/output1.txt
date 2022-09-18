@@ -1,0 +1,210 @@
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+NUEVA FAMILIA DE ACOGIDA
+------------------------
+Nombre del tutor: Municipio: Numero maximo de acogidas: 
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+NUEVA FAMILIA DE ACOGIDA
+------------------------
+Nombre del tutor: Municipio: Numero maximo de acogidas: 
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+INSERTAR ACOGIMIENTO
+--------------------
+Nombre del acogido: Nombre del tutor: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+INSERTAR ACOGIMIENTO
+--------------------
+Nombre del acogido: Nombre del tutor: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+INSERTAR ACOGIMIENTO
+--------------------
+Nombre del acogido: Nombre del tutor: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+ELIMINAR ACOGIMIENTO
+--------------------
+Nombre del acogido: 
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion: 
+a1 - t1(m1):0
+a3 - t2(m2):1
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+GESTIONAR ACOGIMIENTOS
+--------------------
+	7. Insertar acogimiento
+	8. Disolver acogimiento
+	9. Imprimir acogimientos
+Elija una opcion:
