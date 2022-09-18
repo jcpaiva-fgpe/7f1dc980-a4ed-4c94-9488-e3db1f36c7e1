@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fonksiyonlu zincir sesli harfleri sayın</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girilen cümlelerdeki sesli harfleri sayan bir Java programı yapmak istiyoruz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cümlelerin büyük ve küçük harfler içerebileceğini ve her iki durumda da ünlülerin sayılması gerektiğini unutmayın.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dizeleri işlemek için String sınıfının yöntemlerini kullanmanız gerekecek. </font><font style="vertical-align: inherit;">Aşağıdaki yöntemleri çok iyi kullanmanız gerekebilir:</font></font></p> 
+        <ul> 
+         <li><code>charAt(n)</code></li> 
+         <li><code>toLowerCase()</code></li> 
+         <li><code>length()</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ayrıca, girdiden verileri okumak için Scanner sınıfının aşağıdaki yöntemlerini kullanmanız gerekebilir:</font></font></p> 
+        <ul> 
+         <li><code>nextInt()</code></li> 
+         <li><code>nextLine()</code></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vakaların her biri bir cümleden oluşur (bir metin dizisi)</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÇIKIŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her test durumu için program, karşılık gelen ifadenin sahip olduğu sesli harf sayısını yazacaktır.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KISITLAMALAR</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Problem, bir metin dizisi alan ve içerdiği sesli harf sayısını döndüren bir fonksiyon tasarlayarak çözülmelidir.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana program, durumların her biri için, dizileri klavye ile isteyecek ve sorunu çözmek için işlevi kullanacak ve ardından ilgili sonucu yazdıracaktır.</font></font></p></body></html>
