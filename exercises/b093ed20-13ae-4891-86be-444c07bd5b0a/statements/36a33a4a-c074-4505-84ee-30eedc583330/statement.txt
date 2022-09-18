@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Listar cartelera.</h2>
+
+<p>Crea la Opción de menú <code>5. Listar cartelera</code>.</p>
+
+<p>Esta opción debe dar información de:</p>
+
+<ul>
+	<li>el <em>nombre</em> de la sala, utilizando el método creado anteriormente <code>getNombre()</code></li>
+	<li>el <em>aforo</em>, utilizando el método <code>getAforo()</code>.</li>
+	<li>la <em>película</em> que está en cartelera, utilizando el método <code>getPelicula()</code>.</li>
+	<li>el <em>precio de la entrada</em>, utilizando el método <code>getPrecioEntrada()</code>.</li>
+	<li>las <em>butacas ocupadas</em>, utilizando el método <code>getButacasOcupadas()</code>.</li>
+	<li>las <em>butacas libres</em>, utilizando el <strong>nuevo</strong> método <code>getButacasLibres()</code>.</li>
+	<li>el <em>porcentaje de ocupación de la sala</em>, utilizando el <strong>nuevo</strong> método&nbsp; <code>getPorcentajeOcupacion()</code>.</li>
+</ul>
+
+<h3><code>public int getButacasLibres()</code></h3>
+
+<p>Devolverá el resultado de restar las butacas ocupadas al aforo máximo. Para ello, no accederemos directamente a las propiedades <em>aforo</em> y <em>butacasOcupadas</em>, sino a través de los métodos <code>getAforo()</code> y <code>getButacasOcupadas()</code>.</p>
+
+<h3><code>public double getPorcentajeOcupacion()</code></h3>
+
+<p>Devolverá el resultado de multiplicar el número de butacas ocupadas por 100 y dividirlo por el aforo máximo.</p>
+
+<p>Al igual que en el método anterior, no se debe acceder directamente a las propiedades sino a través de el método getter correspondiente.</p></body></html>
