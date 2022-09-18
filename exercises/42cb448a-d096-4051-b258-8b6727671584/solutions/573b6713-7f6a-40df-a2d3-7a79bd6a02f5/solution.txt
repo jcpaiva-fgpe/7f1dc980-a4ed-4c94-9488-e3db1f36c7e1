@@ -1,0 +1,53 @@
+package estructuras;
+
+import java.util.Scanner;
+
+public class Estructuras {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        int numero1, numero2, numero3, primero = 0, segundo = 0, tercero = 0;
+
+        Scanner teclado = new Scanner(System.in);
+
+        numero1 = teclado.nextInt();
+        numero2 = teclado.nextInt();
+        numero3 = teclado.nextInt();
+        
+        if(numero1 > numero2 && numero1 > numero3) {
+            primero = numero1;
+            if(numero2 > numero3) {
+                segundo = numero2;
+                tercero = numero3;
+            } else {
+                segundo = numero3;
+                tercero = numero2;
+            }
+        }
+        if(numero2 > numero3 && numero2 > numero1) {
+            primero = numero2;
+            if(numero3 > numero1) {
+                segundo = numero3;
+                tercero = numero1;
+            } else {
+                segundo = numero1;
+                tercero = numero3;
+            }
+        }
+        if(numero3 > numero1 && numero3 > numero2) {
+            primero = numero3;
+            if(numero1 > numero2) {
+                segundo = numero1;
+                tercero = numero2;
+            } else {
+                segundo = numero2;
+                tercero = numero1;
+            }
+        }
+        System.out.println(primero + " - " + segundo + " - " + tercero);
+    }
+
+}
