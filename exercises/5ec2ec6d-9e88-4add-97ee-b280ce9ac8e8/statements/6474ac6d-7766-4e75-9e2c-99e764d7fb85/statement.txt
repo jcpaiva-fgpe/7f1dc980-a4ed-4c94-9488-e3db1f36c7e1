@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Si los atributos servían para almacenar el estado de un objeto, los métodos sirven para indicar la funcionalidad de los objetos de una clase, es decir, lo que pueden hacer.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>El siguiente código crea un método suma que devuelve el resultado de la suma del valor de los dos atributos del objeto:</p>
+
+<blockquote>
+<p><code>package oop;</code></p>
+
+<p><code>public class OOP {</code><br>
+&nbsp;</p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj.y = 10;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.suma());<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+
+<p><code>class SubClase {<br>
+&nbsp; int x = 5;<br>
+&nbsp; int y = 7;<br>
+&nbsp;<br>
+&nbsp; public int suma() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br>
+&nbsp; }<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Partiendo de los ejercicios que incorporan la clase <code>Modulo</code>, crea una aplicación que genere un objeto de la clase <code>Modulo</code>, lea su numérica desde el teclado, dentro del método <code>main()</code> y escriba la calificación textual que corresponde a dicha calificación numérica, atendiendo a las siguientes categorías:</p>
+
+<ul>
+	<li>0 y 1: Muy deficiente</li>
+	<li>2, 3 y 4: Insuficiente</li>
+	<li>5: Suficiente</li>
+	<li>6: Bien</li>
+	<li>7 y 8: Notable</li>
+	<li>9 y 10: Sobresaliente.</li>
+	<li>cualquier otro valor: Fuera de rango</li>
+</ul>
+
+<p>La lógica para devolver la calificación textual que corresponde a una nota numérica se debe realizar en el método <code>calificacion()</code> de la clase <code>Modulo</code>.</p></body></html>
