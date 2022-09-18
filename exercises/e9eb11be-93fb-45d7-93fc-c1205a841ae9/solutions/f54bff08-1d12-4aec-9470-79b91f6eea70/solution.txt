@@ -1,0 +1,19 @@
+package tablasmultiplicar;
+
+import java.util.Scanner;
+
+public class TablasMultiplicar {
+
+    public static void main(String[] args) {
+        int contador = 1, seguir = 1;
+        Scanner sc = new Scanner(System.in);
+        while (seguir != 0) {
+            for(int i = 0; i <= 10; i++) {
+                System.out.println(contador + " x " + i + " = " + contador * i);
+            }
+            contador++;
+            seguir = sc.nextInt();
+        }
+    }
+    
+}
