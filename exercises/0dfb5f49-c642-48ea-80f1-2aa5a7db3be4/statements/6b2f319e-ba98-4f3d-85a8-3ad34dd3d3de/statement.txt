@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sinema salonlarını yöneteceğiz ama şimdilik sadece bir odayı yöneteceğiz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bunu yapmak için </font></font><code>SalaCine</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, özellikler olarak aşağıdakilere sahip olacak bir sınıf oluşturacağız:</font></font></p> 
+        <ul> 
+         <li><code>&nbsp;&nbsp;&nbsp; String nombre;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; int aforo;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; int butacasOcupadas;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; String pelicula;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; double precioEntrada;</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bu özelliklerin hiçbirine dışarıdan erişilemez, bu nedenle bu özelliklere sınıf yöntemleri aracılığıyla erişmek için standart </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alıcılar</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ve </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ayarlayıcılar</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> oluşturulmalıdır .</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sınıf ayrıca iki kurucuya sahip olacaktır:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Argümansız yapıcı: özellikleri aşağıdaki değerlerle başlatır: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">isim = "Oda";</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">kapasite = 100;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">koltuklarOccupied = 0;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">film = "";</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GirişFiyatı = 0,00;</font></font></li> 
+          </ul> </li> 
+         <li>Constructor con parámetros <em>nombre</em> y <em>aforo</em>: inicializará las propiedades nombre y aforo a los valores provistos en la invocación. No obstante, se controlará que el aforo no sea negativo, en cuyo caso, se lanzará <a href="https://translate.google.com/website?sl=es&amp;tl=tr&amp;hl=es&amp;client=webapp&amp;u=https://www.tutorialesprogramacionya.com/javaya/detalleconcepto.php?punto%3D85%26codigo%3D165%26inicio%3D80" target="_blank">un nuevo objeto excepción de la clase <code>IllegalArgumentException</code></a>. El resto de las propiedades se inicializarán a los ya vistos en el constructor sin parámetros.</li> 
+        </ul> 
+        <p>Desde el <code>main()</code> de la clase principal se declarará un objeto de la clase <strong>SalaCine</strong>, el cual se inicializar a <code>null</code>;</p> 
+        <p>A continuación, se solicitará al usuario que introduzca el nombre de la Sala y el aforo. Con estos datos, se utilizará el constructor con parámetros para inicializar un objeto de la clase <strong>SalaCine</strong>.</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Daha sonra, yeni oluşturulan nesnenin mevcut bilgileri görüntülenecektir: bunun için karşılık gelen </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alıcıları</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> kullanarak adı ve kapasitesi .</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Son olarak, nesne null olarak ayarlanarak kaldırılacaktır.</font></font></p></body></html>
