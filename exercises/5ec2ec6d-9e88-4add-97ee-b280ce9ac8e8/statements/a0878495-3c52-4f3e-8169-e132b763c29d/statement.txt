@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If the attributes were used to store the state of an object, the methods are used to indicate the functionality of the objects of a class, that is, what they can do.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The following code creates a sum method that returns the result of the sum of the value of the two attributes of the object:</font></font></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {</code><br> &nbsp;</p> 
+         <p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj.y = 10;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.suma());<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+         <p><code>class SubClase {<br> &nbsp; int x = 5;<br> &nbsp; int y = 7;<br> &nbsp;<br> &nbsp; public int suma() {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br> &nbsp; }<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercise:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Starting from the exercises that incorporate the class </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, create an application that generates an object of the class </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, reads its numeric value from the keyboard, inside the method, </font></font><code>main()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and writes the textual grade that corresponds to said numerical grade, according to the following categories:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 and 1: Very poor</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2, 3 and 4: Insufficient</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5: Enough</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6: good</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7 and 8: Remarkable</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 and 10: Outstanding.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">any other value: out of range</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The logic to return the textual grade that corresponds to a numerical grade must be done in the </font></font><code>calificacion()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">class method </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p></body></html>
