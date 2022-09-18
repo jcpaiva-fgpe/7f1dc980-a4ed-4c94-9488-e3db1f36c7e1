@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Definition</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">According to wikipedia, </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=en&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Recursi%25C3%25B3n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">recursion</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> is the way in which a process is specified based on its own definition.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The tree shown below is a recursive tree, since each branch is, in turn, the start of another tree.</font></font></p> 
+        <p><img alt="recursive tree" src="https://miro.medium.com/max/1000/1*TiJl4Rh47os3hVGoWMwhJQ.gif" style="height:546px; width:600px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In programming, a recursive function is said to be one that calls itself.</font></font></p> 
+        <p>&nbsp; </p>
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example</font></font></h3> 
+        <p></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In a previous exercise, you were asked to perform a function that calculates the factorial of a number. </font><font style="vertical-align: inherit;">A possible solution using imperative programming is as follows:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 1; i &lt;= numero; i++) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = resultado * i;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Actually, the calculation of the factorial of a number can also be expressed as follows:</font></font></p> 
+        <p><img alt="" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc7c912b34ffe06bb047d66c307c104237adef5" style="height:49px; width:360px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">As we can see, the factorial of n can be calculated as a function of the factorial of n-1. </font><font style="vertical-align: inherit;">Therefore, the previous exercise could be solved as:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = numero * factorial(numero - 1);</code><br> <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Advantages and disadvantages</font></font></h3> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Advantage:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Designing a recursive function is easier to do.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reading is made easy.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The code is shorter.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Disadvantages:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">It is less efficient than its imperative equivalent.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Consume more memory.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercise</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Make an application that calculates the products of two natural numbers entered by keyboard, using the recursive function for this </font></font><code>multiplica(multiplicando, multiplicador)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The program will terminate when either of the two operands is less than or equal to 0.</font></font></p></body></html>
