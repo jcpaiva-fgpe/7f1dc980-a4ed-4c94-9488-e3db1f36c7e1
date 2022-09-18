@@ -1,0 +1,73 @@
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+Elija una opcion: 
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Aforo de sala: 
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+Elija una opcion: 
+CREAR SESION DE PROYECCION
+-------------------
+Nombre de la pelicula: Precio de la entrada: 
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+Elija una opcion: 
+LISTAR CARTELERA
+-------------------
+Sala: Rialto	Aforo: 120
+	Pelicula: Los Intocables		Precio de la entrada: 3.76 euros
+	Butacas ocupadas: 0	Butacas libres: 120	Porcentaje de ocupacion: 0.0
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+Elija una opcion: 
+BORRAR SALA de CINE
+-------------------
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+Elija una opcion:
