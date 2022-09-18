@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escreva um programa Java que mescle em um único array dois arrays de inteiros que estão em ordem crescente, de modo que o array resultante da fusão também esteja em ordem crescente.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dadas as 2 matrizes ordenadas de inteiros {10, 20, 30, 40, 50, 60} e {25, 38, 90}, a matriz resultante da mesclagem ficaria assim: {10, 20, 25, 30, 38 , 40, 50, 60, 90}.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dadas as 2 matrizes ordenadas de inteiros {15, 22, 38, 38, 50, 70} e {22, 29, 38, 66}, a matriz resultante da mesclagem ficaria assim: {15, 22, 22, 29 , 38, 38, 38, 50, 66, 70}</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A entrada começa com um número indicando quantos casos de teste serão processados.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cada caso será composto por:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma primeira linha com o número N de elementos do array 1, onde N &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um segundo com os L elementos do referido array separados por um espaço.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma terceira linha com o número M de elementos do array 2, onde M &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um segundo com os M elementos do referido array separados por um espaço.</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SAÍDA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para cada caso de teste, o programa imprimirá na tela o array resultante da realização da fusão ordenada de ambos os arrays de entrada.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTRIÇÕES</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O problema será resolvido usando a seguinte decomposição funcional:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma função que recebe dois arrays de inteiros cada vez mais ordenados e executa uma mesclagem ordenada deles.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal, para cada caso, coletará os dados de cada array a partir do teclado e, posteriormente, imprimirá o array resultante da fusão ordenada dos mesmos.</font></font></p></body></html>
