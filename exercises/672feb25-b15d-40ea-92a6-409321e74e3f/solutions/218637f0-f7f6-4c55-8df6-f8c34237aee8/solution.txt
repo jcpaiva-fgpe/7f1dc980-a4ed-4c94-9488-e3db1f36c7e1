@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class FNumeroCentral {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int numCasos = 0;
+
+        int numero1 = 0, numero2 = 0, numero3 = 0;
+        int numCentral = 0;
+
+        Scanner teclado = new Scanner(System.in);
+
+        numCasos = teclado.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+
+            numero1 = teclado.nextInt();
+            numero2 = teclado.nextInt();
+            numero3 = teclado.nextInt();
+
+            numCentral = numeroCentral(numero1, numero2, numero3);
+
+            System.out.println("El numero central es " + numCentral);
+        }
+    }
+
+    public static int numeroCentral(int n1, int n2, int n3) {
+        int central = 0;
+
+        if (((n1 >= n2) && (n1 <= n3)) || ((n1 <= n2) && (n1 >= n3))) {                          
+            central = n1;
+        } else if (((n2 >= n1) && (n2 <= n3)) || ((n2 <= n1) && (n2 >= n3))) {                          
+            central = n2;
+        } else {             //si los anteriores no son el central será n3             
+            central = n3;
+        }
+
+        return central;
+    }
+
+}
