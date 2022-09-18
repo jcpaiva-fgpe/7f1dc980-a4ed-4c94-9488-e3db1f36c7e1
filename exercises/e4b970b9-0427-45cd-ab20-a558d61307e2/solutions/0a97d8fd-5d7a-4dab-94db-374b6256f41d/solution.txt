@@ -1,0 +1,34 @@
+package estructuras;
+
+import java.util.Scanner;
+
+public class Estructuras {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int nota;
+        Scanner teclado = new Scanner(System.in);
+
+        // Lectura de los numeros por teclado
+        nota = teclado.nextInt();
+
+        if (nota >= 5) {
+            System.out.println("APROBADO");
+        } else {
+            System.out.println("SUSPENSO");
+        }
+        System.out.println("========");
+        // Lectura de los numeros por teclado
+        nota = teclado.nextInt();
+
+        if (nota >= 5) {
+            System.out.println("APROBADO");
+        } else {
+            System.out.println("SUSPENSO");
+        }
+        System.out.println("========");
+    }
+
+}
