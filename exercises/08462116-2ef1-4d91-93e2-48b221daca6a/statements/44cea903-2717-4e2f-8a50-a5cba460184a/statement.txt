@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Operadores </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lógicos</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma condição simples é aquela em que apenas uma expressão (com um operador como os vistos) é avaliada.&nbsp;</font></font></p> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E se quisermos avaliar duas coisas, duas condições, duas expressões ou até mais de duas? </font><font style="vertical-align: inherit;">Então precisamos fazer uso de condições compostas, que serão compostas por várias expressões booleanas simples e um conector que serve para especificar como essas condições simples devem ser unidas para formar a condição composta.&nbsp;</font></font></p> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma expressão booleana composta (ou condição composta) ainda é uma expressão booleana que só pode ser avaliada, como um todo, como VERDADEIRO ou FALSO.</font></font></p> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esses conectores de expressão booleana são chamados de operadores lógicos e são os seguintes:</font></font></p> 
+        <ul> 
+         <li><strong>Operador "AND"</strong>. Una expresión boolenada compuesta que usa el operador lógico AND para conectar las dos expresiones boolenas simples que la componen, será evaluada como verdadera cuando ambas expresiones booleanas simples sean verdaderas, y será falsa en cuanto una de ellas sea falsa.&nbsp;</li> 
+         <li><strong>Operador "OR"</strong>. Una expresión booleana compuesta que usa el operador lógico OR para conectar las dos expresiones booleanas simples que la componen, será evaluada como verdadera cuando al menos una de las expresiones booleanas simples sea verdadera, y será falsa si las dos son falsas.</li> 
+         <li><strong>Operador “XOR”</strong>. Una expresión booleana compuesta que usa el operador lógico XOR para conectar las dos expresiones booleanas simples que la componen, será evaluada como verdadera cuando una de las expresiones booleanas simples que la componen sea cierta y la otra sea falsa.</li> 
+         <li><strong>Operador "NOT"</strong>. El operador lógico NOT no sirve para unir dos expresiones booleanas simples, sino simplemente para negar la lógica de una expresión booleana (simple o compuesta)</li> 
+        </ul> 
+        <p>Los operadores lógicos que podemos utilizar se muestran en la siguiente tabla:</p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption>
+          Operadores lógicos
+         </caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center">OPERADOR</th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center">USO</th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center">OPERACIÓN</th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center">&amp;&amp;</td> 
+           <td style="text-align:center">a &amp;&amp; b</td> 
+           <td style="text-align:center">a AND b</td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center">||</td> 
+           <td style="text-align:center">a || b</td> 
+           <td style="text-align:center">a OR b</td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center">!</td> 
+           <td style="text-align:center">!a</td> 
+           <td style="text-align:center">NOT a</td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center">^</td> 
+           <td style="text-align:center">a ^ b</td> 
+           <td style="text-align:center">a XOR b<br> Resultado true si uno es true y el otro false</td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você pode ver o resultado da maioria das combinações </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=pt&amp;hl=es&amp;client=webapp&amp;u=https://www.monografias.com/trabajos106/fundamentos-programacion-operadores/img6.png" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">aqui</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercício:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ele lê 2 valores booleanos (true e false) do teclado e exibe o resultado das 4 possíveis operações lógicas neles. </font><font style="vertical-align: inherit;">O ! </font><font style="vertical-align: inherit;">faça isso no primeiro dos valores booleanos.</font></font></p></body></html>
