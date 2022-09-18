@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+public class FusionOrdenada {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int numCasos = 0;
+
+        int arraySize1;
+        int[] array1;
+
+        int arraySize2;
+        int[] array2;
+
+        int[] array3;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            arraySize1 = sc.nextInt();
+            array1 = new int[arraySize1];
+
+            for (int j = 0; j < array1.length; j++) {
+                array1[j] = sc.nextInt();
+            }
+
+            arraySize2 = sc.nextInt();
+            array2 = new int[arraySize2];
+
+            for (int j = 0; j < array2.length; j++) {
+                array2[j] = sc.nextInt();
+            }
+
+            array3 = fusionOrdenada(array1, array2);
+
+            for (int j = 0; j < array3.length; j++) {
+                System.out.print(array3[j] + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
+    public static int[] fusionOrdenada(int[] array1, int[] array2) {
+        int[] nuevoArray;
+
+        int sizeNuevoArray = array1.length + array2.length;
+
+        nuevoArray = new int[sizeNuevoArray];
+
+        int posArray1 = 0;
+        int posArray2 = 0;
+        int posNuevoArray = 0;
+
+        while (posArray1 < array1.length && posArray2 < array2.length) {
+            if (array1[posArray1] <= array2[posArray2]) {
+                nuevoArray[posNuevoArray] = array1[posArray1];
+                posArray1++;
+            } else {
+                nuevoArray[posNuevoArray] = array2[posArray2];
+                posArray2++;
+            }
+            posNuevoArray++;
+        }
+
+        while (posArray1 < array1.length) {
+            nuevoArray[posNuevoArray] = array1[posArray1];
+            posArray1++;
+            posNuevoArray++;
+        }
+
+        while (posArray2 < array2.length) {
+            nuevoArray[posNuevoArray] = array2[posArray2];
+            posArray2++;
+            posNuevoArray++;
+        }
+
+        return nuevoArray;
+    }
+
+}
