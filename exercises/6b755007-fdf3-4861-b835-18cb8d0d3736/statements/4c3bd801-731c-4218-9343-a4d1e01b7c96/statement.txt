@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Añade al menú las siguientes líneas:</p>
+
+<pre><code>            System.out.println("GESTIONAR FAMILIAS DE ACOGIDA");
+            System.out.println("--------------------");
+            System.out.println("\t4. Nueva familia de acogida");
+            System.out.println("\t5. Eliminar familia de acogida");
+            System.out.println("\t6. Listar familias de acogida"); </code></pre>
+
+<p><strong>Implementa el método</strong><br>
+<tt>&nbsp; private static void nuevaFamiliaAcogida(LinkedList &lt;FamiliaAcogida&gt; familias)</tt><strong>.<br>
+Este método:</strong></p>
+
+<ul>
+	<li>
+	<p>Debe solicitar los 3 datos que se necesitan para añadir a la familia:</p>
+
+	<ul>
+		<li>
+		<p><tt>“</tt><tt>Nombre del tutor: “</tt></p>
+		</li>
+		<li>
+		<p><tt>“</tt><tt>Municipio: “</tt></p>
+		</li>
+		<li>
+		<p><tt>“</tt><tt>Numero maximo de acogidas: “</tt></p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p>Invocará al constructor de la clase <tt>FamiliaAcogida</tt>, teniendo la precaución de capturar la posible excepción <tt>IllegalArgumentException</tt>.</p>
+	</li>
+	<li>
+	<p>El constructor de la clase <tt>FamiliaAcogida</tt> lanzará la excepción <tt>IllegalArgumentException</tt> si el número máximo de acogidas no está entre 1 y 5.</p>
+	</li>
+	<li>
+	<p>Se añadirá la familia recién creada a la lista de familias de acogida.</p>
+	</li>
+</ul></body></html>
