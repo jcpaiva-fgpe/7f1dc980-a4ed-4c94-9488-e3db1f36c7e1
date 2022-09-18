@@ -1,0 +1,3 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Crea una aplicación que muestre tablas de multiplicar de los números enteros positivos.</p>
+
+<p>Por cada una de las tablas de multiplicar, la aplicación deberá esperar que se introduzca un número: si se introduce un número distinto de 0, la aplicación mostrará la siguiente tabla de multiplicar; si el número que se introduce es un 0, la aplicación finalizará.</p></body></html>
