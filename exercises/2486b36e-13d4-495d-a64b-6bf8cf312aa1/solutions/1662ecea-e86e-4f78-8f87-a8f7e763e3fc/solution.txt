@@ -1,0 +1,72 @@
+package oop;
+
+import java.util.Scanner;
+
+public class OOP {
+
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int nota;
+        String nombre;
+        
+        System.out.println("Escriba el nombre del modulo: ");
+        nombre = sc.nextLine();
+        do {
+            System.out.println("Escriba la nota del modulo: ");
+            nota = sc.nextInt();
+        } while (nota > Modulo.calificacionMaxima());
+        Modulo miModulo = new Modulo(nota, nombre);
+        System.out.println("Nombre del modulo: " + miModulo.nombre);
+        System.out.println("Nota: " + miModulo.nota);
+        System.out.println("Calificacion textual: " + miModulo.calificacion());
+    }
+
+}
+
+class Modulo {
+
+    int nota;
+    String nombre;
+
+    public Modulo(int _nota, String _nombre) {
+        nota = _nota;
+        nombre = _nombre;
+    }
+
+    public String calificacion() {
+        String laCalificacionTextual;
+        switch (nota) {
+            case 0:
+            case 1:
+                laCalificacionTextual = "Muy deficiente";
+                break;
+            case 2:
+            case 3:
+            case 4:
+                laCalificacionTextual = "Insuficiente";
+                break;
+            case 5:
+                laCalificacionTextual = "Suficiente";
+                break;
+            case 6:
+                laCalificacionTextual = "Bien";
+                break;
+            case 7:
+            case 8:
+                laCalificacionTextual = "Notable";
+                break;
+            case 9:
+            case 10:
+                laCalificacionTextual = "Sobresaliente";
+                break;
+            default:
+                laCalificacionTextual = "Fuera de rango";
+        }
+
+        return laCalificacionTextual;
+    }    
+    static int calificacionMaxima() {
+        return 10;
+    }
+}
