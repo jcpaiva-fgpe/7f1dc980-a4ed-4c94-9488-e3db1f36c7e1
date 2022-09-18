@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">operadores </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">relacionais</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Operadores relacionais são aqueles usados ​​para avaliar condições ou expressões booleanas, expressões que são avaliadas como VERDADEIRO ou FALSO.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Não devemos confundir o operador </font></font><code>=</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">com o operador </font></font><code>==</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">O primeiro faz uma atribuição, enquanto o segundo faz uma comparação.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo:</font></font></strong></p> 
+        <blockquote> 
+         <p><code>a = 3; <small>// Asigna el valor 3 a la variable a</small></code></p> 
+         <p><code>a == 3; <small>// compara el contenido de la variable a con el valor 3 y devuelve true o false, según el resultado de dicha comparación</small></code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Os operadores relacionais que podemos usar são mostrados na tabela a seguir:</font></font></p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          operadores relacionais
+         </font></font></caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERADOR</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USAR</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERAÇÃO</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EXEMPLO</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESULTADO</font></font></th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a &lt; b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a menos que b</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 &lt; 8</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 &lt; 6</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verdadeiro</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">falso</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a &gt; b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a maior que b</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 &gt; 5</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 &gt; 6</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verdadeiro</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">falso</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a &lt;= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a menor ou igual a b</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 &lt;= 5</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 &lt;= 6</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">falso</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verdadeiro</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a &gt;= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a maior ou igual a b</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 &gt;= 5</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 &gt;= 6</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verdadeiro</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verdadeiro</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">!=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a != b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">um b diferente</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 != 5</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 != 6</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verdadeiro</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">falso</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">==</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a == b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o mesmo que b</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 == 5</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 == 6</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">falso</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verdadeiro</font></font></p> </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercício:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lê 2 inteiros (a e b) do teclado e exibe o resultado das seguintes operações relacionais:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a menos que b</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a maior que b</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a menor ou igual a b</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a maior ou igual a b</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">um b diferente</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o mesmo que b</font></font></li> 
+        </ul> 
+        <p><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ATENÇÃO</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Devido ao funcionamento do corretor automático Juez-LTI, não se deve imprimir mais informações na tela do que o resultado da soma dos números. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Não acompanhe a solução com nenhum texto</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> como "A soma dos números é: "</font></font></small></p></body></html>
