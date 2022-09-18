@@ -1,0 +1,7 @@
+6
+esto es una prueba
+Este es el modulo de PROGRAMACION Y ENTORNOS DE DESARROLLO
+Mi programa cuentas las VOCALES
+La palabra MURCIELAGO contiene las cinco vocales
+TODO MAYUSCULAS
+KFC
