@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong>Implementa el método</strong><br>
+<tt>&nbsp; private static void eliminarAcogido()</tt><strong>.<br>
+Este método:</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>
+	<p>Solicitará el nombre de un acogido por teclado.</p>
+	</li>
+	<li>
+	<p>Utilizará el método <tt>private static int buscarAcogido(String nombreAcogido)</tt> para encontrar la posición del array <tt>acogidos[] </tt>en la que se encuentra el acogido con ese nombre. <em>*</em><em>Ten en cuenta que el método buscarAcogido() ya está implementado.</em></p>
+	</li>
+	<li>
+	<p>La eliminación del acogido se producirá desplazando hacia la izquierda todos los acogidos que se hayan almacenado a partir de la posición devuelta por el método anterior.</p>
+
+	<table cellpadding="4" cellspacing="0" style="width:100%">
+		<tbody>
+			<tr>
+				<td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none">
+				<p>antes de eliminar a A3</p>
+				</td>
+				<td style="border-style:none">
+				<p>&nbsp;</p>
+				</td>
+				<td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none">
+				<p>después de eliminar a A3</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A1</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A2</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A3</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A4</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A5</p>
+				</td>
+				<td style="border-bottom:none; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>&nbsp;</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A1</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A2</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A4</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none">
+				<p>A5</p>
+				</td>
+				<td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:none">
+				<p>null</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</li>
+	<li>La variable <code>numAcogidos</code> deberá decrementarse por cada acogido eliminado del array.</li>
+</ul></body></html>
