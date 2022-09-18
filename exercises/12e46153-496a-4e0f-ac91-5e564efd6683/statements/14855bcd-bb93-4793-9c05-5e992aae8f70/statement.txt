@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>En Java, un <strong>constructor</strong> es un <strong>método especial</strong> que se utiliza para inicializar objetos. Cuando se instancia un objeto de una clase, a través del comando <code>new</code>, se invoca al constructor de dicha clase, el cual puede ser usado para inicializar los atributos de dicha clase.</p>
+
+<p>El método constructor tendrá el mismo nombre que la clase y no tiene ningún tipo de retorno.</p>
+
+<h3>Ejemplo:</h3>
+
+<blockquote><code>public class OOP {</code>
+
+<p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.suma());<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>}</code></p>
+
+<p><code>class SubClase {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; int x, y;</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public SubClase() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = 5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = 7;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public int suma() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+}</code></p>
+</blockquote>
+
+<p>Podemos observar que el resultado de la suma es el obtenido de sumar los valores que se inicializan en el método constructor.</p>
+
+<h3>Ejercicio</h3>
+
+<p>Partiendo de la clase <code>Modulo</code> que soluciona el último ejercicio, crea el constructor de la clase en el que se inicializarán los atributos <code>nota</code> y <code>nombre</code> con los valores <em>8</em> y <em>"Programacion"</em> respectivamente.</p></body></html>
