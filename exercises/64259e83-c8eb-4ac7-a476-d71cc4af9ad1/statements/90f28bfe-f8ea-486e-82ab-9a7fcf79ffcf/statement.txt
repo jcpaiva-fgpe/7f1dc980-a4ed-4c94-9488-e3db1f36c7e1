@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Definição</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De acordo com a wikipedia, a </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=pt&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Recursi%25C3%25B3n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">recursão</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> é a maneira pela qual um processo é especificado com base em sua própria definição.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A árvore mostrada abaixo é uma árvore recursiva, pois cada galho é, por sua vez, o início de outra árvore.</font></font></p> 
+        <p><img alt="árvore recursiva" src="https://miro.medium.com/max/1000/1*TiJl4Rh47os3hVGoWMwhJQ.gif" style="height:546px; width:600px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Na programação, diz-se que uma função recursiva é aquela que chama a si mesma.</font></font></p> 
+        <p>&nbsp; </p>
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo</font></font></h3> 
+        <p></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Em um exercício anterior, você foi solicitado a executar uma função que calcula o fatorial de um número. </font><font style="vertical-align: inherit;">Uma possível solução usando programação imperativa é a seguinte:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 1; i &lt;= numero; i++) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = resultado * i;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Na verdade, o cálculo do fatorial de um número também pode ser expresso da seguinte forma:</font></font></p> 
+        <p><img alt="" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc7c912b34ffe06bb047d66c307c104237adef5" style="height:49px; width:360px"></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Como podemos ver, o fatorial de n pode ser calculado em função do fatorial de n-1. </font><font style="vertical-align: inherit;">Portanto, o exercício anterior poderia ser resolvido como:</font></font></p> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = numero * factorial(numero - 1);</code><br> <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vantagens e desvantagens</font></font></h3> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vantagem:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Projetar uma função recursiva é mais fácil de fazer.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A leitura é facilitada.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O código é mais curto.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desvantagens:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">É menos eficiente que seu equivalente imperativo.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Consuma mais memória.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercício</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faça um aplicativo que calcule os produtos de dois números naturais digitados pelo teclado, usando a função recursiva para isso </font></font><code>multiplica(multiplicando, multiplicador)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa terminará quando um dos dois operandos for menor ou igual a 0.</font></font></p></body></html>
