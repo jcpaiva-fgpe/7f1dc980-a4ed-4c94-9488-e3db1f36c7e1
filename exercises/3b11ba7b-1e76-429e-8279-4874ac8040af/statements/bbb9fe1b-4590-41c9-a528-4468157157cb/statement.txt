@@ -1,0 +1,3 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Se le pide al usuario que vaya introduciendo&nbsp;valores numéricos enteros y calcula la suma de todos ellos. La aplicación finaliza cuando el usuario introduce un 9999.</p>
+
+<p><strong>ATENCIÓN:</strong> Cuidado con la tilde de la palabra número. Asegúrate de que escribes la palabra de la misma forma que está en la solución dada por Juez-LTI</p></body></html>
