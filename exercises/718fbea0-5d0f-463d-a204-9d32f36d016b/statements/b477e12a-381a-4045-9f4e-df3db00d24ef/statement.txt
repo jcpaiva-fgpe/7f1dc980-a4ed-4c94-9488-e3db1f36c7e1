@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hantera biljetter.</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Skapar menyalternativet HANTERA ENTRIES, tillsammans med menyalternativen:</font></font></p> 
+        <ul> 
+         <li><code>6. Vender entradas</code></li> 
+         <li><code>7. Devolver entradas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sälja biljetter</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Du måste begära, med tangentbord, antalet biljetter som du begär att köpa.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antalet inmatade ingångar kommer att skickas till </font></font><code>venderEntradas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">klassmetoden </font></font><code>SalaCine</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">och den måste styra om metoden ger undantaget </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Metoden </font></font><code>public void venderEntradas(int numeroEntradas)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">kontrollerar om antalet biljetter som redan är upptagna plus antalet biljetter som säljs skulle överstiga kapaciteten, i vilket fall ett nytt undantagsobjekt av klass skulle kastas </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Undantaget skulle också kastas </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">om antalet poster var negativt.</font></font></li> 
+         <li>si se cumplen los requisitos, se utilizará el método <code>setButacasOcupadas</code> para indicar que el número de butacas ocupadas se ha incrementado en el número de entradas vendidas.</li> 
+        </ul> 
+        <h3>Devolver entradas</h3> 
+        <p>Debe solicitar, por teclado, el número de entradas que se está solicitando devolver.</p> 
+        <p>El número de entradas introducido se enviará al método <code>devolverEntradas</code> de la clase <code>SalaCine</code>, debiendo controlar si dicho método lanza la excepción <code>IllegalArgumentException</code>.</p> 
+        <p>El método <code>public void devolverEntradas(int numeroEntradas)</code>:</p> 
+        <ul> 
+         <li>comprueba si el número de entradas que se intenta devolver es mayor que el número de butacas ocupadas , en cuyo caso se lanzaría un nuevo objeto excepción de la clase <code>IllegalArgumentException</code>.</li> 
+         <li>también se lanzaría la excepción <code>IllegalArgumentException</code> en el caso de que el número de entradas fuera negativo.</li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">om kraven är uppfyllda kommer metoden att användas för </font></font><code>setButacasOcupadas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">att indikera att antalet upptagna platser har minskat med antalet återlämnade biljetter.</font></font></li> 
+        </ul></body></html>
