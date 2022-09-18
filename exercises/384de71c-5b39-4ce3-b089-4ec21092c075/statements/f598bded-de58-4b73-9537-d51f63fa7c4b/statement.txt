@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Añade al menú las siguientes líneas:</p>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("GESTIONAR ACOGIMIENTOS");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("--------------------");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("\t7. Insertar acogimiento");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("\t8. Disolver acogimiento");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("\t9. Imprimir acogimientos");</pre>
+
+<p><strong>El método </strong><tt>insertarAcogimiento()</tt><strong> hace uso del método </strong><tt>acoger()</tt><strong> de la clase </strong><tt>FamiliaAcogida</tt><strong>. Implementa dicho método, sabiendo que:</strong></p>
+
+<ul>
+	<li>
+	<p>Si el número de plazas de las que dispone la familia que va a coger es menor o igual que 0, debe lanzar la excepción <tt>IllegalArgumentException</tt>.</p>
+	</li>
+	<li>
+	<p>En caso contrario,</p>
+
+	<ul>
+		<li>
+		<p>se incluirá, en <tt>acogimientos</tt>, la asociación entre el acogido y la familia.</p>
+		</li>
+		<li>
+		<p>Se decrementará el número de plazas de acogida disponibles para esa familia.</p>
+		</li>
+		<li>
+		<p>Se devolverá <tt>true</tt>.</p>
+		</li>
+	</ul>
+	</li>
+</ul></body></html>
