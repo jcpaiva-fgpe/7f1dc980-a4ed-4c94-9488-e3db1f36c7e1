@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Pago nóminas con funciones</h2>
+
+<p>Queremos hacer un programa Java que calcule el coste mensual de las nóminas de la empresa.&nbsp;</p>
+
+<p>La jornada semanal de un empleado es de 40&nbsp;horas semanales, más horas extras, donde no se pueden tener horas extras si no se han llegado a las 40 horas de trabajo semanal, y todas las horas que superen las 40&nbsp;horas, son consideradas horas extra.</p>
+
+<p>Cada hora de trabajo se paga a un precio de 9,95€, mientras que las horas extras se pagan a 14,95€ la hora.</p>
+
+<p><strong>Ejemplos</strong>:</p>
+
+<ul>
+	<li>Un trabajador que ha trabajado 30&nbsp;horas una semana, le corresponde un salario esa semana de 298.5&nbsp;€</li>
+	<li>Un trabajador que ha trabajado 50 horas una semana, le corresponde un salario esa semana de 547.5&nbsp;€</li>
+</ul>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>Cada caso de prueba comienza con un número que indica cuántos empleados tiene la empresa. A continuación habrá una línea para cada uno de estos empleados. Para cada empleado se aportan 4 números enteros separados por espacio, donde cada número representa el número de horas que ha trabajado en cada una de las 4 semanas que tiene el mes.</p>
+
+<p>La entrada acaba con un 0, que no debe procesarse.</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá la frase "<em><strong>El coste de las nominas este mes es de X</strong></em>", donde X será la suma de todas la nóminas mensuales de los empleados según lo que cada uno haya trabajado cada mes.</p>
+
+<p>La salida debe ser un número decimal con solo 2 decimales.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función que calcule el salario semanal a pagar según las horas trabajadas. Esta función queremos que sea lo más reutilizable posible, por lo que recibirá como entrada:&nbsp;</p>
+
+<ul>
+	<li>El número de horas normales trabajadas: un número entero</li>
+	<li>El precio de cada hora normal trabajada: un número decimal (con dos decimales)</li>
+	<li>El número de horas extra trabajadas: un número entero</li>
+	<li>El precio de cada hora extra: un número decimal (con dos decimales)</li>
+</ul>
+
+<p>La función&nbsp;devolverá&nbsp;el dinero a pagar, un número decimal con dos decimales.</p>
+
+<p>Se proporcionan la&nbsp;cabecer&nbsp;o interfaz&nbsp;de dicha&nbsp;función&nbsp;en la sección MUST CONTAIN&nbsp;</p>
+
+<p><strong>Atención</strong>: Habrá que asegurar&nbsp;que la función devuelve un número decimal con dos decimales. Para saber cómo puedes hacerlo, puedes consultar <a href="https://www.delftstack.com/es/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/" target="_blank">este enlace</a></p>
+
+<p>El programa principal usará la función anterior para resolver el problema.</p></body></html>
