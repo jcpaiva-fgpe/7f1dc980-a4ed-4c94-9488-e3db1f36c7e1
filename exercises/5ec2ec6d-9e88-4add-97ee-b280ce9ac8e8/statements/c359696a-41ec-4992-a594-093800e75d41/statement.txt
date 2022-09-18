@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se os atributos foram usados ​​para armazenar o estado de um objeto, os métodos são usados ​​para indicar a funcionalidade dos objetos de uma classe, ou seja, o que eles podem fazer.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O código a seguir cria um método sum que retorna o resultado da soma do valor dos dois atributos do objeto:</font></font></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {</code><br> &nbsp;</p> 
+         <p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj.y = 10;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.suma());<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+         <p><code>class SubClase {<br> &nbsp; int x = 5;<br> &nbsp; int y = 7;<br> &nbsp;<br> &nbsp; public int suma() {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br> &nbsp; }<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercício:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A partir dos exercícios que incorporam a classe </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, crie um aplicativo que gere um objeto da classe </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, leia seu valor numérico no teclado, dentro do método, </font></font><code>main()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">e escreva a nota textual que corresponde à referida nota numérica, de acordo com as seguintes categorias:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 e 1: Muito ruim</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2, 3 e 4: Insuficiente</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5: Suficiente</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6: bom</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7 e 8: Notável</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 e 10: Excelente.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">qualquer outro valor: fora do intervalo</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A lógica para retornar a nota textual que corresponde a uma nota numérica deve ser feita no método </font></font><code>calificacion()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">class </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p></body></html>
