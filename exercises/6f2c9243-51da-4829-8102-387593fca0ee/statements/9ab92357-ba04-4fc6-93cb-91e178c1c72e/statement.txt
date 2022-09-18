@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Control de existencias</h2>
+
+<p>Vamos a crear una aplicación para controlar el stock de almacén.</p>
+
+<p>En primer lugar, la aplicación solicitará la cantidad correspondiente al stock inicial. Posteriormente, el encargado de almacén ira sirviendo pedidos de producto según se vayan solicitando, mostrando el stock que queda después de servir ese pedido, hasta que haya un pedido que no se pueda servir por falta de stock, en ese caso se mostrará un mensaje de aviso "NO QUEDA SUFICIENTE STOCK".</p>
+
+<p>Cuando el proveedor reponga el producto, la aplicación volverá a solicitar el stock inicial con el que se parte para ir sirviendo pedidos.</p>
+
+<p>La aplicación finalizará cuando el stock inicial con el que cuenta el encargado de almacén sea 0.</p></body></html>
