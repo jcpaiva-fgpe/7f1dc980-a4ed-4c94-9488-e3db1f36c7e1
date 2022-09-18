@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Write a Java program that loops through an array of N integers, displaying them on the screen in the following order:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">First</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The last</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The second</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">penultimate</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The third</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the penultimate</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">etc.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">With an array formed by the following numbers: 1, 2, 3, 4, 5, 6, 7, 8, the following would be printed: 1, 8, 2, 7, 3, 6, 4, 5</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">With an array consisting of the following numbers: 1, 2, 3, 4, 5, 6, 7, the following would be printed: 1, 7, 2, 6, 3, 5, 4</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRY</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The entry begins with a number indicating how many test cases will be processed.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Each of the cases will consist of a line with the number N of elements of the array, where N &gt;= 0, and another line with the N elements of said array separated by a space (if N &gt; 0).</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EXIT</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">For each test case, the program will write in a different line, the result of making the alternate traversal of the corresponding array.</font></font></p></body></html>
