@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>while</h2>
+
+<p>Mientras que el bucle <strong><code>for</code></strong> es un bucle controlado por contador, en el que se conoce previamente el número de veces que se tienen que repetir las instrucciones que forman el curso del bucle, el bucle <code>while</code> es un bucle controlado por condición, en el que las instrucciones del cuerpo del bucle se ejecutan mientras la condición se evalúe como cierta.</p>
+
+<p>Es imprescindible que en el interior del bucle <code>while</code> se realice <strong>alguna acción que modifique la condición</strong> que controla la ejecución del mismo, en caso contrario estaríamos ante un <strong>bucle infinito</strong>.</p>
+
+<p>&nbsp;</p>
+
+<h3>Sintaxis:</h3>
+
+<blockquote>
+<p><code>while (condición) {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; sentencia1;<br>
+&nbsp;&nbsp;&nbsp; sentencia2;<br>
+&nbsp;&nbsp;&nbsp; …;<br>
+&nbsp;&nbsp;&nbsp; sentenciaN;<br>
+}</code></p>
+</blockquote>
+
+<h3>Funcionamiento</h3>
+
+<p>Mientras la condición sea cierta, el bucle se repetirá, ejecutando la/s instrucción/es de su interior. En el momento en el que la condición no se cumpla, el control del flujo del programa pasará a la siguiente instrucción que exista justo detrás del bucle while.</p>
+
+<p>La condición se evaluará siempre al principio, y podrá darse el caso de que las instrucciones contenidas en él no lleguen a ejecutarse nunca si no se satisface la condición de partida.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>En el siguiente ejemplo, utilizamos un bucle while para escribir la tabla de multiplicar de un número.</p>
+
+<blockquote>
+<p><code>// Declaración e inicialización de variables<br>
+int numero = 7;<br>
+int contador;<br>
+int resultado=0;</code></p>
+
+<p><code>//Salida de información<br>
+System.out.println ("Tabla de multiplicar del " + numero);<br>
+System.out.println (".............................. ");</code></p>
+
+<p><code>//Utilizamos ahora el bucle while<br>
+contador = 1; //inicializamos la variable contadora<br>
+while (contador &lt;= 10) //Establecemos la condición del bucle<br>
+{<br>
+&nbsp;&nbsp;&nbsp; resultado = contador * numero;<br>
+&nbsp;&nbsp;&nbsp; System.out.println(numero + " x " + contador + " = " + resultado);<br>
+&nbsp;&nbsp;&nbsp; //Modificamos el valor de la variable contadora, para hacer que el<br>
+&nbsp;&nbsp;&nbsp; //bucle pueda seguir iterando hasta llegar a finalizar<br>
+&nbsp;&nbsp;&nbsp; contador++;<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Haz un programa que solicite al usuario un número entero positivo e indique cuántos números enteros consecutivos se necesitan sumar, a partir del número 1, para alcanzar dicha cantidad.</p></body></html>
