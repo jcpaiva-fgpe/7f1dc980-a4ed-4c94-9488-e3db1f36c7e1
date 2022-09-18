@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aritmetiska</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> operatorer </font><font style="vertical-align: inherit;">.</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Som namnet antyder tillåter aritmetiska operatorer oss att utföra aritmetiska operationer med uttryck med ett numeriskt värde.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Operatörerna som vi kan använda visas i följande tabell:</font></font></p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Aritmetiska operatorer
+         </font></font></caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERATÖR</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ANVÄNDA SIG AV</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DRIFT</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EXEMPEL</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESULTAT</font></font></th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a + b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tillägg</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 + 5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Subtraktion</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 - 5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a*b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Multiplikation</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8*5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">40</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a/b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Division</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8/5</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8f / 5f</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.6f</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">%</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a % b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modul eller resten av heltalsdivision</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 % 5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Träning:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Läser 2 heltal från tangentbordet och visar resultatet av deras addition, subtraktion, multiplikation, division och modul.</font></font></p> 
+        <p><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBSERVERA</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : På grund av hur den automatiska Juez-LTI-korrigeraren fungerar bör du inte skriva ut mer information på skärmen än resultatet av summan av siffrorna. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bifoga inte lösningen med någon text</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> som "Summan av siffrorna är: "</font></font></small></p></body></html>
