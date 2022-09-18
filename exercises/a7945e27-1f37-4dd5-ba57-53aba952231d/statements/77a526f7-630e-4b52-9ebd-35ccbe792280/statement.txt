@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In 'Terra Mítica' you want to know how many people have visited the amusement park in one day.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visitors must state their age as they enter:&nbsp;</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If your age is less than or equal to 4, admission is free,</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If the age is between 5 and 12 years (included), the ticket will cost €20, and</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If the age exceeds 12, the ticket will cost €40.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The locker will close when the cashier enters an age equal to -1.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Indicate the number of children under 4 years of age (including 4), the number of children between 5 and 12 years of age (including both), and the number of adults.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">It also shows the total number of people who have entered and the box that has been made at the end of the day.</font></font></p></body></html>
