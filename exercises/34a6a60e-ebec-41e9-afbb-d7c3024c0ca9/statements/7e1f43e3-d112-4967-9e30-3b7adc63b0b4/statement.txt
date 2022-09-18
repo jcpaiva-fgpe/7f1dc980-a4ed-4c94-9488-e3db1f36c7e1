@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>La Delegación del Gobierno en Canarias nos ha solicitado el desarrollo de una aplicación para la gestión de las ayudas destinadas a paliar daños materiales en viviendas, provocados por el volcán de La Palma.</p>
+
+<p>Para estos daños, el gobierno del estado ha establecido 3 tipos de ayudas:</p>
+
+<ol>
+	<li>Por destrucción total de la vivienda habitual</li>
+	<li>Por daños que afecten a la estructura de la vivienda habitual</li>
+	<li>Por daños que no afecten a la estructura de la vivienda habitual</li>
+</ol>
+
+<p>Por lo tanto, lo primero que debe hacer la aplicación es mostrar un menú en el que se pregunte al usuario el tipo de ayuda que está solicitando o 0 si lo que quiere es que finalice el programa. <small><em>Copia y pega los textos del OUTPUT, para que no existan fallos tipográficos en el menú.</em></small></p>
+
+<p>Este menú se mostrará a través de la función <code>mostrarMenu()</code>.</p>
+
+<p>Si el usuario elige alguno de los 3 tipos de ayuda, la aplicación debe preguntar al usuario la <code>"Cantidad solicitada: "</code>. La cantidad que el usuario solicite no podrá ser superior a las cuantías máximas de las ayudas establecidas en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-16231">Real Decreto-ley 20/2021</a> y que son las que se muestran a continuación para cada uno de los tipos de ayuda:</p>
+
+<ol>
+	<li>Por destrucción total de la vivienda habitual: <strong>30240</strong></li>
+	<li>Por daños que afecten a la estructura de la vivienda habitual: <strong>20640</strong></li>
+	<li>Por daños que no afecten a la estructura de la vivienda habitual: <strong>10320</strong></li>
+</ol>
+
+<p>Por ello, la aplicación deberá invocar a la función <code>cuantiaOtorgada()</code>, a la que se le envía el tipo de ayuda y la cantidad solicitadas. La función <code>cuantiaOtorgada()</code>devolverá:</p>
+
+<ul>
+	<li><strong>la cantidad solicitada</strong>, en caso de que ésta <strong>no</strong> sea superior a la cuantía máxima para ese tipo de ayuda.<br>
+	ó</li>
+	<li><strong>la cuantía máxima establecida para el tipo de ayuda</strong>, en el caso de que la cantidad solicitada sea superior a la máxima para ese tipo de ayuda.</li>
+</ul>
+
+<p>Finalmente, cuando el usuario decida salir de la aplicación (<em>eligiendo la opción 0 del menú)</em> la aplicación debe informar de la cuantía total de las ayudas otorgadas.</p></body></html>
