@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Una vez desarrollada la versión anterior, la delegación del gobierno nos ha pedido que incluyamos un nuevo requisito para la concesión de las ayudas,</p>
+
+<p>Una vez que el usuario ha indicado la cantidad que solicita, la aplicación debe pedirle la <strong>referencia catastral del inmueble</strong> para el que solicita la ayuda y únicamente si la referencia es válida se añadirá la cuantía al total de ayudas otorgadas. Para ello, utilizaremos la función <code>catastroValido()</code>, a la que se envía un String con la referencia catastral del inmueble y nos indica si está cubierto o no.</p>
+
+<p>De los <a href="https://www.catastro.meh.es/esp/referencia_catastral.asp">2 tipos de referencias catastrales existentes</a>, nosotros vamos a utilizar la que comienza por los dígitos de la provincia y del municipio en el que se encuentra el inmueble. En nuestro caso, sólo admitiremos referencias catastrales que estén situados en la provincia de Santa Cruz de Tenerife (<em>código 38</em>). Además, deben estar situados en alguno de los siguientes municipios:</p>
+
+<table align="center" border="1" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="background-color:#9e9e9e; text-align:center">código</td>
+			<td style="background-color:#9e9e9e; text-align:center">municipio</td>
+		</tr>
+		<tr>
+			<td>24</td>
+			<td>Llanos de Aridane (Los)</td>
+		</tr>
+		<tr>
+			<td>27</td>
+			<td>Paso (El)</td>
+		</tr>
+		<tr>
+			<td>45</td>
+			<td>Tazacorte</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Para extraer los códigos de la provincia y del municipio, se utilizarán sendas funciones getProvincia() y getMunicipio() a las que se envía la referencia catastral y devuelven el código correspondiente como un valor entero:</p>
+
+<ul>
+	<li>el código de la <strong>provincia</strong> corresponde al valor numérico de los <strong>2 primeros caracteres</strong> de la referencia catastral.</li>
+	<li>el código del <strong>municipio</strong> corresponde al valor numérico de los caracteres que van <strong>del 3º al 5º</strong>.</li>
+</ul>
+
+<p>Para obtener esos valores numéricos deberás utilizar las funciones <code>charAt()</code> e <code>Integer.parseInt()</code> que se han utilizado en anteriores ejercicios.</p>
+
+<p>En el ejemplo, las referencias catastrales correspondientes a la segunda y a la tercera solicitud no se suman al total de las ayudas otorgadas porque sus referencias catastrales no son válidas: la primera no corresponde a la provincia y la segunda no corresponde con ninguno de los municipios en los que deben estar situados los inmuebles.</p></body></html>
