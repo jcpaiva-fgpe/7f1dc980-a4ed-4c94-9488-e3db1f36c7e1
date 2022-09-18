@@ -1,0 +1,4 @@
+Dime nota 1: 
+Dime nota 2: 
+Dime nota 3: 
+La nota media es: 5.0
