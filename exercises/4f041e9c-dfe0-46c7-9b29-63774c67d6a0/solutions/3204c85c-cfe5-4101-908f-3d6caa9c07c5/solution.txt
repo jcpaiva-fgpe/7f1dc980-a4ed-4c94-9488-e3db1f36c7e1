@@ -1,0 +1,7 @@
+package primerreto;
+public class PrimerReto {
+    public static void main(String[] args) {
+        System.out.println("MODULO DE PROGRAMACION");
+        System.out.println("1er. Reto");
+    }
+}
