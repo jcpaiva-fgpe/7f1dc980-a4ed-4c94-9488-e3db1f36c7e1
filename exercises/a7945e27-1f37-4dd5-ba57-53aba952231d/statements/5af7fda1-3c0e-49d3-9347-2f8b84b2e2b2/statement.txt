@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>En 'Terra Mítica' se desea saber cuántas personas han visitado el parque de atracciones en un día.</p>
+
+<p>Los visitantes deben de decir su edad conforme entren:&nbsp;</p>
+
+<ul>
+	<li>Si su edad es inferior o igual&nbsp;a 4, la&nbsp;entrada es gratis,</li>
+	<li>Si la edad está comprendida entre 5 años y 12 años&nbsp;(incluídos), la entrada costará 20€, y</li>
+	<li>Si la edad supera a 12, la entrada&nbsp;costará 40€.</li>
+</ul>
+
+<p>La taquilla se cerrará cuando la cajera introduzca una edad&nbsp;igual a -1.</p>
+
+<p>Indicad&nbsp;el número de niños con edades inferiores a 4 años (incluido el 4), el&nbsp;número de niños con edad comprendida entre 5 y 12 años (incluidos ambos), y el número de adultos.</p>
+
+<p>Muestra también el número total de personas que han entrado y la caja&nbsp;que se ha hecho al final de la jornada.</p></body></html>
