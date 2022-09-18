@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class FContarVocalesCadena {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        String frase;
+
+        int numCasos = 0;
+        numCasos = sc.nextInt();
+        frase = sc.nextLine();
+
+        for (int i = 1; i <= numCasos; i++) {
+            frase = sc.nextLine();
+            System.out.println(contarVocales(frase));
+        }
+    }
+
+    public static int contarVocales(String cadena) {
+        int contador = 0;
+
+        String cadena2;
+        int tamanyoCadena2 = 0;
+
+        cadena2 = cadena.toLowerCase();
+
+        for (int i = 0; i < cadena2.length(); i++) {
+            if (cadena2.charAt(i) == 'a' || cadena2.charAt(i) == 'e' || cadena2.charAt(i) == 'i' || cadena2.charAt(i) == 'o' || cadena2.charAt(i) == 'u') {
+                contador++;
+            }
+        }
+        return contador;
+    }
+}
