@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">süre</font></font></h2> 
+        <p><font style="vertical-align: inherit;"></font><strong><code>for</code></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Döngü , döngünün gidişatını oluşturan talimatların kaç kez tekrarlanması gerektiğinin önceden bilindiği, sayaç kontrollü bir döngü </font><font style="vertical-align: inherit;">iken, döngü , </font></font><code>while</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">koşul kontrollü bir döngüdür; döngü gövdesi, koşul doğru olarak değerlendirildiği sürece yürütülür.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">Yürütülmesini kontrol eden koşulu değiştiren</font></strong><font style="vertical-align: inherit;"> döngü içinde bazı eylemlerin </font></font><code>while</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gerçekleştirilmesi önemlidir </font><font style="vertical-align: inherit;">, aksi takdirde </font><strong><font style="vertical-align: inherit;">sonsuz bir döngü</font></strong><font style="vertical-align: inherit;"> ile karşı karşıya kalırdık .</font></font><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"></font></p> 
+        <p>&nbsp;</p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sözdizimi:</font></font></h3> 
+        <blockquote> 
+         <p><code>while (condición) {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; sentencia1;<br> &nbsp;&nbsp;&nbsp; sentencia2;<br> &nbsp;&nbsp;&nbsp; …;<br> &nbsp;&nbsp;&nbsp; sentenciaN;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">işleyen</font></font></h3> 
+        <p>Mientras la condición sea cierta, el bucle se repetirá, ejecutando la/s instrucción/es de su interior. En el momento en el que la condición no se cumpla, el control del flujo del programa pasará a la siguiente instrucción que exista justo detrás del bucle while.</p> 
+        <p>La condición se evaluará siempre al principio, y podrá darse el caso de que las instrucciones contenidas en él no lleguen a ejecutarse nunca si no se satisface la condición de partida.</p> 
+        <h3>Ejemplo:</h3> 
+        <p>En el siguiente ejemplo, utilizamos un bucle while para escribir la tabla de multiplicar de un número.</p> 
+        <blockquote> 
+         <p><code>// Declaración e inicialización de variables<br> int numero = 7;<br> int contador;<br> int resultado=0;</code></p> 
+         <p><code>//Salida de información<br> System.out.println ("Tabla de multiplicar del " + numero);<br> System.out.println (".............................. ");</code></p> 
+         <p><code>//Utilizamos ahora el bucle while<br> contador = 1; //inicializamos la variable contadora<br> while (contador &lt;= 10) //Establecemos la condición del bucle<br> {<br> &nbsp;&nbsp;&nbsp; resultado = contador * numero;<br> &nbsp;&nbsp;&nbsp; System.out.println(numero + " x " + contador + " = " + resultado);<br> &nbsp;&nbsp;&nbsp; //Modificamos el valor de la variable contadora, para hacer que el<br> &nbsp;&nbsp;&nbsp; //bucle pueda seguir iterando hasta llegar a finalizar<br> &nbsp;&nbsp;&nbsp; contador++;<br> }</code></p> 
+        </blockquote> 
+        <h3>Ejercicio:</h3> 
+        <p>Haz un programa que solicite al usuario un número entero positivo e indique cuántos números enteros consecutivos se necesitan sumar, a partir del número 1, para alcanzar dicha cantidad.</p></body></html>
