@@ -1,0 +1,11 @@
+package literales;
+
+public class Literales {
+
+    public static void main(String[] args) {
+        final double PI = 3.14D;
+        
+        System.out.println("El contenido de la constante \u0050\u0049 es \n\t\'" + PI + "\'");
+    }
+    
+}
