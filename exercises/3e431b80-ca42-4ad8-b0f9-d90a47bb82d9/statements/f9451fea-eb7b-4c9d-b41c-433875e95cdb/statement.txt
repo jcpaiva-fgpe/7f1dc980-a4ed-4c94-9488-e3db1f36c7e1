@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Få åtkomst till och ändra attribut.</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Som vi redan har sett i exemplen kan attribut nås genom att skapa ett objekt i klassen och använda syntaxen </font></font><code>.</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Men vi kan också ändra värdet på attributen och tilldela dem ett nytt värde.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exempel:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Följande kod ändrar värdet på attributet och klassen </font></font><code>SubClase</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">och kommer sedan åt dess nya värde för att skriva det:</font></font></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {<br> <br> &nbsp;&nbsp;&nbsp; public static void main(String[] args) {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();</code><br> <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj.y = 10;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.y);<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+         <p><code>class SubClase {<br> &nbsp; int x = 5;</code><br> <code>&nbsp; int y = 7;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Träning:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ändra föregående övning så att kvalifikationen som är associerad med klassobjektet </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">läses från tangentbordet, inuti </font></font><code>main()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p></body></html>
