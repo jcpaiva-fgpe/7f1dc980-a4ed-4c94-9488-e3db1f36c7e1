@@ -1,0 +1,11 @@
+10
+2 SI - SI +
+1 SI * SI *
+3 NO NO
+5 SI * NO 
+5 SI * SI *
+5 NO SI -
+6 SI 0 SI *
+4 NO SI *
+3 SI - NO
+8 SI o NO
