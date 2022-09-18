@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Acceder y modificar los atributos.</h2>
+
+<p>Como ya hemos visto en los ejemplos, se puede acceder a los atributos creando un objeto de la clase y utilizando la sintaxis <code>.</code>.</p>
+
+<p>Pero, también podemos modificar el valor de los atributos, asignándoles un nuevo valor.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>El siguiente código modifica el valor del atributo y de la clase <code>SubClase</code> y ,posteriormente, accede a su nuevo valor para escribirlo:</p>
+
+<blockquote>
+<p><code>package oop;</code></p>
+
+<p><code>public class OOP {<br>
+<br>
+&nbsp;&nbsp;&nbsp; public static void main(String[] args) {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();</code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj.y = 10;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.y);<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+
+<p><code>class SubClase {<br>
+&nbsp; int x = 5;</code><br>
+<code>&nbsp; int y = 7;<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Modifica el ejercicio anterior, de manera que la calificación asociada al objeto de la clase <code>Modulo</code> se lea desde el teclado, dentro del método <code>main()</code>.</p></body></html>
