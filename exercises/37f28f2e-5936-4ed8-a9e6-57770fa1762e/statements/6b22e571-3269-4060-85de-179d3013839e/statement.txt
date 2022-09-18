@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sektionsradar</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Det särskilda trafikdirektoratet (DPT) har åtagit sig att få förare att respektera hastighetsgränserna. </font><font style="vertical-align: inherit;">Utan att gå in på om det är av säkerhetsskäl, för att spara bränsle eller med en ren insamlingsinsats vet vi nu att förutom traditionella fasta fartkameror tas sektionsfartkameror i drift.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sektionsradarerna består av att placera två kameror på två avlägsna ställen på en väg för att kontrollera hur lång tid det har tagit bilen att färdas den sträckan. </font><font style="vertical-align: inherit;">Om medelhastigheten överstiger den högsta tillåtna hastigheten kommer vi att kunna veta (även om vi inte har sett det) att den någon gång på vägen har överskridit den hastigheten. </font><font style="vertical-align: inherit;">Till exempel, om vi placerar kamerorna 10 km från varandra på en sektion vars hastighet är begränsad till 110 km/h, och det tar 5 minuter för en bil att ses av den andra kameran, vet vi att dess medelhastighet har varit 120 km/h, och Därför har han någonstans överskridit hastighetsgränsen, även om bilen körde i 80 km/h när han passerade under de två kamerorna.</font></font></p> 
+        <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">App</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Det är viktigt att du, så att dina kollegor kan testa applikationen, genererar applikationen med följande egenskaper:</font></font></p> 
+        <ul> 
+         <li>Categoría: Java with Ant 
+          <ul> 
+           <li>Projecto: Java Application</li> 
+          </ul> </li> 
+         <li>Nombre del Proyecto: Radar</li> 
+        </ul> 
+        <h2>Entrada</h2> 
+        <p>Cada caso de prueba consistirá en leer del teclado tres números: el primero será la distancia (en metros) que separan las dos cámaras, el segundo indicará la velocidad máxima permitida en todo ese tramo (en Km/h) y el tercer y último número indicará el número de segundos que ha tardado un coche en recorrer el tramo. Todos esos números serán enteros.</p> 
+        <p>La aplicación finalizará cuando los 3 valores introducidos sean 0.</p> 
+        <h2>Salida</h2> 
+        <p>Para cada caso de prueba, el programa generará una línea, indicando si el coche debe ser multado o no. En concreto, indicará "<tt>OK</tt>" si el coche no superó la velocidad máxima, indicará "<tt>MULTA</tt>" si se superó esa velocidad máxima permitida.</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I händelse av att resultatet är " </font></font><tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FIN</font></font></tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ", kommer även de poäng som kommer att tas bort från licensen att visas, enligt de tiotals kilometer som genomsnittet har överskridits:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 tiotals kilometer i genomsnitt övervunna: 0 poäng</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 tio kilometer tillryggalagd: 2 poäng</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 tiotals kilometer övervunna: 4 poäng</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 tiotals kilometer övervunna: 7 poäng</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">av 4 tiotals kilometer överträffade och framåt: 10 poäng</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p></body></html>
