@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Access and modify attributes.</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">As we have already seen in the examples, attributes can be accessed by creating an object of the class and using the syntax </font></font><code>.</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">But, we can also modify the value of the attributes, assigning them a new value.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The following code modifies the value of the attribute and the class </font></font><code>SubClase</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and then accesses its new value to write it:</font></font></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {<br> <br> &nbsp;&nbsp;&nbsp; public static void main(String[] args) {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();</code><br> <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj.y = 10;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.y);<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+         <p><code>class SubClase {<br> &nbsp; int x = 5;</code><br> <code>&nbsp; int y = 7;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercise:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modify the previous exercise, so that the qualification associated with the class object </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">is read from the keyboard, inside the </font></font><code>main()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p></body></html>
