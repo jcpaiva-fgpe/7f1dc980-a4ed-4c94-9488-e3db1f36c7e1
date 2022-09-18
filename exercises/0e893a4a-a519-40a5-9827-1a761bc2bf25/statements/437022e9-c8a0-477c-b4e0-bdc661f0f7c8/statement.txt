@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">basic calculator</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Make a program that allows you to do the 4 basic operations:</font></font></p> 
+        <ol> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Addition</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Subtraction</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Multiplication</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Division</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">end of program</font></font></li> 
+        </ol> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The user will introduce an option, followed by two numbers and the program will do the corresponding operation according to the first number. </font><font style="vertical-align: inherit;">Then, it will be asked again what you want to do. </font><font style="vertical-align: inherit;">And so on, until the chosen option is 5: end of the program.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ATTENTION</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : If the division is not exact, only the integer part of the result will be displayed</font></font></p></body></html>
