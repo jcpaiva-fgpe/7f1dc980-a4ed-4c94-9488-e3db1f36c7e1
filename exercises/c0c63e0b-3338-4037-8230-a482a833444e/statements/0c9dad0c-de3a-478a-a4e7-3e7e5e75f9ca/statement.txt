@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Make a program that asks for the number of students in the class (integer values) and then asks for the grades of each of those students. </font><font style="vertical-align: inherit;">The output consists of showing the following:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The total number of approved students</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The number of students who have obtained a 10.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The number of failed students</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The number of students who have obtained a 0.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The percentage of approved.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The percentage of failures.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">For variable types use integers.</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Student grades are numbers without decimals.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Perhaps the percentages would be more reasonable to work with real numbers, but we are going to work with whole numbers. </font><font style="vertical-align: inherit;">This means that if the result percentage is 30.66%, the result will be 30%.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ATTENTION</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Be careful with the messages on the screen. </font><font style="vertical-align: inherit;">Identify in the example OUTPUT what is printed with System.out.print("") and what is printed with System.out. </font><font style="vertical-align: inherit;">println("").</font></font></p></body></html>
