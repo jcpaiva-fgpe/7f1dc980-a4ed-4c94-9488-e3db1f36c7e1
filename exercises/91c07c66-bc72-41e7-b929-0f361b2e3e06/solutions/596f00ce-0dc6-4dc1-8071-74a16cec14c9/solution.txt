@@ -1,0 +1,30 @@
+package tablasmultiplicar;
+import java.util.Scanner;
+
+public class TablasMultiplicar {
+
+    public static void main(String[] args) {
+        int contador = 1, seguir = 1;
+        Scanner sc = new Scanner(System.in);
+        while (seguir != 0) {
+            // Invocamos el método cabecera
+            cabeceraTablaMultiplicar();
+            for(int i = 0; i <= 10; i++) {
+                System.out.println(contador + " x " + i + " = " + contador * i);
+            }
+            // Invocamos el método pie
+            pieTablaMultiplicar();
+            contador++;
+            seguir = sc.nextInt();
+        }
+    }
+    
+    static void cabeceraTablaMultiplicar() {
+        System.out.println("** INICIO TABLA **");
+    }
+    
+    static void pieTablaMultiplicar() {
+        System.out.println("** FIN TABLA **\n");
+    }
+    
+}
