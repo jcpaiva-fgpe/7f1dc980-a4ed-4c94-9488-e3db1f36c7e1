@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escreva um programa Java que desloque circularmente os elementos de um array de inteiros, para a esquerda ou para a direita, pelo número de posições informado. </font><font style="vertical-align: inherit;">Um deslocamento circular significa que os elementos que saem de um lado da matriz entram no outro.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dada a matriz de inteiros {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, deslocá-la 3 posições para a direita daria o seguinte resultado: {8, 9, 10, 1, 2 , 3, 4, 5, 6, 7}</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dada a matriz de inteiros {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, deslocá-la 4 posições para a esquerda daria o seguinte resultado: {5, 6, 7, 8, 9 , 10, 1, 2, 3, 4}</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A entrada começa com um número indicando quantos casos de teste serão processados.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cada caso será composto por:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma primeira linha com o número L de elementos da matriz, onde L &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um segundo com os L elementos do referido array separados por um espaço.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma terceira linha com o número N de posições que o array deve ser movido, um espaço, e um D ou um I, para indicar se o movimento é para a direita ou para a esquerda.&nbsp;</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SAÍDA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para cada caso de teste, o programa escreverá o conteúdo do array assim que o deslocamento solicitado for realizado.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTRIÇÕES</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O problema será resolvido usando a seguinte decomposição funcional:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma função que recebe um array de inteiros e um inteiro positivo como argumento e rotaciona esse array N posições para a direita. </font><font style="vertical-align: inherit;">A função lançará IllegalArgumentException se o número recebido como argumento for um número negativo.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma função que recebe um array de inteiros e um inteiro positivo como argumento e rotaciona esse array N posições para a esquerda. </font><font style="vertical-align: inherit;">A função lançará IllegalArgumentException se o número recebido como argumento for um número negativo.&nbsp;</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal, para cada caso, imprimirá o resultado da rotação da string nas N posições para a direita ou para a esquerda.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OTIMIZAÇÃO ALGORITMICA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JuezLTI não levará isso em consideração ao decidir se o exercício está correto ou não, mas tentaremos programá-lo da maneira mais otimizada possível, reduzindo ao máximo o tempo de execução. </font><font style="vertical-align: inherit;">Para isso, você deve observar e capturar em seu algoritmo, esta circunstância:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girar as mesmas posições que o tamanho do array, ou um múltiplo do tamanho do array, é deixar o array como está</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girar o tamanho da matriz + 1, ou um múltiplo do tamanho da matriz + 1, é como girar a posição da matriz 1.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girar o tamanho do array + 2, ou um múltiplo do tamanho do array + 2, é como girar o array 2 posições.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girar o tamanho do array + N, ou um múltiplo do tamanho do array + N, é como girar o array por N posições.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quer dizer,</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para girar 5 posições, 10 posições, 15 posições, 20 posições, etc., um array de tamanho 5 é deixá-lo como está (é como girar 0 posições).</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girar 6 posições, 11 posições, 16 posições, 21 posições, etc., uma matriz de tamanho 5 é deixada como girar 1 posição</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gire 7 posições, 12 posições, 17 posições, 22 posições, etc., uma matriz de tamanho 5 é deixada como girar 2 posições</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qual é a operação matemática que me dá essa relação entre as rotações equivalentes?</font></font></strong><br> &nbsp;</p></body></html>
