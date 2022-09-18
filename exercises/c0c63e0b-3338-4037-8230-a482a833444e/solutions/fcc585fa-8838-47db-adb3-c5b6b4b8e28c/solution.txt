@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class AprobadosYSuspensos {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int alumnos;
+        int nota;
+        int excelente = 0, suspenso = 0;
+        int totalA = 0, totalS = 0;
+        int porcentajeA, porcentajeS;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Introduzca numero de alumnos: ");
+        alumnos = sc.nextInt();
+
+        for (int i = 1; i <= alumnos; i++) {
+
+            System.out.print("Nota del alumno " + i + ": ");
+            nota = sc.nextInt();
+
+            if (nota >= 5) {
+                totalA++;
+                if (nota == 10) {
+                    excelente++;
+                }
+            } else {
+                totalS++;
+                if (nota == 0) {
+                    suspenso++;
+                }
+            }
+        }//for
+
+        porcentajeA = (totalA * 100) / alumnos;
+        porcentajeS = (totalS * 100) / alumnos;
+
+        System.out.println("Total Aprobados: " + totalA);
+        System.out.println("Dieces: " + excelente);
+        System.out.println("Total Suspensos: " + totalS);
+        System.out.println("Ceros: " + suspenso);
+        System.out.println("Porcentaje de aprobados: " + porcentajeA + "%");
+        System.out.println("Porcentaje de suspensos: " + porcentajeS + "%");
+    }
+}
