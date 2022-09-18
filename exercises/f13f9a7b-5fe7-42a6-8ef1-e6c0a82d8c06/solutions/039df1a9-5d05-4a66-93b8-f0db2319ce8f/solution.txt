@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class FSusituirCaracteres {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String frase;
+        char caracter1;
+        char caracter2;
+
+        int numCasos = 0;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            caracter1 = sc.next().charAt(0);
+            caracter2 = sc.next().charAt(0);
+            sc.nextLine();
+            frase = sc.nextLine();
+            System.out.println(cambiaCaracter(frase,caracter1,caracter2));
+        }
+
+    }
+
+    public static String cambiaCaracter(String frase, char origen, char destino) {
+        String cadenaResultado = "";
+        
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) == origen) {
+                cadenaResultado = cadenaResultado + destino;
+            } else {
+                cadenaResultado = cadenaResultado + frase.charAt(i);
+            }
+        }
+
+        return cadenaResultado;
+    }
+}
