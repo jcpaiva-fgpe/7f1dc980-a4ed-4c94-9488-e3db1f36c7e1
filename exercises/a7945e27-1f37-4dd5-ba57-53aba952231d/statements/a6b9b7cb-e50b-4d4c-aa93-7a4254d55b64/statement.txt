@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I 'Terra Mítica' vill du veta hur många som har besökt nöjesparken på en dag.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Besökare måste ange sin ålder när de kommer in:&nbsp;</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Om din ålder är mindre än eller lika med 4 är entrén gratis,</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Om åldern är mellan 5 och 12 år (ingår) kommer biljetten att kosta €20, och</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Om åldern överstiger 12 kostar biljetten 40 €.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Skåpet stängs när kassan går in i en ålder lika med -1.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ange antalet barn under 4 år (inklusive 4), antalet barn mellan 5 och 12 år (inklusive båda) och antalet vuxna.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den visar också det totala antalet personer som har gått in och rutan som har gjorts i slutet av dagen.</font></font></p></body></html>
