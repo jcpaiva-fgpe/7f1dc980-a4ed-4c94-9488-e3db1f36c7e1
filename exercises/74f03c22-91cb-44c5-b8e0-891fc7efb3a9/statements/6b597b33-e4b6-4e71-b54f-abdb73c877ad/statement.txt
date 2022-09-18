@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hem pozitif hem de negatif tabanları ve hem pozitif hem de negatif üsleri olan bir tam sayı dizisinin gücünü hesaplayan bir Java programı yapmak istiyoruz.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dikkat</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0'a yükseltilmiş herhangi bir sayı 1'e eşittir</font></font></li> 
+         <li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Negatif bir üsse yükseltilmiş bir sayının gücü eşittir (1 / pozitif bir üsse yükseltilmiş sayı)</font></font></strong></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">örnekler</font></font></strong></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 üzeri 3'ün kuvveti 8'dir</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 üzeri 3'ün kuvveti 27'dir</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-3 üzeri 3'ün kuvveti -27'dir</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2, -4'e yükseltildi, 0,0625</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Durumların her biri, -100 ≤&nbsp; </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ,&nbsp; </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">B</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &nbsp;≤ 100, taban ve üs olmak üzere iki farklı tam sayıdan oluşur.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÇIKIŞ</font></font></strong></h3> 
+        <p>Por cada caso de prueba, el programa el resultado de la potencia, que será un <strong>double</strong>.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Deberá resolverse el problema diseñando una función&nbsp;que reciba 2&nbsp;números enteros y devuelva el resultado de la potencia de elevar el primero al segundo.&nbsp;</p> 
+        <p><strong>NO</strong> se puede utilizar la función <strong>Math.pow</strong> ni ninguna otra que resuelva el problema, sino que éste debe ser resuelto algorítmicamente por ti en la función.</p> 
+        <p>Aunque Juez-LTI no lo va a tener en cuenta, RESUELVELO haciendo uso de la función dentro de la propia función, para resolver las potencias de exponente negativo (<strong>La potencia de un número elevado a un exponente negativo es igual a (1 / número elevado a exponente positivo</strong>)</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana program, her durum için sayıları klavyeyle isteyecek ve sorunu çözmek için işlevi kullanacak, ardından işlev tarafından hesaplanan ve döndürülen sonucu yazdıracaktır.</font></font></p></body></html>
