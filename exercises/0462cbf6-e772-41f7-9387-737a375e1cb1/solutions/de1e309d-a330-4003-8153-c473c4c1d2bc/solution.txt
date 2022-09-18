@@ -1,0 +1,170 @@
+package ayudaspalma;
+
+import java.util.Scanner;
+
+public class AyudasPalma {
+    
+    static Scanner sc = new Scanner(System.in);
+        
+    public static void main(String[] args) {
+        int tipoAyuda;
+        long cuantiaTotal = 0, cuantiaSolicitada;
+        
+        do {
+            mostrarMenu();
+            tipoAyuda = sc.nextInt();
+            if(tipoAyuda >= 1 && tipoAyuda <= 3) {
+                System.out.println("Cantidad solicitada: ");
+                cuantiaSolicitada = sc.nextLong();
+                sc.nextLine();
+                System.out.println("Referencia catastral: ");
+                if(catastroValido(sc.nextLine())) {
+                    cuantiaTotal += cuantiaOtorgada(tipoAyuda, cuantiaSolicitada);
+                }
+            }
+            
+        } while (tipoAyuda != 0);
+
+        System.out.println("Se han concedido ayudas por un total de: " + cuantiaTotal);
+    }
+
+    static void mostrarMenu() {
+        System.out.println("MENU AYUDAS");
+        System.out.println("1.- Por destruccion total de la vivienda habitual");
+        System.out.println("2.- Por danos que afecten a la estructura de la vivienda habitual");
+        System.out.println("3.- Por danos que no afecten a la estructura de la vivienda habitual");
+        System.out.println("0.- Salir");
+        System.out.println("Elija un tipo de ayuda (0-3)");
+    }
+    
+    static long cuantiaOtorgada(int tipoAyuda, long cuantiaSolicitada) {
+        long cuantiaMaxima = 0;
+        
+        switch(tipoAyuda){
+            case 1:
+                cuantiaMaxima = 30240;
+                break;
+            case 2: 
+                cuantiaMaxima = 20640;
+                break;
+            case 3: 
+                cuantiaMaxima = 10320;
+                break;
+        }
+        if(cuantiaSolicitada > cuantiaMaxima) {
+            cuantiaSolicitada = cuantiaMaxima;
+        }
+        return cuantiaSolicitada;
+    }
+
+    private static boolean catastroValido(String refCatastral) {
+        boolean refValida = false;
+        int provincia = getProvincia(refCatastral);
+        if(provincia == 38) {
+            int municipio = getMunicipio(refCatastral);
+            if((municipio == 24) || (municipio == 27) || (municipio == 45)) {
+                if (validarAlgoritmoCatastro(refCatastral)) {
+                    refValida = true;
+                }
+            }
+        }
+        return refValida;
+    }
+
+    private static int getProvincia(String refCatastral) {
+        return Integer.parseInt("" + refCatastral.charAt(0) + refCatastral.charAt(1));
+    }
+
+    private static int getMunicipio(String refCatastral) {
+        return Integer.parseInt("" + refCatastral.charAt(2) + refCatastral.charAt(3) + refCatastral.charAt(4));
+    }
+    
+    private static boolean validarAlgoritmoCatastro(String refCatastral) {
+        boolean res = false;
+
+        //Sólo se comprueban las referencias catastrales con 20 carácteres alfanuméricos,
+        //los dos últimos corresponden a los dÃ­gitos de control.
+        if (refCatastral != null && refCatastral.length() == 20) {
+            refCatastral = refCatastral.toUpperCase();
+
+            //Para calcular cada dÃ­gito de control se utilizan siguientes subcadenas
+            String cadenaPrimerDC = (refCatastral.substring(0, 7) + refCatastral.substring(14, 18));
+            String cadenaSegundoDC = (refCatastral.substring(7, 14) + refCatastral.substring(14, 18));
+
+            String dcCalculado = "";
+            dcCalculado += getCaracterControl(cadenaPrimerDC);
+            dcCalculado += getCaracterControl(cadenaSegundoDC);
+
+            if (dcCalculado.equals(refCatastral.substring(18, 20))) {
+                res = true;
+            }
+        }
+        return res;
+
+    }
+
+    static char getCaracterControl(String cadenaCC) {
+        int sumaDigitos = 0;
+        
+        String letraDc = "MQWERTYUIOPASDFGHJKLBZX";
+        /*
+        Para el cálculo de cada dÃ­gito de control, se deben de sumar cada
+        uno de los carácteres de cada cadena.
+        Si el carácter no es numérico el valor corresponde de la siguiente
+        manera: A = 1, B = 2, ..., Z = 27.
+        */
+        for(int posicion = 0; posicion < cadenaCC.length(); posicion++) {
+            int caracter = cadenaCC.charAt(posicion);
+            if(caracter >= 'A' && caracter <= 'Z') {
+                caracter = caracter - 'A' + 1;
+            } else {
+                caracter = caracter - '0';                
+            }
+            sumaDigitos += caracter * pesoPosicion(posicion);
+        }
+        sumaDigitos %= 23;
+        return letraDc.charAt(sumaDigitos);
+    }
+    
+    static int pesoPosicion(int posicion) {
+        int peso = 0;
+        // 13, 15, 12, 5, 4, 17, 9, 21, 3, 7, 1
+        switch(posicion) {
+            case 0:
+                peso = 13;
+                break;
+            case 1:
+                peso = 15;
+                break;
+            case 2:
+                peso = 12;
+                break;
+            case 3:
+                peso = 5;
+                break;
+            case 4:
+                peso = 4;
+                break;
+            case 5:
+                peso = 17;
+                break;
+            case 6:
+                peso = 9;
+                break;
+            case 7:
+                peso = 21;
+                break;
+            case 8:
+                peso = 3;
+                break;
+            case 9:
+                peso = 7;
+                break;
+            case 10:
+                peso = 1;
+                break;
+        }
+        return peso;
+    }
+    
+}
