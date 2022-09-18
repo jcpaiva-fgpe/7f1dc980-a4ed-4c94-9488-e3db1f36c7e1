@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Crear varios objetos de la misma clase</h2>
+
+<p>Ejemplo:</p>
+
+<p>Podemos crear varias instancias de la clase nombrada <code>SubClase</code>:</p>
+
+<blockquote>
+<p><code>package oop;</code></p>
+
+<p><code>public class OOP {<br>
+<br>
+&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SubClase obj1 = new SubClase();</strong></code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SubClase obj2 = new SubClase();</strong></code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(<strong>obj1.x</strong>);</code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(<strong>obj2.x</strong>);</code><br>
+<code>&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+
+<p><code>class SubClase {<br>
+&nbsp; int x = 5;<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Crea dos objetos de la clase Modulo, que desarrollaste en el ejercicio anterior, y escribe, desde el método main(), el valor de las dos notas.</p>
+
+<p><small><strong>Nota:</strong> De momento el valor de la nota de todas las instancias que se creen de la clase Modulo será el mismo. Más adelante veremos como asignar una calificación diferente a cada módulo.</small></p></body></html>
