@@ -1,0 +1,11 @@
+package variables;
+
+public class Variables {
+
+    public static void main(String[] args) {
+        int miCalificacion;
+        miCalificacion = 10;
+        System.out.println("Mi nota en PROGRAMACION es: " + miCalificacion);
+    }
+    
+}
