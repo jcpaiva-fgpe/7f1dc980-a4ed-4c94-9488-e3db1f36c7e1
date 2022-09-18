@@ -1,0 +1,25 @@
+package operadores;
+
+import java.util.Scanner;
+
+
+public class Operadores {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      boolean a=false, b=false;
+      Scanner teclado = new Scanner(System.in);
+      
+      // Lectura de los numeros por teclado
+      a = teclado.nextBoolean();
+      b = teclado.nextBoolean();
+      
+      System.out.println(a && b);
+      System.out.println(a || b);
+      System.out.println(!a);
+      System.out.println(a ^ b);
+    }
+    
+}
