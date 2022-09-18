@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Biletleri yönetin.</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menü seçenekleriyle birlikte GİRİŞLERİ YÖNET menü öğesini oluşturur:</font></font></p> 
+        <ul> 
+         <li><code>6. Vender entradas</code></li> 
+         <li><code>7. Devolver entradas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bilet satmak</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Satın almak istediğiniz bilet sayısını klavye ile talep etmelisiniz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girilen girdilerin sayısı </font></font><code>venderEntradas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sınıf yöntemine gönderilecek </font></font><code>SalaCine</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ve söz konusu yöntemin istisna atıp atmadığını kontrol etmesi gerekiyor </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yöntem </font></font><code>public void venderEntradas(int numeroEntradas)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zaten dolu olan biletlerin sayısı artı satılan biletlerin sayısının kapasiteyi aşıp aşmadığını kontrol eder, bu durumda sınıfın yeni bir istisna nesnesi atılır </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li> 
+         <li><font style="vertical-align: inherit;"></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">giriş sayısı negatifse </font><font style="vertical-align: inherit;">istisna da atılır .</font></font></li> 
+         <li>si se cumplen los requisitos, se utilizará el método <code>setButacasOcupadas</code> para indicar que el número de butacas ocupadas se ha incrementado en el número de entradas vendidas.</li> 
+        </ul> 
+        <h3>Devolver entradas</h3> 
+        <p>Debe solicitar, por teclado, el número de entradas que se está solicitando devolver.</p> 
+        <p>El número de entradas introducido se enviará al método <code>devolverEntradas</code> de la clase <code>SalaCine</code>, debiendo controlar si dicho método lanza la excepción <code>IllegalArgumentException</code>.</p> 
+        <p>El método <code>public void devolverEntradas(int numeroEntradas)</code>:</p> 
+        <ul> 
+         <li>comprueba si el número de entradas que se intenta devolver es mayor que el número de butacas ocupadas , en cuyo caso se lanzaría un nuevo objeto excepción de la clase <code>IllegalArgumentException</code>.</li> 
+         <li>también se lanzaría la excepción <code>IllegalArgumentException</code> en el caso de que el número de entradas fuera negativo.</li> 
+         <li><font style="vertical-align: inherit;"></font><code>setButacasOcupadas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gereklilikler karşılanırsa, dolu koltuk sayısının iade edilen bilet sayısı kadar azaldığını belirtmek </font><font style="vertical-align: inherit;">için yöntem kullanılacaktır .</font></font></li> 
+        </ul></body></html>
