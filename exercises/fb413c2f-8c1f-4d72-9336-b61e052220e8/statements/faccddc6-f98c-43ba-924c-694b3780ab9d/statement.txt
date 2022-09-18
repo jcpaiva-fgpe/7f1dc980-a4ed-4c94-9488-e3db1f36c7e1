@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir sayının faktöriyelini hesaplayan bir Java programı yapmak istiyoruz. </font><font style="vertical-align: inherit;">Aşağıdaki </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=tr&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Factorial" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">linkte</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> bir sayının faktöriyelinin nasıl hesaplanacağı hakkında bilgi var.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NOT:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5'in faktöriyeli 5 * 4 * 3 * 2 * 1 = 120'dir.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0'ın faktöriyeli 1'dir.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faktöriyel hesaplamak için bir çift kullanın.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işlenmesi gerektiğini belirten bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sonraki her durum için bir satır olacaktır, burada her durum basitçe faktöriyelin hesaplanacağı sayıdır. </font><font style="vertical-align: inherit;">Her sayı, n &gt;=0 ve n&lt;=100 olan bir n tamsayısı olacaktır.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÇIKIŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her bir test durumu için program, sayının faktöriyelinin hesaplanmasının sonucunu yazacaktır.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KISITLAMALAR</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Girilen sayının faktöriyelini parametre olarak hesaplayan ve döndüren bir fonksiyon tasarlanarak problem çözülmelidir.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Söz konusu işlevin başlığı veya arayüzü MUST CONTAIN bölümünde sağlanır.&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana program klavye girişini işleyecek, işlevi çağıracak ve onun tarafından hesaplanan ve döndürülen sonucu yazdıracaktır.</font></font></p></body></html>
