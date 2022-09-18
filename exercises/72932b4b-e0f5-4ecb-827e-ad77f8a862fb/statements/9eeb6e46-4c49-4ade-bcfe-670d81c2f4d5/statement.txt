@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>if</h2>
+
+<p>La estructura <strong>if</strong> es una estructura de selección, en la que se evalúa una expresión lógica y, en función del resultado, se ejecuta una sentencia o un bloque de éstas.</p>
+
+<h3>Sintaxis:</h3>
+
+<blockquote>
+<p><code>if (expresión-lógica) {<br>
+&nbsp;&nbsp;&nbsp; sentencia1;<br>
+&nbsp;&nbsp;&nbsp; sentencia2;<br>
+&nbsp;&nbsp;&nbsp; …;<br>
+&nbsp;&nbsp;&nbsp; sentenciaN;<br>
+}</code></p>
+</blockquote>
+
+<h3>Funcionamiento</h3>
+
+<p>Si la evaluación de la expresión-lógica ofrece un resultado verdadero, se ejecuta el bloque de sentencias asociado. Si el resultado de dicha evaluación es falso, no se ejecutará ninguna instrucción asociada a la estructura condicional.</p>
+
+<p><em><small>Aunque, en el caso de que se tenga que ejecutar una única sentencia, sea posible evitar la utilización de las llaves, se aconseja incluir siempre las llaves, aunque sea para encerrar una única sentencia.</small></em></p>
+
+<h3>Ejemplo:</h3>
+
+<p>En el siguiente ejemplo, se escribirá el texto 'APROBADO' en el caso de que el valor asignado a la variable nota sea mayor o igual que 5.</p>
+
+<blockquote>
+<p><code>...<br>
+int nota = 7;<br>
+if(nota &gt;= 5) {<br>
+&nbsp;&nbsp;&nbsp; System.out.println("APROBADO");<br>
+}<br>
+...</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Desarrolla una aplicación que lea 2 notas del teclado y, por cada una de ellas, escribirá el texto "APROBADO" únicamente en el caso de que la nota introducida sea mayor o igual que 5.</p>
+
+<p>Independientemente de si hemos escrito el texto "APROBADO" o no, tras cada una de las calificaciones debe aparecer una cadena como esta "========", como se muestra en el OUTPUT.</p></body></html>
