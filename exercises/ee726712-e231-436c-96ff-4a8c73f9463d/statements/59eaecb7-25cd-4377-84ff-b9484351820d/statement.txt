@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Implemente o método </font></font></strong><br> <tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp; private static void removeHosted() </font></font></tt><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este método:</font></font></strong></p> 
+        <p>&nbsp;</p> 
+        <ul> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ele solicitará o nome de um host pelo teclado.</font></font></p> </li> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ele usará o método </font></font><tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">private static int findHosted(String hostName)</font></font></tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> para encontrar a posição na matriz hosts </font></font><tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[]</font></font></tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> onde o host com esse nome é encontrado. </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">* </font></font></em><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Observe que o método findHosted() já está implementado.</font></font></em></p> </li> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A remoção do host ocorrerá movendo para a esquerda todos os hosts que foram armazenados da posição retornada pelo método anterior.</font></font></p> 
+          <table cellpadding="4" cellspacing="0" style="width:100%"> 
+           <tbody> 
+            <tr> 
+             <td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">antes de eliminar A3</font></font></p> </td> 
+             <td style="border-style:none"> <p>&nbsp;</p> </td> 
+             <td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">depois de eliminar A3</font></font></p> </td> 
+            </tr> 
+            <tr> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A1</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A2</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A3</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A4</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PARA 5</font></font></p> </td> 
+             <td style="border-bottom:none; border-left:1px solid #000000; border-right:none; border-top:none"> <p>&nbsp;</p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A1</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A2</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A4</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PARA 5</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nulo</font></font></p> </td> 
+            </tr> 
+           </tbody> 
+          </table> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A variável </font></font><code>numAcogidos</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">deve ser decrementada para cada host removido do array.</font></font></li> 
+        </ul></body></html>
