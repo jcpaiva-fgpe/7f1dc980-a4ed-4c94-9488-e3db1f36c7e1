@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Definición</h3>
+
+<p>Según la wikipedia, la <a href="https://es.wikipedia.org/wiki/Recursi%C3%B3n">recursividad</a> es la forma en la cual se específica un proceso basado en su propia definición.</p>
+
+<p>El árbol que se muestra a continuación es un árbol recursivo, ya que cada rama es, a su vez el inicio de otro árbol.</p>
+
+<p><img alt="recursive tree" src="https://miro.medium.com/max/1000/1*TiJl4Rh47os3hVGoWMwhJQ.gif" style="height:546px; width:600px"></p>
+
+<p>En programación se dice que una función recursiva es aquella que se llama a sí misma.</p>
+
+<p>&nbsp;
+</p><h3>Ejemplo</h3>
+<p></p>
+
+<p>En un ejercicio anterior, se pidió la realización de una función que calculara el factorial de un número. Una posible solución utilizando la programación imperativa es la siguiente:</p>
+
+<blockquote>
+<p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 1; i &lt;= numero; i++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = resultado * i;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+</blockquote>
+
+<p>En realidad, el cálculo del factorial de un número también se puede expresar de la siguiente forma:</p>
+
+<p><img alt="" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc7c912b34ffe06bb047d66c307c104237adef5" style="height:49px; width:360px"></p>
+
+<p>Como podemos observar, el factorial de n se puede calcular en función del factorial de n-1. Por lo tanto, el ejercicio anterior se podría resolver como:</p>
+
+<blockquote>
+<p><code>&nbsp;&nbsp;&nbsp; static double factorial (int numero){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double resultado = 1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (numero &lt;= 0) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = 1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado = numero * factorial(numero - 1);</code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return resultado;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+</blockquote>
+
+<h3>Ventajas e inconvenientes</h3>
+
+<p><strong>Ventajas:</strong></p>
+
+<ul>
+	<li>El diseño de una función recursiva es más fácil de realizar.</li>
+	<li>Se facilita la lectura.</li>
+	<li>El código es más breve.</li>
+</ul>
+
+<p><strong>Inconvenientes:</strong></p>
+
+<ul>
+	<li>Es menos eficiente que su equivalente imperativo.</li>
+	<li>Consume más memoria.</li>
+</ul>
+
+<h3>Ejercicio</h3>
+
+<p>Realiza una aplicación que calcule los productos de dos números naturales introducidos por teclado, utilizando para ello la función recursiva <code>multiplica(multiplicando, multiplicador)</code>.</p>
+
+<p>El programa terminará cuando alguno de los dos operandos sea menor o igual que 0.</p></body></html>
