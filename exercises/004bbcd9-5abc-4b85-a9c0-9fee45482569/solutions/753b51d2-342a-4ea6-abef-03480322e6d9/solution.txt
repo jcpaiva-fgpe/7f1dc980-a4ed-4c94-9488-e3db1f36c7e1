@@ -1,0 +1,86 @@
+package numeroscapicua;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author AulaVirtual
+ */
+public class NumerosCapicua {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+        int numCasos = 0;
+        int caso = -1;
+
+        int[] cifras;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            caso = sc.nextInt();
+
+            try {
+                cifras = descomponerNumero(caso);
+                if (esCapicua(cifras)) {
+                    System.out.println("CAPICUA");
+                } else {
+                    System.out.println("NO CAPICUA");
+                }
+            } catch (IllegalArgumentException ex) {
+                System.out.println("El numero NO puede ser negativo");
+            }
+        }
+
+    }
+
+    public static int cantidadCifras(int numero) {
+        int numCifras = 0;
+
+        if (numero < 0) {
+            throw new IllegalArgumentException();
+        } else {
+            while (numero >= 10) {
+                numero = numero / 10;
+                numCifras++;
+            }
+            return numCifras + 1;
+        }
+    }
+
+    public static int[] descomponerNumero(int numero) throws IllegalArgumentException {
+        int numCifras = cantidadCifras(numero);
+
+        int[] arrayNumero = new int[numCifras];
+
+        for (int i = numCifras - 1; i >= 0; i--) {
+            arrayNumero[i] = numero % 10;
+            numero = numero / 10;
+        }
+
+        return arrayNumero;
+    }
+
+    public static boolean esCapicua(int[] numero) {
+        boolean respuesta = true;
+
+        int i = 0;
+        int j = numero.length - 1;
+
+        while (i < numero.length && respuesta == true) {
+            if (numero[i] != numero[j]) {
+                respuesta = false;
+            }
+            i++;
+            j--;
+        }
+
+        return respuesta;
+    }
+
+}
