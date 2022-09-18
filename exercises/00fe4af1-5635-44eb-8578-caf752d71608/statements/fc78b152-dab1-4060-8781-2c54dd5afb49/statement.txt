@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir tamsayı dizisinin sırasını kontrol eden ve dizinin ASCENDING, DESCENDING veya sırasız olup olmadığını söyleyen bir Java programı yazın.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{1, 2, 3, 4, 5, 6, 7, 8, 9, 10} tamsayı dizisi verildiğinde, bunun bir YÜKSELİŞ dizi olduğunu söyleyecektir.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{10, 9, 8, 7, 6, 5, 4, 3, 2, 1} tamsayıları dizisi göz önüne alındığında, bunun AZALTAN sırada bir dizi olduğunu söyleyecektir.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{10, 9, 8, 2, 6, 5, 4, 3, 2, 1} tamsayı dizisi verildiğinde, bunun SİPARİŞ VERİLMEYEN bir dizi olduğunu söyleyecektir.</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her vaka aşağıdakilerden oluşacaktır:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L &gt; 0 olmak üzere dizi öğelerinin L numaralı ilk satırı</font></font></li> 
+         <li>Una segunda con los L&nbsp;elementos de dicho array separados por un espacio.&nbsp;</li> 
+        </ul> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá ASCENDENTE, DESCENDENTE o SIN ORDEN, según el orden que tenga el array analizado.</p> 
+        <p>En aquellos casos especiales en los que todos los elementos del array son iguales,&nbsp;la respuesta que daremos será que el array no tiene orden.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p> 
+        <ul> 
+         <li>Una función que reciba un array de enteros y devuelva un booleano diciendo si el orden del array es ascendente o no.</li> 
+         <li>Una función que reciba un array de enteros y devuelva un booleano diciendo si el orden del array es descendente&nbsp;o no</li> 
+        </ul> 
+        <p>El programa principal, para cada caso, imprimirá el tipo de orden del array: ASCENDENTE, DESCENDENTE o SIN ORDEN.</p> 
+        <h3><strong>OPTIMIZACIÓN ALGORÍTMICA</strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JuezLTI, egzersizin doğru olup olmadığına karar verirken bunu dikkate almayacak, ancak mümkün olan en uygun şekilde programlamaya çalışacağız </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, uygulama süresini mümkün olduğunca azaltacağız</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dizide sıralı olmayan bir öğe bulduğunuzda, sıralı olmadığını bilmek için sonuna kadar devam etmenize gerek olmadığını akılda tutarak işlevlerinizi programlamalısınız.</font></font></p> 
+        <p>&nbsp;</p></body></html>
