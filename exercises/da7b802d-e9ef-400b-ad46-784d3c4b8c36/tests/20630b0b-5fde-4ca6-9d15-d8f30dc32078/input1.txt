@@ -1,0 +1,17 @@
+1
+Sala1
+-100
+1
+Sala1
+100
+3
+1
+Sala2
+150
+3
+2
+minicine
+3
+2
+Sala1
+0
