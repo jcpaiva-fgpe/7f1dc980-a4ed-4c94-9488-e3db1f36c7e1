@@ -1,0 +1,11 @@
+5
+Estas 2 cadenas son iguales
+Estas 2 cadenas son iguales
+Estas 2 no lo son
+Estas 2 no lo soN
+Volvemos a hacer un caso que sea igual
+Volvemos a hacer un caso que sea igual
+Estas tampoco porque no tienen el mismo tamanyo
+porque esta es mas corta
+Esta es en minuscula
+ESTA ES EN MINUSCULA
