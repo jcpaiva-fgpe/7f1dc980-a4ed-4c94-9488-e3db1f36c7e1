@@ -1,0 +1,61 @@
+package radar;
+
+import java.util.Scanner;
+
+public class Radar {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int dist;
+        int v_max;
+        int time;
+        int pts;
+        float v_real;
+        int exceso;
+        String texto = "";
+
+        dist = sc.nextInt();
+        v_max = sc.nextInt();
+        time = sc.nextInt();
+
+        while (dist != 0 && v_max != 0 && time != 0) {
+
+            v_real = (float) (dist * 3.6 / time);
+            exceso = (int) ((v_real - v_max) / 10);
+
+            if (exceso >= 0 && v_real > v_max) {
+
+                switch (exceso) {
+
+                    case 0:
+                        pts = 0;
+                        texto = "MULTA - " + pts + " puntos";
+                        break;
+                    case 1:
+                        pts = 2;
+                        texto = "MULTA - " + pts + " puntos";
+                        break;
+                    case 2:
+                        pts = 4;
+                        texto = "MULTA - " + pts + " puntos";
+                        break;
+                    case 3:
+                        pts = 7;
+                        texto = "MULTA - " + pts + " puntos";
+                        break;
+                    default:
+                        pts = 10;
+                        texto = "MULTA - " + pts + " puntos";
+                }
+            } else {
+                texto = "OK";
+            }
+            System.out.println(texto);
+            dist = sc.nextInt();
+            v_max = sc.nextInt();
+            time = sc.nextInt();
+        }
+    }
+
+}
