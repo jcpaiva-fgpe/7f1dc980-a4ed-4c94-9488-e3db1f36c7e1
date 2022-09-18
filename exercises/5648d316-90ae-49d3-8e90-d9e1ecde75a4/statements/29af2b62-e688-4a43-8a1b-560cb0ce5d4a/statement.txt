@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Operadores <strong>especiales de asignación</strong>.</h3>
+
+<p><strong>Operadores de incremento y decremento.</strong></p>
+
+<p>Las operaciones de incremento o decremento funcionan de la siguiente manera. Supongamos la variable a, de tipo int:</p>
+
+<ul>
+        <li>a++ es equivalente a hacer a = a + 1</li>
+        <li>++a es equivalente a hacer a = a + 1</li>
+        <li>a-- es equivalente a hacer a = a - 1</li>
+        <li>--a es equivalente a hacer a = a - 1</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>¿Hay&nbsp; alguna diferencia entre a++ y ++a? Evidentemente, sí:</p>
+
+<ul>
+        <li>a++ : primero usa el valor de a en la operación correspondiente, y luego incrementa en 1 dicho valor de a</li>
+        <li>++a : primero incrementa en 1 el valor de a y después usa dicho valor incrementado en la operación correspondiente</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Con los decrementos sucede lo mismo:</p>
+
+<ul>
+        <li>a-- : primero usa el valor de a en la operación correspondiente, y luego decrementa en 1 dicho valor de a</li>
+        <li>--a : primero decrementa en 1 el valor de a y después usa dicho valor decrementado en la operación correspondiente</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+        <caption>Operadores de incremento/decremento</caption>
+        <thead>
+                <tr>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">OPERADOR</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">USO</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">OPERACIÓN</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">EJEMPLO</th>
+                        <th scope="col" style="background-color:#9e9e9e; text-align:center">RESULTADO</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td style="text-align:center">++</td>
+                        <td style="text-align:center">a++ ó ++a</td>
+                        <td style="text-align:center">Incremento</td>
+                        <td style="text-align:center">
+                        <p>a = 8</p>
+
+                        <p>a++</p>
+                        </td>
+                        <td style="text-align:center">a = 9</td>
+                </tr>
+                <tr>
+                        <td style="text-align:center">--</td>
+                        <td style="text-align:center">a-- ó --a</td>
+                        <td style="text-align:center">Decremento</td>
+                        <td style="text-align:center">
+                        <p>a = 8</p>
+
+                        <p>a--</p>
+                        </td>
+                        <td style="text-align:center">7</td>
+                </tr>
+        </tbody>
+</table>
+
+<h3>Ejercicio:</h3>
+
+<p>Lee del teclado 1 número entero y muestra el entero inmediatamente superior y el entero inmediatamente inferior.</p></body></html>
