@@ -1,0 +1,123 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Una de las ventajas más importantes de la descomposición funcional es la de adaptarse a nuevos requisitos.</p>
+
+<p>El código que se muestra a continuación solicita DNI o NIE y nos indica si la letra final que contiene es válida o no es válida.</p>
+
+<p><br>
+<code>package validadni;</code></p>
+
+<p><code>import java.util.Scanner;</code></p>
+
+<p><code>public class ValidaDNI {</code></p>
+
+<p><code>&nbsp; &nbsp;&nbsp;<br>
+&nbsp; &nbsp; <strong>static Scanner sc = new Scanner(System.in);</strong><br>
+&nbsp; &nbsp;&nbsp;<br>
+&nbsp; &nbsp; public static void main(String[] args) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; String dni_nie, tipo, dni;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; long numero;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; char letra;</code></p>
+
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp; while (!(dni_nie = leeDniNie()).equals("0")) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (esNIE(dni_nie)) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dni = convierteNIE(dni_nie);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tipo = "NIE";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dni = dni_nie;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tipo = "DNI";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (esValido(dni)) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; escribeMensajeValido(tipo);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; escribeMensajeNoValido(tipo);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static String leeDniNie() {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; return (sc.nextLine()).toUpperCase();<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static boolean esNIE(String dni_nie) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; char primera;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; boolean esNieBoolean = false;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; primera = dni_nie.charAt(0);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; if (primera == 'X' || primera == 'Y' || primera == 'Z') {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; esNieBoolean = true;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; return esNieBoolean;<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static String convierteNIE(String dni_nie) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; String numeroLetra;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; char letraNIE = dni_nie.charAt(0);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; switch (letraNIE) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case 'X':<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; numeroLetra = "0";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case 'Y':<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; numeroLetra = "1";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case 'Z':<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; numeroLetra = "2";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default:<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; numeroLetra = "9999";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; return numeroLetra + dni_nie.substring(1);<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static long getNumero(String dni) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; return Integer.parseInt(dni.substring(0, dni.length() - 1));<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static char getLetra(String dni) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; return dni.charAt(dni.length() - 1);<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static boolean esValido(String dni) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; char letraControl;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; long numero = getNumero(dni);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; char letra = getLetra(dni);<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; boolean valido = false;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; if (numero &lt;= 99999999) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int resto = (int) numero % 23;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; String letras = "TRWAGMYFPDXBNJZSQVHLCKE";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; letraControl = letras.charAt(resto);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; valido = (letra == letraControl);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp; return valido;<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static void escribeMensajeValido(String tipo) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(tipo + " Validado");<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>&nbsp; &nbsp; static void escribeMensajeNoValido(String tipo) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(tipo + " No validado");<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>}</code></p>
+
+<h3>Atención</h3>
+
+<p>Fíjate en la declaración y en la posición del objeto Scanner.</p>
+
+<p><code>&nbsp; &nbsp; <strong>static Scanner sc = new Scanner(System.in);</strong></code></p>
+
+<p>Con esa instanciación del objeto Scanner, podemos usar <code>sc</code> en cualquier método de la clase.</p>
+
+<h3>Ejercicio</h3>
+
+<p>Nos piden modificar la aplicación para que, en lugar de que la letra final la facilite el usuario, será el programa el que la asocie al final del número que escribe el usuario.</p>
+
+<p>Crea la función letraDNI que recibe un String con un NIE o DNI, los cuales no incluyen la letra final y devuelve la letra que le corresponde a ese número.</p>
+
+<p>De momento, la función mostrará, en el OUTPUT, el DNI o NIE completo.</p>
+
+<p>Además deberás invocar a dicha función en el lugar apropiado para que siempre indique que el DNI o NIE es válido.</p>
+
+<p>Si necesitas transformar el String que contiene el DNI en su valor numérico puedes utilizar <code>Integer.parseInt(dni)</code>.</p>
+
+<p>&nbsp;</p></body></html>
