@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Vamos a gestionar salas de cine, aunque, de momento, solamente gestionaremos una sala.</p>
+
+<p>Para ello, vamos a crear una clase <code>SalaCine</code>, que tendrá, como propiedades, las siguientes:</p>
+
+<ul>
+	<li><code>&nbsp;&nbsp;&nbsp; String nombre;</code></li>
+	<li><code>&nbsp;&nbsp;&nbsp; int aforo;</code></li>
+	<li><code>&nbsp;&nbsp;&nbsp; int butacasOcupadas;</code></li>
+	<li><code>&nbsp;&nbsp;&nbsp; String pelicula;</code></li>
+	<li><code>&nbsp;&nbsp;&nbsp; double precioEntrada;</code></li>
+</ul>
+
+<p>A ninguna de estas propiedades se puede acceder desde el exterior, por lo que habrá que generar los <em>getter</em> y <em>setter</em> estándar para el acceso a dichas propiedades a través de métodos de la clase.</p>
+
+<p>La clase contará también con dos constructores:</p>
+
+<ul>
+	<li>Constructor sin argumentos: inicializará las propiedades con los siguientes valores:
+	<ul>
+		<li>nombre = "Sala";</li>
+		<li>aforo = 100;</li>
+		<li>butacasOcupadas = 0;</li>
+		<li>pelicula = "";</li>
+		<li>precioEntrada = 0.00;</li>
+	</ul>
+	</li>
+	<li>Constructor con parámetros <em>nombre</em> y <em>aforo</em>: inicializará las propiedades nombre y aforo a los valores provistos en la invocación. No obstante, se controlará que el aforo no sea negativo, en cuyo caso, se lanzará <a href="https://www.tutorialesprogramacionya.com/javaya/detalleconcepto.php?punto=85&amp;codigo=165&amp;inicio=80" target="_blank">un nuevo objeto excepción de la clase <code>IllegalArgumentException</code></a>. El resto de las propiedades se inicializarán a los ya vistos en el constructor sin parámetros.</li>
+</ul>
+
+<p>Desde el <code>main()</code> de la clase principal se declarará un objeto de la clase <strong>SalaCine</strong>, el cual se inicializar a <code>null</code>;</p>
+
+<p>A continuación, se solicitará al usuario que introduzca el nombre de la Sala y el aforo. Con estos datos, se utilizará el constructor con parámetros para inicializar un objeto de la clase <strong>SalaCine</strong>.</p>
+
+<p>Posteriormente, se mostrará la información disponible del objeto recién creado: su nombre y su aforo, utilizando, para ello los <em>getter</em> correspondientes.</p>
+
+<p>Finalmente, se eliminará el objeto igualándolo a null.</p></body></html>
