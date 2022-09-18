@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eurokonverterare med funktioner</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vi vill göra ett Java-program som gör att vi kan byta från euro till pesetas och vice versa. </font><font style="vertical-align: inherit;">För att göra detta kommer användaren att ange ett av följande alternativ:</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. Gå från pesetas till euro</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Konvertera från euro till pesetas</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. Avsluta</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Efter att ha angett ett av alternativen kommer användaren att ange ett nummer, vilket kommer att vara det belopp som ska konverteras, i euro eller pesetas, beroende på det valda alternativet.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">För euro kommer vi att använda decimaltal (flytande) med två decimaler, medan vi för pesetas använder heltal (int)</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Slutligen kommer resultatet av konverteringen att visas.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Detta kommer att upprepas tills användaren bestämmer sig för att lämna programmet med alternativet "Avsluta".</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Motsvarighet: 1 euro = 166 386 pesetas</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INTRÄDE</font></font></strong></h3> 
+        <p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p> 
+        <p>A continuación habrá una línea para cada caso.</p> 
+        <p>Cada línea será una secuencia de opción de conversión y cantidad a convertir (en pesetas o euros, según la opción), donde cada cantidad será un número entre 0 y 10000,&nbsp;hasta que se pulse la opción 3. Es decir, cada línea termina con la opción 3.</p> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá el resultado para cada conversión del caso con el texto que puede observarse en el OUTPUT.</p> 
+        <p>Entre caso y caso, se imprimirá la frase "SIGUIENTE CASO", tal y como puede observarse en el OUTPUT.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se deberá implementar una función que reciba un float&nbsp;y un entero y redondee el float con el número de decimales que se hayan indicado en el número entero.&nbsp;Para saber cómo hacer esto, visita <a href="https://translate.google.com/website?sl=es&amp;tl=sv&amp;hl=es&amp;client=webapp&amp;u=https://www.delftstack.com/es/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/" target="_blank">este enlace</a>. En el enlace te explica cómo redondear a 2 decimales. Deberás generalizar el problema a redondear a N decimales, obteniendo así una función más reutilizable.</p> 
+        <p>Deberá resolverse el problema diseñando dos funciones más, una que pase de pesetas a euros y otra que pase de euros a pesetas.</p> 
+        <p>Se proporcionan las cabeceras o interfaces de dichas funciones en la sección MUST CONTAIN&nbsp;</p> 
+        <p>La&nbsp;función que devuelve euros, devolverá un número decimal con dos decimales.</p> 
+        <p>La función que devuelve pesetas, devolverá un número entero redondeado, usando la función <strong>Math.round</strong>.&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Huvudprogrammet kommer att fråga efter alternativen och kommer att lösa dem genom att göra anrop till funktionerna och därefter skriva ut resultatet som beräknats och returneras av motsvarande funktion.</font></font></p></body></html>
