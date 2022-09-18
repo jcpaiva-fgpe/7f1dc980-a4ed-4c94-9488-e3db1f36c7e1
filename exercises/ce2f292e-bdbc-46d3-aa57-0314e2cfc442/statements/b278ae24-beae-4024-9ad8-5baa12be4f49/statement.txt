@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nested loops</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The user should be prompted for the value of the base and height of a rectangle (no decimals). </font><font style="vertical-align: inherit;">The application will draw the corresponding rectangle on the screen, using asterisks (the symbol *)</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example</font></font></strong></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Entry:</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">23</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 2</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">****</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">****</font></font></p></body></html>
