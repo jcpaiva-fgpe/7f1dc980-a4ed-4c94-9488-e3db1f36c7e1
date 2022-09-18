@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Operadores </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">de Atribuição Especial</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></h3> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Operadores de incremento e decremento.</font></font></strong></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">As operações de incremento ou decremento funcionam da seguinte forma. </font><font style="vertical-align: inherit;">Suponha a variável a, do tipo int:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ é equivalente a fazer a = a + 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++a é equivalente a fazer a = a + 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- é equivalente a fazer a = a - 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--a é equivalente a fazer a = a - 1</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Existe diferença entre a++ e ++a? </font><font style="vertical-align: inherit;">Obviamente sim:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ : primeiro use o valor de a na operação correspondente e, em seguida, incremente esse valor de a por 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++a : primeiro incrementa o valor de a em 1 e depois usa esse valor incrementado na operação correspondente</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A mesma coisa acontece com os decrementos:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- : primeiro usar o valor de a na operação correspondente, e depois decrementar em 1 o referido valor de a</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--a : primeiro decrementa o valor de a em 1 e depois usa esse valor decrementado na operação correspondente</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Operadores de Incremento/Decremento
+         </font></font></caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERADOR</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USAR</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERAÇÃO</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EXEMPLO</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESULTADO</font></font></th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ ou ++a</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aumentar</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 8</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 9</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- ou --a</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diminuir</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 8</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">uma--</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercício:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lê 1 inteiro do teclado e exibe o inteiro imediatamente acima dele e o inteiro imediatamente abaixo dele.</font></font></p></body></html>
