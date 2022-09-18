@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong>Implementa el método</strong><br>
+<tt>&nbsp; private static void disolverAcogimiento(LinkedHashMap&lt;String, FamiliaAcogida&gt; acogimientos).</tt><br>
+<strong>Este método:</strong></p>
+
+<ul>
+	<li>
+	<p>Leerá del teclado el nombre del acogido.</p>
+	</li>
+	<li>
+	<p>Eliminará del mapa la entrada correspondiente a ese acogido, si es que existiera dicha entrada.</p>
+	</li>
+	<li>
+	<p>En el caso de haberse disuelto un acogimiento, se incrementará el número de plazas que puede acoger la familia que tenía el acogimiento anterior.</p>
+	</li>
+</ul></body></html>
