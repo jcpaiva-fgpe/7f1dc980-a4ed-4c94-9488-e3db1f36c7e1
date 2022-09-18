@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Bucles anidados</h3>
+
+<p>Se debe pedir al usuario el valor de la base y la altura de un rectángulo (sin decimales). La aplicación dibujará por pantalla el&nbsp;rectángulo correspondiente, utilizando asteriscos (el símbolo *)</p>
+
+<p><strong>Ejemplo</strong></p>
+
+<p>Entrada:</p>
+
+<p>2 3</p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>4 2</p>
+
+<p>****</p>
+
+<p>****</p></body></html>
