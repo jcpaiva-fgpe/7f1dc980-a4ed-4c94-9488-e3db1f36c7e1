@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Skriv ett Java-program som går igenom en array av N heltal och visar dem på skärmen i följande ordning:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Först</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den sista</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den andra</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">näst sista</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den tredje</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">den näst sista</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">etc.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exempel:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Med en matris som bildas av följande siffror: 1, 2, 3, 4, 5, 6, 7, 8, skulle följande skrivas ut: 1, 8, 2, 7, 3, 6, 4, 5</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Med en array som består av följande siffror: 1, 2, 3, 4, 5, 6, 7, skulle följande skrivas ut: 1, 7, 2, 6, 3, 5, 4</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INTRÄDE</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Posten börjar med ett nummer som anger hur många testfall som kommer att behandlas.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vart och ett av fallen kommer att bestå av en linje med antalet N element i arrayen, där N &gt;= 0, och en annan linje med N element i nämnda array separerade av ett mellanslag (om N &gt; 0).</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UTGÅNG</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">För varje testfall kommer programmet att skriva på en annan rad, resultatet av att göra den alternativa genomgången av motsvarande array.</font></font></p></body></html>
