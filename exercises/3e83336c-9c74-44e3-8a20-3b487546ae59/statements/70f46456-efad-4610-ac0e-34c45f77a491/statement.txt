@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Menú de opciones.</h2>
+
+<p>La creación, listado y borrado de una sala, se va a poder repetir tantas veces como el usuario quiera, sin tener que ejecutar varias veces la aplicación. Para ello, vamos a mostrar repetidamente un menú de opciones como el que se muestra en el OUTPUT, hasta que el usuario pulse la opción 0, que será la de salir.</p>
+
+<p>Las salidas correspondientes al menú se deberán mostrar desde un método de la clase principal llamado <code>imprimirMenu()</code>, el cual recibirá:</p>
+
+<ul>
+        <li>un objeto <code>Scanner</code>, que se utilizará para leer del teclado la opción elegida por el usuario. Esta opción será la que se devuelva al usuario siempre que sea una de las opciones elegibles. Si la opción está fuera del rango elegible, se mostrará al usuario de nuevo el menú.</li>
+        <li>un booleano que indicará si la <strong>sala</strong> ha sido creada todavía es <code>null</code>. En el caso de que la <strong>sala</strong> no exista todavía, no se deberían mostrar las opciones de borrar y&nbsp;listar <strong>sala</strong>.</li>
+</ul>
+
+<p>Desde el método <code>main()</code> se llamará al método de <code>imprimirMenu()</code> y se gestionará la opción elegida por el usuario.</p>
+
+<p>En relación esas opciones: la opción 1 solo se ejecutará si la <strong>sala</strong> todavía es <code>null</code>.</p>
+
+<p>El resto de las opciones se ejecutarán únicamente si la <strong>sala</strong> es distint de <code>null</code>.</p>
+
+<p>Excepto la opción 1, el resto de las opciones (y las que se vayan desarrollando en los ejercicios posteriores) se gestionarán a través de un switch, integrando toda la lógica necesaria en cada uno de los <code>case</code>, excepto la que se tenga que declarar en los métodos de la clase <code>SalaCine</code>.</p></body></html>
