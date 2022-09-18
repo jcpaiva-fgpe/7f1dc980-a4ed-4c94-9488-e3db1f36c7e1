@@ -1,0 +1,66 @@
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 10130 pesetas
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 6.01 euros
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 9.54 euros
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 14975 pesetas
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+SIGUIENTE CASO
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 9.02 euros
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 8319 pesetas
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 174787 pesetas
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 18.03 euros
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 10066 pesetas
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+SIGUIENTE CASO
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+SIGUIENTE CASO
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+Introduzca cantidad: 
+Son 60.1 euros
+1. Pasar de pesetas a euros
+2. Pasar de euros a pesetas
+3. Salir
+SIGUIENTE CASO
