@@ -1,0 +1,4 @@
+NIE Y2345678 Validado: SI
+DNI 12345678 Validado: SI
+NIE X2345678 Validado: SI
+DNI 23456789 Validado: SI
