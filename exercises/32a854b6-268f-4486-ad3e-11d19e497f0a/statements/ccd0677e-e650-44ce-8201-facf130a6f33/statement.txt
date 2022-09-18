@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O que é Programação Orientada a Objetos (POO)?</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enquanto a programação procedural refere-se a escrever procedimentos ou métodos que executam operações em dados, a Programação Orientada a Objetos refere-se à criação de objetos que contêm dados e métodos que manipulam esses dados.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vantagem:</font></font></h3> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">é mais rápido e fácil de executar.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">facilita a estruturação dos programas.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">segue o princípio DRY "Don't Repeat Yourself".</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">torna fácil manter, depurar e modificar seu código.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">permite a criação de aplicativos reutilizáveis ​​com menos código e menos tempo de desenvolvimento.</font></font></li> 
+        </ul> 
+        <p><strong>Nota:</strong> El principio "Don't Repeat Yourself" (DRY) se refiere a la reducción en la repetición de código, extrayendo el código que sea común en diversas partes de la aplicación, colocándolas en un único lugar, que permita su reutilización en lugar de su repetición.</p> 
+        <hr> 
+        <h2>¿Qué son las Clases y los Objetos?</h2> 
+        <p>Las clases y los objetos constituyen los dos principales aspectos de la Programación Orientada a Objetos.</p> 
+        <p>En la siguiente tabla se puede observar la diferencia entre clases y objetos:</p> 
+        <table border="1" cellpadding="1" cellspacing="1" style="width:100%"> 
+         <thead> 
+          <tr> 
+           <th scope="col">class</th> 
+           <th scope="col">objects</th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td>Fruta</td> 
+           <td> <p>Manzana</p> <p>Plátano</p> <p>Mango</p> </td> 
+          </tr> 
+          <tr> 
+           <td>Coche</td> 
+           <td> <p>Volvo</p> <p>Audi</p> <p>Toyota</p> </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <p>&nbsp;</p> 
+        <p>Por lo tanto, debemos entender una clase como una plantilla para la creación de objetos. Un objeto será una <strong>instancia</strong> de una clase.</p> 
+        <p>&nbsp;</p> 
+        <p>Cuando creamos un objeto, éste hereda todas las variables y los métodos de la clase.</p> 
+        <h3>Crear una clase en Java.</h3> 
+        <p>Recordamos ahora, algunas de los conceptos que abordamos en los primeros ejercicios de Java.</p> 
+        <p><strong>Los programas en Java</strong> (y en cualquier lenguaje orientado a objetos) <strong>se organizan en clases</strong>.</p> 
+        <p>Java nos obliga a que <strong>en cada programa haya al menos una clase</strong>, en concreto una <strong>clase pública</strong>.</p> 
+        <p><code>public class OOP {</code></p> 
+        <p><code>}</code></p> 
+        <p>Es importante recordar que <strong>el nombre del fichero tiene que coincidir exactamente con el nombre de la clase</strong>, teniendo cuidado con las mayúsculas y minúsculas, que en Java son caracteres distintos.</p> 
+        <p><tt>OOP.java</tt></p> 
+        <p>Java nos obliga a que <strong>en cada aplicación haya un método main</strong>, que es por donde empezará a ejecutarse el código de la misma; es lo que se llama el punto de entrada de la aplicación.</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Abaixo está o esqueleto básico de um aplicativo Java:</font></font></p> 
+        <blockquote> 
+         <p><code>public class OOP {<br> <br> &nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO code application logic here<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Normalmente, cada classe é escrita em um arquivo separado. </font><font style="vertical-align: inherit;">No entanto, para que possamos continuar usando o JuezLTI, definiremos todas as classes em um único arquivo, levando em consideração que apenas a classe que contém o método </font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">terá o modificador </font></font><code>public</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">Todas as outras classes serão colocadas após a chave de fechamento dessa classe pública.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Abaixo estão duas classes que seriam definidas juntas em um único arquivo OOP.java:</font></font></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {<br> <br> &nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Creando una clase");<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+         <p><code>class SubClase {<br> &nbsp; int x = 5;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercício:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para a seguinte classe pública, que contém o método</font></font><code>main()</code></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {</code></p> 
+         <p><br> <code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Creando una clase");<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adicione a classe </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:</font></font></p> 
+        <blockquote> 
+         <p><code>class Modulo {<br> &nbsp; int nota = 8;<br> }</code></p> 
+        </blockquote> 
+        <p>&nbsp;</p></body></html>
