@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir diziden, içinde tekrarlanan tamsayıları, yalnızca ilkini bırakacak şekilde eleyen bir Java programı yazın.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{1, 2, 1, 8, 5, 2, 8, 2, 4, 9, 12, 8, 1, 2} tamsayı dizisi verildiğinde, onu bir diziye dönüştürür: {1, 2, 8, 5, 4, 9, 12}</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{8, 20, 555, 555, 555, 8, 1, 9, 2, 555, 8, 20, 80} tamsayı dizisi verildiğinde, onu diziye dönüştürür: {8, 20, 555, 1, 9, 2, 80}</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her vaka aşağıdakilerden oluşacaktır:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L &gt; 0 olmak üzere dizi öğelerinin L numaralı ilk satırı</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Söz konusu dizinin L öğelerinin boşlukla ayrıldığı bir saniye.&nbsp;</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÇIKIŞ</font></font></strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá el contenido del array una vez eliminados los números repetidos.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p> 
+        <ul> 
+         <li>Una función que reciba un array de enteros y un número entero positivo como argumento y devuelva la posición del array de la primera aparición de dicho número. La función devolverá -1 si el número pasado como argumento no aparece en el array.</li> 
+         <li>Una función que reciba un array de enteros como argumento y devuelva otro array distinto en el que se habrán suprimido los números repetidos, de tal manera que cada número aparezca solo una vez, en el mismo orden en el que aparecen en el array original.&nbsp; <strong>ATENCIÓN:</strong> Vamos a programar esta función con cuidado, haciendo un uso óptimo de la memoria. Para ello, crearás un array auxiliar del mismo tamaño del original, en el que solo introduciremos los números no repetidos. En este array pueden quedar posiciones vacias (al valor de inicialización), y deberemos llevar la cuenta de cuántas de esas posiciones del array contienen número válidos para la resolución del problema.&nbsp;Una vez que sabemos cuántos son estos número no repetidos, crearemos un nuevo array de dicho tamaño y pasaremos a él los números de la solución. Éste será el array que devolvamos, que tendrá el tamaño justo para la solución buscada. <strong>Es decir, NO se puede crear un nuevo array para cada número nuevo no repetido que encontremos.</strong></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana program, her durumda, dizeyi N konumlarını sağa veya sola döndürmenin sonucunu yazdıracaktır.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ALGORİTMİK OPTİMİZASYON</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JuezLTI, egzersizin doğru olup olmadığına karar verirken bunu dikkate almayacak, ancak mümkün olan en uygun şekilde programlamaya çalışacağız, </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bellek kullanımını mümkün olduğunca azaltacağız</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">Bunu yapmak için, "Kısıtlamalar" bölümünde ikinci işlev için açıklanan ilerleme şeklini gözlemlemeli ve algoritmanızda yakalamalısınız.</font></font></p></body></html>
