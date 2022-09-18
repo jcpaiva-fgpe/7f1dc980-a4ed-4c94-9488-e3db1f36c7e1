@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Día de la semana con funciones</h2>
+
+<p>Queremos hacer un programa Java que nos diga qué día de la semana se corresponde con el número del día, teniendo en cuenta que la semana empieza en lunes.</p>
+
+<p>Entiende y prueba este código</p>
+
+<pre><code>import java.util.Scanner;</code>
+
+<code>public class FDiaSemana {</code>
+
+<code>    public static void main(String[] args) {
+        // TODO code application logic here</code>
+
+<code>        Scanner sc = new Scanner(System.in);</code>
+
+<code>        int numCasos;
+        int numDia;</code>
+
+<code>        numCasos = sc.nextInt();</code>
+
+<code>        for (int i = 1; i &lt;= numCasos; i++) {
+            numDia = sc.nextInt();
+            System.out.println(diaSemana(numDia));
+        }
+    }</code>
+
+<code>    public static String diaSemana(int valor) {
+        switch (valor) {
+            case 1:
+                return "LUNES";
+            case 2:
+                return "MARTES";
+            case 3:
+                return "MIERCOLES";
+            case 4:
+                return "JUEVES";
+            case 5:
+                return "VIERNES";
+            case 6:
+                return "SABADO";
+            case 7:
+                return "DOMINGO";
+            default:
+                return "ERROR";
+        }
+    }
+}</code></pre>
+
+<p>&nbsp;</p></body></html>
