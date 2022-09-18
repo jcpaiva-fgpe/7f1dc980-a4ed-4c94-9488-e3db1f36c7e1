@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author AulaVirtual
+ */
+public class RecorridoAlterno {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+        int numCasos = 0;
+
+        int sizeArray = 0;
+        int[] arrayEnteros;
+
+        int start, end;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            sizeArray = sc.nextInt();
+            arrayEnteros = new int[sizeArray];
+
+            for (int j = 0; j < arrayEnteros.length; j++) {
+                arrayEnteros[j] = sc.nextInt();
+            }
+
+            start = 0;
+            end = arrayEnteros.length - 1;
+
+            while (start <= end) {
+                System.out.print(arrayEnteros[start] + " ");
+                start++;
+
+                if (end >= start) {
+                    System.out.print(arrayEnteros[end] + " ");
+                    end--;
+                }
+            }
+            System.out.println();
+        }
+
+    }
+
+}
