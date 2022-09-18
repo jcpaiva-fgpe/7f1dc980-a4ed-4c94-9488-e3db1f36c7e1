@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Operadores <strong>aritméticos</strong>.</h3>
+
+<p>Como su nombre indica, los operadores aritméticos nos permiten realizar operaciones aritméticas con expresiones con valor numérico.</p>
+
+<p>Los operadores que podemos utilizar se muestran en la siguiente tabla:</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<caption>Operadores aritméticos</caption>
+	<thead>
+		<tr>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">OPERADOR</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">USO</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">OPERACIÓN</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">EJEMPLO</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">RESULTADO</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align:center">+</td>
+			<td style="text-align:center">a + b</td>
+			<td style="text-align:center">Suma</td>
+			<td style="text-align:center">8 + 5</td>
+			<td style="text-align:center">13</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">-</td>
+			<td style="text-align:center">a - b</td>
+			<td style="text-align:center">Resta</td>
+			<td style="text-align:center">8 - 5</td>
+			<td style="text-align:center">3</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">*</td>
+			<td style="text-align:center">a * b</td>
+			<td style="text-align:center">Multiplicación</td>
+			<td style="text-align:center">8 * 5</td>
+			<td style="text-align:center">40</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">/</td>
+			<td style="text-align:center">a / b</td>
+			<td style="text-align:center">División</td>
+			<td style="text-align:center">
+			<p>8 / 5</p>
+
+			<p>8f / 5f</p>
+			</td>
+			<td style="text-align:center">
+			<p>1</p>
+
+			<p>1.6f</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">%</td>
+			<td style="text-align:center">a % b</td>
+			<td style="text-align:center">Módulo o resto de la división entera</td>
+			<td style="text-align:center">8 % 5</td>
+			<td style="text-align:center">3</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Ejercicio:</h3>
+
+<p>Lee del teclado 2 números enteros y muestra el resultado de su suma, resta, multiplicación, división y módulo.</p>
+
+<p><small><strong>ATENCIÓN</strong>: Por la manera de funcionar del corrector automático Juez-LTI, no debes imprimir por pantalla&nbsp;más información que el resultado de la suma de los números. <strong>No acompañes la solución de ningún texto</strong> tipo "La suma de los números es: "</small></p></body></html>
