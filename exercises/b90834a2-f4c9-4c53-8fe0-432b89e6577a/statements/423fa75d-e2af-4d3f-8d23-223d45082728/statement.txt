@@ -1,0 +1,135 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Operadores <strong>relacionales</strong>.</h3>
+
+<p>Los operadores relacionales son los que se utilizan para evaluar condiciones o expresiones booleanas, expresiones que dan como resultado TRUE o FALSE.</p>
+
+<p>No debemos confundir el operador <code>=</code> con el operador <code>==</code>. El primero hace una asignación, mientras que el segundo hace una comparación.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<blockquote>
+<p><code>a = 3; <small>// Asigna el valor 3 a la variable a</small></code></p>
+
+<p><code>a == 3; <small>// compara el contenido de la variable a con el valor 3 y devuelve true o false, según el resultado de dicha comparación</small></code></p>
+</blockquote>
+
+<p>Los operadores relacionales que podemos utilizar se muestran en la siguiente tabla:</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<caption>Operadores relacionales</caption>
+	<thead>
+		<tr>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">OPERADOR</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">USO</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">OPERACIÓN</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">EJEMPLO</th>
+			<th scope="col" style="background-color:#9e9e9e; text-align:center">RESULTADO</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align:center">&lt;</td>
+			<td style="text-align:center">a &lt; b</td>
+			<td style="text-align:center">a menor que b</td>
+			<td style="text-align:center">
+			<p>5 &lt; 8</p>
+
+			<p>6 &lt; 6</p>
+			</td>
+			<td style="text-align:center">
+			<p>true</p>
+
+			<p>false</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">&gt;</td>
+			<td style="text-align:center">a &gt; b</td>
+			<td style="text-align:center">a mayor que b</td>
+			<td style="text-align:center">
+			<p>8 &gt; 5</p>
+
+			<p>6 &gt; 6</p>
+			</td>
+			<td style="text-align:center">
+			<p>true</p>
+
+			<p>false</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">&lt;=</td>
+			<td style="text-align:center">a &lt;= b</td>
+			<td style="text-align:center">a menor o igual que b</td>
+			<td style="text-align:center">
+			<p>8 &lt;= 5</p>
+
+			<p>6 &lt;= 6</p>
+			</td>
+			<td style="text-align:center">
+			<p>false</p>
+
+			<p>true</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">&gt;=</td>
+			<td style="text-align:center">a &gt;= b</td>
+			<td style="text-align:center">a mayor o igual que b</td>
+			<td style="text-align:center">
+			<p>8 &gt;= 5</p>
+
+			<p>6 &gt;= 6</p>
+			</td>
+			<td style="text-align:center">
+			<p>true</p>
+
+			<p>true</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">!=</td>
+			<td style="text-align:center">a != b</td>
+			<td style="text-align:center">a distinto b</td>
+			<td style="text-align:center">
+			<p>8 != 5</p>
+
+			<p>6 != 6</p>
+			</td>
+			<td style="text-align:center">
+			<p>true</p>
+
+			<p>false</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">==</td>
+			<td style="text-align:center">a == b</td>
+			<td style="text-align:center">a igual que b</td>
+			<td style="text-align:center">
+			<p>8 == 5</p>
+
+			<p>6 == 6</p>
+			</td>
+			<td style="text-align:center">
+			<p>false</p>
+
+			<p>true</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Ejercicio:</h3>
+
+<p>Lee del teclado 2 números enteros (a y b) y muestra el resultado de las siguientes operaciones relacionales:</p>
+
+<ul>
+	<li>a menor que b</li>
+	<li>a mayor que b</li>
+	<li>a menor o igual que b</li>
+	<li>a mayor o igual que b</li>
+	<li>a distinto b</li>
+	<li>a igual que b</li>
+</ul>
+
+<p><small><strong>ATENCIÓN</strong>: Por la manera de funcionar del corrector automático Juez-LTI, no debes imprimir por pantalla&nbsp;más información que el resultado de la suma de los números. <strong>No acompañes la solución de ningún texto</strong> tipo "La suma de los números es: "</small></p></body></html>
