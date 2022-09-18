@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vi vill göra ett Java-program som räknar ut faktorn för ett tal. </font><font style="vertical-align: inherit;">I </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=sv&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Factorial" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">följande länk</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> har du information om hur man räknar ut faktorn för ett tal.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NOTERA:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faktorialet på 5 är 5 * 4 * 3 * 2 * 1 = 120.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faktorialen på 0 är 1.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Använd en dubbel för att beräkna faktorvärdet.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INTRÄDE</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Posten börjar med ett nummer som anger hur många testfall som ska behandlas.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nästa kommer att vara en rad för varje fall, där varje fall helt enkelt är numret att beräkna faktorial för. </font><font style="vertical-align: inherit;">Varje tal kommer att vara ett heltal n, med n &gt;=0 och n&lt;=100</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UTGÅNG</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">För varje testfall kommer programmet att skriva resultatet av beräkningen av numrets faktor</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BEGRÄNSNINGAR</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Problemet bör lösas genom att designa en funktion som beräknar och returnerar fakulteten för talet som skickas som parameter.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rubriken eller gränssnittet för nämnda funktion finns i avsnittet MÅSTE INNEHÅLLA&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Huvudprogrammet kommer att bearbeta tangentbordsinmatningen, anropa funktionen och skriva ut resultatet som beräknas och returneras av det.</font></font></p></body></html>
