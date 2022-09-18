@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Crea un proyecto en NetBeans llamado <code>acogimientos</code> e incluye en él el contenido del archivo <a href="https://aulavirtual.murciaeduca.es/mod/resource/view.php?id=2884402"><code>Acogimientos.java</code></a>. Posteriormente, resuelve los ejercicios que se solicitan a continuación</p>
+
+<p><strong>Implementa el método</strong><br>
+<tt>&nbsp; private static void nuevoAcogido()</tt><strong>.<br>
+Este método:</strong></p>
+
+<ul>
+	<li>
+	<p>Insertará, en el array <tt>acogidos[],</tt> el nombre de un nuevo acogido introducido por teclado.</p>
+	</li>
+	<li>
+	<p>La posición en la que se debe insertar será la que indique la variable <tt>numAcogidos</tt>. Esta variable se deberá incrementar por cada acogido almacenado en el array <tt>acogidos[]</tt>.</p>
+	</li>
+	<li>
+	<p>Tanto el array <tt>acogidos[]</tt> como la variable <tt>numAcogidos</tt> deberán ser visibles en todos los métodos de la clase <tt>Acogimientos</tt>. El tamaño del array será el indicado por la constante&nbsp;<code>NUMERO_ACOGIDOS</code>.</p>
+	</li>
+	<li>
+	<p>Hay que tener en cuenta que la capacidad máxima inicial del array es la que indica la constante <tt>NUMERO_ACOGIDOS</tt> y que hay que controlar la excepción <tt>ArrayIndexOutOfBoundsException</tt> en el caso de que se quieran almacenar más acogidos de los que permite el array <tt>acogidos[]</tt>.</p>
+	</li>
+</ul></body></html>
