@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong>Implementa el método</strong><br>
+<tt>&nbsp; private static FamiliaAcogida buscarFamilia(LinkedList&lt;FamiliaAcogida&gt; familias, String nombreTutor)</tt><strong>.<br>
+Este método:</strong></p>
+
+<ul>
+	<li>
+	<p>Recibe la lista de familias inscritas y el nombre del tutor.</p>
+	</li>
+	<li>
+	<p>Recorre cada uno de los elementos de la lista y compara el tutor de la familia con el enviado como parámetro.</p>
+	</li>
+	<li>
+	<p>Devolverá la familia cuyo tutor coincide con el enviado como parámetro o <tt>null,</tt> en el caso de que no se haya encontrado ningún tutor con ese nombre.</p>
+	</li>
+</ul></body></html>
