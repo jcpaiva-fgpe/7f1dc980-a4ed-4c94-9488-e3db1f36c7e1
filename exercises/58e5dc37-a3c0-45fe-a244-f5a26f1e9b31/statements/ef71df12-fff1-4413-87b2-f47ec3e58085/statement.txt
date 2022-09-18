@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Önceki sürüm geliştirildikten sonra, hükümet delegasyonu bizden yardım verilmesi için yeni bir gereklilik eklememizi istedi,</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kullanıcı talep edilen miktarı belirttikten sonra, başvurunun yardımın talep edildiği </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mülkün kadastro referansını</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> istemesi gerekir ve sadece referansın geçerli olması durumunda miktar verilen toplam yardıma eklenecektir. </font><font style="vertical-align: inherit;">Bunu yapmak için </font></font><code>catastroValido()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, özelliğin kadastro referansıyla bir String'in gönderildiği ve kapsanıp kapsanmadığını söyleyen işlevi kullanacağız.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mevcut </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=tr&amp;hl=es&amp;client=webapp&amp;u=https://www.catastro.meh.es/esp/referencia_catastral.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 çeşit kadastro referansından</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> taşınmazın bulunduğu il ve belediye rakamlarıyla başlayanını kullanacağız. </font><font style="vertical-align: inherit;">Bizim durumumuzda, yalnızca Santa Cruz de Tenerife eyaletinde bulunan kadastro referanslarını kabul edeceğiz ( </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">kod 38</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ). </font><font style="vertical-align: inherit;">Ayrıca, aşağıdaki belediyelerden birinde bulunmaları gerekir:</font></font></p> 
+        <table align="center" border="1" cellspacing="0"> 
+         <tbody> 
+          <tr> 
+           <td style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">kod</font></font></td> 
+           <td style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">belediye</font></font></td> 
+          </tr> 
+          <tr> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">24</font></font></td> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aridane Ovaları (The)</font></font></td> 
+          </tr> 
+          <tr> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">27</font></font></td> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adım (O)</font></font></td> 
+          </tr> 
+          <tr> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dört beş</font></font></td> 
+           <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kupa kesimi</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">İl ve belediye kodlarını çıkarmak için, kadastro referansının gönderildiği getProvincia() ve getMunicipio() iki işlevi kullanılacak ve ilgili kodu bir tamsayı olarak döndürecekler:</font></font></p> 
+        <ul> 
+         <li>el código de la <strong>provincia</strong> corresponde al valor numérico de los <strong>2 primeros caracteres</strong> de la referencia catastral.</li> 
+         <li>el código del <strong>municipio</strong> corresponde al valor numérico de los caracteres que van <strong>del 3º al 5º</strong>.</li> 
+        </ul> 
+        <p>Para obtener esos valores numéricos deberás utilizar las funciones <code>charAt()</code> e <code>Integer.parseInt()</code> que se han utilizado en anteriores ejercicios.</p> 
+        <p>En el ejemplo, las referencias catastrales correspondientes a la segunda y a la tercera solicitud no se suman al total de las ayudas otorgadas porque sus referencias catastrales no son válidas: la primera no corresponde a la provincia y la segunda no corresponde con ninguno de los municipios en los que deben estar situados los inmuebles.</p></body></html>
