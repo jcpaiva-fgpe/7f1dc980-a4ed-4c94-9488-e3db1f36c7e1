@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We want to make a Java program that calculates the factorial of a number. </font><font style="vertical-align: inherit;">In the </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=en&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Factorial" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">following link</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> you have information on how to calculate the factorial of a number.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NOTE:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The factorial of 0 is 1.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Use a double to compute the factorial.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRY</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The entry begins with a number indicating how many test cases should be processed.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Next will be a line for each case, where each case is simply the number to calculate the factorial for. </font><font style="vertical-align: inherit;">Each number will be an integer n, with n &gt;=0 and n&lt;=100</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EXIT</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">For each test case, the program will write the result of the calculation of the factorial of the number</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTRICTIONS</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The problem should be solved by designing a function that calculates and returns the factorial of the number passed as a parameter.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The header or interface of said function is provided in the MUST CONTAIN section&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The main program will process the keyboard input, will call the function and will print the result calculated and returned by it.</font></font></p></body></html>
