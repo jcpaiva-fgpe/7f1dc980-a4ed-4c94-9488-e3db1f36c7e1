@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class FDiaSemana {
+
+    public static void main(String[] args) {
+        // TODO code application logic hereScanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+
+        int numCasos;
+        int numDia;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            numDia = sc.nextInt();
+            System.out.println(diaSemana(numDia));
+        }
+    }
+
+    public static String diaSemana(int valor) {
+        switch (valor) {
+            case 1:
+                return "LUNES";
+            case 2:
+                return "MARTES";
+            case 3:
+                return "MIERCOLES";
+            case 4:
+                return "JUEVES";
+            case 5:
+                return "VIERNES";
+            case 6:
+                return "SABADO";
+            case 7:
+                return "DOMINGO";
+            default:
+                return "ERROR";
+        }
+    }
+}
