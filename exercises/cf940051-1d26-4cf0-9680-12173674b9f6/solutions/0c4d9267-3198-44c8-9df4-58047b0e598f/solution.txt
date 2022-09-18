@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class HastaEnteroExcepcion {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int miCalificacion = 0;
+        boolean esEntero;
+
+        do {
+            System.out.println("Dime la nota que me corresponde:");
+
+            try {
+                miCalificacion = sc.nextInt();
+                esEntero = true;                
+            } catch (InputMismatchException ime) {
+                System.out.println("Debe introducir un numero entero:");
+                esEntero = false;
+                sc.nextLine();
+            }
+        } while (!esEntero);
+        System.out.println("Mi nota en PROGRAMACION es: " + miCalificacion);
+    }
+
+}
