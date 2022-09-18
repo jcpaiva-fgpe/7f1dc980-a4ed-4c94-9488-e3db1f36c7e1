@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">om</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If -strukturen är en </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">urvalsstruktur</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , där ett logiskt uttryck utvärderas och, beroende på resultatet, en sats eller ett block av satser exekveras.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Syntax:</font></font></h3> 
+        <blockquote> 
+         <p><code>if (expresión-lógica) {<br> &nbsp;&nbsp;&nbsp; sentencia1;<br> &nbsp;&nbsp;&nbsp; sentencia2;<br> &nbsp;&nbsp;&nbsp; …;<br> &nbsp;&nbsp;&nbsp; sentenciaN;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fungerande</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Om det logiska uttrycket evalueras till sant, exekveras det associerade satsblocket. </font><font style="vertical-align: inherit;">Om resultatet av denna utvärdering är falskt kommer ingen instruktion associerad med den villkorliga strukturen att exekveras.</font></font></p> 
+        <p><em><small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Även om det är möjligt att undvika att använda klammerparenteser, i händelse av att ett enstaka uttalande måste köras, är det lämpligt att alltid inkludera klammerparenteserna, även om det ska bifoga ett enstaka uttalande.</font></font></small></em></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exempel:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I följande exempel kommer texten "GODKÄND" att skrivas om värdet som tilldelas notvariabeln är större än eller lika med 5.</font></font></p> 
+        <blockquote> 
+         <p><code>...<br> int nota = 7;<br> if(nota &gt;= 5) {<br> &nbsp;&nbsp;&nbsp; System.out.println("APROBADO");<br> }<br> ...</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Träning:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utveckla en applikation som läser 2 anteckningar från tangentbordet och för var och en av dem skriver texten "GODKÄND" endast om den angivna anteckningen är större än eller lika med 5.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Oavsett om vi har skrivit texten "GODKÄND" eller inte, efter varje kvalifikation bör en sträng som denna "========" dyka upp, som visas i OUTPUT.</font></font></p></body></html>
