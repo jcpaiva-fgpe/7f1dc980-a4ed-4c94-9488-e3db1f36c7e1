@@ -1,0 +1,16 @@
+Escriba el nombre del modulo: 
+Escriba la nota del modulo: 
+Escriba la nota del modulo: 
+Nombre del modulo: Bases de Datos
+Nota: 7
+Calificacion textual: Notable
+Escriba el nombre del modulo: 
+Nombre del modulo: Programacion
+Nota: 8
+Calificacion textual: Notable
+Escriba el nombre del modulo: 
+Escriba la nota del modulo: 
+Escriba la nota del modulo: 
+Nombre del modulo: Sistemas
+Nota: 5
+Calificacion textual: Suficiente
