@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Signo do zodíaco com funções</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Queremos fazer um programa Java que calcule o signo do zodíaco ao qual uma pessoa pertence, dada sua data de nascimento.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para isso, leve em consideração os seguintes dados:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AQUÁRIO: 21 de janeiro a 20 de fevereiro</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PEIXES: 21 de fevereiro a 20 de março</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÁRIES: 21 de março a 20 de abril</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TOURO: 21 de abril a 20 de maio</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GÊMEOS: 21 de maio a 20 de junho</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CÂNCER: 21 de junho a 20 de julho</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LEO: 21 de julho - 20 de agosto</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VIRGEM: 21 de agosto a 20 de setembro</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LIBRA: 21 de setembro a 20 de outubro</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ESCORPIÃO: 21 de outubro a 20 de novembro</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SAGITÁRIO: 21 de novembro a 20 de dezembro</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CAPRICÓRNIO: 21 de dezembro a 20 de janeiro</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A entrada começa com um número indicando quantos casos de teste serão processados.</font></font></p> 
+        <p>Cada uno de los casos&nbsp;está compuesto por dos números&nbsp;enteros distintos, el primero indicando el días de la fecha de nacimiento y el segundo indicando el mes de nacimiento</p> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá el signo del zodiaco al que pertenece la persona que ha nacido en dicha fecha.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Deberá resolverse el problema diseñando una función que reciba una fecha (día y mes, dos enteros) y devuelva el signo del zodiaco al que pertenece dicha fecha (un String). Si la fecha es errónea, devolverá la cadena "FECHA ERRONEA".&nbsp;</p> 
+        <p>El programa principal, para cada uno de los casos,&nbsp;pedirá la fecha&nbsp;por teclado y usará las funciones&nbsp;para resolver el problema, imprimiendo posteriormente el signo del zodiaco asociado a la fecha. Si la fecha es errónea, se imprimirá el mensaje "FECHA ERRONEA"</p> 
+        <ul> 
+        </ul> 
+        <p>&nbsp;</p></body></html>
