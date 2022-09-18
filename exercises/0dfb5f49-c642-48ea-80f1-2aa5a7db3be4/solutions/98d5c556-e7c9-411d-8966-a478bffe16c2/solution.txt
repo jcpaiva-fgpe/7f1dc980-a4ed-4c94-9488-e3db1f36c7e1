@@ -1,0 +1,128 @@
+package cines;
+
+import java.util.Scanner;
+
+public class Cines {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String nombreSala;
+        int aforo;
+
+        SalaCine sala = null;
+
+        System.out.println("CREAR SALA de CINE");
+        System.out.println("-------------------");
+        System.out.print("Nombre de sala: ");
+        nombreSala = sc.nextLine();
+        System.out.print("Aforo de sala: ");
+        aforo = sc.nextInt();
+
+        try {
+            sala = new SalaCine(nombreSala, aforo);
+        } catch (IllegalArgumentException ex) {
+            System.out.println("ERROR: Valores erroneos para sala");
+        }
+        System.out.println("LISTAR SALAS de CINE");
+        System.out.println("-------------------");
+        System.out.println("Sala: " + sala.getNombre() + "\tAforo: " + sala.getAforo());
+
+        System.out.println("BORRAR SALA de CINE");
+        System.out.println("-------------------");
+
+        sala = null;
+    }
+}
+
+class SalaCine {
+
+    private String nombre;
+    private int aforo;
+    private int butacasOcupadas;
+    private String pelicula;
+    private double precioEntrada;
+
+    public SalaCine() {
+        this.nombre = "Sala";
+        this.aforo = 100;
+        this.butacasOcupadas = 0;
+        this.pelicula = "";
+        this.precioEntrada = 0.00;
+    }
+
+    public SalaCine(String nombre, int aforo) {
+        if ((aforo <= 0) || "".equals(nombre)) {
+            throw new IllegalArgumentException();
+        } else {
+            this.nombre = nombre;
+            this.aforo = aforo;
+            this.butacasOcupadas = 0;
+            this.pelicula = "";
+            this.precioEntrada = 0.00;
+        }
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setAforo(int aforo) {
+        if (aforo <= 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.aforo = aforo;
+        }
+    }
+
+    public void setButacasOcupadas(int butacasOcupadas) {
+        if (butacasOcupadas < 0 || butacasOcupadas > this.getAforo()) {
+            throw new IllegalArgumentException();
+        } else {
+            this.butacasOcupadas = butacasOcupadas;
+        }
+    }
+
+    public void setPelicula(String pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    public void setPrecioEntrada(double precioEntrada) {
+        this.precioEntrada = precioEntrada;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getAforo() {
+        return this.aforo;
+    }
+
+    public int getButacasOcupadas() {
+        return this.butacasOcupadas;
+    }
+
+    public String getPelicula() {
+        return this.pelicula;
+    }
+
+    public double getPrecioEntrada() {
+        return this.precioEntrada;
+    }
+
+    public void vaciarSala() throws IllegalArgumentException {
+        this.setButacasOcupadas(0);
+        this.setPelicula("");
+        this.setPrecioEntrada(0.0);
+    }
+
+    public boolean estaLlena() {
+        return (this.getButacasOcupadas() == this.getAforo());
+    }
+
+    public boolean estaVacia() {
+        return (this.getButacasOcupadas() == 0);
+    }
+
+}
