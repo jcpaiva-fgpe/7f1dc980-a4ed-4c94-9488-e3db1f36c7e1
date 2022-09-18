@@ -1,0 +1,425 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package multicines;
+
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+/**
+ *
+ * @author AulaVirtual
+ */
+public class Multicines {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        TreeMap multicine = new TreeMap();
+        Iterator iterador;
+
+        int opcion;
+
+        String nombreSala;
+        int aforo;
+        String pelicula;
+        double precioEntrada;
+        int numEntradas;
+        double recaudacionTotal;
+
+        SalaCine sala;
+
+        do {
+            opcion = imprimirMenu(sc);
+            switch (opcion) {
+                case 1:
+                    System.out.println("CREAR SALA de CINE");
+                    System.out.println("-------------------");
+                    System.out.print("Nombre de sala: ");
+                    nombreSala = sc.nextLine();
+                    System.out.print("Foro de sala: ");
+                    aforo = sc.nextInt();
+
+                    try {
+                        sala = new SalaCine(nombreSala, aforo);
+                        multicine.put(sala.getNombre(), sala);
+                    } catch (IllegalArgumentException ex) {
+                        System.out.println("ERROR: Valores erroneos para sala");
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("BORRAR SALA de CINE");
+                    System.out.println("-------------------");
+                    System.out.print("Nombre de sala: ");
+                    nombreSala = sc.nextLine();
+
+                    sala = multicine.remove(nombreSala);
+                    if (sala == null) {
+                        System.out.println("ERROR: La sala no existia");
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("LISTAR SALAS de CINE");
+                    System.out.println("-------------------");
+                    iterador = multicine.values().iterator();
+                    while (iterador.hasNext()) {
+                        sala = (SalaCine) iterador.next();
+                        System.out.println("Sala: " + sala.getNombre() + "\tAforo: " + sala.getAforo());
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("CREAR SESION DE PROYECCION");
+                    System.out.println("-------------------");
+                    System.out.print("Nombre de sala: ");
+                    nombreSala = sc.nextLine();
+
+                    if (multicine.containsKey(nombreSala)) {
+                        sala = multicine.get(nombreSala);
+                        if (sala != null) {
+                            System.out.print("Nombre de la pelicula: ");
+                            pelicula = sc.nextLine();
+                            sala.setPelicula(pelicula);
+
+                            System.out.print("Precio de la entrada: ");
+                            try {
+                                precioEntrada = Double.parseDouble(sc.nextLine());
+                                sala.setPrecioEntrada(precioEntrada);
+                            } catch (NumberFormatException ex1) {
+                                System.out.println("ERROR: Valor introducido incorrecto");
+                            } catch (NullPointerException ex2) {
+                                System.out.println("ERROR: Valor NO introducido");
+                            }
+
+                        } else {
+                            System.out.println("ERROR: La sala no existia");
+                        }
+                    } else {
+                        System.out.println("ERROR: La sala no existia");
+                    }
+                    break;
+
+                case 5:
+                    System.out.println("LISTAR CARTELERA");
+                    System.out.println("-------------------");
+
+                    iterador = multicine.values().iterator();
+                    while (iterador.hasNext()) {
+                        sala = (SalaCine) iterador.next();
+                        System.out.println("Sala: " + sala.getNombre() + "\tAforo: "
+                                + sala.getAforo());
+                        System.out.println("\tPelicula: " + sala.getPelicula()
+                                + "\t\tPrecio de la entrada: " + sala.getPrecioEntrada() + " euros");
+                        System.out.println("\tButacas ocupadas: " + sala.getButacasOcupadas()
+                                + "\tButacas libres: " + sala.getButacasLibres()
+                                + "\tPorcentaje de ocupacion: " + sala.getPorcentajeOcupacion());
+                        System.out.println();
+                    }
+                    break;
+
+                case 6:
+                    System.out.println("VENDER ENTRADAS");
+                    System.out.println("-------------------");
+                    System.out.print("Nombre de sala: ");
+                    nombreSala = sc.nextLine();
+
+                    if (multicine.containsKey(nombreSala)) {
+                        sala = multicine.get(nombreSala);
+                        if (sala != null) {
+                            System.out.print("Cantidad de entradas: ");
+                            numEntradas = sc.nextInt();
+
+                            try {
+                                sala.venderEntradas(numEntradas);
+                            } catch (IllegalArgumentException ex) {
+                                System.out.println("ERROR: Numero de entradas incorrecto");
+                            }
+                        } else {
+                            System.out.println("ERROR: La sala no existia");
+                        }
+                    } else {
+                        System.out.println("ERROR: La sala no existia");
+                    }
+
+                    break;
+
+                case 7:
+                    System.out.println("DEVOLVER ENTRADAS");
+                    System.out.println("-------------------");
+                    System.out.print("Nombre de sala: ");
+                    nombreSala = sc.nextLine();
+
+                    if (multicine.containsKey(nombreSala)) {
+                        sala = multicine.get(nombreSala);
+                        if (sala != null) {
+                            System.out.print("Cantidad de entradas: ");
+                            numEntradas = sc.nextInt();
+
+                            try {
+                                sala.devolverEntradas(numEntradas);
+                            } catch (IllegalArgumentException ex) {
+                                System.out.println("ERROR: Numero de entradas incorrecto");
+                            }
+                        } else {
+                            System.out.println("ERROR: La sala no existia");
+                        }
+                    } else {
+                        System.out.println("ERROR: La sala no existia");
+                    }
+
+                    break;
+
+                case 8:
+                    recaudacionTotal = 0;
+                    System.out.println("CALCULAR RECAUDACION");
+                    System.out.println("-------------------");
+
+                    iterador = multicine.values().iterator();
+                    while (iterador.hasNext()) {
+                        sala = (SalaCine) iterador.next();
+                        recaudacionTotal = recaudacionTotal + sala.getIngresos();
+                        System.out.println("Sala: " + sala.getNombre() 
+                                + "\tPorcentaje de ocupacion: " + sala.getPorcentajeOcupacion()
+                                + "\tRecaudacion: " + sala.getIngresos() + " euros");
+                        System.out.println();
+                    }
+                    System.out.println("Recaudacion Total: " + recaudacionTotal + " euros");
+                    break;
+            }
+        } while (opcion != 0);
+
+        multicine.clear();
+    }
+
+    public static int imprimirMenu(Scanner sc) {
+
+        int opcion;
+
+        do {
+            System.out.println("0. Salir");
+            System.out.println("REFORMAR MULTICINE");
+            System.out.println("--------------------");
+            System.out.println("\t1. Crear sala de cine");
+            System.out.println("\t2. Borrar sala de cine");
+            System.out.println("\t3. Listar salas de cine");
+            System.out.println("GESTIONAR CARTELERA");
+            System.out.println("--------------------");
+            System.out.println("\t4. Crear sesion de proyeccion");
+            System.out.println("\t5. Listar cartelera");
+            System.out.println("GESTIONAR ENTRADAS");
+            System.out.println("--------------------");
+            System.out.println("\t6. Vender entradas");
+            System.out.println("\t7. Devolver entradas");
+            System.out.println("\t8. Calcular recaudacion");
+
+            System.out.print("Elija una opcion: ");
+            opcion = sc.nextInt();
+            System.out.println();
+        } while (opcion < 0 || opcion > 8);
+
+        sc.nextLine();
+        return opcion;
+    }
+
+}
+
+/**
+ * La clase SalaCine representa una sala de cine
+ *
+ * @author Gonzalo Fernández Hernández
+ * @version 1.0
+ * @see
+ * https://app.genmymodel.com/api/projects/_qQmJgKZuEeuXgcfNRvw02A/diagrams/_qQmJg6ZuEeuXgcfNRvw02A/svg
+ */
+class SalaCine {
+
+    private String nombre;
+    private int aforo;
+    private int butacasOcupadas;
+    private String pelicula;
+    private double precioEntrada;
+
+    public SalaCine() {
+        this.nombre = "Sala";
+        this.aforo = 100;
+        this.butacasOcupadas = 0;
+        this.pelicula = "";
+        this.precioEntrada = 0.00;
+    }
+
+    public SalaCine(String nombre, int aforo) {
+        if ((aforo <= 0) || "".equals(nombre)) {
+            throw new IllegalArgumentException();
+        } else {
+            this.nombre = nombre;
+            this.aforo = aforo;
+            this.butacasOcupadas = 0;
+            this.pelicula = "";
+            this.precioEntrada = 0.00;
+        }
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setAforo(int aforo) {
+        if (aforo <= 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.aforo = aforo;
+        }
+    }
+
+    public void setButacasOcupadas(int butacasOcupadas) {
+        if (butacasOcupadas < 0 || butacasOcupadas > this.aforo) {
+            throw new IllegalArgumentException();
+        } else {
+            this.butacasOcupadas = butacasOcupadas;
+        }
+    }
+
+    public void setButacasLibres(int butacasLibres) {
+        if (butacasLibres < 0 || butacasLibres > this.aforo) {
+            throw new IllegalArgumentException();
+        } else {
+            this.butacasOcupadas = this.aforo - butacasLibres;
+        }
+    }
+
+    public void setPelicula(String pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    public void setPrecioEntrada(double precioEntrada) {
+        if (precioEntrada < 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.precioEntrada = redondear2Decimales(precioEntrada);
+        }
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getAforo() {
+        return this.aforo;
+    }
+
+    public int getButacasOcupadas() {
+        return this.butacasOcupadas;
+    }
+
+    public int getButacasLibres() {
+        return this.aforo - this.butacasOcupadas;
+    }
+
+    public String getPelicula() {
+        return this.pelicula;
+    }
+
+    public double getPrecioEntrada() {
+        return this.precioEntrada;
+    }
+
+    public double getPorcentajeOcupacion() {
+        return (this.butacasOcupadas * 100 / this.aforo);
+    }
+
+    /**
+     * Devuelve la cantidad de dinero ingresado en la sala en función del número
+     * de entradas vendidas y el precio de cada entrada
+     *
+     * @return La cantidad en euros, redondeado a dos decimales
+     */
+    public double getIngresos() {
+        return redondear2Decimales(this.precioEntrada * this.butacasOcupadas);
+    }
+
+    /**
+     * VacÃ­a la sala de cine, lo que implica establecer que todas la butacas
+     * quedan libres, que en la sala no se está proyectando ninguna pelÃ­cula y
+     * que no hay precio establecido para la entrada a la sala (o lo que es lo
+     * mismo, establecido a 0 euros).
+     */
+    public void vaciarSala() {
+        this.butacasOcupadas = 0;
+        this.pelicula = "";
+        this.precioEntrada = 0.0;
+    }
+
+    /**
+     * Calcula si la sala de cine está llena; es decir, si todas sus butacas
+     * están ocupadas
+     *
+     * @return true si la sala de cine tiene todas sus butacas llenas y false en
+     * caso de que haya alguna butaca que esté vacÃ­a
+     */
+    public boolean estaLlena() {
+        return (this.butacasOcupadas == this.aforo);
+    }
+
+    /**
+     * Calcula si la sala de cine está vacÃ­a; es decir, si todas sus butacas
+     * están libres
+     *
+     * @return true si la sala de cine tiene todas sus butacas vacÃ­as y false en
+     * caso de que haya alguna que esté ocupada
+     */
+    public boolean estaVacia() {
+        return (this.butacasOcupadas == 0);
+    }
+
+    /**
+     * Gestiona la compra de entradas de la sala de cine, marcando como ocupadas
+     * las butacas correspondientes al número de entradas que se compra
+     *
+     * @param numeroEntradas Número de entradas que se quieren comprar. Debe de
+     * ser un número mayor que cero y no se pueden comprar más entradas de las
+     * butacas que queden libres en la sala
+     * @throws IllegalArgumentException en caso de que se intente comprar un
+     * número negativo de entradas o se intente comprar más entradas de las
+     * butacas que queden libres
+     */
+    public void venderEntradas(int numeroEntradas) {
+        if ((numeroEntradas + this.butacasOcupadas > this.aforo) || (numeroEntradas <= 0)) {
+            throw new IllegalArgumentException();
+        } else {
+            this.butacasOcupadas = this.butacasOcupadas + numeroEntradas;
+        }
+    }
+
+    /**
+     * Gestiona la devolución de entradas de la sala de cine, dejando
+     * desocupadas las butacas correspondientes al número de entradas que se
+     * devuelve
+     *
+     * @param numeroEntradas Número de entradas que se quieren devolver. Debe de
+     * ser un número mayor que cero y no se pueden devolver más entradas de las
+     * que se hayan vendido para la sala
+     * @throws IllegalArgumentException en caso de que se intenten devolver un
+     * número negativo de entradas o se intenten devolver más entradas de las
+     * que se habÃ­an vendido
+     */
+    public void devolverEntradas(int numeroEntradas) {
+        if ((numeroEntradas > this.butacasOcupadas) || (numeroEntradas <= 0)) {
+            throw new IllegalArgumentException();
+        } else {
+            this.butacasOcupadas = this.butacasOcupadas - numeroEntradas;
+        }
+    }
+
+    private double redondear2Decimales(double numero) {
+        return ((double) Math.round(numero * 100) / 100);
+    }
+
+}
