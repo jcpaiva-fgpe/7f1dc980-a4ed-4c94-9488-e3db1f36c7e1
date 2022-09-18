@@ -1,0 +1,6 @@
+Introduzca numero de alumnos: Nota del alumno 1: Nota del alumno 2: Nota del alumno 3: Nota del alumno 4: Nota del alumno 5: Nota del alumno 6: Total Aprobados: 3
+Dieces: 2
+Total Suspensos: 3
+Ceros: 2
+Porcentaje de aprobados: 50%
+Porcentaje de suspensos: 50%
