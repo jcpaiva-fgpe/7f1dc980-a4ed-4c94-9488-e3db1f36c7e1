@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Gestionar cartelera.</h2>
+
+<p>Crea el apartado de menú&nbsp;GESTIONAR CARTELERA, junto con la opción de menú:</p>
+
+<ul>
+	<li><code>4. Crear sesion de proyeccion</code></li>
+</ul>
+
+<h3>Crear sesion de proyeccion</h3>
+
+<p>Debe solicitar, por teclado, tanto el nombre de la película como el precio de la entrada.</p>
+
+<p>Como el precio de la entrada debe ser Double, utilizaremos el método <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html#parseDouble-java.lang.String-" target="_blank">parseDouble()</a> de la clase <code>Double</code>. Este método puede lanzar la excepción <code>NumberFormatException</code>, que habrá que gestionar cuando se le invoque.</p>
+
+<p>Habrá que hacer uso de los métodos <code>setPelicula()</code> y <code>setPrecioEntrada()</code> para establecer el valor de las propiedades pelicula y precioEntrada del objeto.</p>
+
+<p>El método <code>setPrecioEntrada()</code> habrá que modificarlo para que únicamente acepte valores de precio positivo, por lo que, en caso de que el precio indicado sea negativo devolverá un nuevo objeto excepción de la clase <code>IllegalArgumentException</code>, debiendo gestionar dicha excepción en la invocación.</p>
+
+<p>En el caso de que el precio de la entrada sea válido, se redondeará ese precio a 2 decimales antes de asignárselo a la propiedad <code>precioEntrada</code>, debiendo utilizar el procedimiento explicado <a href="https://www.delftstack.com/es/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/" target="_blank">este enlace</a> y que ya se utilizó con anterioridad.</p></body></html>
