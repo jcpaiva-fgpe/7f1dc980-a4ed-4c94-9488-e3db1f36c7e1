@@ -1,0 +1,55 @@
+MENU AYUDAS
+1.- Por destruccion total de la vivienda habitual
+2.- Por danos que afecten a la estructura de la vivienda habitual
+3.- Por danos que no afecten a la estructura de la vivienda habitual
+0.- Salir
+Elija un tipo de ayuda (0-3)
+Cantidad solicitada: 
+Referencia catastral: 
+MENU AYUDAS
+1.- Por destruccion total de la vivienda habitual
+2.- Por danos que afecten a la estructura de la vivienda habitual
+3.- Por danos que no afecten a la estructura de la vivienda habitual
+0.- Salir
+Elija un tipo de ayuda (0-3)
+Cantidad solicitada: 
+Referencia catastral: 
+MENU AYUDAS
+1.- Por destruccion total de la vivienda habitual
+2.- Por danos que afecten a la estructura de la vivienda habitual
+3.- Por danos que no afecten a la estructura de la vivienda habitual
+0.- Salir
+Elija un tipo de ayuda (0-3)
+Cantidad solicitada: 
+Referencia catastral: 
+MENU AYUDAS
+1.- Por destruccion total de la vivienda habitual
+2.- Por danos que afecten a la estructura de la vivienda habitual
+3.- Por danos que no afecten a la estructura de la vivienda habitual
+0.- Salir
+Elija un tipo de ayuda (0-3)
+Cantidad solicitada: 
+Referencia catastral: 
+MENU AYUDAS
+1.- Por destruccion total de la vivienda habitual
+2.- Por danos que afecten a la estructura de la vivienda habitual
+3.- Por danos que no afecten a la estructura de la vivienda habitual
+0.- Salir
+Elija un tipo de ayuda (0-3)
+Cantidad solicitada: 
+Referencia catastral: 
+MENU AYUDAS
+1.- Por destruccion total de la vivienda habitual
+2.- Por danos que afecten a la estructura de la vivienda habitual
+3.- Por danos que no afecten a la estructura de la vivienda habitual
+0.- Salir
+Elija un tipo de ayuda (0-3)
+Cantidad solicitada: 
+Referencia catastral: 
+MENU AYUDAS
+1.- Por destruccion total de la vivienda habitual
+2.- Por danos que afecten a la estructura de la vivienda habitual
+3.- Por danos que no afecten a la estructura de la vivienda habitual
+0.- Salir
+Elija un tipo de ayuda (0-3)
+Se han concedido ayudas por un total de: 80000
