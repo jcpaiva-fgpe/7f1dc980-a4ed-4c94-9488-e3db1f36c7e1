@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Special Assignment</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Operators </font><font style="vertical-align: inherit;">.</font></font></h3> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Increment and decrement operators.</font></font></strong></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The increment or decrement operations work as follows. </font><font style="vertical-align: inherit;">Suppose the variable a, of type int:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ is equivalent to doing a = a + 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++a is equivalent to doing a = a + 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- is equivalent to doing a = a - 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--a is equivalent to making a = a - 1</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Is there a difference between a++ and ++a? </font><font style="vertical-align: inherit;">Obviously yes:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ : first use the value of a in the corresponding operation, and then increment that value of a by 1</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++a : first increments the value of a by 1 and then uses that incremented value in the corresponding operation</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The same thing happens with decrements:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- : first use the value of a in the corresponding operation, and then decrement by 1 said value of a</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--a : first decrements the value of a by 1 and then uses that decremented value in the corresponding operation</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Increment/Decrement Operators
+         </font></font></caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERATOR</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USE</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERATION</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EXAMPLE</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESULT</font></font></th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ or ++a</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Increase</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 8</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 9</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- or --a</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Decrement</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 8</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a--</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercise:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reads 1 integer from the keyboard and displays the integer immediately above it and the integer immediately below it.</font></font></p></body></html>
