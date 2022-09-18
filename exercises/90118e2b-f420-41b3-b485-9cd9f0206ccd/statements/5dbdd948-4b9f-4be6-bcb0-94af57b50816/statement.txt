@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir tamsayı dizisinin öğelerini, kendisine söylenen konum sayısına göre dairesel olarak sola veya sağa kaydıran bir Java programı yazın. </font><font style="vertical-align: inherit;">Dairesel kaydırma, dizinin bir tarafından ayrılan öğelerin diğerine girmesi anlamına gelir.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{1, 2, 3, 4, 5, 6, 7, 8, 9, 10} tamsayı dizisi verildiğinde, onu 3 konum sağa kaydırmak şu sonucu verir: {8, 9, 10, 1, 2 , 3, 4, 5, 6, 7}</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{1, 2, 3, 4, 5, 6, 7, 8, 9, 10} tamsayı dizisi verildiğinde, onu 4 konum sola kaydırmak şu sonucu verir: {5, 6, 7, 8, 9 , 10, 1, 2, 3, 4}</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her vaka aşağıdakilerden oluşacaktır:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L &gt; 0 olmak üzere dizi öğelerinin L numaralı ilk satırı</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Söz konusu dizinin L öğelerinin boşlukla ayrıldığı bir saniye.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dizinin taşınması gereken konumların sayısı N olan üçüncü bir satır, bir boşluk ve hareketin sağa mı yoksa sola mı olduğunu belirtmek için bir D veya I.&nbsp;</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÇIKIŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her test durumu için program, istenen yer değiştirme gerçekleştirildikten sonra dizinin içeriğini yazacaktır.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KISITLAMALAR</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sorun, aşağıdaki işlevsel ayrıştırma kullanılarak çözülecektir:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Argüman olarak bir tamsayı dizisi ve bir pozitif tamsayı alan ve bu diziyi N konumlarını sağa döndüren bir işlev. </font><font style="vertical-align: inherit;">Argüman olarak alınan sayı negatif bir sayıysa, işlev IllegalArgumentException öğesini atar.</font></font></li> 
+         <li>Una función que reciba un array de enteros y un número entero positivo como argumento y realizará la rotación de dicho array N posiciones a la izquierda. La función lanzará la excepción IllegalArgumentException en caso de que el número recibido como argumento sea un número negativo.&nbsp;</li> 
+        </ul> 
+        <p>El programa principal, para cada caso, imprimirá el resultado de rotar la cadena las N posiciones a derecha o a izquierda.</p> 
+        <h3><strong>OPTIMIZACIÓN ALGORÍTMICA</strong></h3> 
+        <p>JuezLTI no lo va a tener en cuenta a la hora de dar como correcto o no el ejercicio, pero vamos a intentar programar de la manera más óptima posible, reduciendo al máximo el tiempo de ejecución. Para ello, debes observar y plasmar en tu algoritmo, esta circunstancia:</p> 
+        <ul> 
+         <li>Rotar las mismas posiciones que el tamaño del array, o un múltiplo del tamaño del array, es dejar el array como está</li> 
+         <li>Rotar el tamaño del array + 1, o un múltiplo del tamaño del array + 1, es como rotar el array 1 posición.</li> 
+         <li>Rotar el tamaño del array + 2, o un múltiplo del tamaño del array + 2, es como rotar el array 2 posiciones.</li> 
+         <li>Rotar el tamaño del array + N, o un múltiplo del tamaño del array + N, es como rotar el array N posiciones.</li> 
+        </ul> 
+        <p>Es decir,</p> 
+        <ul> 
+         <li>Rotar 5 posiciones, 10 posiciones, 15 posiciones, 20 posiciones, etc., un array de tamaño 5 es dejarlo como está (es como rotar 0 posiciones).</li> 
+         <li>Rotar 6 posiciones, 11 posiciones, 16 posiciones, 21 posiciones, etc., un array de tamaño 5 es dejarlo como rotarlo 1 posición</li> 
+         <li>Rotar 7 posiciones, 12 posiciones, 17 posiciones, 22 posiciones, etc., un array de tamaño 5 es dejarlo como rotarlo 2 posiciones</li> 
+        </ul> 
+        <p><strong>¿Qué operación matemática es la que me da esta relación entre las rotaciones equivalentes?</strong><br> &nbsp;</p></body></html>
