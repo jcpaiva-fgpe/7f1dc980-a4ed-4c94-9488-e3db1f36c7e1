@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>El siguiente cambio que nos proponen afecta a los métodos que envían el mensaje de validado o no al usuario.</p>
+
+<p>En el primero de los ejercicios hemos permitido que el DNI-NIE completo se mostrara en la función <code>letraControl()</code>. En este ejercicio debemos eliminar de ese método el <code>System.out.println()</code> correspondiente, ya que no es el lugar adecuado para ello.</p>
+
+<p>En su lugar, se debe realizar la escritura del DNI-NIE junto con el mensaje de si es válido o no, quedando la salida como puedes observar en el OUTPUT.</p>
+
+<p>Para poder visualizar el DNI-NIE junto con el resto del mensaje, debemos sustituir el parámetro tipo, que anteriormente se enviaba a los métodos <code>escribeMensajeValido()</code> y <code>escribeMensajeNoValido()</code> por el parámetro dni-nie.</p></body></html>
