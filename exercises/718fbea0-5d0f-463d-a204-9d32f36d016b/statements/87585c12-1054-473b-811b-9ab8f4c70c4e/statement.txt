@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gerenciar ingressos.</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cria o item de menu GERENCIAR ENTRADAS, junto com as opções de menu:</font></font></p> 
+        <ul> 
+         <li><code>6. Vender entradas</code></li> 
+         <li><code>7. Devolver entradas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">vender ingressos</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você deve solicitar, por teclado, o número de ingressos que está solicitando a compra.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O número de entradas inseridas será enviado para </font></font><code>venderEntradas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o método de classe </font></font><code>SalaCine</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, e ele deve controlar se o referido método lança a exceção </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O método </font></font><code>public void venderEntradas(int numeroEntradas)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">verifica se o número de ingressos já ocupados mais o número de ingressos vendidos excederiam a capacidade, caso em que um novo objeto de exceção de classe seria lançado </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a exceção também seria lançada </font></font><code>IllegalArgumentException</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">se o número de entradas fosse negativo.</font></font></li> 
+         <li>si se cumplen los requisitos, se utilizará el método <code>setButacasOcupadas</code> para indicar que el número de butacas ocupadas se ha incrementado en el número de entradas vendidas.</li> 
+        </ul> 
+        <h3>Devolver entradas</h3> 
+        <p>Debe solicitar, por teclado, el número de entradas que se está solicitando devolver.</p> 
+        <p>El número de entradas introducido se enviará al método <code>devolverEntradas</code> de la clase <code>SalaCine</code>, debiendo controlar si dicho método lanza la excepción <code>IllegalArgumentException</code>.</p> 
+        <p>El método <code>public void devolverEntradas(int numeroEntradas)</code>:</p> 
+        <ul> 
+         <li>comprueba si el número de entradas que se intenta devolver es mayor que el número de butacas ocupadas , en cuyo caso se lanzaría un nuevo objeto excepción de la clase <code>IllegalArgumentException</code>.</li> 
+         <li>también se lanzaría la excepción <code>IllegalArgumentException</code> en el caso de que el número de entradas fuera negativo.</li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">se os requisitos forem atendidos, o método será usado </font></font><code>setButacasOcupadas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">para indicar que o número de assentos ocupados foi diminuído pelo número de bilhetes devolvidos.</font></font></li> 
+        </ul></body></html>
