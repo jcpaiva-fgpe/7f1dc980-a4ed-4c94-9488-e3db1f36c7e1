@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Özel Görevli</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Operatörler </font><font style="vertical-align: inherit;">.</font></font></h3> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artırma ve eksiltme operatörleri.</font></font></strong></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artırma veya eksiltme işlemleri aşağıdaki gibi çalışır. </font><font style="vertical-align: inherit;">int türündeki a değişkenini varsayalım:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++, a = a + 1 yapmaya eşdeğerdir</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++a, a = a + 1 yapmaya eşdeğerdir</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- a = a - 1 yapmaya eşdeğerdir</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--a, a = a - 1 yapmaya eşdeğerdir</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ ve ++a arasında bir fark var mı? </font><font style="vertical-align: inherit;">Açıkçası evet:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ : önce ilgili işlemde a değerini kullanın ve ardından a değerini 1 artırın</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++a : önce a'nın değerini 1 artırır ve ardından bu artan değeri ilgili işlemde kullanır</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aynı şey eksiltmelerde de olur:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- : önce ilgili işlemde a'nın değerini kullanın ve ardından a'nın söz konusu değerini 1 azaltın</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--a : önce a'nın değerini 1 azaltır ve sonra bu azalan değeri ilgili işlemde kullanır</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Artırma/Azaltma Operatörleri
+         </font></font></caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ŞEBEKE</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KULLANMAK</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERASYON</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÖRNEK</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SONUÇ</font></font></th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">++</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a++ veya ++a</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arttırmak</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 8</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir++</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 9</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">--</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a-- veya --a</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">azalma</font></font></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir = 8</font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a--</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egzersiz yapmak:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Klavyeden 1 tamsayı okur ve tamsayıyı hemen üstünde ve tamsayıyı hemen altında görüntüler.</font></font></p></body></html>
