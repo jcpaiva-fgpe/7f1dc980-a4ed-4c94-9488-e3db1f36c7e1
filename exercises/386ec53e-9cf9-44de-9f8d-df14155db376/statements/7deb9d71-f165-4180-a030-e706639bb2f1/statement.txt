@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Queremos hacer un programa Java que dibuje cuadrados con caracteres.</p>
+
+<p>Los cuadrados se dibujarán pintando el borde y el relleno o interior.</p>
+
+<p>El borde puede pintarse usando un caracter distinto al caracter usado para el relleno o interior.</p>
+
+<p>Los cuadrados pueden no tener relleno, con lo que solo se pintará el borde (el relleno se pintará con el caracter "espacio").</p>
+
+<p>Los cuadrados puden no tener borde (realmente tendrán un borde transparente), con lo que solo se pintará el relleno (el borde se pintará con el caracter "espacio").</p>
+
+<p>También puede haber cuadrados que no tengan ni borde ni relleno. Realmente tendrán un borde transparente. (Se pintará tanto el borde como el relleno con el caracter "espacio")</p>
+
+<p><strong>ATENCIÓN:</strong>&nbsp;Deberás buscar en <a href="https://stackoverflow.com/" target="_blank"><strong>StackOverflow</strong></a> cómo se puede leer un carácter de teclado con el Scanner.</p>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos&nbsp;estará en una línea con el siguiente formato:</p>
+
+<ul>
+	<li>Un número entero que indicará el tamaño de los lados del cuadrado. Si el número introducido es menor de 2, entonces no se pintará el rectángulo.</li>
+	<li>Un SI o un NO para indicar si se pinta el borde del cuadrado. Si es un SI, entonces a continuación vendrá el caracter que hay que utilizar para pintar el borde.</li>
+	<li>Un SI o un NO para indicar si se pinta el relleno o interior del cuadrado. Si es un SI, entonces a continuación vendrá el caracter que hay que utilizar para pintar el relleno o interior.</li>
+</ul>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa pintará el cuadrado correspondiente.</p>
+
+<p>Entre caso y caso se imprimirá CASO y el número del caso.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función (técnicamente un PROCEDIMIENTO)&nbsp;que reciba como entrada el tamaño del lado del cuadrado y el caracter que debe usarse para pintar el borde del cuadrado y el caracter que debe usarse para pintar el relleno del cuadrado. El procedimiento dibujará por pantalla el cuadrado del tamaño correspondiente usando los caracteres indicados.</p>
+
+<p>Se proporcionan la&nbsp;cabecer&nbsp;o interfaz&nbsp;de dicha&nbsp;función&nbsp;en la sección MUST CONTAIN&nbsp;</p></body></html>
