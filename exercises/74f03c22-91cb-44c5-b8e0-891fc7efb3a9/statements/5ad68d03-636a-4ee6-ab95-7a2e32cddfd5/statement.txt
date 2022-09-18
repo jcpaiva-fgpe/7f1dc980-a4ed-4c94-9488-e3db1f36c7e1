@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Queremos hacer un programa Java que calcule la potencia de una serie de números enteros, con base tanto positiva como negativa y con exponente tanto positivo como negativo.</p>
+
+<p><strong>Atención</strong>:</p>
+
+<ul>
+	<li>Cualquier número elevado a 0, da 1</li>
+	<li><strong>La potencia de un número elevado a un exponente negativo es igual a (1 / número elevado a exponente positivo)</strong></li>
+</ul>
+
+<p><strong>Ejemplos</strong></p>
+
+<p>2 elevado a 3 es 8</p>
+
+<p>3 elevado a 3 es 27</p>
+
+<p>-3 elevado a 3 es -27</p>
+
+<p>2 elevado a -4 es 0.0625</p>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos&nbsp;está compuesto por dos números&nbsp;enteros distintos, -100&nbsp;≤&nbsp;<em>A</em>,&nbsp;<em>B</em>&nbsp;≤&nbsp;100, la base y el exponente.</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa el resultado de la potencia, que será un <strong>double</strong>.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función&nbsp;que reciba 2&nbsp;números enteros y devuelva el resultado de la potencia de elevar el primero al segundo.&nbsp;</p>
+
+<p><strong>NO</strong> se puede utilizar la función <strong>Math.pow</strong> ni ninguna otra que resuelva el problema, sino que éste debe ser resuelto algorítmicamente por ti en la función.</p>
+
+<p>Aunque Juez-LTI no lo va a tener en cuenta, RESUELVELO haciendo uso de la función dentro de la propia función, para resolver las potencias de exponente negativo (<strong>La potencia de un número elevado a un exponente negativo es igual a (1 / número elevado a exponente positivo</strong>)</p>
+
+<p>El programa principal, para cada uno de los casos,&nbsp;pedirá los números por teclado y usará la función para resolver el problema, imprimiendo posteriormente el resultado calculado y devuelto por la función.</p></body></html>
