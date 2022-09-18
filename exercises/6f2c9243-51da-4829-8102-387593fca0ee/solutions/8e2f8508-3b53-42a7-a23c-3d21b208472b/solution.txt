@@ -1,0 +1,34 @@
+package controlstock;
+
+import java.util.Scanner;
+
+public class ControlStock {
+
+    public static void main(String[] args) {
+
+        int stockInicial;
+        int pedido = 0;
+        boolean ultimoPedido = false, salir;
+
+        Scanner sc = new Scanner(System.in);
+        while (!ultimoPedido) {
+            stockInicial = sc.nextInt();
+            if (stockInicial == 0) {
+                salir = ultimoPedido = true;
+            } else {
+                salir = false;
+                while (!salir) {
+                    pedido = sc.nextInt();
+                    if (pedido > stockInicial) {
+                        salir = true;
+                    } else {
+                        stockInicial = stockInicial - pedido;
+                        System.out.println("QUEDAN " + stockInicial);
+                    }
+                }
+                System.out.println("NO QUEDA SUFICIENTE STOCK");
+            }
+        }
+    }
+
+}
