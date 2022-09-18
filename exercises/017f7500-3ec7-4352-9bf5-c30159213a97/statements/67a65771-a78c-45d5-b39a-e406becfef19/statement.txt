@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">for</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The loop </font></font><strong><code>for</code></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">is a counter controlled loop. </font><font style="vertical-align: inherit;">This type of loop has the following characteristics:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">It is executed a certain number of times.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">It uses a counter variable that controls the iterations of the loop.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In general, there are three operations that are carried out in this type of loop:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The counter variable is initialized.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The value of the counter variable is evaluated by comparing its value with the specified number of iterations.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The value of the counter is modified or updated through increments or decrements of it, in each one of the iterations.</font></font></li> 
+        </ul> 
+        <p>&nbsp;</p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Syntax:</font></font></h3> 
+        <blockquote> 
+         <p><code>for (inicialización; condición; iteración)&nbsp;{<br> &nbsp;&nbsp;&nbsp; sentencia1;<br> &nbsp;&nbsp;&nbsp; sentencia2;<br> &nbsp;&nbsp;&nbsp; …;<br> &nbsp;&nbsp;&nbsp; sentenciaN;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Functioning</font></font></h3> 
+        <p>Inicialización es una expresión en la que se inicializa una variable de control, que será la encargada de controlar el final del bucle.</p> 
+        <p>Condición es una expresión que evaluará la variable de control. Mientras la condición sea <em>cierta</em>, el cuerpo del bucle estará repitiéndose. Cuando la condición sea <em>falsa</em>, terminará la ejecución del bucle.</p> 
+        <p>Iteración indica la manera en la que la variable de control va cambiando en cada iteración del bucle. Podrá ser mediante incremento o decremento, y no solo de uno en uno.</p> 
+        <h3>Ejemplo:</h3> 
+        <p>En el siguiente ejemplo, se escribirá la tabla de multiplicar de un número.</p> 
+        <blockquote> 
+         <p><code>int numero = 7;<br> int contador;<br> int resultado=0;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> System.out.println ("Tabla de multiplicar del " + numero);<br> System.out.println (".............................. ");<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br> //Utilizamos ahora el bucle for<br> for (contador=1; contador&lt;=10;contador++) {<br> &nbsp;&nbsp;&nbsp; resultado = contador * numero;<br> &nbsp;&nbsp;&nbsp; System.out.println(numero + " x " + contador + " = " + resultado);<br> }</code></p> 
+        </blockquote> 
+        <h3>Ejercicio:</h3> 
+        <p>Haz un programa en Java que calcule la suma de los números enteros entre 1 y 10 utilizando una estructura repetitiva de tipo FOR.</p></body></html>
