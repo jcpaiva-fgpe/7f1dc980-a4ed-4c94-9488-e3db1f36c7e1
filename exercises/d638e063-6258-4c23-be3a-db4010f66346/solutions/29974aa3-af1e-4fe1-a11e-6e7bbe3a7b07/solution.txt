@@ -1,0 +1,52 @@
+package adivinaelnumero;
+
+import java.util.Scanner;
+
+public class AdivinaElNumero {
+
+    public static void main(String[] args) {
+
+        int numAzar;
+        int intentos;
+
+        int numUser;
+
+        boolean ganador = false;
+
+        Scanner sc = new Scanner(System.in);
+        // Random aleatorio = new Random();
+
+        // numAzar = aleatorio.nextInt(100)+1;
+        numAzar = 39;
+
+        System.out.println("Introduzca el numero de intentos: ");
+        intentos = sc.nextInt();
+        while (intentos > 0) {
+            do {
+                System.out.println("Introduce un numero: ");
+                numUser = sc.nextInt();
+
+                if (numUser == numAzar) {
+                    System.out.println("GANASTE");
+                    ganador = true;
+                } else {
+                    if (numUser < numAzar) {
+                        System.out.println("MENOR");
+                        intentos--;
+                    } else {
+                        System.out.println("MAYOR");
+                        intentos--;
+                    }
+                }
+            } while (intentos != 0 && ganador == false);
+
+            if (intentos == 0) {
+                System.out.println("PERDISTE");
+            }
+            ganador = false;
+            System.out.println("Introduzca el numero de intentos: ");
+            intentos = sc.nextInt();
+        }
+    }
+
+}
