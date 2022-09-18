@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gör ett program som frågar efter antalet elever i klassen (heltalsvärden) och sedan frågar efter betygen för var och en av dessa elever. </font><font style="vertical-align: inherit;">Utgången består av att visa följande:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Det totala antalet godkända studenter</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antalet elever som har fått en 10:a.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antalet underkända elever</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antalet elever som har fått 0.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Andelen godkända.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Andelen misslyckanden.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">För variabeltyper använd heltal.</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Elevbetyg är siffror utan decimaler.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kanske skulle procentsatserna vara rimligare att arbeta med reella tal, men vi kommer att arbeta med heltal. </font><font style="vertical-align: inherit;">Det betyder att om resultatprocenten är 30,66 % så blir resultatet 30 %.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBSERVERA</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Var försiktig med meddelandena på skärmen. </font><font style="vertical-align: inherit;">Identifiera i exemplet OUTPUT vad som skrivs ut med System.out.print("") och vad som skrivs ut med System.out. </font><font style="vertical-align: inherit;">println("").</font></font></p></body></html>
