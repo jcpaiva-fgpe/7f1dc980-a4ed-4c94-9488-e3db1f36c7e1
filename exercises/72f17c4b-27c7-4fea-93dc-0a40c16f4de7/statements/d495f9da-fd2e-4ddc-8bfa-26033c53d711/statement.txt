@@ -1,0 +1,6 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modify the previous exercise so that it asks for numbers until the number inserted in the input is an integer.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">You must make use of the same exception as before and inside the block that handles the exception, include the following code:</font></font></p> 
+        <blockquote> 
+         <p><code>System.out.println("Debe introducir un numero entero:");<br> esEntero = false;<br> sc.nextLine(); // elimina la entrada anterior</code></p> 
+        </blockquote> 
+        <p>&nbsp;</p></body></html>
