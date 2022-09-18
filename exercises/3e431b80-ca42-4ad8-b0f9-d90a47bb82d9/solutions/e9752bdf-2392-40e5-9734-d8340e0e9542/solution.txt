@@ -1,0 +1,20 @@
+package oop;
+
+import java.util.Scanner;
+
+public class OOP {
+    static Scanner sc = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        Modulo miModulo = new Modulo();
+        miModulo.nota = sc.nextInt();
+        System.out.println("Nombre del modulo: " + miModulo.nombre);
+        System.out.println("Nota: " + miModulo.nota);
+    }
+    
+}
+
+class Modulo {
+  int nota = 8;
+  String nombre = "Programacion";
+}
