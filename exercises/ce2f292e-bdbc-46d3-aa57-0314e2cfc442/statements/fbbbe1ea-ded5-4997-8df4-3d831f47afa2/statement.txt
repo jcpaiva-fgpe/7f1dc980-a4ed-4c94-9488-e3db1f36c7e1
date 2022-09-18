@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">İç içe geçmiş döngüler</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kullanıcıdan bir dikdörtgenin taban ve yüksekliğinin değeri sorulmalıdır (ondalık basamak yok). </font><font style="vertical-align: inherit;">Uygulama, yıldız işaretlerini (* sembolü) kullanarak ekranda ilgili dikdörtgeni çizecektir.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek</font></font></strong></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">giriş:</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">23</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 2</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">****</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">****</font></font></p></body></html>
