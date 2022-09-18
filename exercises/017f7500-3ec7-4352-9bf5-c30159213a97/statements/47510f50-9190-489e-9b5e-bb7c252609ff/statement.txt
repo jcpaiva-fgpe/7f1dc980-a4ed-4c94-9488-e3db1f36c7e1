@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>for</h2>
+
+<p>El bucle <strong><code>for</code></strong> es un bucle controlado por contador. Este tipo de bucle tiene las siguientes características:</p>
+
+<ul>
+	<li>Se ejecuta un número determinado de veces.</li>
+	<li>Utiliza una variable contadora que controla las iteraciones del bucle.</li>
+</ul>
+
+<p>En general, existen tres operaciones que se llevan a cabo en este tipo de bucles:</p>
+
+<ul>
+	<li>Se inicializa la variable contadora.</li>
+	<li>Se evalúa el valor de la variable contador, por medio de una comparación de su valor con el número de iteraciones especificado.</li>
+	<li>Se modifica o actualiza el valor del contador a través de incrementos o decrementos de éste, en cada una de las iteraciones.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Sintaxis:</h3>
+
+<blockquote>
+<p><code>for (inicialización; condición; iteración)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp; sentencia1;<br>
+&nbsp;&nbsp;&nbsp; sentencia2;<br>
+&nbsp;&nbsp;&nbsp; …;<br>
+&nbsp;&nbsp;&nbsp; sentenciaN;<br>
+}</code></p>
+</blockquote>
+
+<h3>Funcionamiento</h3>
+
+<p>Inicialización es una expresión en la que se inicializa una variable de control, que será la encargada de controlar el final del bucle.</p>
+
+<p>Condición es una expresión que evaluará la variable de control. Mientras la condición sea <em>cierta</em>, el cuerpo del bucle estará repitiéndose. Cuando la condición sea <em>falsa</em>, terminará la ejecución del bucle.</p>
+
+<p>Iteración indica la manera en la que la variable de control va cambiando en cada iteración del bucle. Podrá ser mediante incremento o decremento, y no solo de uno en uno.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>En el siguiente ejemplo, se escribirá la tabla de multiplicar de un número.</p>
+
+<blockquote>
+<p><code>int numero = 7;<br>
+int contador;<br>
+int resultado=0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+System.out.println ("Tabla de multiplicar del " + numero);<br>
+System.out.println (".............................. ");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+//Utilizamos ahora el bucle for<br>
+for (contador=1; contador&lt;=10;contador++) {<br>
+&nbsp;&nbsp;&nbsp; resultado = contador * numero;<br>
+&nbsp;&nbsp;&nbsp; System.out.println(numero + " x " + contador + " = " + resultado);<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Haz un programa en Java que calcule la suma de los números enteros entre 1 y 10 utilizando una estructura repetitiva de tipo FOR.</p></body></html>
