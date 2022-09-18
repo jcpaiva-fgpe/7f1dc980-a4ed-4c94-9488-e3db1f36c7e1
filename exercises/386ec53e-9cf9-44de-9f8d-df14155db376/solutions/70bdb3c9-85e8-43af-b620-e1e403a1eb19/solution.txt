@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class FDibujarCuadrado {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner teclado = new Scanner(System.in);
+        int size;
+        char caracterBorde = '*';
+        char caracterRelleno = '+';
+        boolean tieneBorde = true;
+        boolean tieneRelleno = true;
+
+        String cadena;
+
+        int numCasos = 0;
+        numCasos = teclado.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            System.out.println("CASO " + i);
+
+            size = teclado.nextInt();
+
+            cadena = teclado.next();
+
+            tieneBorde = (cadena.equals("SI"));
+            if (tieneBorde) {
+                caracterBorde = teclado.next().charAt(0);
+            } else {
+                caracterBorde = ' ';
+            }
+
+            cadena = teclado.next();
+            tieneRelleno = (cadena.equals("SI"));
+            if (tieneRelleno) {
+                caracterRelleno = teclado.next().charAt(0);
+            } else {
+                caracterRelleno = ' ';
+            }
+
+            dibujarCuadrado(size, caracterBorde, caracterRelleno);
+        }
+
+    }
+
+    public static void dibujarCuadrado(int tamLado, char borde, char relleno) {
+        if (tamLado > 1) {
+            for (int i = 0; i < tamLado; i++) {
+                for (int j = 0; j < tamLado; j++) {
+                    if (i == 0 || i == tamLado - 1 || j == 0 | j == tamLado - 1) {
+                        System.out.print(borde);
+                    } else {
+                        System.out.print(relleno);
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+}
