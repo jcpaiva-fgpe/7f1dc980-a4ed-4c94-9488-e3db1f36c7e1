@@ -1,0 +1,110 @@
+0. Salir
+REFORMAR MULTICINE
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+GESTIONAR ENTRADAS
+--------------------
+	6. Vender entradas
+	7. Devolver entradas
+	8. Calcular recaudacion
+Elija una opcion: 
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Foro de sala: ERROR: Valores erroneos para sala
+0. Salir
+REFORMAR MULTICINE
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+GESTIONAR ENTRADAS
+--------------------
+	6. Vender entradas
+	7. Devolver entradas
+	8. Calcular recaudacion
+Elija una opcion: 
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Foro de sala: 0. Salir
+REFORMAR MULTICINE
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+GESTIONAR ENTRADAS
+--------------------
+	6. Vender entradas
+	7. Devolver entradas
+	8. Calcular recaudacion
+Elija una opcion: 
+LISTAR SALAS de CINE
+-------------------
+Sala: Sala1	Aforo: 100
+0. Salir
+REFORMAR MULTICINE
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+GESTIONAR ENTRADAS
+--------------------
+	6. Vender entradas
+	7. Devolver entradas
+	8. Calcular recaudacion
+Elija una opcion: 
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Foro de sala: 0. Salir
+REFORMAR MULTICINE
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+GESTIONAR ENTRADAS
+--------------------
+	6. Vender entradas
+	7. Devolver entradas
+	8. Calcular recaudacion
+Elija una opcion: 
+LISTAR SALAS de CINE
+-------------------
+Sala: Sala1	Aforo: 100
+Sala: Sala2	Aforo: 150
+0. Salir
+REFORMAR MULTICINE
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+GESTIONAR CARTELERA
+--------------------
+	4. Crear sesion de proyeccion
+	5. Listar cartelera
+GESTIONAR ENTRADAS
+--------------------
+	6. Vender entradas
+	7. Devolver entradas
+	8. Calcular recaudacion
+Elija una opcion:
