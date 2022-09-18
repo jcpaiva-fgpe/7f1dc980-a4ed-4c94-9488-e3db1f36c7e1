@@ -1,0 +1,16 @@
+package paquetebasicos1;
+
+import java.util.Scanner;
+
+public class Suma2Numeros {
+   public static void main(String[] args) {
+      int n1=0, n2=0;
+      Scanner teclado = new Scanner(System.in);
+      
+      // Lectura de los numeros por teclado
+      n1 = teclado.nextInt();
+      n2 = teclado.nextInt();
+      
+      System.out.println(n1 + n2);
+   }
+}
