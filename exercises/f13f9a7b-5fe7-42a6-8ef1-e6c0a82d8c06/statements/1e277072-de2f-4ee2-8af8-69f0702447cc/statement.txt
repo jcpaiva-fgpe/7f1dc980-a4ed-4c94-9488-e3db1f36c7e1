@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Sustituir caracteres de cadena con funciones</h2>
+
+<p>Queremos hacer un programa Java que sustituya, en una frase, todas las apariciones de un caracter, que le digamos, por otro que le digamos.</p>
+
+<p><strong>Por ejemplo</strong>:</p>
+
+<p>Si en la frase "Esta tarde vamos a programar mucho", sustituimos las apariciones del caracter 'a' por el caracter '4', la frase quedaría así: "Est4 t4rde v4mos 4 progr4m4r mucho"&nbsp;</p>
+
+<p>Tendrás que usar métodos de la clase String para manejar cadenas. Es muy posible que tengas que usar los siguientes métodos:</p>
+
+<ul>
+	<li><code>charAt(n)</code></li>
+	<li><code>length()</code></li>
+</ul>
+
+<p>Además, recuerda que puedes concatenar cadenas con el operador '+' o con el método concat (será más fácil con el operador +)</p>
+
+<p>Además, para leer los datos desde la entrada, es muy posible que tengas que usar los siguientes métodos de la clase Scanner:</p>
+
+<ul>
+	<li><code>nextInt()</code></li>
+	<li><code>next()</code></li>
+	<li><code>nextLine()</code></li>
+</ul>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos&nbsp;está compuesto por:</p>
+
+<ul>
+	<li>una primera línea en la que aparecen los dos caracteres separados por un espacio: el caracter que hay que sustituir y el caracter por el que hay que sustituirlo.</li>
+	<li>una segunda línea en la que aparecerá la frase en la que queremos hacer esta sustitución</li>
+</ul>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá la frase resultante de haber hecho la sustición de los caracteres</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>No puede usarse el método de String que hace las sustituciones, sino que hay que programarlo a mano. Es decir, no se puede usar el método:</p>
+
+<ul>
+	<li>
+	<pre>replace(x,y);</pre>
+	</li>
+</ul>
+
+<p>Deberá resolverse el problema diseñando una función que reciba una cadena de texto y dos caracteres y devuelva la cadena resultante de sustituir el primer caracter por el segundo en la cadena de entrada.</p>
+
+<p>El programa principal, para cada uno de los casos,&nbsp;leerá los datos de entrada&nbsp;y usará la&nbsp;función&nbsp;para resolver el problema, imprimiendo posteriormente el resultado correspondiente.</p></body></html>
