@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Create an object</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In Java, an object is created from a class, using the command </font></font><code>new</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Declaration syntax:</font></font></h3> 
+        <blockquote> 
+         <p><code>NombreClase variable = new NombreClase();</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In the example in the previous exercise we created the class named </font></font><code>SubClase</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, so now we can use this definition to create objects:</font></font></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {<br> <br> &nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SubClase obj = new SubClase();</strong><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(<strong>obj.x</strong>);<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+         <p><code>class SubClase {<br> &nbsp; int x = 5;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercise:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Create an object of the Modulo class, which you developed in the previous exercise, and write, from the main() method, the value of the note.</font></font></p></body></html>
