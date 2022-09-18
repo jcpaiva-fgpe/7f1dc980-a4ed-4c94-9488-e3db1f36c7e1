@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">calculadora básica</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faça um programa que permita fazer as 4 operações básicas:</font></font></p> 
+        <ol> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adição</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Subtração</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Multiplicação</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Divisão</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fim do programa</font></font></li> 
+        </ol> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O usuário introduzirá uma opção, seguida de dois números e o programa fará a operação correspondente de acordo com o primeiro número. </font><font style="vertical-align: inherit;">Em seguida, será perguntado novamente o que você deseja fazer. </font><font style="vertical-align: inherit;">E assim sucessivamente, até que a opção escolhida seja 5: fim do programa.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ATENÇÃO</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Se a divisão não for exata, apenas a parte inteira do resultado será exibida</font></font></p></body></html>
