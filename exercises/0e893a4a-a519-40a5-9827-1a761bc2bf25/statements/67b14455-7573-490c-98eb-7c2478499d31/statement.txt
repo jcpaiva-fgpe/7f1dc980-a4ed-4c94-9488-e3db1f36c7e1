@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">grundläggande miniräknare</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gör ett program som låter dig göra de 4 grundläggande operationerna:</font></font></p> 
+        <ol> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tillägg</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Subtraktion</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Multiplikation</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Division</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">slutet av programmet</font></font></li> 
+        </ol> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Användaren kommer att introducera ett alternativ, följt av två siffror och programmet kommer att utföra motsvarande operation enligt den första siffran. </font><font style="vertical-align: inherit;">Sedan kommer det att tillfrågas igen vad du vill göra. </font><font style="vertical-align: inherit;">Och så vidare, tills det valda alternativet är 5: slutet av programmet.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBSERVERA</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Om divisionen inte är exakt, kommer endast heltalsdelen av resultatet att visas</font></font></p></body></html>
