@@ -1,0 +1,4 @@
+El contenido de la variable numero es 18
+El contenido de la variable numeroReal es 3.14
+El contenido de la variable letra es P
+El contenido de la variable estaLloviendo es false
