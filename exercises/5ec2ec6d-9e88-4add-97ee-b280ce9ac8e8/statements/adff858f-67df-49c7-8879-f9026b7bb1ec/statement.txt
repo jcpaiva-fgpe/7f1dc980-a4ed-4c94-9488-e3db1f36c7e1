@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nitelikler bir nesnenin durumunu depolamak için kullanılmışsa, yöntemler bir sınıftaki nesnelerin işlevselliğini, yani yapabileceklerini belirtmek için kullanılır.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aşağıdaki kod, nesnenin iki özniteliğinin değerinin toplamının sonucunu döndüren bir toplama yöntemi oluşturur:</font></font></p> 
+        <blockquote> 
+         <p><code>package oop;</code></p> 
+         <p><code>public class OOP {</code><br> &nbsp;</p> 
+         <p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase();<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj.y = 10;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.suma());<br> &nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp; &nbsp;<br> }</code></p> 
+         <p><code>class SubClase {<br> &nbsp; int x = 5;<br> &nbsp; int y = 7;<br> &nbsp;<br> &nbsp; public int suma() {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br> &nbsp; }<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egzersiz yapmak:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sınıfı içeren alıştırmalardan başlayarak, sınıfın </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bir nesnesini oluşturan bir uygulama oluşturun </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, klavyeden sayısal değerini yöntemin içinde okur ve </font></font><code>main()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">söz konusu sayısal dereceye karşılık gelen metinsel notu aşağıdaki kategorilere göre yazar:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 ve 1: Çok zayıf</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2, 3 ve 4: Yetersiz</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5: Yeter</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6: iyi</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7 ve 8: Olağanüstü</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 ve 10: Olağanüstü.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">başka herhangi bir değer: aralık dışı</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"></font><code>calificacion()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sayısal bir nota karşılık gelen metin notunu döndürme mantığı sınıf yönteminde </font><font style="vertical-align: inherit;">yapılmalıdır </font></font><code>Modulo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p></body></html>
