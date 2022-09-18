@@ -1,0 +1,56 @@
+package ayudaspalma;
+
+import java.util.Scanner;
+
+public class AyudasPalma {
+    
+    static Scanner sc = new Scanner(System.in);
+        
+    public static void main(String[] args) {
+        int tipoAyuda;
+        long cuantiaTotal = 0, cuantiaSolicitada;
+        
+        do {
+            mostrarMenu();
+            tipoAyuda = sc.nextInt();
+            if(tipoAyuda >= 1 && tipoAyuda <= 3) {
+                System.out.println("Cantidad solicitada: ");
+                cuantiaSolicitada = sc.nextLong();
+                cuantiaTotal += cuantiaOtorgada(tipoAyuda, cuantiaSolicitada);
+            }
+            
+        } while (tipoAyuda != 0);
+
+        System.out.println("Se han concedido ayudas por un total de: " + cuantiaTotal);
+    }
+
+    static void mostrarMenu() {
+        System.out.println("MENU AYUDAS");
+        System.out.println("1.- Por destruccion total de la vivienda habitual");
+        System.out.println("2.- Por danos que afecten a la estructura de la vivienda habitual");
+        System.out.println("3.- Por danos que no afecten a la estructura de la vivienda habitual");
+        System.out.println("0.- Salir");
+        System.out.println("Elija un tipo de ayuda (0-3)");
+    }
+    
+    static long cuantiaOtorgada(int tipoAyuda, long cuantiaSolicitada) {
+        long cuantiaMaxima = 0;
+        
+        switch(tipoAyuda){
+            case 1:
+                cuantiaMaxima = 30240;
+                break;
+            case 2: 
+                cuantiaMaxima = 20640;
+                break;
+            case 3: 
+                cuantiaMaxima = 10320;
+                break;
+        }
+        if(cuantiaSolicitada > cuantiaMaxima) {
+            cuantiaSolicitada = cuantiaMaxima;
+        }
+        return cuantiaSolicitada;
+    }
+    
+}
