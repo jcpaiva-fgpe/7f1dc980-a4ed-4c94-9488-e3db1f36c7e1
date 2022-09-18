@@ -1,0 +1,37 @@
+package mediaparesimpares;
+
+import java.util.Scanner;
+
+public class MediaParesImpares {
+
+    public static void main(String[] args) {
+        int numero;
+        int numPares = 0, numImpares = 0, sumaPares = 0, sumaImpares = 0;
+
+        Scanner teclado = new Scanner(System.in);
+
+        for (int i = 0; i < 10; i++) {
+
+            numero = teclado.nextInt();
+            if (numero % 2 == 0) {
+                numPares++;
+                sumaPares += numero;
+            } else {
+                numImpares++;
+                sumaImpares += numero;
+            }
+        }
+        if (numPares > 0) {
+            System.out.println("Media pares: " + (sumaPares / numPares));
+        } else {
+            System.out.println("Media pares: 0");
+        }
+        if (numImpares > 0) {
+            System.out.println("Media impares: " + (sumaImpares / numImpares));
+        } else {
+            System.out.println("Media impares: 0");
+        }
+
+    }
+
+}
