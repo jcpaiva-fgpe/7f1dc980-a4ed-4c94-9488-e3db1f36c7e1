@@ -1,0 +1,3 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Haz un programa en Java que pida al usuario su edad en años y muestre si es mayor de edad o no lo es, con un "SI" o un "NO".</p>
+
+<p><small><strong>ATENCIÓN:</strong> Cuidado con las ñ. NO LAS USES EN EL CÓDIGO. No uses la palabra "años" en el programa. Como ponerlo con "n" suena fatal, usa "anyos", por ejemplo.</small></p></body></html>
