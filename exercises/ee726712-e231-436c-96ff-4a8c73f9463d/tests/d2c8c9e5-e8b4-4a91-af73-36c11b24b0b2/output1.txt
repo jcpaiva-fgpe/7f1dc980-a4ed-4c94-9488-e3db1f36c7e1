@@ -1,0 +1,82 @@
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+NUEVO ACOGIDO
+-------------
+Nombre del acogido: ERROR: En estos momentos, no hay capacidad para otra acogida
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+ELIMINAR ACOGIDO
+----------------
+Nombre del acogido: Acogido eliminado de la lista.
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion: 
+LISTAR ACOGIDOS
+-------------------
+a1_-_a3_-_a4_-_a5_-_
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+Elija una opcion:
