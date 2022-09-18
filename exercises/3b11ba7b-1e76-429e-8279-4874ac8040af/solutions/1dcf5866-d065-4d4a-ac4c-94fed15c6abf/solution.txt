@@ -1,0 +1,20 @@
+package sumaenteros;
+
+import java.util.Scanner;
+
+public class SumaEnteros {
+
+    public static void main(String[] args) {
+        int suma=0, num=0;
+        Scanner teclado = new Scanner(System.in);
+        
+        do {
+            System.out.println("Introduzca un numero: ");
+            num = teclado.nextInt();
+            if(num != 9999){
+                suma = suma + num;
+            }
+        } while (num != 9999);
+        System.out.println("El resultado es: " + suma);
+    }    
+}
