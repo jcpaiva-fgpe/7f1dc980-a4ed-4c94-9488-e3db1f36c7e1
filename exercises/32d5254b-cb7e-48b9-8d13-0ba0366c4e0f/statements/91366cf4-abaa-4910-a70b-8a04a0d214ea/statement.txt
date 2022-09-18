@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">They are values ​​that are written directly in the code and represent a fixed value.</font></font></strong></p> 
+        <p><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">For example:</font></font></em></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The values ​​we assign to variables are literal. </font><font style="vertical-align: inherit;">Obviously, depending on the type of the variable we can assign some literal values ​​or others.</font></font></li> 
+        </ul> 
+        <blockquote> 
+         <p><code>variable = 3;</code></p> 
+         <p><code>variable = 3.56;</code></p> 
+         <p><code>variable = ‘c’;</code></p> 
+         <p><code>variable = true;</code></p> 
+        </blockquote> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The values ​​that we can put directly in a statement to print on the screen are literal.</font></font></li> 
+        </ul> 
+        <blockquote> 
+         <p><code>System.out.println(“Esto es una cadena”);</code></p> 
+        </blockquote> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Any other value that appears directly in some statement of the code.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">List of literals:</font></font></h3> 
+        <ul> 
+         <li>&nbsp;<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">integers</font></font></strong> 
+          <ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Decimal: 21</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Octal: 025, starts with 0</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hexadecimal: 0x15, starts with 0x</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If it is long, it ends with the character L or l: 67L</font></font></li> 
+          </ul> </li> 
+         <li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Royals</font></font></strong> 
+          <ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If it is double, add d or D to the end: 78.9D</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If it is float, add f or F to the end: 4.56F</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Supports exponential notation: 1e2, 56.34E-45</font></font></li> 
+          </ul> </li> 
+         <li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">boolean</font></font></strong> 
+          <ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">true and false</font></font></li> 
+          </ul> </li> 
+         <li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">characters</font></font></strong> 
+          <ul> 
+           <li>Carácter Unicode entre comillas simples: 'c'</li> 
+           <li>Se escribe por su código Unicode o en octal o en hexadecimal 
+            <ul> 
+             <li><strong>'a', 'Z', 'ñ'</strong></li> 
+             <li><strong>'\u00A3'</strong> (hexadecimal)</li> 
+             <li><strong>'\102'</strong> (octal)</li> 
+            </ul> </li> 
+           <li>Hay caracteres con un significado especial cuando vienen precedidos de la \: 
+            <ul> 
+             <li><strong>\b</strong>: Retroceso</li> 
+             <li><strong>\t</strong>: Tabulador</li> 
+             <li><strong>\n</strong>: Salto de línea</li> 
+             <li><strong>\r</strong>: Cambio de línea</li> 
+             <li><strong>\"</strong>: Carácter comillas dobles</li> 
+             <li><strong>\'</strong>: Carácter comillas simples</li> 
+             <li><strong>\\</strong>: Carácter borra hacia atrás</li> 
+            </ul> </li> 
+          </ul> </li> 
+        </ul> 
+        <h3>Ejemplo:</h3> 
+        <p>Muchos de esos literales ya se han utilizado en ejercicios anteriores:</p> 
+        <blockquote> 
+         <p><code>package variables;</code></p> 
+         <p><code>public class Variables {</code></p> 
+         <p><code>&nbsp; &nbsp; public static void main(String[] args) {<br> &nbsp; &nbsp; &nbsp; &nbsp; int numero;<br> &nbsp; &nbsp; &nbsp; &nbsp; float numeroReal;<br> &nbsp; &nbsp; &nbsp; &nbsp; char letra;<br> &nbsp; &nbsp; &nbsp; &nbsp; boolean estaLloviendo;<br> &nbsp; &nbsp; &nbsp; &nbsp; final double PI = 3.14D;<br> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; numero = 18;<br> &nbsp; &nbsp; &nbsp; &nbsp; numeroReal = 3.14f;<br> &nbsp; &nbsp; &nbsp; &nbsp; letra = 'P';<br> &nbsp; &nbsp; &nbsp; &nbsp; estaLloviendo = false;<br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable numero es " + numero);<br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable numeroReal es " + numeroReal);<br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable letra es " + letra);<br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable estaLloviendo es " + estaLloviendo);<br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la constante PI es " + PI);<br> &nbsp; &nbsp; }<br> &nbsp; &nbsp;&nbsp;<br> }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Using the character literals we have seen before, we can format the text in a certain way, for example, to display the value of the constant:</font></font></p> 
+        <blockquote> 
+         <p><code>package literales;</code></p> 
+         <p><code>public class Literales {</code></p> 
+         <p><code>&nbsp; &nbsp; public static void main(String[] args) {<br> &nbsp; &nbsp; &nbsp; &nbsp; final double PI = 3.14D;<br> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la constante PI es \n\t\'" + PI + "\'");<br> &nbsp; &nbsp; }<br> &nbsp; &nbsp;&nbsp;<br> }</code></p> 
+        </blockquote> 
+        <p>&nbsp;</p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exercise:&nbsp;</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In the code above, replace the word PI with the Unicode equivalent of each of those two characters.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">To know the Unicode value of the characters, you can visit the following </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=en&amp;hl=es&amp;client=webapp&amp;u=https://unicode-table.com/es/blocks/basic-latin/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Basic Latin</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> page .</font></font></p></body></html>
