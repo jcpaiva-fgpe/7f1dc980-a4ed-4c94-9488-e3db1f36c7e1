@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class AgruparN {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+        int numCasos = 0;
+        int arraySize;
+        
+        int tamanyoGrupos = 0;
+
+        String[] alumnos;
+        String[] grupos;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            
+            tamanyoGrupos = sc.nextInt();
+            arraySize = sc.nextInt();
+            alumnos = new String[arraySize];
+
+            for (int j = 0; j < alumnos.length; j++) {
+                alumnos[j] = sc.next();
+            }
+
+            grupos = agruparN(alumnos,tamanyoGrupos);
+            
+            for (int j = 0; j < grupos.length; j++) {
+                System.out.println(grupos[j]);
+            }
+            System.out.println("----------");
+        }
+
+    }
+
+    public static String[] agruparN(String[] alumnos, int tamanyoGrupos){
+
+        int posicionArrayAlumnos;
+        int contadorGrupo;
+        int numGrupo;
+        
+        String grupoActual;
+        
+        String[] grupos;
+        
+        int numGrupos = alumnos.length / tamanyoGrupos;
+        if (alumnos.length % tamanyoGrupos != 0){
+            numGrupos++;
+        }
+        
+        grupos = new String[numGrupos];
+
+        posicionArrayAlumnos = 0;
+        numGrupo = 0;
+        while (posicionArrayAlumnos < alumnos.length) {
+            contadorGrupo = 1;
+            grupoActual = "";
+            while (contadorGrupo <= tamanyoGrupos && posicionArrayAlumnos < alumnos.length) {
+                grupoActual = grupoActual + alumnos[posicionArrayAlumnos] + " ";
+                contadorGrupo++;
+                posicionArrayAlumnos++;
+            }
+            grupoActual = grupoActual.trim();
+            while (contadorGrupo <= tamanyoGrupos) {
+                grupoActual = grupoActual + " FALTA";
+                contadorGrupo++;
+            }
+            
+            grupos[numGrupo] = grupoActual;
+            numGrupo++;
+        }
+        
+        return grupos;
+    }
+
+}
