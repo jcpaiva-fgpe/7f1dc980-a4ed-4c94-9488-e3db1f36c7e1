@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">loops aninhados</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O usuário deve ser solicitado a informar o valor da base e a altura de um retângulo (sem decimais). </font><font style="vertical-align: inherit;">O aplicativo irá desenhar o retângulo correspondente na tela, utilizando asteriscos (o símbolo *)</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo</font></font></strong></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Entrada:</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">23</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">**</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 2</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">****</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">****</font></font></p></body></html>
