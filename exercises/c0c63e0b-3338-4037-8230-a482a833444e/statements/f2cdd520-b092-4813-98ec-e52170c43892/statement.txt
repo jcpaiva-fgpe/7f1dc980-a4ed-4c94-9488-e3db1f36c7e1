@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Hacer un programa que pida el número de alumnos de la clase (valores enteros) y a continuación pregunte&nbsp;por las notas de cada uno de esos alumnos. La salida consiste en mostrar lo siguiente:</p>
+
+<ul>
+        <li>El número total de alumnos aprobados</li>
+        <li>El número de alumnos que han obtenido un 10.</li>
+        <li>El número de alumnos suspensos</li>
+        <li>El número de alumnos que han obtenido un 0.</li>
+        <li>El porcentaje de aprobados.</li>
+        <li>El porcentaje de suspensos.</li>
+</ul>
+
+<p>Para los tipos de la variables usa números enteros.</p>
+
+<ul>
+        <li>Las notas de los alumnos son números sin decimales.</li>
+        <li>Quizá los porcentajes sería más razonable trabajarlos con números reales, pero los vamos a trabajar como números enteros. Esto quiere decir que si el porcentaje resultado es de 30.66%, el resultado dará 30%.</li>
+</ul>
+
+<p><strong>ATENCIÓN</strong>: Cuidado con los mensajes por pantalla. Identifica en el OUTPUT del ejemplo qué se imprime con System.out.print("") y qué se imprime con System.out. println("").</p></body></html>
