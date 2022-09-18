@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We are going to manage movie theaters, although, for now, we will only manage one room.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">To do this, we are going to create a class </font></font><code>SalaCine</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, which will have, as properties, the following:</font></font></p> 
+        <ul> 
+         <li><code>&nbsp;&nbsp;&nbsp; String nombre;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; int aforo;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; int butacasOcupadas;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; String pelicula;</code></li> 
+         <li><code>&nbsp;&nbsp;&nbsp; double precioEntrada;</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">None of these properties can be accessed from the outside, so standard getters</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> and </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">setters</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> will have to be generated </font><font style="vertical-align: inherit;">to access these properties through class methods.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The class will also have two constructors:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Constructor with no arguments: will initialize the properties with the following values: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">name = "Room";</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">capacity = 100;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">seatsOccupied = 0;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">movie = "";</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EntryPrice = 0.00;</font></font></li> 
+          </ul> </li> 
+         <li>Constructor con parámetros <em>nombre</em> y <em>aforo</em>: inicializará las propiedades nombre y aforo a los valores provistos en la invocación. No obstante, se controlará que el aforo no sea negativo, en cuyo caso, se lanzará <a href="https://translate.google.com/website?sl=es&amp;tl=en&amp;hl=es&amp;client=webapp&amp;u=https://www.tutorialesprogramacionya.com/javaya/detalleconcepto.php?punto%3D85%26codigo%3D165%26inicio%3D80" target="_blank">un nuevo objeto excepción de la clase <code>IllegalArgumentException</code></a>. El resto de las propiedades se inicializarán a los ya vistos en el constructor sin parámetros.</li> 
+        </ul> 
+        <p>Desde el <code>main()</code> de la clase principal se declarará un objeto de la clase <strong>SalaCine</strong>, el cual se inicializar a <code>null</code>;</p> 
+        <p>A continuación, se solicitará al usuario que introduzca el nombre de la Sala y el aforo. Con estos datos, se utilizará el constructor con parámetros para inicializar un objeto de la clase <strong>SalaCine</strong>.</p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Subsequently, the available information of the newly created object will be displayed: its name and its capacity, using the corresponding </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">getters</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> for this .</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Finally, the object will be removed by setting it to null.</font></font></p></body></html>
