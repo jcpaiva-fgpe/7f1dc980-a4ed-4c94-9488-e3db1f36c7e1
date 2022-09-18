@@ -1,0 +1,42 @@
+package oop;
+
+import java.util.Scanner;
+
+public class OOP {
+
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Modulo miModulo = new Modulo();
+        miModulo.nota = sc.nextInt();
+        System.out.println("Nombre del modulo: " + miModulo.nombre);
+        System.out.println("Nota: " + miModulo.nota);
+        System.out.println("Calificacion textual: " + miModulo.calificacion());
+    }
+
+}
+
+class Modulo {
+
+    int nota = 8;
+    String nombre = "Programacion";
+
+    public String calificacion() {
+        String laCalificacionTextual = "";
+        if (nota < 2) {
+            laCalificacionTextual = "Muy deficiente";
+        } else if (nota < 5) {
+            laCalificacionTextual = "Insuficiente";
+        } else if (nota < 6) {
+            laCalificacionTextual = "Suficiente";
+        } else if (nota < 7) {
+            laCalificacionTextual = "Bien";
+        } else if (nota < 9) {
+            laCalificacionTextual = "Notable";
+        } else if (nota <= 10) {
+            laCalificacionTextual = "Sobresaliente";
+        }
+
+        return laCalificacionTextual;
+    }
+}
