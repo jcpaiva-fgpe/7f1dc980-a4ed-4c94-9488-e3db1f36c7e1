@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Declaración de los atributos de una clase</h2>
+
+<p>En los ejemplos vistos hasta ahora, el identificador <code>x</code> de la clase <code>SubClase</code> y el identificador <code>nota</code> de la clase <code>Modulo</code>, son atributos de cada una de las clases y sirven para representar el estado de los objetos de dicha clase.</p>
+
+<p>En una misma clase, podemos incluir tantos atributos como necesitemos para representar el estado de los objetos de dicha clase.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>A continuación incluimos un segundo atributo en la clase <code>SubClase</code>:</p>
+
+<blockquote>
+<p><code>package oop;</code></p>
+
+<p><code>public class OOP {<br>
+<br>
+&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Creando una clase");<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+
+<p><code>class SubClase {<br>
+&nbsp; int x = 5;</code><br>
+<code>&nbsp; int y = 7;<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Añade el atributo nombre a la clase Modulo y asígnale el valor "<em>Programacion</em>".</p>
+
+<p>Instancia un objeto de la clase Modulo, llamado miModulo y escribe el valor del nombre y de la nota.</p></body></html>
