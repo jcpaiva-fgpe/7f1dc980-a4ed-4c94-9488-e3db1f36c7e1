@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Signo del zodiaco con funciones</h2>
+
+<p>Queremos hacer un programa Java que calcule el signo del zodiaco al que pertenece una persona dada su fecha de nacimiento.</p>
+
+<p>Para ello, ten en cuenta los siguientes datos:</p>
+
+<ul>
+	<li>ACUARIO: 21 Enero - 20 Febrero</li>
+	<li>PISCIS: 21 Febrero - 20 Marzo</li>
+	<li>ARIES: 21 Marzo - 20 Abril</li>
+	<li>TAURO: 21 Abril - 20 Mayo</li>
+	<li>GEMINIS: 21 Mayo - 20 Junio</li>
+	<li>CANCER: 21 Junio - 20 Julio</li>
+	<li>LEO: 21 Julio - 20 Agosto</li>
+	<li>VIRGO: 21 Agosto - 20 Septiembre</li>
+	<li>LIBRA: 21 Septiembre - 20 Octubre</li>
+	<li>ESCORPIO: 21 Octubre - 20 Noviembre</li>
+	<li>SAGITARIO: 21 Noviembre - 20 Diciembre</li>
+	<li>CAPRICORNIO: 21 Diciembre - 20 Enero</li>
+</ul>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos&nbsp;está compuesto por dos números&nbsp;enteros distintos, el primero indicando el días de la fecha de nacimiento y el segundo indicando el mes de nacimiento</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá el signo del zodiaco al que pertenece la persona que ha nacido en dicha fecha.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función que reciba una fecha (día y mes, dos enteros) y devuelva el signo del zodiaco al que pertenece dicha fecha (un String). Si la fecha es errónea, devolverá la cadena "FECHA ERRONEA".&nbsp;</p>
+
+<p>El programa principal, para cada uno de los casos,&nbsp;pedirá la fecha&nbsp;por teclado y usará las funciones&nbsp;para resolver el problema, imprimiendo posteriormente el signo del zodiaco asociado a la fecha. Si la fecha es errónea, se imprimirá el mensaje "FECHA ERRONEA"</p>
+
+<ul>
+</ul>
+
+<p>&nbsp;</p></body></html>
