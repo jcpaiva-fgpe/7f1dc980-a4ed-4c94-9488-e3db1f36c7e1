@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Modificadores de acceso.</h2>
+
+<p>Los modificadores de acceso controlan las clases y objetos que tienen acceso a las clases, propiedades y métodos en las que se incluyen.</p>
+
+<h3>Modificadores de acceso en la declaración de las <strong>clases</strong>:</h3>
+
+<ul>
+	<li><code>public</code>: La clase, así como los objetos instanciados de dicha clase, son accesibles por cualquier otra clase.</li>
+	<li><em>default:</em> La clase, así como los objetos instanciados de dicha clase, solo son accesibles por clases que estén declaradas en el mismo paquete.</li>
+</ul>
+
+<p>Modificadores de acceso para <strong>propiedades</strong> y <strong>métodos</strong>:</p>
+
+<ul>
+	<li><code>public</code>: La propiedad o método es accesible desde cualquier otra clase.</li>
+	<li><code>private</code>: La propiedad o método solo es accesible desde la clase en la que está declarada.</li>
+	<li><em>default:</em> La propiedad o método solo son accesibles por clases que estén declaradas en el mismo paquete.</li>
+	<li><code>protected</code>: La propiedad o el método es accesible desde las clases del paquete y desde las subclases.</li>
+</ul>
+
+<p>En todos los ejercicios que estamos desarrollando, estamos utilizando los dos modificadores de acceso para las clases (<code>public</code> y <em>default</em>), ya que dijimos que en un mismo fichero se podían incluir varias clases, pero solo una de ellas podía estar declarada como <code>public</code>.</p>
+
+<p>Nos centraremos, de momento. en diferenciar los atributos <code>public</code> y <code>private</code> con un ejemplo.</p>
+
+<h3>Ejemplo:</h3>
+
+<blockquote>
+<p><code>&nbsp;&nbsp;&nbsp; public class OOP_ejemplos {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj1 = new SubClase(8);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj1.y = 7; //miObj1.x = 7 devolvería error de compilación<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj1.suma()); // suma(9, 7) devolvería error de compilación<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; class SubClase {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private int x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public int y;</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public SubClase(int _x) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = _x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public SubClase(int _x, int _y) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = _x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = _y;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public int suma() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private int suma(int _x, int _y) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return _x + _y;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+</blockquote>
+
+<p>En el código anterior, podemos observar que:</p>
+
+<ul>
+	<li>Si queremos asignar un valor a <code>x</code>, necesitamos hacerlo desde el constructor, ya que posteriormente no podríamos modificar su valor, al estar declarada como privada.</li>
+	<li>La propiedad <code>y</code> sí puede ser accedida y modificada desde cualquier otra clase, sin necesidad de ser inicializada en el constructor.</li>
+	<li>El método <code>suma(int _x, int _y)</code> no puede ser utilizado desde el exterior de la clase, por lo que hay que utilizar el método <code>suma()</code> habiendo inicializado previamente las propiedades a través del constructor con parámetros.</li>
+</ul>
+
+<h3>Ejercicio:</h3>
+
+<p>Partiendo del código del ejemplo, haz que el valor de las dos propiedades se lean desde el teclado en el método main(). Haz también que en el cálculo de la suma de las dos propiedades intervenga el método <code>private int suma(int _x, int _y)</code>, teniendo en cuenta&nbsp; que este método solo puede ser utilizado desde la propia clase.</p>
+
+<p><small><strong>Nota:</strong> Elimina también los comentarios del código.</small></p></body></html>
