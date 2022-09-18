@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>if - else</h2>
+
+<p>La estructura <strong>if - else</strong> es una estructura de selección, en la que se evalúa una expresión lógica y, en función del resultado, se ejecuta un bloque de sentencias u otro.</p>
+
+<h3>Sintaxis:</h3>
+
+<blockquote>
+<p><code>if (expresión-lógica) {<br>
+&nbsp;&nbsp;&nbsp; sentencia1;<br>
+&nbsp;&nbsp;&nbsp; sentencia2;<br>
+&nbsp;&nbsp;&nbsp; …;<br>
+&nbsp;&nbsp;&nbsp; sentenciaN;<br>
+} else {<br>
+&nbsp;&nbsp;&nbsp; sentencia1;<br>
+&nbsp;&nbsp;&nbsp; sentencia2;<br>
+&nbsp;&nbsp;&nbsp; …;<br>
+&nbsp;&nbsp;&nbsp; sentenciaN;<br>
+}</code></p>
+</blockquote>
+
+<h3>Funcionamiento</h3>
+
+<p>Si la evaluación de la expresión-lógica ofrece un resultado verdadero, se ejecutará el primer bloque de sentencias. Si, por el contrario, la evaluación de la expresión-lógica ofrece un resultado falso, no se ejecutará&nbsp; el primer bloque y sí se ejecutará el segundo bloque.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>En el siguiente ejemplo, se escribirá el texto "APROBADO" en el caso de que el valor asignado a la variable nota sea mayor o igual que 5 y, en caso contrario, se escribirá "SUSPENSO"</p>
+
+<blockquote>
+<p><code>...<br>
+int nota = 7;<br>
+if(nota &gt;= 5) {<br>
+&nbsp;&nbsp;&nbsp; System.out.println("APROBADO");<br>
+}</code><code> else {<br>
+&nbsp;&nbsp;&nbsp; System.out.println("SUSPENSO");<br>
+}<br>
+...</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>Desarrolla una aplicación que lea 2 notas del teclado y, por cada una de ellas, escribirá el texto "APROBADO" únicamente en el caso de que la nota introducida sea mayor o igual que 5 y "SUSPENSO" en caso contrario.</p>
+
+<p>Independientemente de si hemos escrito el texto "APROBADO" o no, tras cada una de las calificaciones debe aparecer una cadena como esta "========", como se muestra en el OUTPUT.</p></body></html>
