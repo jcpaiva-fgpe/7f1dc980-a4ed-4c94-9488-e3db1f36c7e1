@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">temel hesap makinesi</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 temel işlemi yapmanızı sağlayan bir program yapın:</font></font></p> 
+        <ol> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">İlave</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Çıkarma</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Çarpma işlemi</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bölüm</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">programın sonu</font></font></li> 
+        </ol> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kullanıcı bir seçenek tanıtacak, ardından iki sayı gelecek ve program ilk sayıya göre ilgili işlemi yapacak. </font><font style="vertical-align: inherit;">Ardından tekrar ne yapmak istediğiniz sorulacak. </font><font style="vertical-align: inherit;">Ve böylece, seçilen seçenek 5: programın sonu olana kadar.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DİKKAT</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Bölme tam değilse sonucun sadece tamsayı kısmı görüntülenecektir.</font></font></p></body></html>
