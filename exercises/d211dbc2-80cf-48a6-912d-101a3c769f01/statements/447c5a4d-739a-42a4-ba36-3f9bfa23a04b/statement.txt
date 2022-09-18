@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Write a Java program that groups the elements of an array into groups of N contiguous elements. </font><font style="vertical-align: inherit;">The elements of the array will be text strings, representing student names.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Examples</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Given the string array {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, grouping 3 contiguous elements would result in the following groups: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Group 1: David, Maria, Sergio</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Group 2: Cristhian, Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Given the same string array as above: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, grouping 2 contiguous elements would result in the following groups: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Group 1: David, Maria</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Group 2: Sergio, Cristhian&nbsp;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Group 3: Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Given the same string array as above: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, grouping 4 contiguous elements would result in the following groups: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Group 1: David, Maria, Sergio, Cristhian</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Group 2: Miguel, Alfonso, MISSING, MISSING</font></font></li> 
+          </ul> </li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRY</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The entry begins with a number indicating how many test cases will be processed.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Each case will consist of:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A first line with the number N of elements that each group must have, where N &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A second line with the number L of array elements, where L &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A third with the L elements of said array separated by a space. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NOTE:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Compound names cannot be used, as it would take them as two names if the parts of the compound name are separated by a space.</font></font></li> 
+        </ul> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, imprimirá las agrupaciones hechas, cada una en una línea, donde se rellenará con la palabra FALTA aquellos miembros que le falten al último grupo hecho, si es que le falta alguno.</p> 
+        <p>Entre caso y caso, se imprimirán 10 guiones en una línea, para que se pueda diferenciar entre las salidas de los distintos casos de prueba.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p> 
+        <ul> 
+         <li>Una función que reciba un array de cadenas y el número de miembros que tiene que tener cada grupo, y devuelva una array de cadenas, donde en cada cadena estén los nombres de los miembros de cada grupo, separados por espacio.</li> 
+        </ul> 
+        <p>Es decir, que si la función recibe los siguientes argumentos:</p> 
+        <ul> 
+         <li>alumnos = {David, Maria, Sergio, Cristhian, Miguel, Alfonso}</li> 
+         <li>tamanyoGrupos&nbsp;= 4</li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">would return the following array of 2 elements: { David Maria Sergio Cristhian, Miguel Alfonso MISSING MISSING}, where</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the first element of the array would be the string "David Maria Sergio, Cristhian" and</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the second element would be the string "Miguel Alfonso MISSING MISSING"</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The main program, for each case, will generate the array of students reading from the keyboard, will call the function and print the result array returned by the function with the format expected for the program output</font></font></p></body></html>
