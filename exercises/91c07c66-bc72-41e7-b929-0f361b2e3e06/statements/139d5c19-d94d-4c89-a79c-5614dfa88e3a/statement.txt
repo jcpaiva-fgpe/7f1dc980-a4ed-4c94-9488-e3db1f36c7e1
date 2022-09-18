@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Definición</h3>
+
+<p>Una función es una parte de un programa o <strong>conjunto de instrucciones</strong> con un nombre, que <strong>puede ser invocada</strong> (llamada a ejecución) desde otras partes del programa, tantas veces como se desee. En algunos lenguajes, son llamadas subrutinas.</p>
+
+<p>Las funciones nos permiten dividir el trabajo que hace un programa, en tareas más pequeñas separadas de la parte principal.</p>
+
+<p>Hasta ahora, hemos <strong>invocado</strong> funciones creadas por otros desarrolladores, com, por ejemplo <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextInt()">Scanner.nextInt()</a> o <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(java.lang.String)">System.out.println()</a>. En los casos anteriores, debemos anteponer a los nombres de los métodos, la clase a la que pertenece (<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html">Scanner</a>), separados por un (.)</p>
+
+<h3>Ejemplo</h3>
+
+<p>Partiendo de un ejercicio anterior, que mostraba tablas de multiplicar mientras el usuario no pulsaba un 0 al finalizar cada tabla, vamos a utilizar un método&nbsp;<code>cabeceraTablaMultiplicar()</code> para escribir un texto ("** INICIO TABLA **") al principio de cada una de las tablas.</p>
+
+<p>La declaración del método requerirá el <strong>nombre</strong>, que servirá para invocarlo, así como otros modificadores que se explicarán más adelante.</p>
+
+<blockquote>
+<p><code>&nbsp;&nbsp;&nbsp; static void <strong>cabeceraTablaMultiplicar()</strong> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("** INICIO TABLA **");<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+</blockquote>
+
+<p>Esta declaración debe colocarse fuera del bloque correspondiente al método <code>main()</code>, pero dentro del bloque correspondiente a la clase.</p>
+
+<p>Las sentencias que se han incorporado al método&nbsp;<code><strong>cabeceraTablaMultiplicar()</strong></code> no se ejecutarán hasta que sea invocado desde el método <code>main()</code>. Esta llamada la colocaremos entre el <code>while</code> y el <code>for</code>:</p>
+
+<blockquote>
+<p><code>package tablasmultiplicar;<br>
+import java.util.Scanner;</code></p>
+
+<p><code>public class TablasMultiplicar {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int contador = 1, seguir = 1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scanner sc = new Scanner(System.in);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (seguir != 0) {<br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Invocamos el método cabecera<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cabeceraTablaMultiplicar();</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(int i = 0; i &lt;= 10; i++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(contador + " x " + i + " = " + contador * i);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contador++;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; seguir = sc.nextInt();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp; static void <strong>cabeceraTablaMultiplicar() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("** INICIO TABLA **");<br>
+&nbsp;&nbsp;&nbsp; }</strong><br>
+&nbsp;&nbsp; &nbsp;<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio</h3>
+
+<p>Crea e invoca una función, <code>pieTablaMultiplicar()</code>, que escriba el texto "** FIN TABLA **", seguido de una línea en blanco, al finalizar cada una de las tablas de multiplicar.</p></body></html>
