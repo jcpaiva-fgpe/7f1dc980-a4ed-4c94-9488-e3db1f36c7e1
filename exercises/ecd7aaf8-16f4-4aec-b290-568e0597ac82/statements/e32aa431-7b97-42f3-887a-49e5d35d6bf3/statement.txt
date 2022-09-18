@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3>Calcular la recaudación.</h3>
+
+<p>Crea la Opción de menú <code>8. Calcular recaudacion</code>.</p>
+
+<p>Esta opción debe dar información de:</p>
+
+<ul>
+	<li>el nombre de la sala, utilizando el método creado anteriormente <code>getNombre()</code>.</li>
+	<li>el porcentaje de ocupación de la sala, utilizando el método creado anteriormente <code>getPorcentajeOcupacion()</code>.</li>
+	<li>la recaudación obtenida, haciendo uso de un nuevo método de la clase <code>SalaCine</code>, que se llamará <code>getIngresos()</code>.</li>
+</ul>
+
+<p>&nbsp;El nuevo método <code>getIngresos()</code> calculará la recaudación obtenida por la venta de las entradas. Para ello, hará uso de los métodos <code>getPrecioEntrada()</code> y <code>getButacasOcupadas()</code>. El resultado obtenido por la multiplicación de los dos valores anteriores se enviará al método <code>redondearDecimales()</code>, para que lo redondee a 2 decimales.</p></body></html>
