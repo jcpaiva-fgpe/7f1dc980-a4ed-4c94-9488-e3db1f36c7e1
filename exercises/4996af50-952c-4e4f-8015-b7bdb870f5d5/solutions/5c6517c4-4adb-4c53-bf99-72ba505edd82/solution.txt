@@ -1,0 +1,28 @@
+package lecturateclado;
+
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class LecturaTeclado {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int miCalificacion = 0;
+        
+        System.out.println("Dime la nota que me corresponde:");
+
+        try {
+          miCalificacion = leeTeclado(sc);
+        } catch (InputMismatchException ime) {
+          System.out.println("Debe introducir un numero entero:");
+        } 
+        System.out.println("Mi nota en PROGRAMACION es: " + miCalificacion);
+    }
+
+    static int leeTeclado(Scanner sc) throws InputMismatchException{
+        int miCalificacion;
+        miCalificacion = sc.nextInt();
+        return miCalificacion;
+    }
+
+}
