@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class FSalarioEmpleados {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        double precioHoraNormal = 9.95;
+        double precioHoraExtra = 14.95;
+
+        int numEmpleados;
+        int horasEmpleadoSemana = 0;
+
+        int numHorasNormales;
+        int numHorasExtra;
+
+        double nominaMensual = 0;
+
+        Scanner sc = new Scanner(System.in);
+        numEmpleados = sc.nextInt();
+
+        while (numEmpleados != 0) {
+
+            for (int i = 1; i <= numEmpleados; i++) {
+                for (int j = 1; j <= 4; j++) {
+                    horasEmpleadoSemana = sc.nextInt();
+                    if (horasEmpleadoSemana < 40) {
+                        numHorasNormales = horasEmpleadoSemana;
+                        numHorasExtra = 0;
+                    } else {
+                        numHorasNormales = 40;
+                        numHorasExtra = horasEmpleadoSemana - 40;
+                    }
+                    nominaMensual += salarioSemanalEmpleado(numHorasNormales, precioHoraNormal, numHorasExtra, precioHoraExtra);
+                }
+            }
+            System.out.println("El coste de las nominas este mes es de " + nominaMensual);
+            nominaMensual = 0;
+            numEmpleados = sc.nextInt();
+        }
+    }
+
+    public static double salarioSemanalEmpleado(int horasTrabajadas, double salarioHora, int horasExtra, double salarioExtra) {
+
+        double salarioTotal = 0;
+
+        salarioTotal = horasTrabajadas * salarioHora + horasExtra * salarioExtra;
+
+        salarioTotal = Math.round(salarioTotal * 100.0) / 100.0;
+
+        return salarioTotal;
+    }
+}
