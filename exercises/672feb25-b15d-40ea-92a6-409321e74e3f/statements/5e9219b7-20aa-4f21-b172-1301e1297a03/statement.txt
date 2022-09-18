@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Número central con funciones</h2>
+
+<p>Queremos hacer un programa Java que para cada secuencia de tres números enteros distintos, sea capaz de decir cuál es el número central, es decir, aquel que está en medio.</p>
+
+<p><strong>Ejemplo</strong>: La entrada 2 9 5 debería producir una salida de 5, pues es el número central de la serie</p>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos&nbsp;está compuesto por tres números enteros distintos, -1000&nbsp;≤&nbsp;<em>S</em>,&nbsp;<em>A</em>,&nbsp;<em>B</em>&nbsp;≤&nbsp;1000.</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá la frase "<em><strong>El numero central es X</strong></em>", donde X será el número central del caso de prueba</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función&nbsp;que reciba 3 números enteros y devuelva el número central.&nbsp;El programa principal, para cada uno de los casos,&nbsp;pedirá los números por teclado y usará la función para resolver el problema, imprimiendo posteriormente el resultado calculado y devuelto por la función.</p></body></html>
