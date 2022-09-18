@@ -1,0 +1,87 @@
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+Elija una opcion: 
+NUEVA FAMILIA DE ACOGIDA
+------------------------
+Nombre del tutor: Municipio: Numero maximo de acogidas: 
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+Elija una opcion: 
+NUEVA FAMILIA DE ACOGIDA
+------------------------
+Nombre del tutor: Municipio: Numero maximo de acogidas: 
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+Elija una opcion: 
+NUEVA FAMILIA DE ACOGIDA
+------------------------
+Nombre del tutor: Municipio: Numero maximo de acogidas: 
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+Elija una opcion: 
+ELIMINAR FAMILIA DE ACOGIDA
+---------------------------
+Nombre del tutor: 0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+Elija una opcion: 
+LISTAR FAMILIAS DE ACOGIDA
+-------------------
+t1(m1):1
+t3(m3):3
+0. Salir
+GESTIONAR ACOGIDOS
+--------------------
+	1. Nuevo acogido
+	2. Eliminar acogido
+	3. Listar acogidos
+GESTIONAR FAMILIAS DE ACOGIDA
+--------------------
+	4. Nueva familia de acogida
+	5. Eliminar familia de acogida
+	6. Listar familias de acogida
+Elija una opcion:
