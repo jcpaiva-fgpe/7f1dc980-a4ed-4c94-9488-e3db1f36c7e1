@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Som med DNI:er, för att kontrollera att matrikelreferenserna är korrekta, ingår viss kontrollkaraktär. </font><font style="vertical-align: inherit;">Till skillnad från DNI har fastighetsreferenser 2 kontrolltecken.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">För beräkning av kontrolltecken för matrikelreferenserna extraheras 2 strängar:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecken 0 till 6, sammanlänkade med tecken 14 till 17</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecken 7 till 13, sammanlänkade med tecken 14 till 17</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Var och en av dessa teckensträngar används för att beräkna vart och ett av de två kontrolltecknen.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Att erhålla tecknet som motsvarar var och en av strängarna erhålls:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">extrahera, en efter en, tecknen i strängen.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tecknets initiala värde beror på om det är numeriskt eller alfabetiskt: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alfabetisk: 'A' = 1, 'B' = 2, 'C' = 3,...</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">numerisk: '0' = 0, '1' = 1, '2' = 2,...</font></font></li> 
+          </ul> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Observera att teckenräkning kan vara användbar för dig:</font></font></p> 
+          <blockquote> 
+           <ul> 
+            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'C' - 'A' = 2</font></font></li> 
+            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'3' - '0' = 3</font></font></li> 
+           </ul> 
+          </blockquote> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">det tidigare erhållna värdet måste multipliceras med vikten som motsvarar den position i vilken den befinner sig.</font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vikterna för varje position är som följer:</font></font></p> 
+          <blockquote><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           13, 15, 12, 5, 4, 17, 9, 21, 3, 7, 1
+          </font></font></blockquote> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">resultatet som erhålls genom att multiplicera tecknets värde med vikten av dess position måste adderas till de tidigare erhållna resultaten.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Efter att ha gått igenom hela teckensträngen och lagt till alla erhållna resultat, måste summan delas med 23 och resten erhållas.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">resten som erhålls på detta sätt kommer att indikera den position som kontrolltecknet upptar i följande teckensträng: 
+          </font></font><blockquote><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           "MQWERTYUIOPASDFGHJKLBZX"
+          </font></font></blockquote> </li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Om uttalandet inte är helt förtydligande kommer jag att ge dig 2 länkar på olika språk som löser dessa kontrolltecken:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://bloginformaticoinaki.blogspot.com/2016/05/validar-referencia-catastral.html</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/juanato/referenciacatastral/blob/master/valida-refcastv104.py</font></font></li> 
+        </ul> 
+        <p><em><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Obs:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Arrayer ska inte användas.</font></font></small></em></p></body></html>
