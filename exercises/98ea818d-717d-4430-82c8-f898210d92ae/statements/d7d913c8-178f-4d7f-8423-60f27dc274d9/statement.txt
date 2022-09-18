@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Euroconversor con funciones</h2>
+
+<p>Queremos hacer un programa Java que&nbsp;permita pasar de euros a pesetas y viceversa. Para ello, el usuario introducirá una de las siguientes opciones:</p>
+
+<p>1. Pasar de pesetas a euros</p>
+
+<p>2. Pasar de euros&nbsp;a pesetas</p>
+
+<p>3. Salir</p>
+
+<p>Tras introducir una de las opciones el usuario introducirá un número, que será la cantidad a convertir, en euros o pesetas, según la opción seleccionada.</p>
+
+<p>Para los euros usaremos números decimales (float) con dos decimales, mientras que para las pesetas usaremos números enteros (int)</p>
+
+<p>Por último, se mostrará el resultado de la conversión.</p>
+
+<p>Esto se estará repitiendo hasta que el usuario decida abandonar el programa con la opción de "Salir".</p>
+
+<p>Equivalencia: 1 euro = 166.386 pesetas</p>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>A continuación habrá una línea para cada caso.</p>
+
+<p>Cada línea será una secuencia de opción de conversión y cantidad a convertir (en pesetas o euros, según la opción), donde cada cantidad será un número entre 0 y 10000,&nbsp;hasta que se pulse la opción 3. Es decir, cada línea termina con la opción 3.</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá el resultado para cada conversión del caso con el texto que puede observarse en el OUTPUT.</p>
+
+<p>Entre caso y caso, se imprimirá la frase "SIGUIENTE CASO", tal y como puede observarse en el OUTPUT.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Se deberá implementar una función que reciba un float&nbsp;y un entero y redondee el float con el número de decimales que se hayan indicado en el número entero.&nbsp;Para saber cómo hacer esto, visita <a href="https://www.delftstack.com/es/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/" target="_blank">este enlace</a>. En el enlace te explica cómo redondear a 2 decimales. Deberás generalizar el problema a redondear a N decimales, obteniendo así una función más reutilizable.</p>
+
+<p>Deberá resolverse el problema diseñando dos funciones más, una que pase de pesetas a euros y otra que pase de euros a pesetas.</p>
+
+<p>Se proporcionan las cabeceras o interfaces de dichas funciones en la sección MUST CONTAIN&nbsp;</p>
+
+<p>La&nbsp;función que devuelve euros, devolverá un número decimal con dos decimales.</p>
+
+<p>La función que devuelve pesetas, devolverá un número entero redondeado, usando la función <strong>Math.round</strong>.&nbsp;</p>
+
+<p>El programa principal pedirá las opciones y las irá resolviendo haciendo llamadas a las funciones, e imprimiendo posteriormente el resultado calculado y devuelto por la función correspondiente.</p></body></html>
