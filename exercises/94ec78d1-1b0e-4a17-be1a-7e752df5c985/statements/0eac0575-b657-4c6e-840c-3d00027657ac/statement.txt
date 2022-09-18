@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Detectar cadenas iguales con funciones</h2>
+
+<p>Queremos hacer un programa Java que compare cadenas y detecte si dos&nbsp;cadenas son iguales.</p>
+
+<p>Como sabemos, para comparar dos cadenas, que son objetos, no podemos usar el operador de igualdad (==), pues dicho operador compara si ambos objetos son el mismo (misma posición de memoria), y no si ambos objetos o cadenas contienen el mismo texto.</p>
+
+<p>Tendrás que usar métodos de la clase String para manejar cadenas. Es muy posible que tengas que usar los siguientes métodos:</p>
+
+<ul>
+	<li><code>length()</code></li>
+	<li><code>charAt(n)</code></li>
+</ul>
+
+<p>Además, para leer los datos desde la entrada, es muy posible que tengas que usar los siguientes métodos de la clase Scanner:</p>
+
+<ul>
+	<li><code>nextInt()</code></li>
+	<li><code>nextLine()</code></li>
+</ul>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar. Cada uno de los casos estará formado por dos cadenas, cada una en una línea.</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá si las dos cadenas comparadas son iguales.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función que reciba dos cadenas de texto y devuelva un boolean en el que se indique si son iguales o no.</p>
+
+<p>El programa principal, para cada uno de los casos,&nbsp;leerá los datos de entrada&nbsp;y usará la&nbsp;función&nbsp;para resolver el problema, imprimiendo posteriormente el resultado correspondiente.</p>
+
+<p>Ya sabes que en Java, para resolver este problema que es comparar cadenas, existe el método&nbsp;equals. Evidentemente, se trata de que implementes tú el algoritmo de comparación, por lo que NO&nbsp;se puede usar ni el método "<strong>equals</strong>" ni el método "<strong>compareTo</strong>", ni ninguno similar.</p></body></html>
