@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">İşlevleri olan burç</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir kişinin doğum tarihine göre ait olduğu burcu hesaplayan bir Java programı yapmak istiyoruz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bunu yapmak için aşağıdaki verileri dikkate alın:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KOVA: 21 Ocak - 20 Şubat</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BALIK: 21 Şubat - 20 Mart</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KOÇ: 21 Mart - 20 Nisan</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BOĞA: 21 Nisan - 20 Mayıs</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">İKİZLER: 21 Mayıs - 20 Haziran</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KANSER: 21 Haziran - 20 Temmuz</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ASLAN: 21 Temmuz - 20 Ağustos</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Başak: 21 Ağustos - 20 Eylül</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TERAZİ: 21 Eylül - 20 Ekim</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Akrep: 21 Ekim - 20 Kasım</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YAY: 21 Kasım - 20 Aralık</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OĞLAK: 21 Aralık - 20 Ocak</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p>Cada uno de los casos&nbsp;está compuesto por dos números&nbsp;enteros distintos, el primero indicando el días de la fecha de nacimiento y el segundo indicando el mes de nacimiento</p> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá el signo del zodiaco al que pertenece la persona que ha nacido en dicha fecha.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Deberá resolverse el problema diseñando una función que reciba una fecha (día y mes, dos enteros) y devuelva el signo del zodiaco al que pertenece dicha fecha (un String). Si la fecha es errónea, devolverá la cadena "FECHA ERRONEA".&nbsp;</p> 
+        <p>El programa principal, para cada uno de los casos,&nbsp;pedirá la fecha&nbsp;por teclado y usará las funciones&nbsp;para resolver el problema, imprimiendo posteriormente el signo del zodiaco asociado a la fecha. Si la fecha es errónea, se imprimirá el mensaje "FECHA ERRONEA"</p> 
+        <ul> 
+        </ul> 
+        <p>&nbsp;</p></body></html>
