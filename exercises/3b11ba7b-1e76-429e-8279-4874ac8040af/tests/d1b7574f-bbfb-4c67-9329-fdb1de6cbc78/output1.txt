@@ -1,0 +1,5 @@
+Introduzca un numero: 
+Introduzca un numero: 
+Introduzca un numero: 
+Introduzca un numero: 
+El resultado es: 20
