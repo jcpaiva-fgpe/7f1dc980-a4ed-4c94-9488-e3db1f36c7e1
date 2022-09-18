@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artan sırayla iki tamsayı dizisini tek bir dizide birleştiren bir Java programı yazın, böylece birleştirmeden kaynaklanan dizi de artan sırada olsun.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{10, 20, 30, 40, 50, 60} ve {25, 38, 90} tamsayılarından oluşan 2 sıralı dizi göz önüne alındığında, sonuç birleştirme dizisi şöyle görünecektir: {10, 20, 25, 30, 38 , 40 , 50, 60, 90}.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{15, 22, 38, 38, 50, 70} ve {22, 29, 38, 66} tamsayılarının 2 sıralı dizisi göz önüne alındığında, sonuç birleştirme dizisi şöyle görünecektir: {15, 22, 22, 29 , 38 , 38, 38, 50, 66, 70}</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GİRİŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş, kaç test senaryosunun işleneceğini gösteren bir sayı ile başlar.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her vaka aşağıdakilerden oluşacaktır:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N &gt; 0 olduğu dizi 1'in öğelerinin N numaralı ilk satırı</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Söz konusu dizinin L öğelerinin boşlukla ayrıldığı bir saniye.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">M &gt; 0 olmak üzere, dizi 2'nin elemanlarının M sayısı ile üçüncü bir satır</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Söz konusu dizinin M öğelerinin boşlukla ayrıldığı bir saniye.</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ÇIKIŞ</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her bir test durumu için program, her iki giriş dizisinin sıralı birleştirilmesinin gerçekleştirilmesi sonucunda ortaya çıkan diziyi ekrana yazdıracaktır.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KISITLAMALAR</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sorun, aşağıdaki işlevsel ayrıştırma kullanılarak çözülecektir:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Her ikisi de artan sıralı tamsayılardan oluşan iki diziyi alan ve bunların sıralı bir birleşimini gerçekleştiren bir işlev.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana program, her durum için, klavyeden her bir dizinin verilerini toplayacak ve daha sonra, bunların sıralı birleştirilmesinden elde edilen diziyi yazdıracaktır.</font></font></p></body></html>
