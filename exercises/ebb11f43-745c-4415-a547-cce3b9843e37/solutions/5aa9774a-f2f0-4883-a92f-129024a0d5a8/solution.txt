@@ -1,0 +1,210 @@
+package cines;
+
+import java.util.Scanner;
+
+public class Cines {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int opcion;
+        String pelicula;
+        Double precioEntrada;
+
+        String nombreSala;
+        int aforo;
+
+        SalaCine sala = null;
+
+        do {
+            opcion = imprimirMenu(sc, sala != null);
+            if (opcion == 1 && sala == null) {
+                System.out.println("CREAR SALA de CINE");
+                System.out.println("-------------------");
+                System.out.print("Nombre de sala: ");
+                nombreSala = sc.nextLine();
+                System.out.print("Aforo de sala: ");
+                aforo = sc.nextInt();
+
+                try {
+                    sala = new SalaCine(nombreSala, aforo);
+                } catch (IllegalArgumentException ex) {
+                    System.out.println("ERROR: Valores erroneos para sala");
+                }
+            } else if (sala != null) {
+
+                switch (opcion) {
+                    case 2:
+                        System.out.println("BORRAR SALA de CINE");
+                        System.out.println("-------------------");
+
+                        sala = null;
+                        break;
+
+                    case 3:
+                        System.out.println("LISTAR SALAS de CINE");
+                        System.out.println("-------------------");
+                        System.out.println("Sala: " + sala.getNombre() + "\tAforo: " + sala.getAforo());
+
+                        break;
+
+                    case 4:
+                        System.out.println("CREAR SESION DE PROYECCION");
+                        System.out.println("-------------------");
+
+                        System.out.print("Nombre de la pelicula: ");
+                        pelicula = sc.nextLine();
+                        sala.setPelicula(pelicula);
+
+                        System.out.print("Precio de la entrada: ");
+                        try {
+                            precioEntrada = Double.parseDouble(sc.nextLine());
+                            sala.setPrecioEntrada(precioEntrada);
+                        } catch (NumberFormatException ex1) {
+                            System.out.println("ERROR: Valor introducido incorrecto");
+                        } catch (NullPointerException ex2) {
+                            System.out.println("ERROR: Valor NO introducido");
+                        } catch (IllegalArgumentException ex) {
+                            System.out.println("ERROR: Precio NO valido");
+                        }
+
+                        break;
+                }
+            }
+        } while (opcion != 0);
+
+    }
+
+    public static int imprimirMenu(Scanner sc, boolean existeSala) {
+
+        int opcion;
+
+        do {
+            System.out.println("\n========");
+            System.out.println("= MENU =");
+            System.out.println("========");
+            System.out.println("\t0. Salir");
+                System.out.println("GESTIONAR SALA");
+            System.out.println("--------------------");
+            System.out.println("\t1. Crear sala de cine");
+            if (existeSala) {
+                System.out.println("\t2. Borrar sala de cine");
+                System.out.println("\t3. Listar salas de cine");
+                System.out.println("GESTIONAR CARTELERA");
+                System.out.println("--------------------");
+                System.out.println("\t4. Crear sesion de proyeccion");
+            }
+            System.out.print("Elija una opcion: ");
+            opcion = sc.nextInt();
+            System.out.println();
+        } while (opcion < 0 || opcion > 4);
+
+        sc.nextLine();
+        return opcion;
+    }
+
+}
+
+class SalaCine {
+
+    private String nombre;
+    private int aforo;
+    private int butacasOcupadas;
+    private String pelicula;
+    private double precioEntrada;
+
+    public SalaCine() {
+        this.nombre = "Sala";
+        this.aforo = 100;
+        this.butacasOcupadas = 0;
+        this.pelicula = "";
+        this.precioEntrada = 0.00;
+    }
+
+    public SalaCine(String nombre, int aforo) {
+        if ((aforo <= 0) || "".equals(nombre)) {
+            throw new IllegalArgumentException();
+        } else {
+            this.nombre = nombre;
+            this.aforo = aforo;
+            this.butacasOcupadas = 0;
+            this.pelicula = "";
+            this.precioEntrada = 0.00;
+        }
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setAforo(int aforo) {
+        if (aforo <= 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.aforo = aforo;
+        }
+    }
+
+    public void setButacasOcupadas(int butacasOcupadas) {
+        if (butacasOcupadas < 0 || butacasOcupadas > this.getAforo()) {
+            throw new IllegalArgumentException();
+        } else {
+            this.butacasOcupadas = butacasOcupadas;
+        }
+    }
+
+    public void setPelicula(String pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    public void setPrecioEntrada(double precioEntrada) {
+        if (precioEntrada < 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.precioEntrada = redondearDecimales(precioEntrada, 2);
+        }
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getAforo() {
+        return this.aforo;
+    }
+
+    public int getButacasOcupadas() {
+        return this.butacasOcupadas;
+    }
+
+    public String getPelicula() {
+        return this.pelicula;
+    }
+
+    public double getPrecioEntrada() {
+        return this.precioEntrada;
+    }
+
+    public void vaciarSala() throws IllegalArgumentException {
+        this.setButacasOcupadas(0);
+        this.setPelicula("");
+        this.setPrecioEntrada(0.0);
+    }
+
+    public boolean estaLlena() {
+        return (this.getButacasOcupadas() == this.getAforo());
+    }
+
+    public boolean estaVacia() {
+        return (this.getButacasOcupadas() == 0);
+    }
+
+    private double redondearDecimales(double numero, int decimales) {
+        double divisor;
+
+        divisor = (double) Math.pow(10, decimales);
+
+        return ((double) Math.round(numero * divisor) / divisor);
+    }
+
+}
