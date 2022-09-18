@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Contar vocales de cadena con funciones</h2>
+
+<p>Queremos hacer un programa Java que cuente el número de vocales que tienen las frase que se introducen.</p>
+
+<p>Recuerda que las frases pueden contener letras en mayúsculas y en minúsculas y, en cualquiera de los dos casos, las vocales deben ser contadas.</p>
+
+<p>Tendrás que usar métodos de la clase String para manejar cadenas. Es muy posible que tengas que usar los siguientes métodos:</p>
+
+<ul>
+	<li><code>charAt(n)</code></li>
+	<li><code>toLowerCase()</code></li>
+	<li><code>length()</code></li>
+</ul>
+
+<p>Además, para leer los datos desde la entrada, es muy posible que tengas que usar los siguientes métodos de la clase Scanner:</p>
+
+<ul>
+	<li><code>nextInt()</code></li>
+	<li><code>nextLine()</code></li>
+</ul>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos&nbsp;está compuesto por una frase (una cadena de texto)</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá el número de vocales que tiene la frase correspondiente.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Deberá resolverse el problema diseñando una función que reciba una cadena de texto y devuelva el número de vocales que contiene.</p>
+
+<p>El programa principal, para cada uno de los casos,&nbsp;pedirá las cadenas por teclado y usará la&nbsp;función&nbsp;para resolver el problema, imprimiendo posteriormente el resultado correspondiente.</p></body></html>
