@@ -1,0 +1,19 @@
+package dibujarcuadrado;
+import java.util.Scanner;
+
+public class DibujarCuadrado {
+    public static void main(String[] args) {
+        int base, altura;
+        Scanner sc = new Scanner(System.in);
+        
+            base = sc.nextInt();           
+            altura = sc.nextInt();
+            
+                for (int i=altura; i>=1; i--) {
+                    for (int j=base; j>=1; j--) {
+                        System.out.print("*");
+                    }
+                    System.out.println("");
+                }
+    }    
+}
