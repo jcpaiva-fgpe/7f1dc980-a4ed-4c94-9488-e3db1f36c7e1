@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Escribe un programa en Java que reciba un número entero y evalúe si es capicúa o no, donde un número capicúa es aquel que se lee igual de principio a fin que de fin a principio</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<ul>
+	<li>El número 30303 es capicúa</li>
+	<li>El número 4576754 es capicúa</li>
+	<li>El número 4994 es capicúa</li>
+</ul>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos estará formado por una línea con un número N a evalúar si es capicúa o no, donde 0&lt;= N &gt;= 2147483647 (un int)&nbsp;</p>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, el programa escribirá CAPICÚA o NO CAPICÚA, según el número cumpla con esta propiedad o no.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p>
+
+<ul>
+	<li>Una función que reciba un número entero positivo como argumento y calcule y devuelva la cantidad de cifras que tiene dicho número. La función lanzará la excepción IllegalArgumentException en caso de que el número recibido como argumento sea un número negativo.</li>
+	<li>Una función que reciba un número entero positivo como argumento y devuelva dicho número descompuesto en cifras en un array de enteros, donde cada cifra del número ocupará una posición del array (la cifra más a la izquierda del número, ocupará la posición inicial del array). La función lanzará la excepción IllegalArgumentException si el número pasado como argumento es negativo.</li>
+	<li>Una función que reciba un array de enteros&nbsp;como argumento y evalúe y devuelva si dicho array contiene la misma secuencia de números leída de delante a atrás que de atrás a adelante.&nbsp;</li>
+</ul>
+
+<p>El programa principal, para cada caso, imprimirá si el número es capicúa o no, e imprimirá el mensaje de error correspondiente si el caso es un número negativo. Para resolver el problema hará uso de las funciones.</p>
+
+<h3>OPTIMIZACIÓN ALGORÍTMICA</h3>
+
+<p>JuezLTI no lo va a tener en cuenta a la hora de dar como correcto o no el ejercicio, pero vamos a intentar programar de la manera más óptima posible, <strong>reduciendo al máximo el uso de memoria</strong> y <strong>reduciendo al máximo el tiempo de ejecución</strong>.</p>
+
+<p>Para ello debes tener en cuenta que puedes resolver el ejercicio <strong>SIN</strong>&nbsp;crear un array auxiliar (optimizar el uso de memoria) y que puedes resolver el ejercicio sin tener que recorrer el array entero, solo la mitad, en el sentido de que en cuanto el número no sea capicúa no hace falta seguir comprobando, y también en el sentido de que recorriendo solo la mitad del array puedo saber si el número es capicúa (optimizar el uso de tiempo de ejecución). Si diseñas bien tu algoritmo serás capaz de lograr ambas optimizaciones.</p></body></html>
