@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Folha de pagamento com funções</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Queremos fazer um programa em Java que calcule o custo mensal da folha de pagamento da empresa.&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A jornada de trabalho semanal de um empregado é de 40 horas semanais, acrescidas de horas extras, onde não pode fazer horas extras se não tiver atingido 40 horas de trabalho semanal, e todas as horas que excederem 40 horas são consideradas horas extras.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cada hora de trabalho é paga a um preço de € 9,95, enquanto as horas extraordinárias são pagas a € 14,95 por hora.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplos</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um trabalhador que tenha trabalhado 30 horas semanais, tem direito a um salário nessa semana de 298,5€</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um trabalhador que tenha trabalhado 50 horas semanais tem direito a um salário nessa semana de 547,5€</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p>Cada caso de prueba comienza con un número que indica cuántos empleados tiene la empresa. A continuación habrá una línea para cada uno de estos empleados. Para cada empleado se aportan 4 números enteros separados por espacio, donde cada número representa el número de horas que ha trabajado en cada una de las 4 semanas que tiene el mes.</p> 
+        <p>La entrada acaba con un 0, que no debe procesarse.</p> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá la frase "<em><strong>El coste de las nominas este mes es de X</strong></em>", donde X será la suma de todas la nóminas mensuales de los empleados según lo que cada uno haya trabajado cada mes.</p> 
+        <p>La salida debe ser un número decimal con solo 2 decimales.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Deberá resolverse el problema diseñando una función que calcule el salario semanal a pagar según las horas trabajadas. Esta función queremos que sea lo más reutilizable posible, por lo que recibirá como entrada:&nbsp;</p> 
+        <ul> 
+         <li>El número de horas normales trabajadas: un número entero</li> 
+         <li>El precio de cada hora normal trabajada: un número decimal (con dos decimales)</li> 
+         <li>El número de horas extra trabajadas: un número entero</li> 
+         <li>El precio de cada hora extra: un número decimal (con dos decimales)</li> 
+        </ul> 
+        <p>La función&nbsp;devolverá&nbsp;el dinero a pagar, un número decimal con dos decimales.</p> 
+        <p>Se proporcionan la&nbsp;cabecer&nbsp;o interfaz&nbsp;de dicha&nbsp;función&nbsp;en la sección MUST CONTAIN&nbsp;</p> 
+        <p><strong>Atención</strong>: Habrá que asegurar&nbsp;que la función devuelve un número decimal con dos decimales. Para saber cómo puedes hacerlo, puedes consultar <a href="https://translate.google.com/website?sl=es&amp;tl=pt&amp;hl=es&amp;client=webapp&amp;u=https://www.delftstack.com/es/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/" target="_blank">este enlace</a></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal usará a função acima para resolver o problema.</font></font></p></body></html>
