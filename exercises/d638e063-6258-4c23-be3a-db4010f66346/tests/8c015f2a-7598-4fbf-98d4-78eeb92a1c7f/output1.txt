@@ -1,0 +1,27 @@
+Introduzca el numero de intentos: 
+Introduce un numero: 
+MENOR
+Introduce un numero: 
+GANASTE
+Introduzca el numero de intentos: 
+Introduce un numero: 
+MAYOR
+Introduce un numero: 
+MAYOR
+Introduce un numero: 
+MAYOR
+Introduce un numero: 
+GANASTE
+Introduzca el numero de intentos: 
+Introduce un numero: 
+MENOR
+Introduce un numero: 
+MAYOR
+Introduce un numero: 
+MENOR
+Introduce un numero: 
+MAYOR
+Introduce un numero: 
+MAYOR
+PERDISTE
+Introduzca el numero de intentos:
