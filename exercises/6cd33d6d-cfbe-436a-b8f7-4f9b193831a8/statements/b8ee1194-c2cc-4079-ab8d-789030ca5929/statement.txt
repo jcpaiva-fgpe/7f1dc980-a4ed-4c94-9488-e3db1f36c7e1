@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>El objetivo de la Encapsulación es asegurarse de que los datos sensibles permanecen ocultos a los usuarios. Para conseguirlo, se debe:</p>
+
+<ul>
+        <li>declarar las propiedades de la clase como <code>private</code>.</li>
+        <li>desarrollar métodos <code>public</code> <strong><em>get</em></strong> y <strong><em>set</em></strong> para acceder y actualizar el valor de cada propiedad declarada <code>private</code>.</li>
+</ul>
+
+<h3>Ventajas</h3>
+
+<ul>
+        <li>Mejor control de las propiedades y los métodos.</li>
+        <li>Flexibilidad a la hora de que se pueda modificar una parte del código sin afectar a otras partes.</li>
+        <li>Incrementa la seguridad de los datos.</li>
+</ul>
+
+<h3>Get y Set</h3>
+
+<p>Aprendimos que las propiedades <code>private</code> solo pueden ser accedidas dentro de la misma clase. Sin embargo, es posible acceder a ellas a través de métodos <em><strong>get</strong></em> y <strong><em>set</em></strong> declarados como <code>public</code>.</p>
+
+<p>Un método <code>get</code> devolverá el valor de la variable, y el método <code>set</code> modificará su valor.</p>
+
+<p>La sintaxis&nbsp; para ambos métodos es la misma: comienzan con <code>get</code> o <code>set</code> seguidos del nombre de la propiedad con la primera letra en mayúsculas.</p>
+
+<h3>Ejemplo:</h3>
+
+<blockquote>
+<p><code>public class OOP_ejemplos {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj = new SubClase(4, 3);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj.suma());<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>}</code></p>
+
+<p><code>class SubClase {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; private int x, y;<br>
+&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp; public SubClase(int _x, int _y) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setX(_x);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setY(_y);<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public int getX() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public int getY() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return y;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public void setX(int x) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.x = x;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public void setY(int y) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.y = y;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public int suma() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return getX() + getY();<br>
+&nbsp;&nbsp;&nbsp; }<br>
+}</code></p>
+</blockquote>
+
+<p>Se puede observar un método <code>get</code> y otro método <code>set</code> por cada una de las propiedades.</p>
+
+<p>La palabra clave this es utilizada para referirse al objeto con el que se invocó el método.</p>
+
+<h3>Ejercicio</h3>
+
+<p>Partiendo de la clase <code>Modulo</code> que soluciona el último ejercicio de Modificadores, encapsula las propiedades y genera los métodos <em>get</em> y <em>set</em> correspondientes a dichas propiedades.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p></body></html>
