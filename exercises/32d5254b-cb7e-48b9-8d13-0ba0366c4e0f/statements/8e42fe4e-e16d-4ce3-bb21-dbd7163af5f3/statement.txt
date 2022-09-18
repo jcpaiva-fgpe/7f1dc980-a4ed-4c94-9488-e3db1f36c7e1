@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong>Son valores que se escriben directamente en el código y representan un valor fijo.</strong></p>
+
+<p><em>Por ejemplo:</em></p>
+
+<ul>
+	<li>Los valores que asignamos a las variables, son literales. Evidentemente, dependiendo del tipo de la variable podremos asignar unos valores literales u otros.</li>
+</ul>
+
+<blockquote>
+<p><code>variable = 3;</code></p>
+
+<p><code>variable = 3.56;</code></p>
+
+<p><code>variable = ‘c’;</code></p>
+
+<p><code>variable = true;</code></p>
+</blockquote>
+
+<ul>
+	<li>Los valores que podemos poner directamente en una sentencia para imprimir por pantalla, son literales.</li>
+</ul>
+
+<blockquote>
+<p><code>System.out.println(“Esto es una cadena”);</code></p>
+</blockquote>
+
+<ul>
+	<li>Cualquier otro valor que aparezca directamente en alguna sentencia del código.</li>
+</ul>
+
+<h3>Relación de literales:</h3>
+
+<ul>
+	<li>&nbsp;<strong>Enteros</strong>
+
+	<ul>
+		<li>Decimal: 21</li>
+		<li>Octal: 025, empieza por 0</li>
+		<li>Hexadecimal: 0x15, empieza por 0x</li>
+		<li>Si es long, finaliza con el carácter L ó&nbsp;l: 67L</li>
+	</ul>
+	</li>
+	<li><strong>Reales</strong>
+	<ul>
+		<li>Si es double, se añade d ó D al final: 78.9D</li>
+		<li>Si es float,&nbsp; se añade f&nbsp;ó F&nbsp;al final: 4.56F</li>
+		<li>Admite la notación exponencial: 1e2, 56.34E-45</li>
+	</ul>
+	</li>
+	<li><strong>Boolean</strong>
+	<ul>
+		<li>true y false</li>
+	</ul>
+	</li>
+	<li><strong>Caracteres</strong>
+	<ul>
+		<li>Carácter Unicode entre comillas simples: 'c'</li>
+		<li>Se escribe por su código Unicode o en octal o en hexadecimal
+		<ul>
+			<li><strong>'a', 'Z', 'ñ'</strong></li>
+			<li><strong>'\u00A3'</strong> (hexadecimal)</li>
+			<li><strong>'\102'</strong> (octal)</li>
+		</ul>
+		</li>
+		<li>Hay caracteres con un significado especial cuando vienen precedidos de la \:
+		<ul>
+			<li><strong>\b</strong>: Retroceso</li>
+			<li><strong>\t</strong>: Tabulador</li>
+			<li><strong>\n</strong>: Salto de línea</li>
+			<li><strong>\r</strong>: Cambio de línea</li>
+			<li><strong>\"</strong>: Carácter comillas dobles</li>
+			<li><strong>\'</strong>: Carácter comillas simples</li>
+			<li><strong>\\</strong>: Carácter borra hacia atrás</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h3>Ejemplo:</h3>
+
+<p>Muchos de esos literales ya se han utilizado en ejercicios anteriores:</p>
+
+<blockquote>
+<p><code>package variables;</code></p>
+
+<p><code>public class Variables {</code></p>
+
+<p><code>&nbsp; &nbsp; public static void main(String[] args) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; int numero;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; float numeroReal;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; char letra;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; boolean estaLloviendo;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; final double PI = 3.14D;<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; numero = 18;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; numeroReal = 3.14f;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; letra = 'P';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; estaLloviendo = false;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable numero es " + numero);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable numeroReal es " + numeroReal);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable letra es " + letra);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la variable estaLloviendo es " + estaLloviendo);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la constante PI es " + PI);<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp;&nbsp;<br>
+}</code></p>
+</blockquote>
+
+<p>Utilizando los literales de carácter que hemos visto con anterioridad, podemos darle cierto formato al texto, por ejemplo, para mostrar el valor de la constante:</p>
+
+<blockquote>
+<p><code>package literales;</code></p>
+
+<p><code>public class Literales {</code></p>
+
+<p><code>&nbsp; &nbsp; public static void main(String[] args) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; final double PI = 3.14D;<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("El contenido de la constante PI es \n\t\'" + PI + "\'");<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp;&nbsp;<br>
+}</code></p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<h3>Ejercicio:&nbsp;</h3>
+
+<p>Sustituye, en el código anterior, la palabra PI, por el equivalente Unicode de cada uno de esos dos carácteres.</p>
+
+<p>Para conocer el valor Unicode de los caracteres, puedes visitar la siguiente página <a href="https://unicode-table.com/es/blocks/basic-latin/" target="_blank">Latín básico</a>.</p></body></html>
