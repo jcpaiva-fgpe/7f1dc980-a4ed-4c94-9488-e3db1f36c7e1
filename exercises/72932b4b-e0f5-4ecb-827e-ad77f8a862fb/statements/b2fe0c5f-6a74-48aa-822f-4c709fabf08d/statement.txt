@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eğer</font></font></h2> 
+        <p><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">if</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> yapısı </font><font style="vertical-align: inherit;">, mantıksal bir ifadenin değerlendirildiği ve sonuca bağlı olarak bir ifadenin veya bir ifade bloğunun yürütüldüğü bir seçim yapısıdır.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sözdizimi:</font></font></h3> 
+        <blockquote> 
+         <p><code>if (expresión-lógica) {<br> &nbsp;&nbsp;&nbsp; sentencia1;<br> &nbsp;&nbsp;&nbsp; sentencia2;<br> &nbsp;&nbsp;&nbsp; …;<br> &nbsp;&nbsp;&nbsp; sentenciaN;<br> }</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">işleyen</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mantıksal ifade doğru olarak değerlendirilirse, ilişkili ifade bloğu yürütülür. </font><font style="vertical-align: inherit;">Bu değerlendirmenin sonucu yanlışsa, koşullu yapı ile ilgili hiçbir talimat yürütülmez.</font></font></p> 
+        <p><em><small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tek bir ifadenin yürütülmesi gerektiğinde, parantez kullanmaktan kaçınmak mümkün olsa da, tek bir ifadeyi içine alacak olsa bile, her zaman parantezlerin kullanılması tavsiye edilir.</font></font></small></em></p> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aşağıdaki örnekte, not değişkenine atanan değer 5'e eşit veya daha büyükse 'ONAYLI' metni yazılacaktır.</font></font></p> 
+        <blockquote> 
+         <p><code>...<br> int nota = 7;<br> if(nota &gt;= 5) {<br> &nbsp;&nbsp;&nbsp; System.out.println("APROBADO");<br> }<br> ...</code></p> 
+        </blockquote> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egzersiz yapmak:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Klavyeden 2 nota okuyan ve her biri için yalnızca girilen notun 5'ten büyük veya 5'e eşit olması durumunda "ONAYLI" metnini yazacak bir uygulama geliştirin.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"ONAYLANDI" metnini yazıp yazmadığımıza bakılmaksızın, her bir yeterlilikten sonra ÇIKTI'da gösterildiği gibi "========" gibi bir dize görünmelidir.</font></font></p></body></html>
