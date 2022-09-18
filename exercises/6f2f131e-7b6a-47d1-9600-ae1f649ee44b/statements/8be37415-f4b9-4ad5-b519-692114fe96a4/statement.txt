@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">veri türü</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bildiğimiz gibi, veriler yalnızca sıfırlar ve birler kullanılarak ikili olarak depolanır. </font><font style="vertical-align: inherit;">Ayrıca bildiğimiz gibi, sıfırlar ve birler ile her türlü bilgiyi temsil edebiliriz: sayılar, harfler, renkler, resimler, sesler, video vb.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Neyse ki, programcılar düşük seviyeli verilerle (sıfırlar ve birler) çalışmazlar, bunun yerine yüksek seviyeli veri soyutlamalarını kullanırlar. </font><font style="vertical-align: inherit;">Böylece programcılar sayılar, harfler, renkler, resimler vb. ile çalışırlar. </font><font style="vertical-align: inherit;">Yani, </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bu sıfırların ve birlerin üst düzey yorumuyla çalışıyoruz: </font></font></strong><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">veri türleri</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> dediğimiz şeyle çalışıyoruz </font><font style="vertical-align: inherit;">. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir veri türü, neyi temsil ettiğine bağlı olarak bir sıfırlar ve birler dizisinin nasıl yorumlanması gerektiğini belirler</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : sayı olarak, harf olarak, boole olarak vb.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Birçok dilde, her değişken yalnızca bir tür değer içerebilir: tamsayılar, ondalık sayılar, harfler, boole'ler vb.</font></font></p> 
+        <p>En estos lenguajes, <strong>el tipo de una variable se establece en la definición de la misma y no puede ser cambiado posteriormente en el programa</strong>. Si tratamos de asignar un valor de un tipo distinto a dicha variable, el compilador dará un error.&nbsp; Este tipo de lenguajes se llaman <strong>LENGUAJES FUERTEMENTE TIPADOS</strong>.</p> 
+        <blockquote> 
+         <p><big><strong>Java es un lenguaje fuertemente tipado.</strong></big></p> 
+        </blockquote> 
+        <p>Los lenguajes de programación tipados tienen definidos una serie de <strong>tipos de datos primitivos o básicos</strong>, que generalmente son: numéricos (números, enteros o reales), alfanuméricos (letras/caracteres o cadenas de caracteres) y lógicos o booleanos (valor verdadero o falso). Por lo tanto, los tipos de datos primitivos <strong>son los proporcionados por el propio lenguaje de manera nativa</strong>.</p> 
+        <p>También suelen permitir definir y utilizar datos más complejos a partir de combinaciones de datos primitivos. Estos tipos de datos se llaman <strong>datos estructurados</strong>. Los tipos de datos estructurados son construidos por los programadores (o suministrados en librerías del lenguaje) y, en los lenguajes orientados a objetos, se definen definiendo su propia clase y objetos. <strong>En java, las cadenas de caracteres, son un tipo estructurado: la clase String</strong>.</p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="0"> 
+         <caption>
+          TIPOS DE DATOS
+         </caption> 
+         <thead> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td colspan="5" rowspan="1"><strong>PRIMITIVOS</strong></td> 
+           <td><strong>ESTRUCTURADOS</strong></td> 
+          </tr> 
+          <tr> 
+           <td colspan="2" rowspan="1">NUMÉRICOS</td> 
+           <td colspan="2" rowspan="1">ALFANUMÉRICOS</td> 
+           <td>LÓGICOS/BOOLEANOS</td> 
+           <td>...</td> 
+          </tr> 
+          <tr> 
+           <td>ENTERO</td> 
+           <td>REAL</td> 
+           <td>CARÁCTER</td> 
+           <td>CADENA DE CARACTERES</td> 
+           <td>&nbsp;</td> 
+           <td>&nbsp;</td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <p>De momento, nosotros nos centraremos exclusivamente en los tipos de datos primitivos.</p> 
+        <h3>Tipos de datos y memoria</h3> 
+        <p>Cuando se establece el tipo de una variable, realmente lo que estamos haciendo es <strong>establecer la cantidad de memoria que reservamos para dicha variable</strong>. Por lo tanto, el tipo de dato de una variable establece el rango de valores que dicha variable puede almacenar.</p> 
+        <p>Por ejemplo, si el tipo de datos “número” es un tipo de dato de 16 bits, quiere decir que cuando se declare una variable de dicho tipo (por ejemplo, la variable precio), se reservarán 16 bits en memoria para guardar ceros y unos, que representarán el número entero que dicha variable puede almacenar.</p> 
+        <p>Automáticamente, esto implica que dicha variable sólo va a poder almacenar 2^16 números distintos.</p> 
+        <p><a href="https://translate.google.com/website?sl=es&amp;tl=tr&amp;hl=es&amp;client=webapp&amp;u=https://www.geeksforgeeks.org/data-types-in-java/" target="_blank"><img alt="" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191105122725/Primitive-Data-Types-in-Java-4.jpg"></a></p> 
+        <h3>Declaración de variables en Java</h3> 
+        <p>Para definir una variable en Java, usaremos la siguiente sintaxis:</p> 
+        <blockquote> 
+         <p><code>Tipo Nombre;</code></p> 
+        </blockquote> 
+        <p>donde:</p> 
+        <ul> 
+         <li><code>Tipo </code>es el tipo de dato de la variable</li> 
+         <li><code>Nombre </code>es el nombre o identificador de la variable</li> 
+        </ul> 
+        <p>Ejemplos:</p> 
+        <blockquote> 
+         <p><code>int numero;<br> float numeroReal;<br> char letra;<br> boolean estaLloviendo;</code></p> 
+        </blockquote> 
+        <p>Las variables pueden ser declaradas en cualquier parte del código, pero se aconseja hacerlo siempre en el inicio del bloque en el que van a usarse.</p> 
+        <h3>Inicialización de variables en Java</h3> 
+        <p>Una vez que se define una variable, debemos darle siempre un valor inicial. Esto es lo que se conoce con el nombre de <strong>INICIALIZAR una variable</strong>.</p> 
+        <p>Para darle un valor a una variable, ya sea durante la inicialización de la misma o posteriormente en el programa, usaremos una <strong>sentencia de asignación</strong>. En Java, <strong>el operador de asignación es el símbolo =</strong></p> 
+        <p><strong>Si intentamos usar una variable sin haberla inicializado, el IDE nos avisará marcando el error y nos dará un error de compilación.</strong></p> 
+        <h3>Ejercicio</h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aşağıdaki değişkenleri bildiren ve başlatan bir Java uygulaması oluşturun:</font></font></p> 
+        <blockquote> 
+         <p><code>numero </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tamsayı türü. </font></font><br> <code>numeroReal </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tipi yüzer. </font></font><br> <code>letra </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">karakter türü. </font></font><br> <code>estaLloviendo </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">boole türü.</font></font></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bu değişkenlerin her birinin değerleri aşağıdaki gibi olacaktır.</font></font></p> 
+        <blockquote> 
+         <p><code>numero</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:18 </font></font><br> <code>numeroReal</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:3.14 </font></font><br> <code>letra</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:P </font></font><br> <code>estaLloviendo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:yanlış</font></font></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uygulamanın sonucu OUTPUT'ta</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> görülebilecek sonuç olacaktır </font><font style="vertical-align: inherit;">.</font></font></p></body></html>
