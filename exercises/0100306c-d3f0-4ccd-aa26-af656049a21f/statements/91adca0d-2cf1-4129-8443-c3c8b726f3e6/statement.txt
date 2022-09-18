@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Skriv ett Java-program som slår samman till en enda array två arrayer av heltal som är i ökande ordning, så att arrayen som resulterar från sammanslagningen också är i ökande ordning.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exempel:</font></font></strong></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Med tanke på de 2 ordnade arrayerna med heltal {10, 20, 30, 40, 50, 60} och {25, 38, 90}, skulle den resulterande arrayen av sammanslagningen se ut så här: {10, 20, 25, 30, 38 , 40, 50, 60, 90}.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Med tanke på de 2 ordnade arrayerna med heltal {15, 22, 38, 38, 50, 70} och {22, 29, 38, 66} skulle den resulterande arrayen av sammanslagningen se ut så här: {15, 22, 22, 29 , 38 , 38, 38, 50, 66, 70}</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INTRÄDE</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Posten börjar med ett nummer som anger hur många testfall som kommer att behandlas.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Varje fall kommer att bestå av:</font></font></p> 
+        <ul> 
+         <li>Una primera línea con el número N&nbsp;de elementos del array 1, donde N&nbsp;&gt;&nbsp;0</li> 
+         <li>Una segunda con los L&nbsp;elementos de dicho array separados por un espacio.</li> 
+         <li>Una tercera&nbsp;línea con el número M&nbsp;de elementos del array 2, donde M&nbsp;&gt;&nbsp;0</li> 
+         <li>Una segunda con los M&nbsp;elementos de dicho array separados por un espacio.</li> 
+        </ul> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa imprimirá por pantalla el array resultado de realizar la fusión ordenada de ambos arrays de entrada.</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p> 
+        <ul> 
+         <li>Una función que reciba dos arrays de enteros ordenados crecientemente ambos y realice una fusión ordenada de los mismos.</li> 
+        </ul> 
+        <p>El programa principal, para cada caso, recogerá de teclado los datos de cada array y, posteriomente, imprimirá el array resultado de hacer la fusión ordenada de los mismos.</p></body></html>
