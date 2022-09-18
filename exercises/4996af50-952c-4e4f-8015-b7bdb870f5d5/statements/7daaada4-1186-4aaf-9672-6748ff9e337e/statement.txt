@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>En ocasiones, en lugar de capturar la excepción en el momento en el que se produce, nos interesará <em>"lanzar"</em> la excepción hacia el método invocante.</p>
+
+<p>Cuando un método utiliza una sentencia que puede generar una excepción, pero dicha excepción no es capturada y tratada por él, sino que se encarga su gestión a quién llamó al método, decimos que se ha producido <strong>delegación de excepciones.</strong></p>
+
+<p>Para establecer esta delegación, en la cabecera del método se declara el tipo de excepciones que puede generar y que deberán ser gestionadas por quien invoque a dicho método. Utilizaremos para ello la sentencia <code>throws</code> y tras esa palabra se indica qué excepciones puede provocar el código del método. Si ocurre una excepción en el método, el código abandona ese método y regresa al código desde el que se llamó al método. Allí se posará en el <code>catch</code> apropiado para esa excepción.</p>
+
+<h3>Ejemplo:</h3>
+
+<p>Hemos modificado el ejemplo sobre captura de excepciones para que la lectura de los datos se realice en un método propio, aunque la captura de la excepción sigue estando en el método <code>main</code>, ya que el nuevo método&nbsp;<code>leeTeclado</code> delega la gestión de las excepciones con <code>throws</code>.</p>
+
+<blockquote>
+<p><code>/*<br>
+&nbsp;* Ejercicio resuelto sobre manejo de excepciones.<br>
+&nbsp;* El programa solicita que el usuario introduzca por teclado<br>
+&nbsp;* un número entre 0 y 100, debiendo gestionarse la entrada<br>
+&nbsp;* por medio de excepciones.<br>
+&nbsp;*/</code></p>
+
+<p><code>import java.io.*;</code></p>
+
+<p><code>public class ejercicio_resuelto_excepciones {<br>
+&nbsp;&nbsp;&nbsp; public static void main(String[] args){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int numero=-1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int intentos=0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String linea;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; do{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print("Introduzca un número entre 0 y 100: ");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numero = leeTeclado(teclado);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }catch(IOException e){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Error al leer del teclado.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }catch(NumberFormatException e){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Debe introducir un número entre 0 y 100.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }finally{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intentos++;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }while (numero &lt; 0 || numero &gt; 100);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("El número introducido es: " + numero);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Número de intentos: " + intentos);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; private static int leeTeclado(BufferedReader teclado) <strong>throws NumberFormatException, IOException</strong> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String linea = teclado.readLine();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int numero = Integer.parseInt(linea);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return numero;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+}</code></p>
+</blockquote>
+
+<h3>Ejercicio:</h3>
+
+<p>En el&nbsp;ejemplo correspondiente al apartado Leer del teclado, se muestra la calificación en el módulo de Programación que introduce el usuario por teclado:</p>
+
+<blockquote>
+<p><code>import java.util.Scanner;</code></p>
+
+<p><code>public class LecturaTeclado {</code></p>
+
+<p><code>&nbsp; &nbsp; public static void main(String[] args) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; Scanner sc = new Scanner(System.in);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; int miCalificacion = 0;<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("Dime la nota que me corresponde:");<br>
+&nbsp; &nbsp; &nbsp; &nbsp; miCalificacion = sc.nextInt();</code></p>
+
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println("Mi nota en PROGRAMACION es: " + miCalificacion);<br>
+&nbsp; &nbsp; }</code></p>
+
+<p><code>}</code></p>
+</blockquote>
+
+<p>Modifica el código anterior incluyendo un método leeTeclado, que delegue la excepción <a href="https://docs.oracle.com/javase/8/docs/api/java/util/InputMismatchException.html">InputMismatchException</a> al método main en el caso de que el usuario introduzca un valor float.</p></body></html>
