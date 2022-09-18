@@ -1,0 +1,80 @@
+package oop;
+
+import java.util.Scanner;
+
+public class OOP {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String nombre;
+        int nota;
+        Modulo miModulo;
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Escriba el nombre del modulo: ");
+            nombre = sc.nextLine();
+            if (nombre.length() > 0) {
+                do {
+                    System.out.println("Escriba la nota del modulo: ");
+                    nota = Integer.parseInt(sc.nextLine());
+                    
+                } while (nota > Modulo.CALIFICACION_MAXIMA);
+                miModulo = new Modulo(nota, nombre);
+            } else {
+                miModulo = new Modulo();
+            }
+            System.out.println("Nombre del modulo: " + miModulo.nombre);
+            System.out.println("Nota: " + miModulo.nota);
+            System.out.println("Calificacion textual: " + miModulo.calificacion());
+        }
+    }
+
+}
+
+class Modulo {
+
+    final static int CALIFICACION_MAXIMA = 10;
+    int nota;
+    String nombre;
+
+    public Modulo() {
+        nota = 8;
+        nombre = "Programacion";
+    }
+
+    public Modulo(int _nota, String _nombre) {
+        this.nota = _nota;
+        this.nombre = _nombre;
+    }
+
+    public String calificacion() {
+        String notaTextual;
+        switch (nota) {
+            case 0:
+            case 1:
+                notaTextual = "Muy deficiente";
+                break;
+            case 2:
+            case 3:
+            case 4:
+                notaTextual = "Insuficiente";
+                break;
+            case 5:
+                notaTextual = "Suficiente";
+                break;
+            case 6:
+                notaTextual = "Bien";
+                break;
+            case 7:
+            case 8:
+                notaTextual = "Notable";
+                break;
+            case 9:
+            case 10:
+                notaTextual = "Sobresaliente";
+                break;
+            default:
+                notaTextual = "Fuera de rango";
+        }
+        return notaTextual;
+    }
+}
