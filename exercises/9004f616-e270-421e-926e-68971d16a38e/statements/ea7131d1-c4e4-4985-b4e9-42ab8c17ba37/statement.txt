@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fonksiyonlarla haftanın günü</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Haftanın Pazartesi günü başladığını göz önünde bulundurarak, haftanın hangi gününün gün sayısına karşılık geldiğini söyleyen bir Java programı yapmak istiyoruz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bu kodu anlayın ve test edin</font></font></p> 
+        <pre><code>import java.util.Scanner;</code><font></font>
+<font></font>
+<code>public class FDiaSemana {</code><font></font>
+<font></font>
+<code>    public static void main(String[] args) {<font></font>
+        // TODO code application logic here</code><font></font>
+<font></font>
+<code>        Scanner sc = new Scanner(System.in);</code><font></font>
+<font></font>
+<code>        int numCasos;<font></font>
+        int numDia;</code><font></font>
+<font></font>
+<code>        numCasos = sc.nextInt();</code><font></font>
+<font></font>
+<code>        for (int i = 1; i &lt;= numCasos; i++) {<font></font>
+            numDia = sc.nextInt();<font></font>
+            System.out.println(diaSemana(numDia));<font></font>
+        }<font></font>
+    }</code><font></font>
+<font></font>
+<code>    public static String diaSemana(int valor) {<font></font>
+        switch (valor) {<font></font>
+            case 1:<font></font>
+                return "LUNES";<font></font>
+            case 2:<font></font>
+                return "MARTES";<font></font>
+            case 3:<font></font>
+                return "MIERCOLES";<font></font>
+            case 4:<font></font>
+                return "JUEVES";<font></font>
+            case 5:<font></font>
+                return "VIERNES";<font></font>
+            case 6:<font></font>
+                return "SABADO";<font></font>
+            case 7:<font></font>
+                return "DOMINGO";<font></font>
+            default:<font></font>
+                return "ERROR";<font></font>
+        }<font></font>
+    }<font></font>
+}</code></pre> 
+        <p>&nbsp;</p></body></html>
