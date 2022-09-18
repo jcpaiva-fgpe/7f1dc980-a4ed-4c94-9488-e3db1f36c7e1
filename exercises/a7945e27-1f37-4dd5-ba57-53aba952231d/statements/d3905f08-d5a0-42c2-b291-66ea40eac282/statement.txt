@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'Terra Mítica'da bir günde lunaparkı kaç kişinin ziyaret ettiğini bilmek istersiniz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ziyaretçiler girerken yaşlarını belirtmelidir:&nbsp;</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yaşınız 4 veya daha küçük ise giriş ücretsizdir,</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yaş 5 ila 12 (dahil) arasındaysa, bilet 20 €'dur ve</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yaşın 12'yi aşması durumunda, bilet ücreti 40 € olacaktır.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kasiyer -1'e eşit bir yaş girdiğinde dolap kapanacaktır.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 yaşın altındaki çocuk sayısını (4 dahil), 5 ila 12 yaş arasındaki çocuk sayısını (her ikisi dahil) ve yetişkin sayısını belirtiniz.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ayrıca gün sonunda giren toplam kişi sayısını ve yapılan kutuyu da gösterir.</font></font></p></body></html>
