@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Queremos fazer um programa Java que calcule o fatorial de um número. </font><font style="vertical-align: inherit;">No </font></font><a href="https://translate.google.com/website?sl=es&amp;tl=pt&amp;hl=es&amp;client=webapp&amp;u=https://es.wikipedia.org/wiki/Factorial" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">link a seguir</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> você tem informações sobre como calcular o fatorial de um número.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NOTA:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O fatorial de 5 é 5 * 4 * 3 * 2 * 1 = 120.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O fatorial de 0 é 1.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Use um double para calcular o fatorial.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A entrada começa com um número indicando quantos casos de teste devem ser processados.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Em seguida, haverá uma linha para cada caso, onde cada caso é simplesmente o número para calcular o fatorial. </font><font style="vertical-align: inherit;">Cada número será um inteiro n, com n &gt;=0 e n&lt;=100</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SAÍDA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para cada caso de teste, o programa escreverá o resultado do cálculo do fatorial do número</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTRIÇÕES</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O problema deve ser resolvido projetando uma função que calcule e retorne o fatorial do número passado como parâmetro.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O cabeçalho ou interface da referida função é fornecido na seção DEVE CONTER&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal processará a entrada do teclado, chamará a função e imprimirá o resultado calculado e retornado por ela.</font></font></p></body></html>
