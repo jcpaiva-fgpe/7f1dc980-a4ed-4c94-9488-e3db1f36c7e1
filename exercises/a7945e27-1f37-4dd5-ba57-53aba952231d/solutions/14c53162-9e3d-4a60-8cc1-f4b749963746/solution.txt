@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ParqueAtracciones {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int edadPersona = 0;
+        int menos4 = 0;
+        int menos12 = 0;
+        int mayores = 0;
+        int cajaTotal = 0;
+        int contador = 0;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        while (edadPersona != -1) {
+            edadPersona = sc.nextInt();
+            if (edadPersona >= 0 && edadPersona <= 4) {
+                contador++;
+                menos4++;
+            } else if (edadPersona >= 5 && edadPersona <= 12) {
+                contador++;
+                menos12++;
+                cajaTotal = cajaTotal + 20;
+            } else if (edadPersona >= 13) {
+                contador++;
+                mayores++;
+                cajaTotal = cajaTotal + 40;
+            }
+        }//while 
+
+        System.out.println("RECAUDACION: " + cajaTotal);
+        System.out.println("TOTAL PERSONAS: " + contador);
+        System.out.println("MENORES DE 4: " + menos4);
+        System.out.println("ENTRE 4 Y 12: " + menos12);
+        System.out.println("ADULTOS: " + mayores);
+
+    }//main
+}
