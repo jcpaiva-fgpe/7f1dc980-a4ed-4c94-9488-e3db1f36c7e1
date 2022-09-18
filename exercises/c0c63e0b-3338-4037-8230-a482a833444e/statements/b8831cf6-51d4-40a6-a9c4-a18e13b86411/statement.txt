@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sınıftaki öğrenci sayısını (tamsayı değerleri) soran ve ardından bu öğrencilerin her birinin notlarını soran bir program yapın. </font><font style="vertical-align: inherit;">Çıktı aşağıdakileri göstermekten oluşur:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Onaylanan toplam öğrenci sayısı</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10 puan alan öğrenci sayısı.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Başarısız öğrenci sayısı</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 alan öğrenci sayısı.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Onaylanan yüzde.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Başarısızlık yüzdesi.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Değişken türleri için tamsayılar kullanın.</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Öğrenci notları ondalıksız sayılardır.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Belki yüzdeler reel sayılarla çalışmak daha mantıklı olabilir ama biz tam sayılarla çalışacağız. </font><font style="vertical-align: inherit;">Bu, sonuç yüzdesi %30.66 ise sonucun %30 olacağı anlamına gelir.</font></font></li> 
+        </ul> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DİKKAT</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : Ekrandaki mesajlara dikkat edin. </font><font style="vertical-align: inherit;">OUTPUT örneğinde System.out.print("") ile neyin yazdırıldığını ve System.out ile neyin yazdırıldığını belirleyin. </font><font style="vertical-align: inherit;">println("").</font></font></p></body></html>
