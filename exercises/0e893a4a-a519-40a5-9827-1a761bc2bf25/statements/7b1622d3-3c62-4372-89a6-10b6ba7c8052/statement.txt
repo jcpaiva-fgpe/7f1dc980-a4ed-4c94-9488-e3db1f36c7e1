@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Calculadora básica</h2>
+
+<p>Haz un programa que permita&nbsp;hacer las 4 operaciones básica:</p>
+
+<ol>
+        <li>Suma</li>
+        <li>Resta</li>
+        <li>Multiplicación</li>
+        <li>División</li>
+        <li>Fin del programa</li>
+</ol>
+
+<p>El usuario introducirá&nbsp;una opción, seguida de dos números y el programa hará la operación que corresponda según el primer número. Entonces, se volverá a pedir qué se quiere hacer. Y así sucesivamente, hasta que la opción elegida sea la 5: fin del programa.</p>
+
+<p><strong>ATENCIÓN</strong>: Si la división no es exacta, se mostrará solo la parte entera del resultado</p></body></html>
