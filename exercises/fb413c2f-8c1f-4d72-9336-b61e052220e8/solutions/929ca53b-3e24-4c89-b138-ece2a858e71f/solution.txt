@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class FFactorial {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int numCasos = 0;
+        int numEntrada = 0;
+        Scanner sc = new Scanner(System.in);
+        
+        numCasos = sc.nextInt();
+        
+        for (int i=1; i<=numCasos; i++){
+            numEntrada = sc.nextInt();
+            System.out.println(factorial(numEntrada));
+        }
+    }
+
+    public static double factorial (int numero){
+        double resultado = 1;
+        
+        for (int i = 1; i <= numero; i++) {
+            resultado = resultado * i;
+        }
+        if (numero <= 0) {
+            resultado = 1;
+        }
+        return resultado;
+    }
+}
