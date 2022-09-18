@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class FSignoZodiaco {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int dia, mes;
+
+        int numCasos = 0;
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+
+            dia = sc.nextInt();
+            mes = sc.nextInt();
+            System.out.println(signoZodiaco(dia, mes));
+        }
+    }
+
+    public static String signoZodiaco(int dia, int mes) {
+        String signo;
+
+        if ((mes == 1 && dia >= 21 && dia <= 31) || (mes == 2 && dia <= 20 && dia >= 1)) {
+            signo = "ACUARIO";
+        } else if ((mes == 2 && dia >= 21 && dia <= 29) || (mes == 3 && dia <= 20 && dia >= 1)) {
+            signo = "PISCIS";
+        } else if ((mes == 3 && dia >= 21 && dia <= 31) || (mes == 4 && dia <= 20 && dia >= 1)) {
+            signo = "ARIES";
+        } else if ((mes == 4 && dia >= 21 && dia <= 30) || (mes == 5 && dia <= 20 && dia >= 1)) {
+            signo = "TAURO";
+        } else if ((mes == 5 && dia >= 21 && dia <= 31) || (mes == 6 && dia <= 20 && dia >= 1)) {
+            signo = "GEMINIS";
+        } else if ((mes == 6 && dia >= 21 && dia <= 30) || (mes == 7 && dia <= 20 && dia >= 1)) {
+            signo = "CANCER";
+        } else if ((mes == 7 && dia >= 21 && dia <= 31) || (mes == 8 && dia <= 20 && dia >= 1)) {
+            signo = "LEO";
+        } else if ((mes == 8 && dia >= 21 && dia <= 31) || (mes == 9 && dia <= 20 && dia >= 1)) {
+            signo = "VIRGO";
+        } else if ((mes == 9 && dia >= 21 && dia <= 30) || (mes == 10 && dia <= 20 && dia >= 1)) {
+            signo = "LIBRA";
+        } else if ((mes == 10 && dia >= 21 && dia <= 31) || (mes == 11 && dia <= 20 && dia >= 1)) {
+            signo = "ESCORPIO";
+        } else if ((mes == 11 && dia >= 21 && dia <= 30) || (mes == 12 && dia <= 20 && dia >= 1)) {
+            signo = "SAGITARIO";
+        } else if ((mes == 12 && dia >= 21 && dia <= 31) || (mes == 1 && dia <= 20 && dia >= 1)) {
+            signo = "CAPRICORNIO";
+        } else {
+            signo = "FECHA ERRONEA";
+        }
+
+        return signo;
+    }
+}
