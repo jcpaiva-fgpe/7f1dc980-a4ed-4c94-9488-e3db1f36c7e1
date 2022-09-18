@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Haz un programa en Java que realice agrupaciones de los elementos de un array en grupos de N elementos contiguos. Los elementos del array serán cadenas de texto, representando nombres de alumnos.</p>
+
+<p><strong>Ejemplos</strong>:</p>
+
+<ul>
+        <li>Dado el array de cadenas {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, hacer agrupaciones de 3 elementos contiguos, daría como resultado los siguientes grupos:
+        <ul>
+                <li>Grupo 1: David, Maria, Sergio</li>
+                <li>Grupo 2: Cristhian, Miguel, Alfonso</li>
+        </ul>
+        </li>
+        <li>Dado el mismo array de cadenas anterior: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, hacer agrupaciones de 2&nbsp;elementos contiguos, daría como resultado los siguientes grupos:
+        <ul>
+                <li>Grupo 1: David, Maria</li>
+                <li>Grupo 2: Sergio, Cristhian&nbsp;</li>
+                <li>Grupo 3: Miguel, Alfonso</li>
+        </ul>
+        </li>
+        <li>Dado el mismo array de cadenas anterior: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, hacer agrupaciones de 4&nbsp;elementos contiguos, daría como resultado los siguientes grupos:
+        <ul>
+                <li>Grupo 1: David, Maria, Sergio, Cristhian</li>
+                <li>Grupo 2:&nbsp;Miguel, Alfonso, FALTA, FALTA</li>
+        </ul>
+        </li>
+</ul>
+
+<h3><strong>ENTRADA</strong></h3>
+
+<p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p>
+
+<p>Cada uno de los casos estará formado por:</p>
+
+<ul>
+        <li>Una primera línea con el número N de elementos que tiene que tener cada grupo que se haga, donde N &gt; 0</li>
+        <li>Una segunda&nbsp;línea con el número L&nbsp;de elementos del array, donde L&nbsp;&gt;&nbsp;0</li>
+        <li>Una tercera con los L&nbsp;elementos de dicho array separados por un espacio. <strong>NOTA:</strong> No se podrán usar nombres compuestos, pues los tomaría como dos nombres si las partes del nombre compuesto están separados por un espacio.</li>
+</ul>
+
+<h3><strong>SALIDA</strong></h3>
+
+<p>Por cada caso de prueba, imprimirá las agrupaciones hechas, cada una en una línea, donde se rellenará con la palabra FALTA aquellos miembros que le falten al último grupo hecho, si es que le falta alguno.</p>
+
+<p>Entre caso y caso, se imprimirán 10 guiones en una línea, para que se pueda diferenciar entre las salidas de los distintos casos de prueba.</p>
+
+<h3><strong>RESTRICCIONES</strong></h3>
+
+<p>Se resolverá el problema haciendo uso de la siguiente descomposición funcional:</p>
+
+<ul>
+        <li>Una función que reciba un array de cadenas y el número de miembros que tiene que tener cada grupo, y devuelva una array de cadenas, donde en cada cadena estén los nombres de los miembros de cada grupo, separados por espacio.</li>
+</ul>
+
+<p>Es decir, que si la función recibe los siguientes argumentos:</p>
+
+<ul>
+        <li>alumnos = {David, Maria, Sergio, Cristhian, Miguel, Alfonso}</li>
+        <li>tamanyoGrupos&nbsp;= 4</li>
+</ul>
+
+<p>devolvería el siguiente array de 2 elementos: { David Maria Sergio Cristhian, Miguel Alfonso FALTA FALTA}, donde</p>
+
+<ul>
+        <li>el primer elemento del array sería la cadena "David Maria Sergio, Cristhian" y</li>
+        <li>el segundo elemento sería la cadena "Miguel Alfonso FALTA FALTA"</li>
+</ul>
+
+<p>El programa principal, para cada caso, generará el array de alumnos leyendo de teclado, llamará a la función e&nbsp;imprimirá el array resultado devuelto por la función con el formato que se espera para la salida del programa</p></body></html>
