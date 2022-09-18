@@ -1,0 +1,5 @@
+El numero central es 5
+El numero central es 25
+El numero central es 5
+El numero central es 0
+El numero central es -25
