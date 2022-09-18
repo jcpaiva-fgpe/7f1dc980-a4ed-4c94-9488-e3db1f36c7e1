@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author AulaVirtual
+ */
+public class EliminarRepetidos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+        int numCasos = 0;
+        int arraySize;
+        int[] array;
+        int [] arraySinRepetidos;
+        
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            arraySize = sc.nextInt();
+            array = new int[arraySize];
+
+            for (int j = 0; j < array.length; j++) {
+                array[j] = sc.nextInt();
+            }
+            
+            arraySinRepetidos = eliminarRepetidos(array);
+
+            for (int j = 0; j < arraySinRepetidos.length; j++) {
+                System.out.print(arraySinRepetidos[j] + " ");
+            }
+            System.out.println();
+
+        }
+    }
+
+    public static int primeraAparicionNumero(int[] array, int numero) {
+        int posicion = -1;
+        int i = 0;
+
+        while (i < array.length && posicion == -1) {
+            if (array[i] == numero) {
+                posicion = i;
+            }
+            i++;
+        }
+        return posicion;
+    }
+
+    public static int[] eliminarRepetidos(int[] array) {
+        int[] arrayAuxiliar = new int[array.length];
+        int[] nuevoArray;
+        int ultimoNuevoArray = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (primeraAparicionNumero(array, array[i]) == i) {
+                arrayAuxiliar[ultimoNuevoArray] = array[i];
+                ultimoNuevoArray++;
+            }
+        }
+                
+        nuevoArray = new int[ultimoNuevoArray];
+        for (int i = 0; i < nuevoArray.length; i++) {
+            nuevoArray[i] = arrayAuxiliar[i];
+        }
+        
+        return nuevoArray;
+    }
+}
