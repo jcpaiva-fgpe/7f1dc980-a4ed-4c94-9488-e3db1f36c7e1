@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estrutura básica de um programa Java</font></font></h1> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crie um aplicativo Java que exiba os seguintes textos:</font></font></strong></p> 
+        <blockquote> 
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MÓDULO DE PROGRAMAÇÃO</font></font></p> 
+         <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1º. </font><font style="vertical-align: inherit;">Desafio</font></font></p> 
+        </blockquote> 
+        <p><em><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lembre-se:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> copie e cole os textos no lugar certo, para não perder os espaços, acentos ou sinais de pontuação.</font></font></small></em></p></body></html>
