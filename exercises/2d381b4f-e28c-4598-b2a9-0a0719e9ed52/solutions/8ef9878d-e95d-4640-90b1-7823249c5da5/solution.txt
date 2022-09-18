@@ -1,0 +1,19 @@
+package mayoriaedad;
+
+import java.util.Scanner;
+
+public class MayoriaEdad {
+    public static void main(String[] args) {
+        int edad;        
+        Scanner teclado=new Scanner(System.in);
+
+        // leo por teclado la edad
+        edad=teclado.nextInt();
+
+        if (edad>=18) {
+            System.out.println("SI");
+        } else {
+            System.out.println("NO");
+        }
+    }    
+}
