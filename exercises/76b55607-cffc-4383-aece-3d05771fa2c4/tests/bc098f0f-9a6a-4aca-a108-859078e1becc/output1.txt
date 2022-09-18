@@ -1,0 +1,2 @@
+Media pares: 16
+Media impares: 15
