@@ -1,0 +1,29 @@
+package javaapplication4;
+
+import java.util.Scanner;
+
+public class JavaApplication4 {
+
+    public static void main(String[] args) {
+        int multiplicador, multiplicando;
+        Scanner sc = new Scanner(System.in);
+        do {
+            multiplicando = sc.nextInt();
+            multiplicador = sc.nextInt();
+            if (multiplicador > 0 && multiplicando > 0) {
+                System.out.println(multiplicando + " x " + multiplicador + " = " + multiplica(multiplicando, multiplicador));
+            }
+        } while (multiplicador > 0 && multiplicando > 0);
+    }
+
+    static int multiplica(int multiplicando, int multiplicador) {
+        int resultado;
+        if (multiplicador == 1) {
+            resultado = multiplicando;
+        } else {
+            resultado = multiplicando + multiplica(multiplicando, multiplicador - 1);
+        }
+        return resultado;
+    }
+
+}
