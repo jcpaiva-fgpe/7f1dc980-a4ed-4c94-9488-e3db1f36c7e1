@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class FNumeroPrimo {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        int numCasos = 0;
+        int opcion = 0;
+        int n = 0, m = 0;
+
+        int cantidadPrimos = 0;
+        int numero = 0;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            opcion = sc.nextInt();
+            switch (opcion) {
+                case 1:
+                    n = sc.nextInt();
+                    cantidadPrimos = 0;
+                    numero = 0;
+                    while (cantidadPrimos < n) {
+                        numero++;
+                        if (esPrimo(numero)) {
+                            cantidadPrimos++;
+                            System.out.print(numero + " ");
+                        }
+                    }
+                    System.out.println();
+                    break;
+                case 2:
+                    n = sc.nextInt();
+                    m = sc.nextInt();
+                    cantidadPrimos = 0;
+                    for (int j = n; j <= m; j++) {
+                        if (esPrimo(j)) {
+                            cantidadPrimos++;
+                            System.out.print(j + " ");
+                        }
+                    }
+                    System.out.println("\nTotal de " + cantidadPrimos + " numeros primos");
+                    break;
+                default:
+                    System.out.println("Opción incorrecta");
+                    break;
+
+            }
+        }
+
+    }
+
+    public static boolean esPrimo(int numero) {
+
+        int divisor = 1;
+        boolean primo = true;
+
+        if (numero == 1) {
+            primo = false;
+        } else {
+            divisor = numero - 1;
+            while (divisor > 1 && primo == true) {
+                if (numero % divisor == 0) {
+                    primo = false;
+                }
+                divisor--;
+            }
+        }
+        return primo;
+    }
+
+}
