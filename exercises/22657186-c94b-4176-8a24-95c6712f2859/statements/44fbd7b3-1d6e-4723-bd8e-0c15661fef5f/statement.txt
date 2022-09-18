@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>El siguiente cambio que nos proponen afecta a más métodos, ya que nos piden desarrollar un método <code>getTipo()</code>, que nos devuelve "DNI" o "NIE" en función del tipo de documento que se haya insertado. Por lo tanto:</p>
+
+<ol>
+	<li>Debes crear un método&nbsp;<code>static String getTipo(String dni_nie)</code>, que recibe un <code>String</code> con un dni o nie y, valiéndose del método <code>esNIE()</code>, devuelve "NIE" o "DNI" en función del tipo de documento enviado.</li>
+	<li>En el main, el siguiente código<br>
+	<code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (esNIE(dni_nie)) {<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dni = convierteNIE(dni_nie);<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tipo = "NIE";<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dni = dni_nie;<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tipo = "DNI";<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</code><br>
+	deberás actualizarlo a<br>
+	<code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (tipo.equals("NIE")) {<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dni = convierteNIE(dni_nie);<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dni = dni_nie;<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</code><br>
+	por lo que previamente deberás haber invocado al método&nbsp;<code>getTipo()</code>.</li>
+</ol></body></html>
