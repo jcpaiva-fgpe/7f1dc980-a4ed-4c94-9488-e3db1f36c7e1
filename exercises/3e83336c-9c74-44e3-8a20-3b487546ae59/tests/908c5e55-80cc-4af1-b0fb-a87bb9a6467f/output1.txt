@@ -1,0 +1,117 @@
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+Elija una opcion: 
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Aforo de sala: 
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+Elija una opcion: 
+LISTAR SALAS de CINE
+-------------------
+Sala: Rialto	Aforo: 120
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+Elija una opcion: 
+BORRAR SALA de CINE
+-------------------
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+Elija una opcion: 
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Aforo de sala: 
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+Elija una opcion: 
+BORRAR SALA de CINE
+-------------------
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+Elija una opcion: 
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+Elija una opcion: 
+CREAR SALA de CINE
+-------------------
+Nombre de sala: Aforo de sala: 
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+Elija una opcion: 
+LISTAR SALAS de CINE
+-------------------
+Sala: Rialto	Aforo: 120
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+	2. Borrar sala de cine
+	3. Listar salas de cine
+Elija una opcion: 
+BORRAR SALA de CINE
+-------------------
+
+========
+= MENU =
+========
+	0. Salir
+GESTIONAR SALA
+--------------------
+	1. Crear sala de cine
+Elija una opcion:
