@@ -1,0 +1,36 @@
+package suma1segundo;
+
+import java.util.Scanner;
+
+public class Suma1Segundo {
+
+    public static void main(String[] args) {
+        int ss = 0, mm = 0, hh = 0;
+        Scanner sc = new Scanner(System.in);
+
+        hh = sc.nextInt();
+        mm = sc.nextInt();
+        ss = sc.nextInt();
+        while (hh < 24 && mm < 60 && ss < 60) {
+            if (ss == 59 && mm == 59 && hh == 23) {
+                hh = 0;
+                mm = 0;
+                ss = 0;
+            } else if (ss == 59 && mm == 59) {
+                hh = hh + 1;
+                mm = 0;
+                ss = 0;
+            } else if (ss == 59) {
+                mm = mm + 1;
+                ss = 0;
+            } else {
+                ss = ss + 1;
+            }
+            System.out.println(hh + " " + mm + " " + ss);
+            hh = sc.nextInt();
+            mm = sc.nextInt();
+            ss = sc.nextInt();
+        }
+    }
+
+}
