@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aritmetiska operatorer </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">med uppdrag</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></h3> 
+        <p>&nbsp;</p> 
+        <table align="center" border="1" cellpadding="1" cellspacing="1"> 
+         <caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Aritmetiska operatorer
+         </font></font></caption> 
+         <thead> 
+          <tr> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OPERATÖR</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ANVÄNDA SIG AV</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DRIFT</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EXEMPEL</font></font></th> 
+           <th scope="col" style="background-color:#9e9e9e; text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESULTAT</font></font></th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a += b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">är lika med a </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= a + b</font></font></strong></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a += 5</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 13</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a -= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">är lika med a </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= a - b</font></font></strong></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a -= 5</font></font></p> </td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 3</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a *= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">är lika med a </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= a * b</font></font></strong></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">till=8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">till *= 5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 40</font></font></td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a /= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">är lika med a </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= a / b</font></font></strong></td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=10 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a /= 5</font></font></p> </td> 
+           <td style="text-align:center"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 2</font></font></p> </td> 
+          </tr> 
+          <tr> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">%=</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a %= b</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">är lika med a </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= a % b</font></font></strong></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a=8 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a %= 5</font></font></td> 
+           <td style="text-align:center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a = 3</font></font></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Träning:</font></font></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den läser två heltal från tangentbordet och använder de aritmetiska operatorerna med tilldelning som ses ovan för att visa värdet som det första av talen skulle ha när det ökas med enheterna som anges med det andra och när det minskas med samma belopp.</font></font></p></body></html>
