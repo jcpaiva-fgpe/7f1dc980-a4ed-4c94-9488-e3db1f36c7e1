@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author AulaVirtual
+ */
+public class ComprobarOrden {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        boolean ascendente, descendente;
+
+        int numCasos = 0;
+        int arraySize;
+        int[] array;
+
+        numCasos = sc.nextInt();
+
+        for (int i = 1; i <= numCasos; i++) {
+            arraySize = sc.nextInt();
+            array = new int[arraySize];
+
+            for (int j = 0; j < array.length; j++) {
+                array[j] = sc.nextInt();
+            }
+
+            ascendente = estaOrdenadoAscendente(array);
+            descendente = estaOrdenadoDescendente(array);
+            if (ascendente && descendente) {
+                System.out.println("SIN ORDEN");
+            } else if (ascendente) {
+                System.out.println("ASCENDENTE");
+            } else if (descendente){
+                System.out.println("DESCENDENTE");
+            } else {
+                System.out.println("SIN ORDEN");
+            }
+
+        }
+
+    }
+
+    public static boolean estaOrdenadoAscendente(int[] array) {
+        boolean ordenadoAscendente = true;
+
+        int i = 0;
+        while (i < array.length - 1 && ordenadoAscendente == true) {
+            if (array[i] > array[i + 1]) {
+                ordenadoAscendente = false;
+            }
+            i++;
+        }
+
+        return ordenadoAscendente;
+    }
+
+    public static boolean estaOrdenadoDescendente(int[] array) {
+        boolean ordenadoDescendente = true;
+
+        int i = 0;
+        while (i < array.length - 1 && ordenadoDescendente == true) {
+            if (array[i] < array[i + 1]) {
+                ordenadoDescendente = false;
+            }
+            i++;
+        }
+
+        return ordenadoDescendente;
+    }
+
+}
