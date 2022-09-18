@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diğer değiştiriciler.</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Önceki bir bölümde statik değiştiriciden bahsetmiştik, bu yüzden bu bölümde diğer iki değiştiriciye odaklanacağız.</font></font></p> 
+        <h3><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sınıf</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> bildirimindeki değiştiricilere erişin </font><font style="vertical-align: inherit;">:</font></font></h3> 
+        <ul> 
+         <li><code>final</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Olarak tanımlanan özellikler veya yöntemler </font></font><code>final </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">değiştirilemez veya geçersiz kılınamaz. </font><font style="vertical-align: inherit;">Değiştiricinin bir sınıfa uygulanması durumunda </font><font style="vertical-align: inherit;">, bu kavram daha sonra ele alınacak olmasına rağmen, söz konusu sınıfın diğer sınıflar tarafından </font><em><font style="vertical-align: inherit;">miras</font></em></font><code>final </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> alınamayacağı anlamına gelecektir.</font></font><em><font style="vertical-align: inherit;"></font></em><font style="vertical-align: inherit;"></font></li> 
+         <li><code>abstract</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: Yalnızca yöntemler veya sınıflar için geçerlidir ve kalıtımla ilişkilendirilirler, bu nedenle daha sonra ele alacağız.</font></font></li> 
+        </ul> 
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örnek:</font></font></h3> 
+        <blockquote> 
+         <p><code>&nbsp;&nbsp;&nbsp; public class OOP_ejemplos {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj1 = new SubClase(8);<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; miObj1.y = 7; // devolvería error de compilación<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj1.suma()); // suma(9, 7) devolvería error de compilación<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp; class SubClase {</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private int x;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; final int y = 10;</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public SubClase(int _x) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = _x;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public int suma() {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</code></p> 
+         <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private int suma(int _x, int _y) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return _x + _y;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp; }</code></p> 
+        </blockquote> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yukarıdaki kodda şunu görebiliriz:</font></font></p> 
+        <ul> 
+         <li>El valor de la propiedad <code>y</code> se le asigna en el momento de la declaración</li> 
+         <li>Si, posteriormente se intentara modificar el valor de esa constante, se generaría un error de compilación.</li> 
+        </ul> 
+        <h3>Ejercicio:</h3> 
+        <p>Partiendo del código que soluciona el último ejercicio del apartado de constructores, convierte el método estático calificacionMaxima() en una propiedad constante, sin que deje de ser static.</p> 
+        <p>Recuerda: el modificador static significaba que la propiedad o método pertenecía a la clase y no era necesario acceder a él a través de un objeto de la clase, sino que se hacía desde la propia clase.</p> 
+        <p>Nota: las constantes se suelen escribir con todas su letras en mayúsculas.</p> 
+        <p><small><strong>Nota:</strong> Elimina también los comentarios del código.</small></p></body></html>
