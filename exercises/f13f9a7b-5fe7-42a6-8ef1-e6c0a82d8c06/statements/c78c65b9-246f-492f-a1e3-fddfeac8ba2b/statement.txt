@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Substituir caracteres de string por funções</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Queremos fazer um programa Java que substitua, em uma frase, todas as ocorrências de um caractere, que contamos, por outro que contamos.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Por exemplo</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se na frase "Esta tarde vamos programar muito", substituirmos as ocorrências do caractere 'a' pelo caractere '4', a frase ficaria assim: "Est4 t4rde v4mos 4 progr4m4r mucho"&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você terá que usar métodos da classe String para manipular strings. </font><font style="vertical-align: inherit;">Você pode muito bem ter que usar os seguintes métodos:</font></font></p> 
+        <ul> 
+         <li><code>charAt(n)</code></li> 
+         <li><code>length()</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Além disso, lembre-se de que você pode concatenar strings com o operador '+' ou com o método concat (será mais fácil com o operador +)</font></font></p> 
+        <p>Además, para leer los datos desde la entrada, es muy posible que tengas que usar los siguientes métodos de la clase Scanner:</p> 
+        <ul> 
+         <li><code>nextInt()</code></li> 
+         <li><code>next()</code></li> 
+         <li><code>nextLine()</code></li> 
+        </ul> 
+        <h3><strong>ENTRADA</strong></h3> 
+        <p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p> 
+        <p>Cada uno de los casos&nbsp;está compuesto por:</p> 
+        <ul> 
+         <li>una primera línea en la que aparecen los dos caracteres separados por un espacio: el caracter que hay que sustituir y el caracter por el que hay que sustituirlo.</li> 
+         <li>una segunda línea en la que aparecerá la frase en la que queremos hacer esta sustitución</li> 
+        </ul> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá la frase resultante de haber hecho la sustición de los caracteres</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>No puede usarse el método de String que hace las sustituciones, sino que hay que programarlo a mano. Es decir, no se puede usar el método:</p> 
+        <ul> 
+         <li> <pre>replace(x,y);</pre> </li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O problema deve ser resolvido projetando uma função que receba uma string de texto e dois caracteres e retorne a string resultante da substituição do primeiro caractere pelo segundo na string de entrada.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal, para cada um dos casos, lerá os dados de entrada e utilizará a função para resolver o problema, imprimindo posteriormente o resultado correspondente.</font></font></p></body></html>
