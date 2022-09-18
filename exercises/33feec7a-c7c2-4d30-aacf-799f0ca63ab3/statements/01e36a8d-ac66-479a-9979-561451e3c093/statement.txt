@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2>Sobrecarga del constructor</h2>
+
+<p>El constructor de una clase, al igual que cualquier otro método, puede estar <strong>sobrecargado</strong>. Eso significa que es posible disponer de métodos con el mismo nombre, siempre que se diferencien en el número o en el tipo de los parámetros.</p>
+
+<h3>Ejemplo:</h3>
+
+<blockquote><code>public class OOP {</code>
+
+<p><code>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj1 = new SubClase(8, 3);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj1.suma());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubClase miObj2 = new SubClase();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(miObj2.suma());<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>}</code></p>
+
+<p><code>class SubClase {</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; int x, y;</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; <strong>public SubClase()</strong> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = 5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = 7;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; <strong>public SubClase(int _x, int _y)</strong> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = _x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = _y;<br>
+&nbsp;&nbsp;&nbsp; }</code></p>
+
+<p><code>&nbsp;&nbsp;&nbsp; public int suma() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+}</code></p>
+</blockquote>
+
+<p><small><strong>Nota:</strong> si dos métodos de la misma clase únicamente se diferencian en el nombre de los parámetros, se generará un error.</small></p>
+
+<h3>Ejercicio</h3>
+
+<p>Partiendo de la clase <code>Modulo</code> que soluciona el último ejercicio, combina un constructor de clase sin parámetros con otro constructor de la clase con parámetros.</p>
+
+<p>La aplicación pedirá 3 veces el nombre del módulo y la calificación. Con las siguientes directrices:</p>
+
+<ul>
+	<li>Si el nombre que facilita el usuario está vacío, no se le solicitará la nota y se invocará el constructor sin parámetros, que inicializará las propiedades del objeto a "Programacion" y 8.</li>
+	<li>Si el nombre que facilita el usuario no está vacío, se solicitará al usuario la nota hasta que suministre una nota &gt;= a la calificación máxima permitida. A continuación, se invocará el constructor con parámetros, el cual, inicializará las propiedades del objeto con los datos suministrados por el usuario.</li>
+</ul>
+
+<p>Para evitar que entre los efectos indeseables de combinar <code>sc.nextLine()</code> con <code>sc.nextInt()</code> entre distintas ejecuciones del bucle que solicita los datos de los 3 módulos, introduce al final de las sentencias que se ejecutan en el caso de que la longitud del nombre sea mayor que 0:</p>
+
+<blockquote>
+<p><code>sc.nextLine();</code></p>
+</blockquote>
+
+<p>Para saber si un nombre de módulo está vacío o no, podemos utilizar el método <code>length()</code> de la clase <code>String</code>, de la siguiente forma:</p>
+
+<blockquote>
+<p><code>if (nombre.length() &gt; 0)</code></p>
+</blockquote>
+
+<p>&nbsp;</p></body></html>
