@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dize karakterlerini işlevlerle değiştirin</font></font></h2> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bir cümlede ona söylediğimiz bir karakterin tüm oluşumlarını, ona söylediğimiz bir başka karakterin yerine koyan bir Java programı yapmak istiyoruz.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Örneğin</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"Bu öğleden sonra çok program yapacağız" cümlesinde, 'a' karakterinin oluşumlarını '4' karakteriyle değiştirirsek, cümle şöyle görünür: "Est4 t4rde v4mos 4 progr4m4r Mucho"&nbsp;</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dizeleri işlemek için String sınıfının yöntemlerini kullanmanız gerekecek. </font><font style="vertical-align: inherit;">Aşağıdaki yöntemleri çok iyi kullanmanız gerekebilir:</font></font></p> 
+        <ul> 
+         <li><code>charAt(n)</code></li> 
+         <li><code>length()</code></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ayrıca, dizeleri '+' operatörüyle veya concat yöntemiyle birleştirebileceğinizi unutmayın (+ operatörüyle daha kolay olacaktır)</font></font></p> 
+        <p>Además, para leer los datos desde la entrada, es muy posible que tengas que usar los siguientes métodos de la clase Scanner:</p> 
+        <ul> 
+         <li><code>nextInt()</code></li> 
+         <li><code>next()</code></li> 
+         <li><code>nextLine()</code></li> 
+        </ul> 
+        <h3><strong>ENTRADA</strong></h3> 
+        <p>La entrada comienza con un número indicando cuántos casos de prueba habrá que procesar.</p> 
+        <p>Cada uno de los casos&nbsp;está compuesto por:</p> 
+        <ul> 
+         <li>una primera línea en la que aparecen los dos caracteres separados por un espacio: el caracter que hay que sustituir y el caracter por el que hay que sustituirlo.</li> 
+         <li>una segunda línea en la que aparecerá la frase en la que queremos hacer esta sustitución</li> 
+        </ul> 
+        <h3><strong>SALIDA</strong></h3> 
+        <p>Por cada caso de prueba, el programa escribirá la frase resultante de haber hecho la sustición de los caracteres</p> 
+        <h3><strong>RESTRICCIONES</strong></h3> 
+        <p>No puede usarse el método de String que hace las sustituciones, sino que hay que programarlo a mano. Es decir, no se puede usar el método:</p> 
+        <ul> 
+         <li> <pre>replace(x,y);</pre> </li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Problem, bir metin dizgisi ve iki karakter alan ve giriş dizgisinde ilk karakterin ikinci karakterin yerine kullanılmasından elde edilen dizgiyi döndüren bir fonksiyon tasarlayarak çözülmelidir.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana program, her durum için, giriş verilerini okuyacak ve sorunu çözmek için işlevi kullanacak ve ardından ilgili sonucu yazdıracaktır.</font></font></p></body></html>
