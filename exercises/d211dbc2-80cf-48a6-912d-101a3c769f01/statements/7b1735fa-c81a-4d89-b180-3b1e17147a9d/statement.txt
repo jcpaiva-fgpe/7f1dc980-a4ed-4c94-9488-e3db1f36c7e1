@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escreva um programa Java que agrupe os elementos de um array em grupos de N elementos contíguos. </font><font style="vertical-align: inherit;">Os elementos do array serão strings de texto, representando os nomes dos alunos.</font></font></p> 
+        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplos</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dado o array de strings {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, agrupar 3 elementos contíguos resultaria nos seguintes grupos: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupo 1: David, Maria, Sergio</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupo 2: Cristhian, Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dado o mesmo array de strings acima: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, agrupar 2 elementos contíguos resultaria nos seguintes grupos: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupo 1: David, Maria</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupo 2: Sérgio, Cristhian&nbsp;</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupo 3: Miguel, Alfonso</font></font></li> 
+          </ul> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dado o mesmo array de strings acima: {David, Maria, Sergio, Cristhian, Miguel, Alfonso}, agrupar 4 elementos contíguos resultaria nos seguintes grupos: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupo 1: David, Maria, Sergio, Cristhian</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grupo 2: Miguel, Afonso, FALTA, FALTA</font></font></li> 
+          </ul> </li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENTRADA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A entrada começa com um número indicando quantos casos de teste serão processados.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cada caso será composto por:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma primeira linha com o número N de elementos que cada grupo deve ter, onde N &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma segunda linha com o número L de elementos do array, onde L &gt; 0</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um terceiro com os L elementos da referida matriz separados por um espaço. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NOTA:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Os nomes compostos não podem ser usados, pois seriam considerados dois nomes se as partes do nome composto fossem separadas por um espaço.</font></font></li> 
+        </ul> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SAÍDA</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para cada caso de teste, imprimirá os agrupamentos realizados, cada um em uma linha, onde os membros faltantes do último grupo formado serão preenchidos com a palavra MISSING, caso falte algum.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Entre caso e caso, 10 traços serão impressos em uma linha, para que você possa diferenciar as saídas dos diferentes casos de teste.</font></font></p> 
+        <h3><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTRIÇÕES</font></font></strong></h3> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O problema será resolvido usando a seguinte decomposição funcional:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uma função que recebe um array de strings e o número de membros que cada grupo deve ter, e retorna um array de strings, onde em cada string estão os nomes dos membros de cada grupo, separados por espaço.</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ou seja, se a função receber os seguintes argumentos:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alunos = {David, Maria, Sergio, Cristhian, Miguel, Alfonso}</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sizeGrupos = 4</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">retornaria o seguinte array de 2 elementos: { David Maria Sergio Cristhian, Miguel Alfonso MISSING MISSING}, onde</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o primeiro elemento do array seria a string "David Maria Sergio, Cristhian" e</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o segundo elemento seria a string "Miguel Alfonso MISSING MISSING"</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O programa principal, para cada caso, irá gerar o array de alunos lendo do teclado, chamará a função e imprimirá o array de resultados retornado pela função com o formato esperado para a saída do programa</font></font></p></body></html>
