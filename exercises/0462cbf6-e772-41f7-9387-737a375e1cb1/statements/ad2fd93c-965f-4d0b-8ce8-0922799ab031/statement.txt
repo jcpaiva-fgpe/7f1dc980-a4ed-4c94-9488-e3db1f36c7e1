@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Assim como nos DNIs, para verificar se as referências cadastrais estão corretas, alguns caracteres de controle são incluídos. </font><font style="vertical-align: inherit;">Ao contrário do DNI, as referências cadastrais possuem 2 caracteres de controle.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para o cálculo dos caracteres de controle das referências cadastrais, são extraídos 2 String:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caracteres de 0 a 6, concatenados com caracteres de 14 a 17</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caracteres de 7 a 13, concatenados com caracteres de 14 a 17</font></font></li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cada uma dessas cadeias de caracteres é usada para calcular cada um dos dois caracteres de controle.</font></font></p> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Obtendo-se o caractere correspondente a cada uma das strings:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">extraindo, um a um, os caracteres da string.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o valor inicial do caractere dependerá se é numérico ou alfabético: 
+          </font></font><ul> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alfabética: 'A' = 1, 'B' = 2, 'C' = 3,...</font></font></li> 
+           <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">numérico: '0' = 0, '1' = 1, '2' = 2,...</font></font></li> 
+          </ul> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Observe que a aritmética de caracteres pode ser útil para você:</font></font></p> 
+          <blockquote> 
+           <ul> 
+            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'C' - 'A' = 2</font></font></li> 
+            <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'3' - '0' = 3</font></font></li> 
+           </ul> 
+          </blockquote> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o valor obtido anteriormente deve ser multiplicado pelo peso correspondente à posição em que se encontra.</font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Os pesos de cada posição são os seguintes:</font></font></p> 
+          <blockquote><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           13, 15, 12, 5, 4, 17, 9, 21, 3, 7, 1
+          </font></font></blockquote> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o resultado obtido pela multiplicação do valor do caractere pelo peso de sua posição deve ser somado aos resultados obtidos anteriormente.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Depois de percorrer toda a cadeia de caracteres e somar todos os resultados obtidos, a soma deve ser dividida por 23 e o restante obtido.</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o restante assim obtido indicará a posição ocupada pelo caractere de controle na seguinte sequência de caracteres: 
+          </font></font><blockquote><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+           "MQWERTYUIOPASDFGHJKLBZX"
+          </font></font></blockquote> </li> 
+        </ul> 
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se a afirmação não for totalmente esclarecedora, darei 2 links em idiomas diferentes que resolvem esses caracteres de controle:</font></font></p> 
+        <ul> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://bloginformaticoinaki.blogspot.com/2016/05/validar-referencia-catastral.html</font></font></li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/juanato/referenciacatastral/blob/master/valida-refcastv104.py</font></font></li> 
+        </ul> 
+        <p><em><small><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nota:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Arrays não devem ser usados.</font></font></small></em></p></body></html>
