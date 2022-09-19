@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Implementera den </font></font></strong><br> <tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp; privata statiska void removeHosted()- metoden </font></font></tt><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den här metoden:</font></font></strong></p> 
+        <p>&nbsp;</p> 
+        <ul> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den kommer att begära namnet på en värd via tangentbordet.</font></font></p> </li> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Den kommer att använda metoden </font></font><tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">private static int findHosted(String hostName)</font></font></tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> för att hitta positionen i värdarrangemanget </font></font><tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[]</font></font></tt><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> där värden med det namnet hittas. </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">* </font></font></em><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Observera att metoden findHosted() redan är implementerad.</font></font></em></p> </li> 
+         <li> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Borttagningen av värden kommer att ske genom att flytta till vänster alla värdar som har lagrats från den position som returnerades av den tidigare metoden.</font></font></p> 
+          <table cellpadding="4" cellspacing="0" style="width:100%"> 
+           <tbody> 
+            <tr> 
+             <td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">innan A3 elimineras</font></font></p> </td> 
+             <td style="border-style:none"> <p>&nbsp;</p> </td> 
+             <td colspan="5" style="border-bottom:1px solid #000000; border-left:none; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">efter att ha eliminerat A3</font></font></p> </td> 
+            </tr> 
+            <tr> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A1</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A2</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A3</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A4</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TILL 5</font></font></p> </td> 
+             <td style="border-bottom:none; border-left:1px solid #000000; border-right:none; border-top:none"> <p>&nbsp;</p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A1</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A2</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A4</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:none; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TILL 5</font></font></p> </td> 
+             <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:none"> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">null</font></font></p> </td> 
+            </tr> 
+           </tbody> 
+          </table> </li> 
+         <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Variabeln </font></font><code>numAcogidos</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ska minskas för varje värd som tas bort från arrayen.</font></font></li> 
+        </ul></body></html>
