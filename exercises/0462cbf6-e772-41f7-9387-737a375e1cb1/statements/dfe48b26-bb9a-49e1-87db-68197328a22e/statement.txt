@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><title>Page Title</title><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' type='text/css' media='screen' href='main.css'><script src='main.js'></script></head><body><p>Al igual que sucede con los DNI, para controlar que las referencias catastrales sean correctas, se incluye algún carácter de control. A diferencia del DNI, las referencias catastrales llevan 2 caracteres de control.</p>
+
+<p>Para el cálculo de los caracteres de control de las referencias catastrales, se extraen 2 String:</p>
+
+<ul>
+	<li>Los caracteres del 0 al 6, concatenados con los caracteres del 14 al 17</li>
+	<li>Los caracteres del 7 al 13, concatenados con los caracteres del 14 al 17</li>
+</ul>
+
+<p>Cada una de estas cadenas de caracteres sirve para calcular cada uno de los dos caracteres de control.</p>
+
+<p>La obtención del caracter correspondiente a cada una de las cadenas se obtiene:</p>
+
+<ul>
+	<li>extrayendo, uno a uno, los caracteres de la cadena.</li>
+	<li>el valor inicial del caracter dependerá de si es numérico o alfabético:
+	<ul>
+		<li>alfabético: 'A' = 1, 'B' = 2, 'C' = 3,...</li>
+		<li>numérico: '0' = 0, '1' = 1, '2' = 2,...</li>
+	</ul>
+
+	<p>ten en cuenta que te puede ser útil la aritmética de caracteres:</p>
+
+	<blockquote>
+	<ul>
+		<li>'C' - 'A' = 2</li>
+		<li>'3' - '0' = 3</li>
+	</ul>
+	</blockquote>
+	</li>
+	<li>el valor anteriormente obtenido debe ser multiplicado por el peso correspondiente a la posición en la que se encuentra.
+	<p>Los pesos de cada posición son los siguientes:</p>
+
+	<blockquote>13, 15, 12, 5, 4, 17, 9, 21, 3, 7, 1</blockquote>
+	</li>
+	<li>el resultado obtenido de multiplicar el valor del carácter por el peso de su posición se debe sumar a los resultados anteriormente obtenidos.</li>
+	<li>tras haber recorrido toda la cadena de caracteres y haber sumado todos los resultados obtenidos, se debe dividir la suma entre 23 y obtener su resto.</li>
+	<li>el resto así obtenido, indicará la posición que ocupa el carácter de control en la siguiente cadena de caracteres:
+	<blockquote>"MQWERTYUIOPASDFGHJKLBZX"</blockquote>
+	</li>
+</ul>
+
+<p>Si el enunciado no es del todo clarificador, os paso 2 enlaces en distintos lenguajes que resuelven esos caracteres de control:</p>
+
+<ul>
+	<li>http://bloginformaticoinaki.blogspot.com/2016/05/validar-referencia-catastral.html</li>
+	<li>https://github.com/juanato/referenciacatastral/blob/master/valida-refcastv104.py</li>
+</ul>
+
+<p><em><small><strong>Nota:</strong> No se deben utilizar arrays.</small></em></p></body></html>
